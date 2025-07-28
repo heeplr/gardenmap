@@ -1,4 +1,5 @@
 let plants = {};
+let palette = [];
 let selectedMonth = 1;
 let editingPlant = null;
 
@@ -29,10 +30,15 @@ function saveViewToLocalStorage() {
     }));
 }
 
-const palette = [
-    { name: 'Tomato', type: 'Vegetable', vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, 'https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg'])) },
-    { name: 'Carrot', type: 'Root', vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, 'https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg'])) }
-];
+function loadPalette() {
+    /* load palette */
+    fetch('/palette')
+        .then(res => res.json())
+        .then(data => {
+            palette = data.palette;
+        });
+    renderPalette();
+}
 
 function togglePalette() {
     const el = document.getElementById('palette');
@@ -41,7 +47,7 @@ function togglePalette() {
 }
 
 function renderPalette() {
-    const el = document.getElementById('palette');
+    const el = document.getElementById('plants');
     el.innerHTML = '';
     palette.forEach((plant, index) => {
         const div = document.createElement('div');
@@ -249,6 +255,7 @@ svg.addEventListener("drop", (event) => {
 });
 
 window.onload = () => {
+    loadPalette();
     loadPlants();
     updateTransform();
 }
