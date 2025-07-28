@@ -1,0 +1,40 @@
+{
+  "palette": [
+    {
+      "name": "Forsythie",
+      "type": "strauch",
+      "vegetation": {
+        "1": "/forsythie-01.svg",
+        "2": "/forsythie-02.svg",
+        "3": "/forsythie-03.svg",
+        "4": "/forsythie-04.svg",
+        "5": "/forsythie-05.svg",
+        "6": "/forsythie-06.svg",
+        "7": "/forsythie-07.svg",
+        "8": "/forsythie-08.svg",
+        "9": "/forsythie-09.svg",
+        "10": "/forsythie-10.svg",
+        "11": "/forsythie-11.svg",
+        "12": "/forsythie-12.svg"
+      }
+    },
+    {
+      "name": "Blume",
+      "type": "staude",
+      "vegetation": {
+        "1": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "2": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "3": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "4": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "5": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "6": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "7": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "8": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "9": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "10": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "11": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg",
+        "12": "https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg"
+      }
+    }
+  ]
+}
