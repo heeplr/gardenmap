@@ -17,7 +17,7 @@
 <body>
     <div id="toolbar">
         <button onclick="togglePalette()">+</button>
-        <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="updateIconsByMonth(this.value)">
+        <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="updateIconsByMonth(this.value)" oninput="updateIconsByMonth(this.value)">
         <div id="zoom-controls">
             <button onclick="zoom(1.2)">+</button>
             <button onclick="zoom(1/1.2)">-</button>
@@ -29,11 +29,6 @@
     <svg id="gardensvg">
       <g id="viewport" transform="translate(0,0) scale(1)">
         <rect x="0" y="0" width="800" height="600" fill="#cceeff" stroke="#3399cc" stroke-width="4" />
-
-        <!-- Draggable SVG images -->
-        <image href="https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg" x="100" y="100" width="50" height="50" class="draggable" />
-        <image href="https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg" x="250" y="150" width="50" height="50" class="draggable" />
-        <image href="https://media.lordicon.com/icons/wired/lineal/1704-flower-doodle.svg" x="400" y="80"  width="50" height="50" class="draggable" />
       </g>
     </svg>
 
