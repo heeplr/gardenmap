@@ -57,6 +57,7 @@ function renderPalette() {
 
 function updateIconsByMonth(month) {
     selectedMonth = month;
+    saveViewToLocalStorage();
     updatePlants();
 }
 
@@ -81,6 +82,11 @@ function loadPlants() {
 
 function updatePlants() {
     for (const [id, plant] of Object.entries(plants)) {
+        /* remove current image */
+        if(plant.img) {
+            plant.img.remove();
+        }
+        /* create new image */
         const img = document.createElementNS("http://www.w3.org/2000/svg", "image");
         img.setAttribute("x", plant.x);
         img.setAttribute("y", plant.y);
@@ -108,10 +114,13 @@ function editPlant(plant) {
 function saveEdit() {
     editingPlant.name = document.getElementById('edit-name').value;
     editingPlant.type = document.getElementById('edit-type').value;
+    let plant_copy = { ...editingPlant };
+    delete plant_copy['img'];
+
     fetch('/plants', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(editingPlant)
+        body: JSON.stringify(plant_copy)
     }).then(() => {
         document.getElementById('edit-form').style.display = 'none';
         loadPlants();
@@ -172,10 +181,13 @@ map.addEventListener("mouseup", () => {
         const plant = plants[draggingImage.id]
         plant.x = draggingImage.getAttribute("x");
         plant.y = draggingImage.getAttribute("y");
+        let plant_copy = { ...plant };
+        delete plant_copy['img'];
+
         fetch('/plants', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(plant)
+            body: JSON.stringify(plant_copy)
         });
     }
 
