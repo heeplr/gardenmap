@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, jsonify
 import json
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 DATA_FILE = 'plants.json'
 if not os.path.exists(DATA_FILE):
