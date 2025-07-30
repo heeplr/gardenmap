@@ -10,7 +10,7 @@
         .palette-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         #edit-form { display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
         #zoom-controls { margin-top: 5px; }
-        svg { width: 100vw; height: 100vh; background: #f0f0f0; }
+        svg { width: 100vw; height: 100vh; background: #ffffff; }
         image { cursor: grab; }
     </style>
 </head>
@@ -26,18 +26,16 @@
 
     <div id="palette">
         <div id="plants"></div>
-        <div id="palette-toolbar"></div>
+        <div id="palette-toolbar">
+            <button onclick="paletteNewPlant()">+</button>
+        </div>
     </div>
 
-    <svg id="gardensvg">
-      <g id="viewport" transform="translate(0,0) scale(1)">
-        <rect x="0" y="0" width="800" height="600" fill="#cceeff" stroke="#3399cc" stroke-width="4" />
-      </g>
-    </svg>
+    {% include "map.svg" %}
 
     <div id="edit-form">
         <label>Name: <input id="edit-name"></label><br>
-        <label>Type: <input id="edit-type"></label><br>
+        <label>Typ: <input id="edit-type" disabled></label><br>
         <button onclick="saveEdit()">Save</button>
         <button onclick="cancelEdit()">Cancel</button>
     </div>
