@@ -8,6 +8,7 @@ let isPanning = false;
 let panStart = { x: 0, y: 0 };
 
 let draggingImage = null;
+let droppedImage = null;
 let dragStart = { x: 0, y: 0 };
 let imageStart = { x: 0, y: 0 };
 
@@ -36,14 +37,7 @@ function loadPalette() {
         .then(res => res.json())
         .then(data => {
             palette = data.palette;
-        });
-    renderPalette();
-}
-
-function togglePalette() {
-    const el = document.getElementById('palette');
-    el.style.display = el.style.display === 'block' ? 'none' : 'block';
-    if (el.style.display === 'block') renderPalette();
+        }).then(() => renderPalette());
 }
 
 function renderPalette() {
@@ -59,6 +53,26 @@ function renderPalette() {
         };
         el.appendChild(div);
     });
+}
+
+function togglePalette() {
+    const el = document.getElementById('palette');
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    if (el.style.display === 'block') renderPalette();
+}
+
+
+function paletteNewPlant() {
+    const newPlant = {
+        name: 'Neu',
+        type: '',
+        vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
+    };
+    fetch('/palette', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newPlant)
+        }).then(() => loadPalette());
 }
 
 function updateIconsByMonth(month) {
@@ -96,13 +110,15 @@ function updatePlants() {
         const img = document.createElementNS("http://www.w3.org/2000/svg", "image");
         img.setAttribute("x", plant.x);
         img.setAttribute("y", plant.y);
-        img.setAttribute("width", 50);
-        img.setAttribute("height", 50);
+        img.setAttribute("width", "1%");
+        img.setAttribute("height", "1%");
         img.setAttribute("class", "draggable");
-        //img.onclick = () => editPlant(plant);
+        img.onclick = () => editPlant(plant);
         img.id = plant.id;
         img.setAttribute("href", plant.vegetation[selectedMonth]);
-        img.setAttribute("title", plant.name + ' (' + plant.type + ')');
+        const title = document.createElement("title");
+        title.textContent = plant.name + ' (' + plant.type + ')';
+        img.appendChild(title);
         /* append to DOM */
         map.appendChild(img);
         /* store image */
@@ -111,6 +127,13 @@ function updatePlants() {
 }
 
 function editPlant(plant) {
+    /* did we fire wrongly after drag operation? */
+    if(droppedImage) {
+        /* clear flag */
+        droppedImage = null;
+        /* don't show edit dialog */
+        return;
+    }
     editingPlant = plant;
     document.getElementById('edit-name').value = plant.name;
     document.getElementById('edit-type').value = plant.type;
@@ -146,7 +169,7 @@ function getSVGCoords(e) {
 }
 
 // ---------- Panning ----------
-map.addEventListener("mousedown", (e) => {
+svg.addEventListener("mousedown", (e) => {
   if (e.target.classList.contains("draggable")) {
     // Start dragging image
     draggingImage = e.target;
@@ -160,17 +183,19 @@ map.addEventListener("mousedown", (e) => {
     // Start panning
     isPanning = true;
     panStart = { x: e.clientX, y: e.clientY };
-    map.style.cursor = "grabbing";
+    svg.style.cursor = "grabbing";
   }
 });
 
-map.addEventListener("mousemove", (e) => {
+svg.addEventListener("mousemove", (e) => {
   if (draggingImage) {
     const pt = getSVGCoords(e);
     const dx = pt.x - dragStart.x;
     const dy = pt.y - dragStart.y;
     draggingImage.setAttribute("x", imageStart.x + dx);
     draggingImage.setAttribute("y", imageStart.y + dy);
+    /* remember image that will be dropped */
+    droppedImage = draggingImage;
   } else if (isPanning) {
     const dx = e.clientX - panStart.x;
     const dy = e.clientY - panStart.y;
@@ -181,9 +206,10 @@ map.addEventListener("mousemove", (e) => {
   }
 });
 
-map.addEventListener("mouseup", () => {
+svg.addEventListener("mouseup", (e) => {
     /* dropped a dragged plant? */
     if(draggingImage) {
+        /* save changed plant */
         const plant = plants[draggingImage.id]
         plant.x = draggingImage.getAttribute("x");
         plant.y = draggingImage.getAttribute("y");
@@ -195,17 +221,18 @@ map.addEventListener("mouseup", () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(plant_copy)
         });
+
+        draggingImage = null;
     }
 
     isPanning = false;
-    draggingImage = null;
-    map.style.cursor = null;
+    svg.style.cursor = null;
 });
 
-map.addEventListener("mouseleave", () => {
-  isPanning = false;
-  draggingImage = null;
-});
+//~ svg.addEventListener("mouseleave", () => {
+  //~ isPanning = false;
+  //~ draggingImage = null;
+//~ });
 
 // ---------- Zoom ----------
 function zoom(factor) {
@@ -219,11 +246,11 @@ function zoom(factor) {
 }
 
 function updateTransform() {
-  viewport.setAttribute("transform", `translate(${transform.x},${transform.y}) scale(${transform.scale})`);
+  map.setAttribute("transform", `translate(${transform.x},${transform.y}) scale(${transform.scale})`);
   saveViewToLocalStorage();
 }
 
-map.addEventListener("wheel", (e) => {
+svg.addEventListener("wheel", (e) => {
   e.preventDefault();
   const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1;
   const pt = getSVGCoords(e);
