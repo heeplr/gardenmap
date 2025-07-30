@@ -140,6 +140,17 @@ function editPlant(plant) {
     document.getElementById('edit-form').style.display = 'block';
 }
 
+function deletePlant() {
+    fetch('/plants', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: editingPlant.id })
+    }).then(() => {
+        document.getElementById('edit-form').style.display = 'none';
+        loadPlants();
+    });
+}
+
 function saveEdit() {
     editingPlant.name = document.getElementById('edit-name').value;
     editingPlant.type = document.getElementById('edit-type').value;
