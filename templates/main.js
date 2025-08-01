@@ -110,8 +110,8 @@ function updatePlants() {
         const img = document.createElementNS("http://www.w3.org/2000/svg", "image");
         img.setAttribute("x", plant.x);
         img.setAttribute("y", plant.y);
-        img.setAttribute("width", "1%");
-        img.setAttribute("height", "1%");
+        img.setAttribute("width", "0.5em");
+        img.setAttribute("height", "0.5em");
         img.setAttribute("class", "draggable");
         img.onclick = () => editPlant(plant);
         img.id = plant.id;
