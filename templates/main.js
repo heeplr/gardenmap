@@ -1,4 +1,4 @@
-let plants = {};
+let garden = {};
 let palette = [];
 let selectedMonth = 1;
 let editingPlant = null;
@@ -41,7 +41,7 @@ function loadPalette() {
 }
 
 function renderPalette() {
-    const el = document.getElementById('plants');
+    const el = document.getElementById('plantlist');
     el.innerHTML = '';
     palette.forEach((plant, index) => {
         const div = document.createElement('div');
@@ -78,30 +78,30 @@ function paletteNewPlant() {
 function updateIconsByMonth(month) {
     selectedMonth = month;
     saveViewToLocalStorage();
-    updatePlants();
+    updateGarden();
 }
 
-function loadPlants() {
+function loadGarden() {
     /* remove all plants */
     document.querySelectorAll('#gardensvg image').forEach(e => e.remove());
 
-    /* load plants */
-    fetch('/plants')
+    /* load garden */
+    fetch('/garden')
         .then(res => res.json())
         .then(data => {
             /* initialize each plant icon */
-            plants = {};
-            data.plants.forEach(plant => {
+            garden = {};
+            data.plantlist.forEach(plant => {
                 /* store model */
-                plants[plant.id] = plant;
+                garden[plant.id] = plant;
             });
             /* redraw */
-            updatePlants();
+            updateGarden();
         });
 }
 
-function updatePlants() {
-    for (const [id, plant] of Object.entries(plants)) {
+function updateGarden() {
+    for (const [id, plant] of Object.entries(garden)) {
         /* remove current image */
         if(plant.img) {
             plant.img.remove();
@@ -141,13 +141,13 @@ function editPlant(plant) {
 }
 
 function deletePlant() {
-    fetch('/plants', {
+    fetch('/garden', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: editingPlant.id })
     }).then(() => {
         document.getElementById('edit-form').style.display = 'none';
-        loadPlants();
+        loadGarden();
     });
 }
 
@@ -157,13 +157,13 @@ function saveEdit() {
     let plant_copy = { ...editingPlant };
     delete plant_copy['img'];
 
-    fetch('/plants', {
+    fetch('/garden', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(plant_copy)
     }).then(() => {
         document.getElementById('edit-form').style.display = 'none';
-        loadPlants();
+        loadGarden();
     });
 }
 
@@ -221,13 +221,13 @@ svg.addEventListener("mouseup", (e) => {
     /* dropped a dragged plant? */
     if(draggingImage) {
         /* save changed plant */
-        const plant = plants[draggingImage.id]
+        const plant = garden[draggingImage.id]
         plant.x = draggingImage.getAttribute("x");
         plant.y = draggingImage.getAttribute("y");
         let plant_copy = { ...plant };
         delete plant_copy['img'];
 
-        fetch('/plants', {
+        fetch('/garden', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(plant_copy)
@@ -283,17 +283,17 @@ svg.addEventListener("drop", (event) => {
     if (index) {
         const base = palette[index];
         const newPlant = { ...base, x, y, id: Date.now() };
-        fetch('/plants', {
+        fetch('/garden', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newPlant)
-        }).then(() => loadPlants());
+        }).then(() => loadGarden());
     }
     event.preventDefault();
 });
 
 window.onload = () => {
     loadPalette();
-    loadPlants();
+    loadGarden();
     updateTransform();
 }

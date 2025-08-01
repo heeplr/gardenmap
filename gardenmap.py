@@ -7,10 +7,10 @@ import os
 app = Flask(__name__, static_url_path='')
 
 PALETTE_FILE = 'palette.json'
-DATA_FILE = 'plants.json'
+DATA_FILE = 'garden.json'
 if not os.path.exists(DATA_FILE):
     with open(DATA_FILE, 'w') as f:
-        json.dump({"plants": []}, f)
+        json.dump({"plantlist": []}, f)
 
 @app.route('/')
 def index():
@@ -48,15 +48,15 @@ def palette():
                 data = json.load(f)
             return jsonify(data)
 
-@app.route('/plants', methods=['GET', 'POST', 'PUT', 'DELETE'])
-def plants():
+@app.route('/garden', methods=['GET', 'POST', 'PUT', 'DELETE'])
+def garden():
 
     match request.method:
         case 'POST':
             new_plant = request.json
             with open(DATA_FILE, 'r+') as f:
                 data = json.load(f)
-                data["plants"].append(new_plant)
+                data["plantlist"].append(new_plant)
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
@@ -66,9 +66,9 @@ def plants():
             updated_plant = request.json
             with open(DATA_FILE, 'r+') as f:
                 data = json.load(f)
-                for i, plant in enumerate(data["plants"]):
+                for i, plant in enumerate(data["plantlist"]):
                     if plant['id'] == updated_plant['id']:
-                        data["plants"][i] = updated_plant
+                        data["plantlist"][i] = updated_plant
                         break
                 f.seek(0)
                 json.dump(data, f, indent=2)
@@ -79,9 +79,9 @@ def plants():
             deleted_id = request.json['id']
             with open(DATA_FILE, 'r+') as f:
                 data = json.load(f)
-                for i, plant in enumerate(data['plants']):
+                for i, plant in enumerate(data['garden']):
                     if plant['id'] == deleted_id:
-                        data["plants"].remove(plant)
+                        data["plantlist"].remove(plant)
                         break
                 f.seek(0)
                 json.dump(data, f, indent=2)
