@@ -3,6 +3,7 @@
     {
       "name": "Forsythie",
       "type": "strauch",
+      "max_height": 2,
       "vegetation": {
         "1": "/forsythie-01.svg",
         "2": "/forsythie-02.svg",
@@ -17,6 +18,81 @@
         "11": "/forsythie-11.svg",
         "12": "/forsythie-12.svg"
       }
+    },
+    {
+      "name": "Vinca Minor Alba",
+      "type": "bodendecker",
+      "max_height": 0.15,
+      "vegetation": {
+        "1": "/vinca-minor-alba-01.svg",
+        "2": "/vinca-minor-alba-02.svg",
+        "3": "/vinca-minor-alba-03.svg",
+        "4": "/vinca-minor-alba-04.svg",
+        "5": "/vinca-minor-alba-05.svg",
+        "6": "/vinca-minor-alba-06.svg",
+        "7": "/vinca-minor-alba-07.svg",
+        "8": "/vinca-minor-alba-08.svg",
+        "9": "/vinca-minor-alba-09.svg",
+        "10": "/vinca-minor-alba-10.svg",
+        "11": "/vinca-minor-alba-11.svg",
+        "12": "/vinca-minor-alba-12.svg"
+      }
+    },
+    {
+      "name": "Vinca Minor Purpura",
+      "type": "bodendecker",
+      "max_height": 0.15,
+      "vegetation": {
+        "1": "/vinca-minor-purpura-01.svg",
+        "2": "/vinca-minor-purpura-02.svg",
+        "3": "/vinca-minor-purpura-03.svg",
+        "4": "/vinca-minor-purpura-04.svg",
+        "5": "/vinca-minor-purpura-05.svg",
+        "6": "/vinca-minor-purpura-06.svg",
+        "7": "/vinca-minor-purpura-07.svg",
+        "8": "/vinca-minor-purpura-08.svg",
+        "9": "/vinca-minor-purpura-09.svg",
+        "10": "/vinca-minor-purpura-10.svg",
+        "11": "/vinca-minor-purpura-11.svg",
+        "12": "/vinca-minor-purpura-12.svg"
+      }
+    },
+    {
+      "name": "Vinca Minor Rubra",
+      "type": "bodendecker",
+      "max_height": 0.15,
+      "vegetation": {
+        "1": "/vinca-minor-rubra-01.svg",
+        "2": "/vinca-minor-rubra-02.svg",
+        "3": "/vinca-minor-rubra-03.svg",
+        "4": "/vinca-minor-rubra-04.svg",
+        "5": "/vinca-minor-rubra-05.svg",
+        "6": "/vinca-minor-rubra-06.svg",
+        "7": "/vinca-minor-rubra-07.svg",
+        "8": "/vinca-minor-rubra-08.svg",
+        "9": "/vinca-minor-rubra-09.svg",
+        "10": "/vinca-minor-rubra-10.svg",
+        "11": "/vinca-minor-rubra-11.svg",
+        "12": "/vinca-minor-rubra-12.svg"
+      }
+    },
+    {
+        "name": "Oenethora Hartwegii",
+        "max_height": 0.3,
+        "vegetation": {
+            "1": "/oenethora-hartwegii-01.svg",
+            "2": "/oenethora-hartwegii-02.svg",
+            "3": "/oenethora-hartwegii-03.svg",
+            "4": "/oenethora-hartwegii-04.svg",
+            "5": "/oenethora-hartwegii-05.svg",
+            "6": "/oenethora-hartwegii-06.svg",
+            "7": "/oenethora-hartwegii-07.svg",
+            "8": "/oenethora-hartwegii-08.svg",
+            "9": "/oenethora-hartwegii-09.svg",
+            "10": "/oenethora-hartwegii-10.svg",
+            "11": "/oenethora-hartwegii-11.svg",
+            "12": "/oenethora-hartwegii-12.svg"
+        }
     },
     {
       "name": "Blume",
