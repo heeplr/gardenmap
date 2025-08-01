@@ -1,5 +1,5 @@
 let garden = {};
-let palette = [];
+let plants = [];
 let selectedMonth = 1;
 let editingPlant = null;
 
@@ -31,21 +31,21 @@ function saveViewToLocalStorage() {
     }));
 }
 
-function loadPalette() {
-    /* load palette */
-    fetch('/palette')
+function loadPlants() {
+    /* load plants */
+    fetch('/plants')
         .then(res => res.json())
         .then(data => {
-            palette = data.palette;
-        }).then(() => renderPalette());
+            plants = data.plantlist;
+        }).then(() => renderPlants());
 }
 
-function renderPalette() {
+function renderPlants() {
     const el = document.getElementById('plantlist');
     el.innerHTML = '';
-    palette.forEach((plant, index) => {
+    plants.forEach((plant, index) => {
         const div = document.createElement('div');
-        div.className = 'palette-item';
+        div.className = 'plants-item';
         div.innerText = plant.name;
         div.draggable = true;
         div.ondragstart = e => {
@@ -55,24 +55,24 @@ function renderPalette() {
     });
 }
 
-function togglePalette() {
-    const el = document.getElementById('palette');
+function togglePlants() {
+    const el = document.getElementById('plants');
     el.style.display = el.style.display === 'block' ? 'none' : 'block';
-    if (el.style.display === 'block') renderPalette();
+    if (el.style.display === 'block') renderPlants();
 }
 
 
-function paletteNewPlant() {
+function plantsNewPlant() {
     const newPlant = {
         name: 'Neu',
         type: '',
         vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
     };
-    fetch('/palette', {
+    fetch('/plants', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newPlant)
-        }).then(() => loadPalette());
+        }).then(() => loadPlants());
 }
 
 function updateIconsByMonth(month) {
@@ -281,7 +281,7 @@ svg.addEventListener("drop", (event) => {
     const y = (event.clientY - rect.top - transform.y) / transform.scale;
     const index = event.dataTransfer.getData('plant-index');
     if (index) {
-        const base = palette[index];
+        const base = plants[index];
         const newPlant = { ...base, x, y, id: Date.now() };
         fetch('/garden', {
             method: 'POST',
@@ -293,7 +293,7 @@ svg.addEventListener("drop", (event) => {
 });
 
 window.onload = () => {
-    loadPalette();
+    loadPlants();
     loadGarden();
     updateTransform();
 }

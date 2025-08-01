@@ -6,8 +6,8 @@
     <style>
         html, body { margin: 0; overflow: hidden; }
         #toolbar { margin-bottom: 10px; }
-        #palette { display: none; position: absolute; background: #fff; border: 1px solid #ccc; max-height: 200px; overflow-y: scroll; width: 200px; z-index: 1; }
-        .palette-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
+        #plants { display: none; position: absolute; background: #fff; border: 1px solid #ccc; max-height: 200px; overflow-y: scroll; width: 200px; z-index: 1; }
+        .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         #edit-form { display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
         #zoom-controls { margin-top: 5px; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
@@ -16,7 +16,7 @@
 </head>
 <body>
     <div id="toolbar">
-        <button onclick="togglePalette()">+</button>
+        <button onclick="togglePlants()">+</button>
         <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="updateIconsByMonth(this.value)" oninput="updateIconsByMonth(this.value)">
         <div id="zoom-controls">
             <button onclick="zoom(1.2)">+</button>
@@ -24,10 +24,10 @@
         </div>
     </div>
 
-    <div id="palette">
+    <div id="plants">
         <div id="plantlist"></div>
-        <div id="palette-toolbar">
-            <button onclick="paletteNewPlant()">+</button>
+        <div id="plants-toolbar">
+            <button onclick="plantsNewPlant()">+</button>
         </div>
     </div>
 

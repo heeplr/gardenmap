@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__, static_url_path='')
 
-PALETTE_FILE = 'palette.json'
+PALETTE_FILE = 'plants.json'
 DATA_FILE = 'garden.json'
 if not os.path.exists(DATA_FILE):
     with open(DATA_FILE, 'w') as f:
@@ -16,15 +16,15 @@ if not os.path.exists(DATA_FILE):
 def index():
     return render_template("index.html")
 
-@app.route('/palette', methods=['GET', 'POST', 'PUT'])
-def palette():
+@app.route('/plants', methods=['GET', 'POST', 'PUT'])
+def plants():
     match request.method:
 
         case 'POST':
             new_plant = request.json
             with open(PALETTE_FILE, 'r+') as f:
                 data = json.load(f)
-                data["palette"] += [ new_plant ]
+                data["plants"] += [ new_plant ]
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
@@ -34,9 +34,9 @@ def palette():
             updated_plant = request.json
             with open(PALETTE_FILE, 'r+') as f:
                 data = json.load(f)
-                for i, plant in enumerate(data["palette"]):
+                for i, plant in enumerate(data["plants"]):
                     if plant['id'] == updated_plant['id']:
-                        data["palette"][i] = updated_plant
+                        data["plants"][i] = updated_plant
                         break
                 f.seek(0)
                 json.dump(data, f, indent=2)
@@ -79,7 +79,7 @@ def garden():
             deleted_id = request.json['id']
             with open(DATA_FILE, 'r+') as f:
                 data = json.load(f)
-                for i, plant in enumerate(data['garden']):
+                for i, plant in enumerate(data['plantlist']):
                     if plant['id'] == deleted_id:
                         data["plantlist"].remove(plant)
                         break
