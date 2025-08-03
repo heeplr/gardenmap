@@ -3,7 +3,7 @@ let plants = [];
 let selectedMonth = 1;
 let editingPlant = null;
 
-const transform = { x: 0, y: 0, scale: 1 };
+const transform = { x: 0, y: 0, scale: 1, centerX: undefined, centerY: undefined };
 let isPanning = false;
 let panStart = { x: 0, y: 0 };
 
@@ -12,6 +12,11 @@ let droppedImage = null;
 let dragStart = { x: 0, y: 0 };
 let imageStart = { x: 0, y: 0 };
 
+let boxSelectMode = false;
+let justSelected = false;
+let selectionStart = null;
+let selectionRect = null;
+let selectedPlants = [];
 
 const savedView = JSON.parse(localStorage.getItem("view") || '{}');
 transform.x = savedView.offsetX || 0;
@@ -171,59 +176,158 @@ function cancelEdit() {
     document.getElementById('edit-form').style.display = 'none';
 }
 
-// ---------- Helpers ----------
-function getSVGCoords(e) {
-  const pt = svg.createSVGPoint();
-  pt.x = e.clientX;
-  pt.y = e.clientY;
-  return pt.matrixTransform(map.getCTM().inverse());
+/* change zoom */
+function zoom(factor, centerX, centerY) {
+    /* use global center if no center was given */
+    if(!centerX) {
+        centerX = svg.clientWidth/2 + svg.clientLeft;
+    }
+    if(!centerY) {
+        centerY = svg.clientHeight/2 + svg.clientTop;
+    }
+    const pt = getSVGCoords({ clientX: centerX, clientY: centerY });
+    // Update the scale
+    const oldScale = transform.scale;
+    const newScale = oldScale * factor;
+    transform.scale = newScale;
+
+    // Adjust translation to keep point under cursor stationary
+    transform.x -= (pt.x * newScale - pt.x * oldScale);
+    transform.y -= (pt.y * newScale - pt.y * oldScale);
+
+    // Apply transform
+    updateTransform();
 }
 
-// ---------- Panning ----------
+/* apply pan & zoom */
+function updateTransform() {
+    map.setAttribute("transform", `translate(${transform.x},${transform.y}) scale(${transform.scale})`);
+    saveViewToLocalStorage();
+}
+
+/* activate/deactivate rectangular selection mode */
+function toggleBoxSelect() {
+    boxSelectMode = !boxSelectMode;
+    document.getElementById('boxSelectToggle').style.background = boxSelectMode ? '#cef' : '';
+    if (!boxSelectMode) {
+        clearSelection();
+    }
+}
+
+/* unselect all selected plants */
+function clearSelection() {
+    selectedPlants.forEach(p => p.classList.remove("selected-plant"));
+    selectedPlants = [];
+    if (selectionRect) {
+        selectionRect.remove();
+        selectionRect = null;
+    }
+}
+
+/* check if rectangle r1 is overlapping with rectangle r2 */
+function rectsOverlap(r1, r2) {
+    return !(r2.x > r1.x + r1.width ||
+             r2.x + r2.width < r1.x ||
+             r2.y > r1.y + r1.height ||
+             r2.y + r2.height < r1.y);
+}
+
+// ---------- Helpers ----------
+/* calculate transformed SVG coordinates from event's screen coordinates */
+function getSVGCoords(e) {
+    const pt = svg.createSVGPoint();
+    const svgRect = svg.getBoundingClientRect();
+
+    pt.x = e.clientX - svgRect.left;
+    pt.y = e.clientY - svgRect.top;
+    return pt.matrixTransform(map.getCTM().inverse());
+}
+
+// ---------- UI Handlers ----------
 svg.addEventListener("mousedown", (e) => {
-  if (e.target.classList.contains("draggable")) {
-    // Start dragging image
-    draggingImage = e.target;
+
     const pt = getSVGCoords(e);
-    dragStart = { x: pt.x, y: pt.y };
-    imageStart = {
-      x: parseFloat(draggingImage.getAttribute("x")),
-      y: parseFloat(draggingImage.getAttribute("y"))
-    };
-  } else {
-    // Start panning
-    isPanning = true;
-    panStart = { x: e.clientX, y: e.clientY };
-    svg.style.cursor = "grabbing";
-  }
+
+    /* start dragging image */
+    if (e.target.classList.contains("draggable")) {
+        draggingImage = e.target;
+        dragStart = { x: pt.x, y: pt.y };
+        imageStart = {
+            x: parseFloat(draggingImage.getAttribute("x")),
+            y: parseFloat(draggingImage.getAttribute("y"))
+        }
+    }
+    /* start rectangular selection mode */
+    else if (boxSelectMode) {
+        selectionStart = getSVGCoords(e);
+
+        selectionRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        selectionRect.setAttribute("id", "selection-rect");
+        selectionRect.setAttribute("x", selectionStart.x);
+        selectionRect.setAttribute("y", selectionStart.y);
+        selectionRect.setAttribute("width", 0);
+        selectionRect.setAttribute("height", 0);
+        selectionRect.setAttribute("fill", "rgba(0, 120, 215, 0.3)");
+        selectionRect.setAttribute("stroke", "blue");
+        selectionRect.setAttribute("stroke-dasharray", "4");
+        selectionRect.setAttribute("pointer-events", "none");
+
+        map.appendChild(selectionRect);
+        svg.style.cursor = "crosshair";
+    }
+    /* pan view */
+    else {
+        // Start panning
+        isPanning = true;
+        panStart = { x: e.clientX, y: e.clientY };
+        svg.style.cursor = "grabbing";
+    }
 });
 
+
 svg.addEventListener("mousemove", (e) => {
-  if (draggingImage) {
+
     const pt = getSVGCoords(e);
-    const dx = pt.x - dragStart.x;
-    const dy = pt.y - dragStart.y;
-    draggingImage.setAttribute("x", imageStart.x + dx);
-    draggingImage.setAttribute("y", imageStart.y + dy);
-    /* remember image that will be dropped */
-    droppedImage = draggingImage;
-  } else if (isPanning) {
-    const dx = e.clientX - panStart.x;
-    const dy = e.clientY - panStart.y;
-    transform.x += dx;
-    transform.y += dy;
-    panStart = { x: e.clientX, y: e.clientY };
-    updateTransform();
-  }
+
+    /* move dragged image */
+    if (draggingImage) {
+        const dx = pt.x - dragStart.x;
+        const dy = pt.y - dragStart.y;
+        draggingImage.setAttribute("x", imageStart.x + dx);
+        draggingImage.setAttribute("y", imageStart.y + dy);
+        /* remember image that will be dropped */
+        droppedImage = draggingImage;
+    }
+    /* pan view */
+    else if (isPanning) {
+        const dx = e.clientX - panStart.x;
+        const dy = e.clientY - panStart.y;
+        transform.x += dx;
+        transform.y += dy;
+        panStart = { x: e.clientX, y: e.clientY };
+        updateTransform();
+    }
+    /* rectangular selection mode */
+    else if (boxSelectMode && selectionStart && selectionRect) {
+        const x = Math.min(selectionStart.x, pt.x);
+        const y = Math.min(selectionStart.y, pt.y);
+        const width = Math.abs(pt.x - selectionStart.x);
+        const height = Math.abs(pt.y - selectionStart.y);
+
+        selectionRect.setAttribute("x", x);
+        selectionRect.setAttribute("y", y);
+        selectionRect.setAttribute("width", width);
+        selectionRect.setAttribute("height", height);
+    }
 });
 
 svg.addEventListener("mouseup", (e) => {
-    /* dropped a dragged plant? */
+    /* dropped a dragged image? */
     if(draggingImage) {
         /* save changed plant */
         const plant = garden[draggingImage.id]
-        plant.x = draggingImage.getAttribute("x");
-        plant.y = draggingImage.getAttribute("y");
+        plant.x = parseFloat(draggingImage.getAttribute("x"));
+        plant.y = parseFloat(draggingImage.getAttribute("y"));
         let plant_copy = { ...plant };
         delete plant_copy['img'];
 
@@ -235,50 +339,75 @@ svg.addEventListener("mouseup", (e) => {
 
         draggingImage = null;
     }
+    /* finish rectangular selection? */
+    else if(boxSelectMode && selectionRect) {
+        const x = parseFloat(selectionRect.getAttribute("x"));
+        const y = parseFloat(selectionRect.getAttribute("y"));
+        const w = parseFloat(selectionRect.getAttribute("width"));
+        const h = parseFloat(selectionRect.getAttribute("height"));
 
-    isPanning = false;
-    svg.style.cursor = null;
+        clearSelection();
+
+        const selBox = { x, y, width: w, height: h };
+        selectedPlants = Array.from(svg.querySelectorAll('image')).filter(img => {
+            const ix = parseFloat(img.getAttribute("x"));
+            const iy = parseFloat(img.getAttribute("y"));
+            const iw = parseFloat(img.getAttribute("width"));
+            const ih = parseFloat(img.getAttribute("height"));
+            const imgBox = { x: ix, y: iy, width: iw, height: ih };
+            return rectsOverlap(selBox, imgBox);
+        });
+
+        /* add class to selected plants */
+        selectedPlants.forEach(p => p.classList.add("selected-plant"));
+
+        /* end selection */
+        selectionStart = null;
+        justSelected = true;
+        if (selectionRect) {
+            selectionRect.remove();
+            selectionRect = null;
+        }
+        svg.style.cursor = null;
+
+    }
+    /* stop panning view */
+    else {
+        isPanning = false;
+        svg.style.cursor = null;
+    }
 });
 
-//~ svg.addEventListener("mouseleave", () => {
-  //~ isPanning = false;
-  //~ draggingImage = null;
-//~ });
+/* selection */
+svg.addEventListener("mouseover", (e) => {
+  if (e.target.classList.contains("draggable")) {
+    e.target.style.outline = "1px solid black";
+  }
+});
 
-// ---------- Zoom ----------
-function zoom(factor) {
-  const cx = window.innerWidth / 2;
-  const cy = window.innerHeight / 2;
-  const pt = getSVGCoords({ clientX: cx, clientY: cy });
-  transform.scale *= factor;
-  transform.x = cx - pt.x * transform.scale;
-  transform.y = cy - pt.y * transform.scale;
-  updateTransform();
-}
-
-function updateTransform() {
-  map.setAttribute("transform", `translate(${transform.x},${transform.y}) scale(${transform.scale})`);
-  saveViewToLocalStorage();
-}
+svg.addEventListener("mouseout", (e) => {
+  if (e.target.classList.contains("draggable")) {
+    e.target.style.outline = null;
+  }
+});
 
 svg.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1;
-  const pt = getSVGCoords(e);
-  transform.scale *= factor;
-  transform.x = e.clientX - pt.x * transform.scale;
-  transform.y = e.clientY - pt.y * transform.scale;
-  updateTransform();
+    /* zoom view */
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1;
+    zoom(factor, e.clientX, e.clientY);
 });
 
+/* plant drag'n'drop */
 svg.addEventListener("dragover", (event) => {
-  // prevent default to allow drop
-  event.preventDefault();
+    // prevent default to allow drop
+    event.preventDefault();
 });
+
 svg.addEventListener("drop", (event) => {
-    const rect = svg.getBoundingClientRect();
-    const x = (event.clientX - rect.left - transform.x) / transform.scale;
-    const y = (event.clientY - rect.top - transform.y) / transform.scale;
+    const pt = getSVGCoords(event);
+    const x = pt.x;
+    const y = pt.y;
     const index = event.dataTransfer.getData('plant-index');
     if (index) {
         const base = plants[index];
@@ -291,6 +420,16 @@ svg.addEventListener("drop", (event) => {
     }
     event.preventDefault();
 });
+
+// Deselect on click outside
+svg.addEventListener("click", (e) => {
+    if (boxSelectMode && e.target.tagName === 'svg' && !justSelected) {
+        clearSelection();
+    }
+
+    justSelected = false;
+});
+
 
 window.onload = () => {
     loadPlants();

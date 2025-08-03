@@ -12,6 +12,16 @@
         #zoom-controls { margin-top: 5px; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
         image { cursor: grab; }
+        #selection-rect {
+          fill: rgba(0, 120, 255, 0.2);
+          stroke: #0078ff;
+          stroke-width: 1;
+          stroke-dasharray: 4;
+          pointer-events: none;
+        }
+        .selected-plant {
+          outline: 1.5px solid #0078ff;
+        }
     </style>
 </head>
 <body>
@@ -22,6 +32,7 @@
             <button onclick="zoom(1.2)">+</button>
             <button onclick="zoom(1/1.2)">-</button>
         </div>
+        <button id="boxSelectToggle" onclick="toggleBoxSelect()">Box Select</button>
     </div>
 
     <div id="plants">
