@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import fcntl
 from flask import Flask, render_template, request, jsonify
 import json
 import os
@@ -23,16 +24,24 @@ def plants():
         case 'POST':
             new_plant = request.json
             with open(PALETTE_FILE, 'r+') as f:
+                # Acquire exclusive lock on the file
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+
                 data = json.load(f)
                 data["plants"] += [ new_plant ]
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
+                # Release the lock
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
             return jsonify({'status': 'success'})
 
         case 'PUT':
             updated_plant = request.json
             with open(PALETTE_FILE, 'r+') as f:
+                # Acquire exclusive lock on the file
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+
                 data = json.load(f)
                 for i, plant in enumerate(data["plants"]):
                     if plant['id'] == updated_plant['id']:
@@ -41,6 +50,9 @@ def plants():
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
+                # Release the lock
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+
             return jsonify({'status': 'updated'})
 
         case _:
@@ -55,16 +67,25 @@ def garden():
         case 'POST':
             new_plant = request.json
             with open(DATA_FILE, 'r+') as f:
+                # Acquire exclusive lock on the file
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+
                 data = json.load(f)
                 data["plantlist"].append(new_plant)
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
+                # Release the lock
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+
             return jsonify({'status': 'success'})
 
         case 'PUT':
             updated_plant = request.json
             with open(DATA_FILE, 'r+') as f:
+                # Acquire exclusive lock on the file
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+
                 data = json.load(f)
                 for i, plant in enumerate(data["plantlist"]):
                     if plant['id'] == updated_plant['id']:
@@ -73,11 +94,17 @@ def garden():
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
+                # Release the lock
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+
             return jsonify({'status': 'updated'})
 
         case 'DELETE':
             deleted_id = request.json['id']
             with open(DATA_FILE, 'r+') as f:
+                # Acquire exclusive lock on the file
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+
                 data = json.load(f)
                 for i, plant in enumerate(data['plantlist']):
                     if plant['id'] == deleted_id:
@@ -86,6 +113,9 @@ def garden():
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
+                # Release the lock
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+
             return jsonify({'status': 'deleted'})
 
         case _:
