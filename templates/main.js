@@ -441,7 +441,7 @@ svg.addEventListener("drop", (event) => {
 
 /* deselect on click outside */
 svg.addEventListener("click", (e) => {
-    if (boxSelectMode && e.target.tagName === 'svg' && !justSelected) {
+    if (e.target.tagName !== 'image' && !justSelected) {
         clearSelection();
     }
 
