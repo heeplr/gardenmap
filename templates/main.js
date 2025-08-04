@@ -7,10 +7,8 @@ const transform = { x: 0, y: 0, scale: 1, centerX: undefined, centerY: undefined
 let isPanning = false;
 let panStart = { x: 0, y: 0 };
 
-let draggingImage = null;
-let droppedImage = null;
-let dragStart = { x: 0, y: 0 };
-let imageStart = { x: 0, y: 0 };
+let dragStart = null;
+let selectionDragStartPositions = [];
 
 let shiftKeyPressed = false;
 
@@ -117,10 +115,13 @@ function updateGarden() {
         const img = document.createElementNS("http://www.w3.org/2000/svg", "image");
         img.setAttribute("x", plant.x);
         img.setAttribute("y", plant.y);
-        img.setAttribute("width", "0.5em");
-        img.setAttribute("height", "0.5em");
+        img.setAttribute("width", "5px");
+        img.setAttribute("height", "5px");
         img.setAttribute("class", "draggable");
-        img.onclick = () => boxSelectPlants({ x: plant.x, y: plant.y, width: 1, height: 1});
+        img.onclick = (e) => {
+            const pt = getSVGCoords(e);
+            boxSelectPlants({ x: pt.x, y: pt.y, width: 1, height: 1})
+        };
         img.id = plant.id;
         img.setAttribute("href", plant.vegetation[selectedMonth]);
         const title = document.createElement("title");
@@ -226,10 +227,9 @@ function rectsOverlap(r1, r2) {
 
 /* select plants according to array of images */
 function boxSelectPlants(box) {
-    /* deselect all if shift key is not pressed */
-    if(!shiftKeyPressed) {
-        clearSelection();
-    }
+    /* deselect all */
+    clearSelection();
+
 
     let selected = Array.from(svg.querySelectorAll('image')).filter(img => {
         const ix = parseFloat(img.getAttribute("x"));
@@ -240,20 +240,20 @@ function boxSelectPlants(box) {
         return rectsOverlap(box, imgBox);
     });
 
-    /* append to current selection if shift-key is pressed */
-    if(shiftKeyPressed) {
-        selectedPlants.push(...selected);
-    }
-    /* replace current selection */
-    else {
-        selectedPlants = selected;
-    }
+    /* append to current selection */
+    selectedPlants.push(...selected);
+
     /* add class to selected plants */
     selectedPlants.forEach(p => p.classList.add("selected-plant"));
 }
 
 /* unselect all selected plants */
 function clearSelection() {
+    /* do nothing if shift key is pressed */
+    if(shiftKeyPressed) {
+        return;
+    }
+
     selectedPlants.forEach(p => p.classList.remove("selected-plant"));
     selectedPlants = [];
     if (selectionRect) {
@@ -281,12 +281,18 @@ svg.addEventListener("mousedown", (e) => {
 
     /* start dragging image */
     if (e.target.classList.contains("draggable")) {
-        draggingImage = e.target;
+
+        /* append target to list of selected plants */
+        boxSelectPlants({ x: pt.x, y: pt.y, width: 1, height: 1 });
         dragStart = { x: pt.x, y: pt.y };
-        imageStart = {
-            x: parseFloat(draggingImage.getAttribute("x")),
-            y: parseFloat(draggingImage.getAttribute("y"))
-        }
+
+        /* Prepare for group dragging */
+        selectionDragStartPositions = selectedPlants.map(img => ({
+            img,
+            x: parseFloat(img.getAttribute("x")),
+            y: parseFloat(img.getAttribute("y"))
+        }));
+
     }
     /* start rectangular selection mode */
     else if (boxSelectMode) {
@@ -321,13 +327,15 @@ svg.addEventListener("mousemove", (e) => {
     const pt = getSVGCoords(e);
 
     /* move dragged image */
-    if (draggingImage) {
+    if (selectionDragStartPositions.length > 0) {
         const dx = pt.x - dragStart.x;
         const dy = pt.y - dragStart.y;
-        draggingImage.setAttribute("x", imageStart.x + dx);
-        draggingImage.setAttribute("y", imageStart.y + dy);
-        /* remember image that will be dropped */
-        droppedImage = draggingImage;
+
+        selectionDragStartPositions.forEach(({ img, x, y }) => {
+            img.setAttribute("x", x + dx);
+            img.setAttribute("y", y + dy);
+        });
+
     }
     /* pan view */
     else if (isPanning) {
@@ -354,21 +362,24 @@ svg.addEventListener("mousemove", (e) => {
 
 svg.addEventListener("mouseup", (e) => {
     /* dropped a dragged image? */
-    if(draggingImage) {
-        /* save changed plant */
-        const plant = garden[draggingImage.id]
-        plant.x = parseFloat(draggingImage.getAttribute("x"));
-        plant.y = parseFloat(draggingImage.getAttribute("y"));
-        let plant_copy = { ...plant };
-        delete plant_copy['img'];
+    if(selectionDragStartPositions.length > 0) {
+        selectionDragStartPositions.forEach(({ img }) => {
+            const id = img.id;
+            if (garden[id]) {
+                garden[id].x = parseFloat(img.getAttribute("x"));
+                garden[id].y = parseFloat(img.getAttribute("y"));
+                const plant_copy = { ...garden[id] };
+                delete plant_copy.img;
 
-        fetch('/garden', {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(plant_copy)
+                fetch('/garden', {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(plant_copy)
+                });
+            }
         });
-
-        draggingImage = null;
+        clearSelection();
+        selectionDragStartPositions = [];
     }
     /* finish rectangular selection? */
     else if(boxSelectMode && selectionRect) {
@@ -387,13 +398,11 @@ svg.addEventListener("mouseup", (e) => {
             selectionRect = null;
         }
         svg.style.cursor = null;
-
     }
     /* stop panning view */
-    else {
-        isPanning = false;
-        svg.style.cursor = null;
-    }
+    isPanning = false;
+    svg.style.cursor = null;
+
 });
 
 /* selection */
@@ -450,11 +459,21 @@ svg.addEventListener("click", (e) => {
 
 /* detect keypresses */
 window.onkeydown = (e) => {
+    /* set flag if shift key is pressed */
     shiftKeyPressed = !e.shiftKey;
+    /* ctrl controls box select mode */
+    if(!e.ctrlKey) {
+        toggleBoxSelect();
+    }
 }
 
 window.onkeyup = (e) => {
+    /* clear flag if shift key is released */
     shiftKeyPressed = !e.shiftKey;
+    /* ctrl controls box select mode */
+    if(e.ctrlKey) {
+        toggleBoxSelect();
+    }
 }
 
 window.onload = () => {
