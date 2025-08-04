@@ -47,7 +47,7 @@ function saveViewToLocalStorage() {
 
 function loadPlants() {
     /* load plants */
-    fetch('/plants')
+    return fetch('/plants')
         .then(res => res.json())
         .then(data => {
             data.plantlist.forEach(plant => {
@@ -107,7 +107,7 @@ function loadGarden() {
     document.querySelectorAll('#gardensvg image').forEach(e => e.remove());
 
     /* load garden */
-    fetch('/garden')
+    return fetch('/garden')
         .then(res => res.json())
         .then(data => {
             /* initialize each plant icon */
@@ -116,9 +116,8 @@ function loadGarden() {
                 /* store model */
                 garden[plant.id] = plant;
             });
-            /* redraw */
-            renderGarden();
-        });
+        })
+        .then(() => { renderGarden(); });
 }
 
 function renderGarden() {
@@ -168,25 +167,22 @@ function renderGarden() {
 }
 
 function editPlant(plant) {
-    /* did we fire wrongly after drag operation? */
-    if(droppedImage) {
-        /* clear flag */
-        droppedImage = null;
-        /* don't show edit dialog */
-        return;
-    }
     editingPlant = plant;
     document.getElementById('edit-name').value = plants[plant.plant_id].name;
+    document.getElementById('edit-id').value = plants[plant.plant_id].id;
     document.getElementById('edit-type').value = plants[plant.plant_id].type;
 }
 
 function deletePlant() {
-    fetch('/garden', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: editingPlant.id })
-    }).then(() => {
-        document.getElementById('edit-form').style.display = 'none';
+    let last_promise = null;
+    selectedPlants.forEach(plant => {
+        last_promise = fetch('/garden', {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: plant.id })
+        });
+    });
+    last_promise.then(() => {
         loadGarden();
     });
 }
@@ -274,14 +270,19 @@ function boxSelectPlants(box) {
         const imgBox = { x: ix, y: iy, width: iw, height: ih };
         if (rectsOverlap(box, imgBox) && !selectedPlants.includes(plant)) {
             selected.push(plant);
+            /* add class to selected plants */
+            plant.el.classList.add("selected-plant");
         }
     }
 
-    /* append to current selection */
-    selectedPlants.push(...selected);
+    if(selected.length > 0) {
+        /* append to current selection */
+        selectedPlants.push(...selected);
 
-    /* add class to selected plants */
-    selectedPlants.forEach(plant => plant.el.classList.add("selected-plant"));
+        /* show last selected plant in edit dialog */
+        let lastPlant = selectedPlants[selectedPlants.length-1];
+        editPlant(lastPlant);
+    }
 }
 
 /* unselect all selected plants */
@@ -534,7 +535,7 @@ window.onkeyup = (e) => {
 }
 
 window.onload = () => {
-    loadPlants();
-    loadGarden();
-    updateTransform();
+    loadPlants()
+        .then(loadGarden)
+        .then(() => updateTransform());
 }
