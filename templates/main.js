@@ -98,7 +98,7 @@ function plantsNewPlant() {
 function updateIconsByMonth(month) {
     selectedMonth = month;
     saveViewToLocalStorage();
-    updateGarden();
+    renderGarden();
     renderPlants();
 }
 
@@ -117,11 +117,11 @@ function loadGarden() {
                 garden[plant.id] = plant;
             });
             /* redraw */
-            updateGarden();
+            renderGarden();
         });
 }
 
-function updateGarden() {
+function renderGarden() {
     for (const [id, plant] of Object.entries(garden)) {
         /* remove current image */
         if(plant.el) {
@@ -243,7 +243,7 @@ function updateTransform() {
 function toggleHeightView(active) {
     showMaxHeight = active;
     document.getElementById('heightVisualizationToggle').checked = active;
-    updateGarden();
+    renderGarden();
 }
 
 /* activate/deactivate rectangular selection mode */
@@ -529,7 +529,7 @@ window.onkeyup = (e) => {
         selectionDragStartPositions = [];
 
         /* redraw */
-        updateGarden();
+        renderGarden();
     }
 }
 
