@@ -57,7 +57,7 @@ function renderPlants() {
             e.dataTransfer.setData('plant-index', index);
         };
         const img = document.createElement('img');
-        img.src = plant['vegetation'][1];
+        img.src = plant['vegetation'][selectedMonth];
         img.align = "right";
         div.appendChild(img);
         el.appendChild(div);
@@ -88,6 +88,7 @@ function updateIconsByMonth(month) {
     selectedMonth = month;
     saveViewToLocalStorage();
     updateGarden();
+    renderPlants();
 }
 
 function loadGarden() {
