@@ -1,10 +1,11 @@
 {
   "plantlist": [
     {
-      "name": "Forsythie",
       "id": "forsythia",
-      "type": "strauch",
       "max_height": 2,
+      "name": "Forsythie",
+      "scale": 1.5,
+      "type": "strauch",
       "vegetation": {
         "1": "/forsythie-01.svg",
         "2": "/forsythie-02.svg",
@@ -21,10 +22,11 @@
       }
     },
     {
-      "name": "Vinca Minor Alba",
       "id": "vinca_minor_alba",
-      "type": "bodendecker",
       "max_height": 0.15,
+      "name": "Vinca Minor Alba",
+      "scale": 1,
+      "type": "bodendecker",
       "vegetation": {
         "1": "/vinca-minor-alba-01.svg",
         "2": "/vinca-minor-alba-02.svg",
@@ -45,6 +47,7 @@
       "id": "vinca_minor_purpura",
       "type": "bodendecker",
       "max_height": 0.15,
+      "scale": 1.0,
       "vegetation": {
         "1": "/vinca-minor-purpura-01.svg",
         "2": "/vinca-minor-purpura-02.svg",
@@ -65,6 +68,7 @@
       "id": "vinca_minor_rubra",
       "type": "bodendecker",
       "max_height": 0.15,
+      "scale": 1.0,
       "vegetation": {
         "1": "/vinca-minor-rubra-01.svg",
         "2": "/vinca-minor-rubra-02.svg",
@@ -81,28 +85,30 @@
       }
     },
     {
-        "name": "Oenethora Hartwegii",
-        "max_height": 0.3,
-        "vegetation": {
-            "1": "/oenethora-hartwegii-01.svg",
-            "2": "/oenethora-hartwegii-02.svg",
-            "3": "/oenethora-hartwegii-03.svg",
-            "4": "/oenethora-hartwegii-04.svg",
-            "5": "/oenethora-hartwegii-05.svg",
-            "6": "/oenethora-hartwegii-06.svg",
-            "7": "/oenethora-hartwegii-07.svg",
-            "8": "/oenethora-hartwegii-08.svg",
-            "9": "/oenethora-hartwegii-09.svg",
-            "10": "/oenethora-hartwegii-10.svg",
-            "11": "/oenethora-hartwegii-11.svg",
-            "12": "/oenethora-hartwegii-12.svg"
-        }
+      "name": "Oenethora Hartwegii",
+      "max_height": 0.3,
+      "scale": 1.0,
+      "vegetation": {
+        "1": "/oenethora-hartwegii-01.svg",
+        "2": "/oenethora-hartwegii-02.svg",
+        "3": "/oenethora-hartwegii-03.svg",
+        "4": "/oenethora-hartwegii-04.svg",
+        "5": "/oenethora-hartwegii-05.svg",
+        "6": "/oenethora-hartwegii-06.svg",
+        "7": "/oenethora-hartwegii-07.svg",
+        "8": "/oenethora-hartwegii-08.svg",
+        "9": "/oenethora-hartwegii-09.svg",
+        "10": "/oenethora-hartwegii-10.svg",
+        "11": "/oenethora-hartwegii-11.svg",
+        "12": "/oenethora-hartwegii-12.svg"
+      }
     },
     {
       "name": "Blume",
       "id": "flower",
       "type": "staude",
       "max_height": 0.15,
+      "scale": 1.0,
       "vegetation": {
         "1": "/flower.svg",
         "2": "/flower.svg",

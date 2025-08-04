@@ -28,7 +28,7 @@ def plants():
                 fcntl.flock(f.fileno(), fcntl.LOCK_EX)
 
                 data = json.load(f)
-                data["plants"] += [ new_plant ]
+                data["plantlist"] += [ new_plant ]
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
@@ -43,9 +43,9 @@ def plants():
                 fcntl.flock(f.fileno(), fcntl.LOCK_EX)
 
                 data = json.load(f)
-                for i, plant in enumerate(data["plants"]):
+                for i, plant in enumerate(data["plantlist"]):
                     if plant['id'] == updated_plant['id']:
-                        data["plants"][i] = updated_plant
+                        data["plantlist"][i] = updated_plant
                         break
                 f.seek(0)
                 json.dump(data, f, indent=2)

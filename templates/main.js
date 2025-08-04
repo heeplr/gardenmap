@@ -21,7 +21,8 @@ let selectedPlants = [];
 let showMaxHeight = false;
 
 /* config */
-const maxPlantHeight = 2.0
+const iconWidth = 5;
+const maxPlantHeight = 2.0;
 
 /* load view from browser localstorage */
 const savedView = JSON.parse(localStorage.getItem("view") || '{}');
@@ -136,8 +137,8 @@ function renderGarden() {
             el.setAttribute("x", plant.x);
             el.setAttribute("y", plant.y);
             el.setAttribute("fill", "rgb(" + color + ",0,0,0.5)");
-            el.setAttribute("width", "5px");
-            el.setAttribute("height", "5px");
+            el.setAttribute("width", iconWidth * plants[plant.plant_id].scale + "px");
+            el.setAttribute("height", iconWidth * plants[plant.plant_id].scale + "px");
             el.setAttribute("class", "draggable");
         }
         else {
@@ -145,8 +146,8 @@ function renderGarden() {
             el = document.createElementNS("http://www.w3.org/2000/svg", "image");
             el.setAttribute("x", plant.x);
             el.setAttribute("y", plant.y);
-            el.setAttribute("width", "5px");
-            el.setAttribute("height", "5px");
+            el.setAttribute("width", iconWidth * plants[plant.plant_id].scale + "px");
+            el.setAttribute("height", iconWidth * plants[plant.plant_id].scale + "px");
             el.setAttribute("class", "draggable");
             el.id = plant.id;
             el.setAttribute("href", plants[plant.plant_id].vegetation[selectedMonth]);
@@ -155,6 +156,10 @@ function renderGarden() {
             el.appendChild(title);
         }
 
+        /* plant is selected? */
+        if(selectedPlants.includes(plant)) {
+            el.classList.add("selected-plant");
+        }
         /* append to DOM */
         map.appendChild(el);
         /* store in model */
@@ -171,6 +176,7 @@ function editPlant(plant) {
     document.getElementById('edit-name').value = plants[plant.plant_id].name;
     document.getElementById('edit-id').value = plants[plant.plant_id].id;
     document.getElementById('edit-type').value = plants[plant.plant_id].type;
+    document.getElementById('edit-scale').value = plants[plant.plant_id].scale;
 }
 
 function deletePlant() {
@@ -188,18 +194,26 @@ function deletePlant() {
 }
 
 function saveEdit() {
-    editingPlant.name = document.getElementById('edit-name').value;
-    editingPlant.type = document.getElementById('edit-type').value;
-    let plant_copy = { ...editingPlant };
-    delete plant_copy.el;
+    /* nothing selected? */
+    if(selectedPlants.length < 0) {
+        return;
+    }
 
-    fetch('/garden', {
+    const plant = selectedPlants[selectedPlants.length-1];
+    const model_plant = plants[plant.plant_id];
+
+    model_plant.name = document.getElementById('edit-name').value;
+    model_plant.id = document.getElementById('edit-id').value;
+    model_plant.type = document.getElementById('edit-type').value;
+    model_plant.scale = parseFloat(document.getElementById('edit-scale').value);
+
+    fetch('/plants', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(plant_copy)
-    }).then(() => {
-        loadGarden();
-    });
+        body: JSON.stringify(model_plant)
+    })
+    .then(() => { loadPlants() })
+    .then(() => { renderGarden() });
 }
 
 function cancelEdit() {
@@ -481,7 +495,12 @@ svg.addEventListener("drop", (event) => {
     const y = pt.y;
     const id = event.dataTransfer.getData('plant-id');
     if (id && plants[id]) {
-        const newPlant = { x, y, plant_id: id, id: Date.now() };
+        const newPlant = {
+            x,
+            y,
+            plant_id: id,
+            id: Date.now()
+        };
         fetch('/garden', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
