@@ -6,8 +6,9 @@
     <style>
         html, body { margin: 0; overflow: hidden; }
         #toolbar { margin-bottom: 10px; }
-        #plants { display: none; position: absolute; background: #fff; border: 1px solid #ccc; max-height: 200px; overflow-y: scroll; width: 200px; z-index: 1; }
+        #plants { display: none; position: absolute; background: #fff; border: 1px solid #ccc; max-height: 200px; overflow-y: scroll; z-index: 1; }
         .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
+        .plants-item img { width: 1.5em; height: 1.5em; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
         #zoom-controls { margin-top: 5px; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
@@ -20,7 +21,7 @@
           pointer-events: none;
         }
         .selected-plant {
-          outline: 1.5px solid #0078ff;
+          outline: 1px solid #0078ff;
         }
     </style>
 </head>
@@ -32,7 +33,7 @@
             <button onclick="zoom(1.2)">+</button>
             <button onclick="zoom(1/1.2)">-</button>
         </div>
-        <button id="boxSelectToggle" onclick="toggleBoxSelect()">Box Select</button>
+        <input type="checkbox" id="boxSelectToggle" onclick="toggleBoxSelect(this.checked)">Box Select</input>
     </div>
 
     <div id="plants">

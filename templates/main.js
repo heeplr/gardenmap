@@ -56,6 +56,10 @@ function renderPlants() {
         div.ondragstart = e => {
             e.dataTransfer.setData('plant-index', index);
         };
+        const img = document.createElement('img');
+        img.src = plant['vegetation'][1];
+        img.align = "right";
+        div.appendChild(img);
         el.appendChild(div);
     });
 }
@@ -208,9 +212,9 @@ function updateTransform() {
 }
 
 /* activate/deactivate rectangular selection mode */
-function toggleBoxSelect() {
-    boxSelectMode = !boxSelectMode;
-    document.getElementById('boxSelectToggle').style.background = boxSelectMode ? '#cef' : '';
+function toggleBoxSelect(active) {
+    boxSelectMode = active;
+    document.getElementById('boxSelectToggle').checked = active;
 }
 
 /* check if rectangle r1 is overlapping with rectangle r2 */
@@ -226,21 +230,23 @@ function boxSelectPlants(box) {
     /* deselect all */
     clearSelection();
 
-
-    let selected = Array.from(svg.querySelectorAll('image')).filter(img => {
-        const ix = parseFloat(img.getAttribute("x"));
-        const iy = parseFloat(img.getAttribute("y"));
-        const iw = parseFloat(img.getAttribute("width"));
-        const ih = parseFloat(img.getAttribute("height"));
+    let selected = [];
+    for (const [id, plant] of Object.entries(garden)) {
+        const ix = parseFloat(plant.img.getAttribute("x"));
+        const iy = parseFloat(plant.img.getAttribute("y"));
+        const iw = parseFloat(plant.img.getAttribute("width"));
+        const ih = parseFloat(plant.img.getAttribute("height"));
         const imgBox = { x: ix, y: iy, width: iw, height: ih };
-        return rectsOverlap(box, imgBox) && !selectedPlants.includes(img);
-    });
+        if (rectsOverlap(box, imgBox) && !selectedPlants.includes(plant)) {
+            selected.push(plant);
+        }
+    }
 
     /* append to current selection */
     selectedPlants.push(...selected);
 
     /* add class to selected plants */
-    selectedPlants.forEach(p => p.classList.add("selected-plant"));
+    selectedPlants.forEach(plant => plant.img.classList.add("selected-plant"));
 }
 
 /* unselect all selected plants */
@@ -250,7 +256,7 @@ function clearSelection() {
         return;
     }
 
-    selectedPlants.forEach(p => p.classList.remove("selected-plant"));
+    selectedPlants.forEach(plant => plant.img.classList.remove("selected-plant"));
     selectedPlants = [];
     if (selectionRect) {
         selectionRect.remove();
@@ -283,10 +289,10 @@ svg.addEventListener("mousedown", (e) => {
         dragStart = { x: pt.x, y: pt.y };
 
         /* Prepare for group dragging */
-        selectionDragStartPositions = selectedPlants.map(img => ({
-            img,
-            x: parseFloat(img.getAttribute("x")),
-            y: parseFloat(img.getAttribute("y"))
+        selectionDragStartPositions = selectedPlants.map(plant => ({
+            img: plant.img,
+            x: parseFloat(plant.img.getAttribute("x")),
+            y: parseFloat(plant.img.getAttribute("y"))
         }));
 
     }
@@ -393,6 +399,8 @@ svg.addEventListener("mouseup", (e) => {
             selectionRect.remove();
             selectionRect = null;
         }
+        svg.style.cursor = null;
+        return;
     }
     /* click anywhere clears selection */
     if (e.target.tagName !== 'image' && !isPanning) {
@@ -456,7 +464,7 @@ window.onkeydown = (e) => {
     }
     /* ctrl controls box select mode */
     if(e.code === "ControlLeft" || e.code === "ControlRight") {
-        toggleBoxSelect();
+        toggleBoxSelect(true);
     }
 }
 
@@ -466,8 +474,28 @@ window.onkeyup = (e) => {
         shiftKeyPressed = false;
     }
     /* ctrl controls box select mode */
-    if(e.code === "ControlLeft" || e.code === "ControlRight") {
-        toggleBoxSelect();
+    else if(e.code === "ControlLeft" || e.code === "ControlRight") {
+        toggleBoxSelect(false);
+    }
+
+    /* escape everything */
+    else if(e.code === "Escape") {
+        /* stop panning view */
+        isPanning = false;
+        panStart = null;
+        svg.style.cursor = null;
+        /* stop box selection */
+        selectionStart = null;
+        justSelected = true;
+        if (selectionRect) {
+            selectionRect.remove();
+            selectionRect = null;
+        }
+        /* stop dragging */
+        selectionDragStartPositions = [];
+
+        /* redraw */
+        updateGarden();
     }
 }
 
