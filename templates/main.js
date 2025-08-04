@@ -5,7 +5,7 @@ let editingPlant = null;
 
 const transform = { x: 0, y: 0, scale: 1, centerX: undefined, centerY: undefined };
 let isPanning = false;
-let panStart = { x: 0, y: 0 };
+let panStart = null;
 
 let dragStart = null;
 let selectionDragStartPositions = [];
@@ -145,7 +145,6 @@ function editPlant(plant) {
     editingPlant = plant;
     document.getElementById('edit-name').value = plant.name;
     document.getElementById('edit-type').value = plant.type;
-    document.getElementById('edit-form').style.display = 'block';
 }
 
 function deletePlant() {
@@ -234,7 +233,7 @@ function boxSelectPlants(box) {
         const iw = parseFloat(img.getAttribute("width"));
         const ih = parseFloat(img.getAttribute("height"));
         const imgBox = { x: ix, y: iy, width: iw, height: ih };
-        return rectsOverlap(box, imgBox);
+        return rectsOverlap(box, imgBox) && !selectedPlants.includes(img);
     });
 
     /* append to current selection */
@@ -276,7 +275,7 @@ svg.addEventListener("mousedown", (e) => {
 
     const pt = getSVGCoords(e);
 
-    /* start dragging image */
+    /* click on image */
     if (e.target.classList.contains("draggable")) {
 
         /* append target to list of selected plants */
@@ -311,8 +310,7 @@ svg.addEventListener("mousedown", (e) => {
     }
     /* pan view */
     else {
-        // Start panning
-        isPanning = true;
+        // maybe start panning
         panStart = { x: e.clientX, y: e.clientY };
         svg.style.cursor = "grabbing";
     }
@@ -335,7 +333,8 @@ svg.addEventListener("mousemove", (e) => {
 
     }
     /* pan view */
-    else if (isPanning) {
+    else if (panStart) {
+        isPanning = true;
         const dx = e.clientX - panStart.x;
         const dy = e.clientY - panStart.y;
         transform.x += dx;
@@ -394,10 +393,14 @@ svg.addEventListener("mouseup", (e) => {
             selectionRect.remove();
             selectionRect = null;
         }
-        svg.style.cursor = null;
+    }
+    /* click anywhere clears selection */
+    if (e.target.tagName !== 'image' && !isPanning) {
+        clearSelection();
     }
     /* stop panning view */
     isPanning = false;
+    panStart = null;
     svg.style.cursor = null;
 
 });
@@ -405,7 +408,7 @@ svg.addEventListener("mouseup", (e) => {
 /* selection */
 svg.addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("draggable")) {
-    e.target.style.outline = "1px solid black";
+    e.target.style.outline = "0.5px solid #f0f0f0a0";
   }
 });
 
@@ -443,15 +446,6 @@ svg.addEventListener("drop", (event) => {
         }).then(() => loadGarden());
     }
     event.preventDefault();
-});
-
-/* deselect on click outside */
-svg.addEventListener("click", (e) => {
-    if (e.target.tagName !== 'image' && !justSelected) {
-        clearSelection();
-    }
-
-    justSelected = false;
 });
 
 /* detect keypresses */
