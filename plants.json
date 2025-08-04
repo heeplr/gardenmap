@@ -2,6 +2,7 @@
   "plantlist": [
     {
       "name": "Forsythie",
+      "id": "forsythia",
       "type": "strauch",
       "max_height": 2,
       "vegetation": {
@@ -21,6 +22,7 @@
     },
     {
       "name": "Vinca Minor Alba",
+      "id": "vinca_minor_alba",
       "type": "bodendecker",
       "max_height": 0.15,
       "vegetation": {
@@ -40,6 +42,7 @@
     },
     {
       "name": "Vinca Minor Purpura",
+      "id": "vinca_minor_purpura",
       "type": "bodendecker",
       "max_height": 0.15,
       "vegetation": {
@@ -59,6 +62,7 @@
     },
     {
       "name": "Vinca Minor Rubra",
+      "id": "vinca_minor_rubra",
       "type": "bodendecker",
       "max_height": 0.15,
       "vegetation": {
@@ -96,7 +100,9 @@
     },
     {
       "name": "Blume",
+      "id": "flower",
       "type": "staude",
+      "max_height": 0.15,
       "vegetation": {
         "1": "/flower.svg",
         "2": "/flower.svg",

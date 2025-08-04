@@ -1,5 +1,5 @@
 let garden = {};
-let plants = [];
+let plants = {};
 let selectedMonth = 1;
 let editingPlant = null;
 
@@ -18,15 +18,24 @@ let selectionStart = null;
 let selectionRect = null;
 let selectedPlants = [];
 
+let showMaxHeight = false;
+
+/* config */
+const maxPlantHeight = 2.0
+
+/* load view from browser localstorage */
 const savedView = JSON.parse(localStorage.getItem("view") || '{}');
 transform.x = savedView.offsetX || 0;
 transform.y = savedView.offsetY || 0;
 transform.scale = savedView.scale || 1;
 selectedMonth = savedView.selectedMonth || 1;
 
+/* our SVG with our map container */
 const svg = document.getElementById("gardensvg");
 const map = document.getElementById("viewport");
 
+
+/* ---------------------------------------------------------------------------*/
 function saveViewToLocalStorage() {
     localStorage.setItem("view", JSON.stringify({
         'offsetX': transform.x,
@@ -41,27 +50,29 @@ function loadPlants() {
     fetch('/plants')
         .then(res => res.json())
         .then(data => {
-            plants = data.plantlist;
+            data.plantlist.forEach(plant => {
+                plants[plant['id']] = plant;
+            });
         }).then(() => renderPlants());
 }
 
 function renderPlants() {
     const el = document.getElementById('plantlist');
     el.innerHTML = '';
-    plants.forEach((plant, index) => {
+    for (const [id, plant] of Object.entries(plants)) {
         const div = document.createElement('div');
         div.className = 'plants-item';
         div.innerText = plant.name;
         div.draggable = true;
         div.ondragstart = e => {
-            e.dataTransfer.setData('plant-index', index);
+            e.dataTransfer.setData('plant-id', plant.id);
         };
         const img = document.createElement('img');
         img.src = plant['vegetation'][selectedMonth];
         img.align = "right";
         div.appendChild(img);
         el.appendChild(div);
-    });
+    };
 }
 
 function togglePlants() {
@@ -70,10 +81,10 @@ function togglePlants() {
     if (el.style.display === 'block') renderPlants();
 }
 
-
 function plantsNewPlant() {
     const newPlant = {
         name: 'Neu',
+        id: 'new',
         type: '',
         vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
     };
@@ -113,29 +124,46 @@ function loadGarden() {
 function updateGarden() {
     for (const [id, plant] of Object.entries(garden)) {
         /* remove current image */
-        if(plant.img) {
-            plant.img.remove();
+        if(plant.el) {
+            plant.el.remove();
         }
-        /* create new image */
-        const img = document.createElementNS("http://www.w3.org/2000/svg", "image");
-        img.setAttribute("x", plant.x);
-        img.setAttribute("y", plant.y);
-        img.setAttribute("width", "5px");
-        img.setAttribute("height", "5px");
-        img.setAttribute("class", "draggable");
-        img.onclick = (e) => {
+        /* DOM element for this plant */
+        let el = null;
+        /* visualize max height? */
+        if(showMaxHeight) {
+            /* calculate color shade from height */
+            let color = (255.0 / maxPlantHeight) * plants[plant.plant_id].max_height;
+            el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            el.setAttribute("x", plant.x);
+            el.setAttribute("y", plant.y);
+            el.setAttribute("fill", "rgb(" + color + ",0,0,0.5)");
+            el.setAttribute("width", "5px");
+            el.setAttribute("height", "5px");
+            el.setAttribute("class", "draggable");
+        }
+        else {
+            /* create new image */
+            el = document.createElementNS("http://www.w3.org/2000/svg", "image");
+            el.setAttribute("x", plant.x);
+            el.setAttribute("y", plant.y);
+            el.setAttribute("width", "5px");
+            el.setAttribute("height", "5px");
+            el.setAttribute("class", "draggable");
+            el.id = plant.id;
+            el.setAttribute("href", plants[plant.plant_id].vegetation[selectedMonth]);
+            const title = document.createElement("title");
+            title.textContent = plants[plant.plant_id].name + ' (' + plants[plant.plant_id].type + ')';
+            el.appendChild(title);
+        }
+
+        /* append to DOM */
+        map.appendChild(el);
+        /* store in model */
+        plant.el = el;
+        el.onclick = (e) => {
             const pt = getSVGCoords(e);
             boxSelectPlants({ x: pt.x, y: pt.y, width: 1, height: 1})
         };
-        img.id = plant.id;
-        img.setAttribute("href", plant.vegetation[selectedMonth]);
-        const title = document.createElement("title");
-        title.textContent = plant.name + ' (' + plant.type + ')';
-        img.appendChild(title);
-        /* append to DOM */
-        map.appendChild(img);
-        /* store image */
-        plant.img = img;
     }
 }
 
@@ -148,8 +176,8 @@ function editPlant(plant) {
         return;
     }
     editingPlant = plant;
-    document.getElementById('edit-name').value = plant.name;
-    document.getElementById('edit-type').value = plant.type;
+    document.getElementById('edit-name').value = plants[plant.plant_id].name;
+    document.getElementById('edit-type').value = plants[plant.plant_id].type;
 }
 
 function deletePlant() {
@@ -167,14 +195,13 @@ function saveEdit() {
     editingPlant.name = document.getElementById('edit-name').value;
     editingPlant.type = document.getElementById('edit-type').value;
     let plant_copy = { ...editingPlant };
-    delete plant_copy['img'];
+    delete plant_copy.el;
 
     fetch('/garden', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(plant_copy)
     }).then(() => {
-        document.getElementById('edit-form').style.display = 'none';
         loadGarden();
     });
 }
@@ -212,6 +239,13 @@ function updateTransform() {
     saveViewToLocalStorage();
 }
 
+/* activate/deactivate height visualization */
+function toggleHeightView(active) {
+    showMaxHeight = active;
+    document.getElementById('heightVisualizationToggle').checked = active;
+    updateGarden();
+}
+
 /* activate/deactivate rectangular selection mode */
 function toggleBoxSelect(active) {
     boxSelectMode = active;
@@ -233,10 +267,10 @@ function boxSelectPlants(box) {
 
     let selected = [];
     for (const [id, plant] of Object.entries(garden)) {
-        const ix = parseFloat(plant.img.getAttribute("x"));
-        const iy = parseFloat(plant.img.getAttribute("y"));
-        const iw = parseFloat(plant.img.getAttribute("width"));
-        const ih = parseFloat(plant.img.getAttribute("height"));
+        const ix = parseFloat(plant.el.getAttribute("x"));
+        const iy = parseFloat(plant.el.getAttribute("y"));
+        const iw = parseFloat(plant.el.getAttribute("width"));
+        const ih = parseFloat(plant.el.getAttribute("height"));
         const imgBox = { x: ix, y: iy, width: iw, height: ih };
         if (rectsOverlap(box, imgBox) && !selectedPlants.includes(plant)) {
             selected.push(plant);
@@ -247,7 +281,7 @@ function boxSelectPlants(box) {
     selectedPlants.push(...selected);
 
     /* add class to selected plants */
-    selectedPlants.forEach(plant => plant.img.classList.add("selected-plant"));
+    selectedPlants.forEach(plant => plant.el.classList.add("selected-plant"));
 }
 
 /* unselect all selected plants */
@@ -257,7 +291,7 @@ function clearSelection() {
         return;
     }
 
-    selectedPlants.forEach(plant => plant.img.classList.remove("selected-plant"));
+    selectedPlants.forEach(plant => plant.el.classList.remove("selected-plant"));
     selectedPlants = [];
     if (selectionRect) {
         selectionRect.remove();
@@ -291,9 +325,9 @@ svg.addEventListener("mousedown", (e) => {
 
         /* Prepare for group dragging */
         selectionDragStartPositions = selectedPlants.map(plant => ({
-            img: plant.img,
-            x: parseFloat(plant.img.getAttribute("x")),
-            y: parseFloat(plant.img.getAttribute("y"))
+            el: plant.el,
+            x: parseFloat(plant.el.getAttribute("x")),
+            y: parseFloat(plant.el.getAttribute("y"))
         }));
 
     }
@@ -333,9 +367,9 @@ svg.addEventListener("mousemove", (e) => {
         const dx = pt.x - dragStart.x;
         const dy = pt.y - dragStart.y;
 
-        selectionDragStartPositions.forEach(({ img, x, y }) => {
-            img.setAttribute("x", x + dx);
-            img.setAttribute("y", y + dy);
+        selectionDragStartPositions.forEach(({ el, x, y }) => {
+            el.setAttribute("x", x + dx);
+            el.setAttribute("y", y + dy);
         });
 
     }
@@ -366,13 +400,13 @@ svg.addEventListener("mousemove", (e) => {
 svg.addEventListener("mouseup", (e) => {
     /* dropped a dragged image? */
     if(selectionDragStartPositions.length > 0) {
-        selectionDragStartPositions.forEach(({ img }) => {
-            const id = img.id;
+        selectionDragStartPositions.forEach(({ el }) => {
+            const id = el.id;
             if (garden[id]) {
-                garden[id].x = parseFloat(img.getAttribute("x"));
-                garden[id].y = parseFloat(img.getAttribute("y"));
+                garden[id].x = parseFloat(el.getAttribute("x"));
+                garden[id].y = parseFloat(el.getAttribute("y"));
                 const plant_copy = { ...garden[id] };
-                delete plant_copy.img;
+                delete plant_copy.el;
 
                 fetch('/garden', {
                     method: 'PUT',
@@ -444,10 +478,9 @@ svg.addEventListener("drop", (event) => {
     const pt = getSVGCoords(event);
     const x = pt.x;
     const y = pt.y;
-    const index = event.dataTransfer.getData('plant-index');
-    if (index) {
-        const base = plants[index];
-        const newPlant = { ...base, x, y, id: Date.now() };
+    const id = event.dataTransfer.getData('plant-id');
+    if (id && plants[id]) {
+        const newPlant = { x, y, plant_id: id, id: Date.now() };
         fetch('/garden', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

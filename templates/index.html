@@ -33,6 +33,7 @@
             <button onclick="zoom(1.2)">+</button>
             <button onclick="zoom(1/1.2)">-</button>
         </div>
+        <input type="checkbox" id="heightVisualizationToggle" onclick="toggleHeightView(this.checked)">show height</input>
         <input type="checkbox" id="boxSelectToggle" onclick="toggleBoxSelect(this.checked)">Box Select</input>
     </div>
 
@@ -47,6 +48,7 @@
 
     <div id="edit-form">
         <label>Name: <input id="edit-name"></label><br>
+        <label>ID: <input id="edit-id"></label><br>
         <label>Typ: <input id="edit-type" disabled></label><br>
         <button onclick="saveEdit()">Save</button>
         <button onclick="deletePlant()">Delete</button>
