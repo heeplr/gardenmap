@@ -212,9 +212,6 @@ function updateTransform() {
 function toggleBoxSelect() {
     boxSelectMode = !boxSelectMode;
     document.getElementById('boxSelectToggle').style.background = boxSelectMode ? '#cef' : '';
-    if (!boxSelectMode) {
-        clearSelection();
-    }
 }
 
 /* check if rectangle r1 is overlapping with rectangle r2 */
@@ -460,18 +457,22 @@ svg.addEventListener("click", (e) => {
 /* detect keypresses */
 window.onkeydown = (e) => {
     /* set flag if shift key is pressed */
-    shiftKeyPressed = !e.shiftKey;
+    if(e.code === "ShiftLeft" || e.code === "ShiftRight" ) {
+        shiftKeyPressed = true;
+    }
     /* ctrl controls box select mode */
-    if(!e.ctrlKey) {
+    if(e.code === "ControlLeft" || e.code === "ControlRight") {
         toggleBoxSelect();
     }
 }
 
 window.onkeyup = (e) => {
     /* clear flag if shift key is released */
-    shiftKeyPressed = !e.shiftKey;
+    if(e.code === "ShiftLeft" || e.code === "ShiftRight" ) {
+        shiftKeyPressed = false;
+    }
     /* ctrl controls box select mode */
-    if(e.ctrlKey) {
+    if(e.code === "ControlLeft" || e.code === "ControlRight") {
         toggleBoxSelect();
     }
 }
