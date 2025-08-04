@@ -12,6 +12,8 @@ let droppedImage = null;
 let dragStart = { x: 0, y: 0 };
 let imageStart = { x: 0, y: 0 };
 
+let shiftKeyPressed = false;
+
 let boxSelectMode = false;
 let justSelected = false;
 let selectionStart = null;
@@ -118,7 +120,7 @@ function updateGarden() {
         img.setAttribute("width", "0.5em");
         img.setAttribute("height", "0.5em");
         img.setAttribute("class", "draggable");
-        img.onclick = () => editPlant(plant);
+        img.onclick = () => boxSelectPlants({ x: plant.x, y: plant.y, width: 1, height: 1});
         img.id = plant.id;
         img.setAttribute("href", plant.vegetation[selectedMonth]);
         const title = document.createElement("title");
@@ -214,6 +216,42 @@ function toggleBoxSelect() {
     }
 }
 
+/* check if rectangle r1 is overlapping with rectangle r2 */
+function rectsOverlap(r1, r2) {
+    return !(r2.x > r1.x + r1.width ||
+             r2.x + r2.width < r1.x ||
+             r2.y > r1.y + r1.height ||
+             r2.y + r2.height < r1.y);
+}
+
+/* select plants according to array of images */
+function boxSelectPlants(box) {
+    /* deselect all if shift key is not pressed */
+    if(!shiftKeyPressed) {
+        clearSelection();
+    }
+
+    let selected = Array.from(svg.querySelectorAll('image')).filter(img => {
+        const ix = parseFloat(img.getAttribute("x"));
+        const iy = parseFloat(img.getAttribute("y"));
+        const iw = parseFloat(img.getAttribute("width"));
+        const ih = parseFloat(img.getAttribute("height"));
+        const imgBox = { x: ix, y: iy, width: iw, height: ih };
+        return rectsOverlap(box, imgBox);
+    });
+
+    /* append to current selection if shift-key is pressed */
+    if(shiftKeyPressed) {
+        selectedPlants.push(...selected);
+    }
+    /* replace current selection */
+    else {
+        selectedPlants = selected;
+    }
+    /* add class to selected plants */
+    selectedPlants.forEach(p => p.classList.add("selected-plant"));
+}
+
 /* unselect all selected plants */
 function clearSelection() {
     selectedPlants.forEach(p => p.classList.remove("selected-plant"));
@@ -224,13 +262,6 @@ function clearSelection() {
     }
 }
 
-/* check if rectangle r1 is overlapping with rectangle r2 */
-function rectsOverlap(r1, r2) {
-    return !(r2.x > r1.x + r1.width ||
-             r2.x + r2.width < r1.x ||
-             r2.y > r1.y + r1.height ||
-             r2.y + r2.height < r1.y);
-}
 
 // ---------- Helpers ----------
 /* calculate transformed SVG coordinates from event's screen coordinates */
@@ -346,20 +377,7 @@ svg.addEventListener("mouseup", (e) => {
         const w = parseFloat(selectionRect.getAttribute("width"));
         const h = parseFloat(selectionRect.getAttribute("height"));
 
-        clearSelection();
-
-        const selBox = { x, y, width: w, height: h };
-        selectedPlants = Array.from(svg.querySelectorAll('image')).filter(img => {
-            const ix = parseFloat(img.getAttribute("x"));
-            const iy = parseFloat(img.getAttribute("y"));
-            const iw = parseFloat(img.getAttribute("width"));
-            const ih = parseFloat(img.getAttribute("height"));
-            const imgBox = { x: ix, y: iy, width: iw, height: ih };
-            return rectsOverlap(selBox, imgBox);
-        });
-
-        /* add class to selected plants */
-        selectedPlants.forEach(p => p.classList.add("selected-plant"));
+        boxSelectPlants({ x, y, width: w, height: h });
 
         /* end selection */
         selectionStart = null;
@@ -421,7 +439,7 @@ svg.addEventListener("drop", (event) => {
     event.preventDefault();
 });
 
-// Deselect on click outside
+/* deselect on click outside */
 svg.addEventListener("click", (e) => {
     if (boxSelectMode && e.target.tagName === 'svg' && !justSelected) {
         clearSelection();
@@ -430,6 +448,14 @@ svg.addEventListener("click", (e) => {
     justSelected = false;
 });
 
+/* detect keypresses */
+window.onkeydown = (e) => {
+    shiftKeyPressed = !e.shiftKey;
+}
+
+window.onkeyup = (e) => {
+    shiftKeyPressed = !e.shiftKey;
+}
 
 window.onload = () => {
     loadPlants();
