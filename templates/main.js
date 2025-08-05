@@ -30,6 +30,15 @@ const gardenMaxHeight = 2.0;
 
 
 /* ---------------------------------------------------------------------------*/
+/* load view from browser localstorage */
+const viewSaved = JSON.parse(localStorage.getItem("view") || '{}');
+const viewTransform = {
+    x: viewSaved.offsetX || 0,
+    y: viewSaved.offsetY || 0,
+    scale: viewSaved.scale || 1,
+    centerX: undefined,
+    centerY: undefined
+};
 /* construct printable month names */
 const monthNames = [];
 for(let i=0; i<12; i++) {
@@ -40,15 +49,6 @@ for(let i=0; i<12; i++) {
 };
 /* currently selected month view */
 let monthSelected = viewSaved.monthSelected || 1;
-/* load view from browser localstorage */
-const viewSaved = JSON.parse(localStorage.getItem("view") || '{}');
-const viewTransform = {
-    x: viewSaved.offsetX || 0,
-    y: viewSaved.offsetY || 0,
-    scale: viewSaved.scale || 1,
-    centerX: undefined,
-    centerY: undefined
-};
 
 
 /* ---------------------------------------------------------------------------*/
