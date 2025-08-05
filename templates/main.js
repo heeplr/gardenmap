@@ -1,15 +1,15 @@
 
+/* our SVG with our map container */
+const svg = document.getElementById("gardensvg");
+const map = document.getElementById("viewport");
 /* complete model of garden with plant references to plant palette */
 let garden = {};
 /* plant palette */
 let plants = {};
 
 
-/* currently selected month view */
-let selectedMonth = 1;
 let editingPlant = null;
 
-const transform = { x: 0, y: 0, scale: 1, centerX: undefined, centerY: undefined };
 let isPanning = false;
 let panStart = null;
 
@@ -42,14 +42,15 @@ for(let i=0; i<12; i++) {
 };
 /* load view from browser localstorage */
 const savedView = JSON.parse(localStorage.getItem("view") || '{}');
-transform.x = savedView.offsetX || 0;
-transform.y = savedView.offsetY || 0;
-transform.scale = savedView.scale || 1;
-selectedMonth = savedView.selectedMonth || 1;
-
-/* our SVG with our map container */
-const svg = document.getElementById("gardensvg");
-const map = document.getElementById("viewport");
+const transform = {
+    x: savedView.offsetX || 0,
+    y: savedView.offsetY || 0,
+    scale: savedView.scale || 1,
+    centerX: undefined,
+    centerY: undefined
+};
+/* currently selected month view */
+let selectedMonth = savedView.selectedMonth || 1;
 
 
 /* ---------------------------------------------------------------------------*/
@@ -335,8 +336,6 @@ function clearSelection() {
     }
 }
 
-
-// ---------- Helpers ----------
 /* calculate transformed SVG coordinates from event's screen coordinates */
 function getSVGCoords(e) {
     const pt = svg.createSVGPoint();
@@ -392,7 +391,6 @@ svg.addEventListener("mousedown", (e) => {
         svg.style.cursor = "grabbing";
     }
 });
-
 
 svg.addEventListener("mousemove", (e) => {
 
@@ -484,7 +482,6 @@ svg.addEventListener("mouseup", (e) => {
 
 });
 
-/* selection */
 svg.addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("draggable")) {
     e.target.style.outline = "0.5px solid #f0f0f0a0";
@@ -504,7 +501,6 @@ svg.addEventListener("wheel", (e) => {
     zoom(factor, e.clientX, e.clientY);
 });
 
-/* plant drag'n'drop */
 svg.addEventListener("dragover", (event) => {
     // prevent default to allow drop
     event.preventDefault();
@@ -531,7 +527,6 @@ svg.addEventListener("drop", (event) => {
     event.preventDefault();
 });
 
-/* detect keypresses */
 window.onkeydown = (e) => {
     /* set flag if shift key is pressed */
     if(e.code === "ShiftLeft" || e.code === "ShiftRight" ) {
