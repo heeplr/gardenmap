@@ -28,20 +28,20 @@
 </head>
 <body>
     <div id="toolbar">
-        <button onclick="togglePlants()">+</button>
-        <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="updateIconsByMonth(this.value)" oninput="updateIconsByMonth(this.value)">
+        <button onclick="plantPaletteToggle()">+</button>
+        <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="monthUpdateIcons(this.value)" oninput="monthUpdateIcons(this.value)">
         <div id="zoom-controls">
-            <button onclick="zoom(1.2)">+</button>
-            <button onclick="zoom(1/1.2)">-</button>
+            <button onclick="viewZoom(1.2)">+</button>
+            <button onclick="viewZoom(1/1.2)">-</button>
         </div>
-        <input type="checkbox" id="heightVisualizationToggle" onclick="toggleHeightView(this.checked)">show height</input>
-        <input type="checkbox" id="boxSelectToggle" onclick="toggleBoxSelect(this.checked)">Box Select</input>
+        <input type="checkbox" id="heightVisualizationToggle" onclick="heightViewToggle(this.checked)">show height</input>
+        <input type="checkbox" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">Box Select</input>
     </div>
 
     <div id="plants">
         <div id="plantlist"></div>
         <div id="plants-toolbar">
-            <button onclick="plantsNewPlant()">+</button>
+            <button onclick="plantPaletteAdd()">+</button>
         </div>
     </div>
 
@@ -52,9 +52,9 @@
         <label>ID: <input id="edit-id"></label><br>
         <label>Type: <input id="edit-type"></label><br>
         <label>Scale: <input id="edit-scale"></label><br>
-        <button onclick="saveEdit()">Save</button>
-        <button onclick="deletePlant()">Delete</button>
-        <button onclick="cancelEdit()">Cancel</button>
+        <button onclick="plantPaletteSaveEdit()">Save</button>
+        <button onclick="gardenDeletePlant()">Delete</button>
+        <button onclick="plantPaletteCancelEdit()">Cancel</button>
     </div>
 
     <div id="month"></div>
