@@ -552,7 +552,10 @@ window.onkeyup = (e) => {
     else if(e.code === "ControlLeft" || e.code === "ControlRight") {
         toggleBoxSelect(false);
     }
-
+    /* delete current selection */
+    else if(e.code === "Delete") {
+        deletePlant();
+    }
     /* escape everything */
     else if(e.code === "Escape") {
         /* stop panning view */
