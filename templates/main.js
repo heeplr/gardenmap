@@ -8,23 +8,21 @@ let garden = {};
 let plants = {};
 
 
-let editingPlant = null;
+let plantPaletteEditing = null;
 
 let viewIsPanning = false;
 let viewPanStart = null;
-
-let selectionDragStart = null;
-let selectionDragStartPositions = [];
-
-let shiftKeyPressed = false;
+let viewMaxHeightMode = false;
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
 let selectionStart = null;
 let selectionRect = null;
-let selectedPlants = [];
+let selection = [];
+let selectionDragStart = null;
+let selectionDragStartPositions = [];
 
-let showMaxHeight = false;
+let shiftKeyPressed = false;
 
 /* config */
 const viewIconWidth = 5;
@@ -40,26 +38,26 @@ for(let i=0; i<12; i++) {
     objDate.setMonth(i);
     monthNames[i] = objDate.toLocaleString(navigator.language, { month: "long" });
 };
+/* currently selected month view */
+let monthSelected = viewSaved.monthSelected || 1;
 /* load view from browser localstorage */
-const savedView = JSON.parse(localStorage.getItem("view") || '{}');
-const transform = {
-    x: savedView.offsetX || 0,
-    y: savedView.offsetY || 0,
-    scale: savedView.scale || 1,
+const viewSaved = JSON.parse(localStorage.getItem("view") || '{}');
+const viewTransform = {
+    x: viewSaved.offsetX || 0,
+    y: viewSaved.offsetY || 0,
+    scale: viewSaved.scale || 1,
     centerX: undefined,
     centerY: undefined
 };
-/* currently selected month view */
-let selectedMonth = savedView.selectedMonth || 1;
 
 
 /* ---------------------------------------------------------------------------*/
 function saveViewToLocalStorage() {
     localStorage.setItem("view", JSON.stringify({
-        'offsetX': transform.x,
-        'offsetY': transform.y,
-        'scale': transform.scale,
-        'selectedMonth': selectedMonth
+        'offsetX': viewTransform.x,
+        'offsetY': viewTransform.y,
+        'scale': viewTransform.scale,
+        'monthSelected': monthSelected
     }));
 }
 
@@ -86,7 +84,7 @@ function plantPaletteRender() {
             e.dataTransfer.setData('plant-id', plant.id);
         };
         const img = document.createElement('img');
-        img.src = plant['vegetation'][selectedMonth];
+        img.src = plant['vegetation'][monthSelected];
         img.align = "right";
         div.appendChild(img);
         el.appendChild(div);
@@ -140,7 +138,7 @@ function gardenRender() {
         /* DOM element for this plant */
         let el = null;
         /* visualize max height? */
-        if(showMaxHeight) {
+        if(viewMaxHeightMode) {
             /* calculate color shade from height */
             let color = (255.0 / gardenMaxHeight) * plants[plant.plant_id].max_height;
             el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -160,14 +158,14 @@ function gardenRender() {
             el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
             el.setAttribute("class", "draggable");
             el.id = plant.id;
-            el.setAttribute("href", plants[plant.plant_id].vegetation[selectedMonth]);
+            el.setAttribute("href", plants[plant.plant_id].vegetation[monthSelected]);
             const title = document.createElement("title");
             title.textContent = plants[plant.plant_id].name + ' (' + plants[plant.plant_id].type + ')';
             el.appendChild(title);
         }
 
         /* plant is selected? */
-        if(selectedPlants.includes(plant)) {
+        if(selection.includes(plant)) {
             el.classList.add("selected-plant");
         }
         /* append to DOM */
@@ -182,7 +180,7 @@ function gardenRender() {
 }
 
 function plantPaletteEdit(plant) {
-    editingPlant = plant;
+    plantPaletteEditing = plant;
     document.getElementById('edit-name').value = plants[plant.plant_id].name;
     document.getElementById('edit-id').value = plants[plant.plant_id].id;
     document.getElementById('edit-type').value = plants[plant.plant_id].type;
@@ -191,7 +189,7 @@ function plantPaletteEdit(plant) {
 
 function gardenDeletePlant() {
     let last_promise = null;
-    selectedPlants.forEach(plant => {
+    selection.forEach(plant => {
         last_promise = fetch('/garden', {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
@@ -205,11 +203,11 @@ function gardenDeletePlant() {
 
 function plantPaletteSaveEdit() {
     /* nothing selected? */
-    if(selectedPlants.length < 0) {
+    if(selection.length < 0) {
         return;
     }
 
-    const plant = selectedPlants[selectedPlants.length-1];
+    const plant = selection[selection.length-1];
     const model_plant = plants[plant.plant_id];
 
     model_plant.name = document.getElementById('edit-name').value;
@@ -232,7 +230,7 @@ function plantPaletteCancelEdit() {
 
 /* change currently displayed month */
 function monthUpdateIcons(month) {
-    selectedMonth = month;
+    monthSelected = month;
     saveViewToLocalStorage();
     monthRender();
     gardenRender();
@@ -241,7 +239,7 @@ function monthUpdateIcons(month) {
 
 /* display name of currently shown month */
 function monthRender() {
-    document.getElementById('month').textContent = monthNames[selectedMonth-1];
+    document.getElementById('month').textContent = monthNames[monthSelected-1];
 }
 
 /* change zoom */
@@ -255,13 +253,13 @@ function viewZoom(factor, centerX, centerY) {
     }
     const pt = getSVGCoords({ clientX: centerX, clientY: centerY });
     // Update the scale
-    const oldScale = transform.scale;
+    const oldScale = viewTransform.scale;
     const newScale = oldScale * factor;
-    transform.scale = newScale;
+    viewTransform.scale = newScale;
 
     // Adjust translation to keep point under cursor stationary
-    transform.x -= (pt.x * newScale - pt.x * oldScale);
-    transform.y -= (pt.y * newScale - pt.y * oldScale);
+    viewTransform.x -= (pt.x * newScale - pt.x * oldScale);
+    viewTransform.y -= (pt.y * newScale - pt.y * oldScale);
 
     // Apply transform
     viewUpdateTransform();
@@ -269,13 +267,13 @@ function viewZoom(factor, centerX, centerY) {
 
 /* apply pan & zoom */
 function viewUpdateTransform() {
-    map.setAttribute("transform", `translate(${transform.x},${transform.y}) scale(${transform.scale})`);
+    map.setAttribute("transform", `translate(${viewTransform.x},${viewTransform.y}) scale(${viewTransform.scale})`);
     saveViewToLocalStorage();
 }
 
 /* activate/deactivate height visualization */
 function heightViewToggle(active) {
-    showMaxHeight = active;
+    viewMaxHeightMode = active;
     document.getElementById('heightVisualizationToggle').checked = active;
     gardenRender();
 }
@@ -306,7 +304,7 @@ function selectionBox(box) {
         const iw = parseFloat(plant.el.getAttribute("width"));
         const ih = parseFloat(plant.el.getAttribute("height"));
         const imgBox = { x: ix, y: iy, width: iw, height: ih };
-        if (rectsOverlap(box, imgBox) && !selectedPlants.includes(plant)) {
+        if (rectsOverlap(box, imgBox) && !selection.includes(plant)) {
             selected.push(plant);
             /* add class to selected plants */
             plant.el.classList.add("selected-plant");
@@ -315,10 +313,10 @@ function selectionBox(box) {
 
     if(selected.length > 0) {
         /* append to current selection */
-        selectedPlants.push(...selected);
+        selection.push(...selected);
 
         /* show last selected plant in edit dialog */
-        let lastPlant = selectedPlants[selectedPlants.length-1];
+        let lastPlant = selection[selection.length-1];
         plantPaletteEdit(lastPlant);
     }
 }
@@ -330,8 +328,8 @@ function selectionClear() {
         return;
     }
 
-    selectedPlants.forEach(plant => plant.el.classList.remove("selected-plant"));
-    selectedPlants = [];
+    selection.forEach(plant => plant.el.classList.remove("selected-plant"));
+    selection = [];
     if (selectionRect) {
         selectionRect.remove();
         selectionRect = null;
@@ -361,7 +359,7 @@ svg.addEventListener("mousedown", (e) => {
         selectionDragStart = { x: pt.x, y: pt.y };
 
         /* Prepare for group dragging */
-        selectionDragStartPositions = selectedPlants.map(plant => ({
+        selectionDragStartPositions = selection.map(plant => ({
             el: plant.el,
             x: parseFloat(plant.el.getAttribute("x")),
             y: parseFloat(plant.el.getAttribute("y"))
@@ -414,10 +412,10 @@ svg.addEventListener("mousemove", (e) => {
         viewIsPanning = true;
         const dx = e.clientX - viewPanStart.x;
         const dy = e.clientY - viewPanStart.y;
-        transform.x += dx;
-        transform.y += dy;
+        viewTransform.x += dx;
+        viewTransform.y += dy;
         viewPanStart = { x: e.clientX, y: e.clientY };
-        viewUpdateTransform();
+        viewUpdateTransform();m
     }
     /* rectangular selection mode */
     else if (selectionBoxMode && selectionStart && selectionRect) {
