@@ -5,6 +5,7 @@
     <title>Garden Map</title>
     <style>
         html, body { margin: 0; overflow: hidden; }
+        #month { font-size: 2em; position:absolute; top: 1em; right: 1em; }
         #toolbar { margin-bottom: 10px; }
         #plants { display: none; position: absolute; background: #fff; border: 1px solid #ccc; max-height: 200px; overflow-y: scroll; z-index: 1; }
         .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
@@ -55,6 +56,8 @@
         <button onclick="deletePlant()">Delete</button>
         <button onclick="cancelEdit()">Cancel</button>
     </div>
+
+    <div id="month"></div>
 
     <script>
         {% include "main.js" %}

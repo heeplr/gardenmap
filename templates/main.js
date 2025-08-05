@@ -1,5 +1,11 @@
+
+/* complete model of garden with plant references to plant palette */
 let garden = {};
+/* plant palette */
 let plants = {};
+
+
+/* currently selected month view */
 let selectedMonth = 1;
 let editingPlant = null;
 
@@ -24,6 +30,16 @@ let showMaxHeight = false;
 const iconWidth = 5;
 const maxPlantHeight = 2.0;
 
+
+/* ---------------------------------------------------------------------------*/
+/* construct printable month names */
+const monthNames = [];
+for(let i=0; i<12; i++) {
+    var objDate = new Date();
+    objDate.setDate(1);
+    objDate.setMonth(i);
+    monthNames[i] = objDate.toLocaleString(navigator.language, { month: "long" });
+};
 /* load view from browser localstorage */
 const savedView = JSON.parse(localStorage.getItem("view") || '{}');
 transform.x = savedView.offsetX || 0;
@@ -99,8 +115,13 @@ function plantsNewPlant() {
 function updateIconsByMonth(month) {
     selectedMonth = month;
     saveViewToLocalStorage();
+    renderMonth();
     renderGarden();
     renderPlants();
+}
+
+function renderMonth() {
+    document.getElementById('month').textContent = monthNames[selectedMonth-1];
 }
 
 function loadGarden() {
@@ -554,6 +575,7 @@ window.onkeyup = (e) => {
 }
 
 window.onload = () => {
+    renderMonth();
     loadPlants()
         .then(loadGarden)
         .then(() => updateTransform());
