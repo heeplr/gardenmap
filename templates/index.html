@@ -6,7 +6,6 @@
     <title>Garden Map</title>
     <style>
         html, body { margin: 0; overflow: hidden; }
-        #month { font-size: 2em; position:absolute; top: 1em; right: 1em; }
         #toolbar { margin-bottom: 10px; }
         #plants { display: none; position: absolute; background: #fff; border: 1px solid #ccc; max-height: 200px; overflow-y: scroll; z-index: 1; }
         .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
@@ -25,11 +24,24 @@
         .selected-plant {
           outline: 1px solid #0078ff;
         }
+        #month-controls {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 16rem;
+        }
     </style>
     <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
     <script src="/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <div id="month-controls" class="card">
+        <div class="card-body">
+            <div class="display-6 text-center" id="month"></div>
+            <input class="form-range" type="range" min="1" max="12" step="1" value="1" id="monthSlider" onchange="monthUpdateIcons(this.value)" oninput="monthUpdateIcons(this.value)">
+        </div>
+    </div>
 
     <div id="zoom-controls" class="btn-group btn-group-sm" role="group" aria-label="zoom">
       <button type="button" class="btn btn-light" onclick="viewZoom(1.2)">+</button>
@@ -39,7 +51,6 @@
 
     <div id="toolbar">
         <button onclick="plantPaletteToggle()">+</button>
-        <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="monthUpdateIcons(this.value)" oninput="monthUpdateIcons(this.value)">
         <input type="checkbox" id="heightVisualizationToggle" onclick="heightViewToggle(this.checked)">show height
         <input type="checkbox" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">Box Select
     </div>
@@ -62,8 +73,6 @@
         <button onclick="gardenDeletePlant()">Delete</button>
         <button onclick="plantPaletteCancelEdit()">Cancel</button>
     </div>
-
-    <div id="month"></div>
 
     <script>
         {% include "main.js" %}
