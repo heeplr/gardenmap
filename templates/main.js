@@ -52,15 +52,6 @@ let monthSelected = viewSaved.monthSelected || 1;
 
 
 /* ---------------------------------------------------------------------------*/
-function saveViewToLocalStorage() {
-    localStorage.setItem("view", JSON.stringify({
-        'offsetX': viewTransform.x,
-        'offsetY': viewTransform.y,
-        'scale': viewTransform.scale,
-        'monthSelected': monthSelected
-    }));
-}
-
 function plantPaletteLoad() {
     /* load plants */
     return fetch('/plants')
@@ -231,7 +222,7 @@ function plantPaletteCancelEdit() {
 /* change currently displayed month */
 function monthUpdateIcons(month) {
     monthSelected = month;
-    saveViewToLocalStorage();
+    viewSaveSettings();
     monthRender();
     gardenRender();
     plantPaletteRender();
@@ -240,6 +231,16 @@ function monthUpdateIcons(month) {
 /* display name of currently shown month */
 function monthRender() {
     document.getElementById('month').textContent = monthNames[monthSelected-1];
+}
+
+/* save current view settings to local browser storage */
+function viewSaveSettings() {
+    localStorage.setItem("view", JSON.stringify({
+        'offsetX': viewTransform.x,
+        'offsetY': viewTransform.y,
+        'scale': viewTransform.scale,
+        'monthSelected': monthSelected
+    }));
 }
 
 /* change zoom */
@@ -268,7 +269,7 @@ function viewZoom(factor, centerX, centerY) {
 /* apply pan & zoom */
 function viewUpdateTransform() {
     map.setAttribute("transform", `translate(${viewTransform.x},${viewTransform.y}) scale(${viewTransform.scale})`);
-    saveViewToLocalStorage();
+    viewSaveSettings();
 }
 
 /* activate/deactivate height visualization */
