@@ -148,8 +148,14 @@ function gardenRender() {
         /* store in model */
         plant.el = el;
         el.onclick = (e) => {
-            const pt = getSVGCoords(e);
-            selectionBox({ x: pt.x, y: pt.y, width: 1, height: 1})
+            /* find plant model belonging to this element */
+            for (const [id, plant] of Object.entries(garden)) {
+                if (plant.el === e.target) {
+                    selection.push(plant);
+                    plant.el.classList.add("selected-plant");
+                    return;
+                }
+            }
         };
     }
 }
