@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Garden Map</title>
     <style>
         html, body { margin: 0; overflow: hidden; }
@@ -11,7 +12,7 @@
         .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         .plants-item img { width: 1.5em; height: 1.5em; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
-        #zoom-controls { margin-top: 5px; }
+        #zoom-controls { position: absolute; bottom: 1rem; left: 1rem; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
         image { cursor: grab; }
         #selection-rect {
@@ -25,17 +26,22 @@
           outline: 1px solid #0078ff;
         }
     </style>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
+    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <div id="zoom-controls" class="btn-group btn-group-sm" role="group" aria-label="zoom">
+      <button type="button" class="btn btn-light" onclick="viewZoom(1.2)">+</button>
+      <button type="button" class="btn btn-light" onclick="viewZoom(1/1.2)">-</button>
+    </div>
+
+
     <div id="toolbar">
         <button onclick="plantPaletteToggle()">+</button>
         <input type="range" min="1" max="12" value="1" id="monthSlider" onchange="monthUpdateIcons(this.value)" oninput="monthUpdateIcons(this.value)">
-        <div id="zoom-controls">
-            <button onclick="viewZoom(1.2)">+</button>
-            <button onclick="viewZoom(1/1.2)">-</button>
-        </div>
-        <input type="checkbox" id="heightVisualizationToggle" onclick="heightViewToggle(this.checked)">show height</input>
-        <input type="checkbox" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">Box Select</input>
+        <input type="checkbox" id="heightVisualizationToggle" onclick="heightViewToggle(this.checked)">show height
+        <input type="checkbox" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">Box Select
     </div>
 
     <div id="plants">
