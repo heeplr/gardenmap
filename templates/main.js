@@ -72,12 +72,6 @@ function plantPaletteRender() {
     };
 }
 
-function plantPaletteToggle() {
-    const el = document.getElementById('plants');
-    el.style.display = el.style.display === 'block' ? 'none' : 'block';
-    if (el.style.display === 'block') plantPaletteRender();
-}
-
 function plantPaletteAdd() {
     const newPlant = {
         name: 'Neu',
@@ -513,16 +507,16 @@ svg.addEventListener("wheel", (e) => {
     viewZoom(factor, e.clientX, e.clientY);
 });
 
-svg.addEventListener("dragover", (event) => {
+svg.addEventListener("dragover", (e) => {
     // prevent default to allow drop
-    event.preventDefault();
+    e.preventDefault();
 });
 
-svg.addEventListener("drop", (event) => {
-    const pt = getSVGCoords(event);
+svg.addEventListener("drop", (e) => {
+    const pt = getSVGCoords(e);
     const x = pt.x;
     const y = pt.y;
-    const id = event.dataTransfer.getData('plant-id');
+    const id = e.dataTransfer.getData('plant-id');
     if (id && plants[id]) {
         const newPlant = {
             x,
@@ -536,7 +530,7 @@ svg.addEventListener("drop", (event) => {
             body: JSON.stringify(newPlant)
         }).then(() => gardenLoad());
     }
-    event.preventDefault();
+    e.preventDefault();
 });
 
 window.onkeydown = (e) => {
