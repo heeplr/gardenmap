@@ -10,6 +10,7 @@ let plants = {};
 
 let plantPaletteEditing = null;
 
+let viewTransform = null;
 let viewIsPanning = false;
 let viewPanStart = null;
 let viewMaxHeightMode = false;
@@ -24,21 +25,8 @@ let selectionDragStartPositions = [];
 
 let shiftKeyPressed = false;
 
-/* config */
-const viewIconWidth = 5;
-const gardenMaxHeight = 2.0;
-
-
-/* ---------------------------------------------------------------------------*/
-/* load view from browser localstorage */
-const viewSaved = JSON.parse(localStorage.getItem("view") || '{}');
-const viewTransform = {
-    x: viewSaved.offsetX || 0,
-    y: viewSaved.offsetY || 0,
-    scale: viewSaved.scale || 1,
-    centerX: undefined,
-    centerY: undefined
-};
+/* currently selected month view */
+let monthSelected = 1
 /* construct printable month names */
 const monthNames = [];
 for(let i=0; i<12; i++) {
@@ -47,8 +35,10 @@ for(let i=0; i<12; i++) {
     objDate.setMonth(i);
     monthNames[i] = objDate.toLocaleString(navigator.language, { month: "long" });
 };
-/* currently selected month view */
-let monthSelected = viewSaved.monthSelected || 1;
+
+/* config */
+const viewIconWidth = 5;
+const gardenMaxHeight = 2.0;
 
 
 /* ---------------------------------------------------------------------------*/
@@ -243,6 +233,24 @@ function viewSaveSettings() {
     }));
 }
 
+/* load settings from local browser storage */
+function viewLoadSettings() {
+    /* load view from browser localstorage */
+    const viewSaved = JSON.parse(localStorage.getItem("view") || '{}');
+    viewTransform = {
+        x: viewSaved.offsetX || 0,
+        y: viewSaved.offsetY || 0,
+        scale: viewSaved.scale || 1,
+        centerX: undefined,
+        centerY: undefined
+    };
+
+    monthSelected = viewSaved.monthSelected || 1;
+
+    document.getElementById("monthSlider").value = monthSelected;
+
+}
+
 /* change zoom */
 function viewZoom(factor, centerX, centerY) {
     /* use global center if no center was given */
@@ -346,6 +354,9 @@ function getSVGCoords(e) {
     pt.y = e.clientY - svgRect.top;
     return pt.matrixTransform(map.getCTM().inverse());
 }
+
+/* ---------------------------------------------------------------------------*/
+viewLoadSettings();
 
 // ---------- UI Handlers ----------
 svg.addEventListener("mousedown", (e) => {
