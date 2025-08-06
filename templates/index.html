@@ -6,6 +6,7 @@
     <title>Garden Map</title>
     <style>
         html, body { margin: 0; overflow: hidden; }
+        #toolbox { position: absolute; top: 1rem; left: 1rem; }
         .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         .plants-item img { width: 1.5em; height: 1.5em; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
@@ -41,15 +42,20 @@
         </div>
     </div>
 
-    <div id="zoom-controls" class="btn-group btn-group-sm" role="group" aria-label="zoom">
+    <div id="zoom-controls" class="btn-group-vertical" role="group" aria-label="zoom">
       <button type="button" class="btn btn-light" onclick="viewZoom(1.2)">+</button>
       <button type="button" class="btn btn-light" onclick="viewZoom(1/1.2)">-</button>
     </div>
 
+    <div class="btn-group-vertical" id="toolbox" role="group" aria-label="toolbox">
+      <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#palette">🎨</button>
 
-    <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#palette">
-      Palette
-    </button>
+      <input type="checkbox" class="btn-check" id="heightVisualizationToggle" onclick="heightViewToggle(this.checked)" autocomplete="off">
+      <label class="btn btn-light" for="heightVisualizationToggle">📏</label>
+
+      <input type="checkbox" class="btn-check" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)" autocomplete="off">
+      <label class="btn btn-light" for="boxSelectToggle">⛶</label>
+    </div>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="palette" aria-labelledby="paletteLabel">
       <div class="offcanvas-header">
@@ -61,11 +67,6 @@
       <div class="offcanvas-footer plants-toolbar">
         <button type="button" class="btn btn-light" onclick="plantPaletteAdd()">+</button>
       </div>
-    </div>
-
-    <div id="toolbar">
-        <input type="checkbox" id="heightVisualizationToggle" onclick="heightViewToggle(this.checked)">show height
-        <input type="checkbox" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">Box Select
     </div>
 
     {% include "map.svg" %}
