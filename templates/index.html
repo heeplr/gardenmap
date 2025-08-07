@@ -29,6 +29,7 @@
             right: 1rem;
             width: 16rem;
         }
+        #edit-images div img { width: 100%; }
     </style>
     <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
@@ -55,6 +56,8 @@
 
       <input type="checkbox" class="btn-check" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)" autocomplete="off">
       <label class="btn btn-light" for="boxSelectToggle">⛶</label>
+
+      <button type="button" class="btn btn-light" onclick="gardenDeletePlant()">🗑️</button>
     </div>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="palette" aria-labelledby="paletteLabel">
@@ -69,17 +72,44 @@
       </div>
     </div>
 
-    {% include "map.svg" %}
-
-    <div id="edit-form">
-        <label>Name: <input id="edit-name"></label><br>
-        <label>ID: <input id="edit-id"></label><br>
-        <label>Type: <input id="edit-type"></label><br>
-        <label>Scale: <input id="edit-scale"></label><br>
-        <button onclick="plantPaletteSaveEdit()">Save</button>
-        <button onclick="gardenDeletePlant()">Delete</button>
-        <button onclick="plantPaletteCancelEdit()">Cancel</button>
+    <div id="plant-edit-form" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="mb-2">
+                <label for="edit-name-trivial" class="form-label">Trivialname</label>
+                <input id="edit-name-trivial" type="text" class="form-control" placeholder="Trivialname" aria-label="Trivialname">
+              </div>
+              <div class="mb-2">
+                <label for="edit-name" class="form-label">Name</label>
+                <input id="edit-name" type="text" class="form-control" placeholder="Name" aria-label="Name">
+              </div>
+              <div class="mb-2">
+                <label for="edit-name-type" class="form-label">Typ</label>
+                <input id="edit-type" type="text" class="form-control" placeholder="Typ" aria-label="Typ">
+              </div>
+              <div class="mb-2">
+                <label for="edit-name-scale" class="form-label">Skalierung</label>
+                <input id="edit-scale" type="text" class="form-control" placeholder="Skalierung" aria-label="Skalierung">
+              </div>
+              <div id="edit-images" class="row mb-2">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="plantPaletteSaveEdit()">Save</button>
+            <button type="button" class="btn btn-alert" onclick="gardenDeletePlant()">Delete</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    {% include "map.svg" %}
 
     <script>
         {% include "main.js" %}

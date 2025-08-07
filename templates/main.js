@@ -8,7 +8,8 @@ let garden = {};
 let plants = {};
 
 
-let plantPaletteEditing = null;
+const plantPaletteEditForm = new bootstrap.Modal('#plant-edit-form');
+let plantPaletteCurrentlyEdited = null;
 
 let viewTransform = null;
 let viewIsPanning = false;
@@ -64,6 +65,9 @@ function plantPaletteRender() {
         div.ondragstart = e => {
             e.dataTransfer.setData('plant-id', plant.id);
         };
+        div.ondblclick = (e) => {
+            plantPaletteEdit(plant);
+        }
         const img = document.createElement('img');
         img.src = plant['vegetation'][monthSelected];
         img.align = "right";
@@ -84,6 +88,52 @@ function plantPaletteAdd() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newPlant)
         }).then(() => plantPaletteLoad());
+}
+
+function plantPaletteEdit(plant) {
+    document.getElementById('edit-name').value = plant.name;
+    document.getElementById('edit-type').value = plant.type;
+    document.getElementById('edit-scale').value = plant.scale;
+    /* build list of monthly images */
+    const images = document.getElementById('edit-images');
+    images.innerHTML = "";
+    for (const [month, veg] of Object.entries(plant.vegetation)) {
+        const objDate = new Date();
+        objDate.setDate(1);
+        objDate.setMonth(month-1);
+        const monthname = objDate.toLocaleString(navigator.language, { month: "short" });
+
+        const img = document.createElement('img');
+        img.src = veg;
+        img.title = monthname;
+        img.className = 'figure-img img-fluid mb-0 h-100 rounded'
+
+        const caption = document.createElement('figcaption');
+        caption.className = 'figure-caption text-center';
+        caption.textContent = monthname;
+        const fig = document.createElement('figure');
+        fig.className = 'figure mb-3 col-2';
+        fig.appendChild(img);
+        fig.appendChild(caption);
+        images.appendChild(fig);
+    }
+
+    plantPaletteCurrentlyEdited = plant;
+    plantPaletteEditForm.show();
+}
+
+function plantPaletteSaveEdit() {
+    plantPaletteCurrentlyEdited.name = document.getElementById('edit-name').value;
+    plantPaletteCurrentlyEdited.type = document.getElementById('edit-type').value;
+    plantPaletteCurrentlyEdited.scale = parseFloat(document.getElementById('edit-scale').value);
+
+    fetch('/plants', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(model_plant)
+    })
+    .then(() => { plantPaletteLoad() })
+    .then(() => { gardenRender() });
 }
 
 function gardenLoad() {
@@ -147,25 +197,13 @@ function gardenRender() {
         map.appendChild(el);
         /* store in model */
         plant.el = el;
+
         el.onclick = (e) => {
-            /* find plant model belonging to this element */
-            for (const [id, plant] of Object.entries(garden)) {
-                if (plant.el === e.target) {
-                    selection.push(plant);
-                    plant.el.classList.add("selected-plant");
-                    return;
-                }
-            }
+            /* add to list of selected plants */
+            selection.push(plant);
+            e.target.classList.add("selected-plant");
         };
     }
-}
-
-function plantPaletteEdit(plant) {
-    plantPaletteEditing = plant;
-    document.getElementById('edit-name').value = plants[plant.plant_id].name;
-    document.getElementById('edit-id').value = plants[plant.plant_id].id;
-    document.getElementById('edit-type').value = plants[plant.plant_id].type;
-    document.getElementById('edit-scale').value = plants[plant.plant_id].scale;
 }
 
 function gardenDeletePlant() {
@@ -180,33 +218,6 @@ function gardenDeletePlant() {
     last_promise.then(() => {
         gardenLoad();
     });
-}
-
-function plantPaletteSaveEdit() {
-    /* nothing selected? */
-    if(selection.length < 0) {
-        return;
-    }
-
-    const plant = selection[selection.length-1];
-    const model_plant = plants[plant.plant_id];
-
-    model_plant.name = document.getElementById('edit-name').value;
-    model_plant.id = document.getElementById('edit-id').value;
-    model_plant.type = document.getElementById('edit-type').value;
-    model_plant.scale = parseFloat(document.getElementById('edit-scale').value);
-
-    fetch('/plants', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(model_plant)
-    })
-    .then(() => { plantPaletteLoad() })
-    .then(() => { gardenRender() });
-}
-
-function plantPaletteCancelEdit() {
-    document.getElementById('edit-form').style.display = 'none';
 }
 
 /* change currently displayed month */
@@ -323,10 +334,6 @@ function selectionBox(box) {
     if(selected.length > 0) {
         /* append to current selection */
         selection.push(...selected);
-
-        /* show last selected plant in edit dialog */
-        let lastPlant = selection[selection.length-1];
-        plantPaletteEdit(lastPlant);
     }
 }
 
@@ -427,7 +434,7 @@ svg.addEventListener("mousemove", (e) => {
         viewTransform.x += dx;
         viewTransform.y += dy;
         viewPanStart = { x: e.clientX, y: e.clientY };
-        viewUpdateTransform();m
+        viewUpdateTransform();
     }
     /* rectangular selection mode */
     else if (selectionBoxMode && selectionStart && selectionRect) {
