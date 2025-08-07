@@ -8,105 +8,117 @@
       "scale": 1.5,
       "type": "strauch",
       "vegetation": {
-        "1": "/forsythie-01.svg",
-        "2": "/forsythie-02.svg",
-        "3": "/forsythie-03.svg",
-        "4": "/forsythie-04.svg",
-        "5": "/forsythie-05.svg",
-        "6": "/forsythie-06.svg",
-        "7": "/forsythie-07.svg",
-        "8": "/forsythie-08.svg",
-        "9": "/forsythie-09.svg",
-        "10": "/forsythie-10.svg",
-        "11": "/forsythie-11.svg",
-        "12": "/forsythie-12.svg"
+        "icon": {
+          "1": "/forsythie-01.svg",
+          "2": "/forsythie-02.svg",
+          "3": "/forsythie-03.svg",
+          "4": "/forsythie-04.svg",
+          "5": "/forsythie-05.svg",
+          "6": "/forsythie-06.svg",
+          "7": "/forsythie-07.svg",
+          "8": "/forsythie-08.svg",
+          "9": "/forsythie-09.svg",
+          "10": "/forsythie-10.svg",
+          "11": "/forsythie-11.svg",
+          "12": "/forsythie-12.svg"
+        }
       }
     },
     {
       "id": "vinca_minor_alba",
       "max_height": 0.15,
       "name": "Vinca Minor Alba",
-      "trivname": "Kleines Immergrün (weiß)",
+      "trivname": "Kleines Immergr\u00fcn (wei\u00df)",
       "scale": 0.75,
       "type": "bodendecker",
       "vegetation": {
-        "1": "/vinca-minor-alba-01.svg",
-        "2": "/vinca-minor-alba-02.svg",
-        "3": "/vinca-minor-alba-03.svg",
-        "4": "/vinca-minor-alba-04.svg",
-        "5": "/vinca-minor-alba-05.svg",
-        "6": "/vinca-minor-alba-06.svg",
-        "7": "/vinca-minor-alba-07.svg",
-        "8": "/vinca-minor-alba-08.svg",
-        "9": "/vinca-minor-alba-09.svg",
-        "10": "/vinca-minor-alba-10.svg",
-        "11": "/vinca-minor-alba-11.svg",
-        "12": "/vinca-minor-alba-12.svg"
+        "icon": {
+          "1": "/vinca-minor-alba-01.svg",
+          "2": "/vinca-minor-alba-02.svg",
+          "3": "/vinca-minor-alba-03.svg",
+          "4": "/vinca-minor-alba-04.svg",
+          "5": "/vinca-minor-alba-05.svg",
+          "6": "/vinca-minor-alba-06.svg",
+          "7": "/vinca-minor-alba-07.svg",
+          "8": "/vinca-minor-alba-08.svg",
+          "9": "/vinca-minor-alba-09.svg",
+          "10": "/vinca-minor-alba-10.svg",
+          "11": "/vinca-minor-alba-11.svg",
+          "12": "/vinca-minor-alba-12.svg"
+        }
       }
     },
     {
       "id": "vinca_minor_purpura",
       "max_height": 0.15,
       "name": "Vinca Minor Purpura",
-      "trivname": "Kleines Immergrün (violett)",
+      "trivname": "Kleines Immergr\u00fcn (violett)",
       "scale": 0.75,
       "type": "bodendecker",
       "vegetation": {
-        "1": "/vinca-minor-purpura-01.svg",
-        "2": "/vinca-minor-purpura-02.svg",
-        "3": "/vinca-minor-purpura-03.svg",
-        "4": "/vinca-minor-purpura-04.svg",
-        "5": "/vinca-minor-purpura-05.svg",
-        "6": "/vinca-minor-purpura-06.svg",
-        "7": "/vinca-minor-purpura-07.svg",
-        "8": "/vinca-minor-purpura-08.svg",
-        "9": "/vinca-minor-purpura-09.svg",
-        "10": "/vinca-minor-purpura-10.svg",
-        "11": "/vinca-minor-purpura-11.svg",
-        "12": "/vinca-minor-purpura-12.svg"
+        "icon": {
+          "1": "/vinca-minor-purpura-01.svg",
+          "2": "/vinca-minor-purpura-02.svg",
+          "3": "/vinca-minor-purpura-03.svg",
+          "4": "/vinca-minor-purpura-04.svg",
+          "5": "/vinca-minor-purpura-05.svg",
+          "6": "/vinca-minor-purpura-06.svg",
+          "7": "/vinca-minor-purpura-07.svg",
+          "8": "/vinca-minor-purpura-08.svg",
+          "9": "/vinca-minor-purpura-09.svg",
+          "10": "/vinca-minor-purpura-10.svg",
+          "11": "/vinca-minor-purpura-11.svg",
+          "12": "/vinca-minor-purpura-12.svg"
+        }
       }
     },
     {
       "id": "vinca_minor_rubra",
       "max_height": 0.15,
       "name": "Vinca Minor Rubra",
-      "trivname": "Kleines Immergrün (lila)",
+      "trivname": "Kleines Immergr\u00fcn (lila)",
       "scale": 0.75,
       "type": "bodendecker",
       "vegetation": {
-        "1": "/vinca-minor-rubra-01.svg",
-        "2": "/vinca-minor-rubra-02.svg",
-        "3": "/vinca-minor-rubra-03.svg",
-        "4": "/vinca-minor-rubra-04.svg",
-        "5": "/vinca-minor-rubra-05.svg",
-        "6": "/vinca-minor-rubra-06.svg",
-        "7": "/vinca-minor-rubra-07.svg",
-        "8": "/vinca-minor-rubra-08.svg",
-        "9": "/vinca-minor-rubra-09.svg",
-        "10": "/vinca-minor-rubra-10.svg",
-        "11": "/vinca-minor-rubra-11.svg",
-        "12": "/vinca-minor-rubra-12.svg"
+        "icon": {
+          "1": "/vinca-minor-rubra-01.svg",
+          "2": "/vinca-minor-rubra-02.svg",
+          "3": "/vinca-minor-rubra-03.svg",
+          "4": "/vinca-minor-rubra-04.svg",
+          "5": "/vinca-minor-rubra-05.svg",
+          "6": "/vinca-minor-rubra-06.svg",
+          "7": "/vinca-minor-rubra-07.svg",
+          "8": "/vinca-minor-rubra-08.svg",
+          "9": "/vinca-minor-rubra-09.svg",
+          "10": "/vinca-minor-rubra-10.svg",
+          "11": "/vinca-minor-rubra-11.svg",
+          "12": "/vinca-minor-rubra-12.svg"
+        }
       }
     },
     {
-      "name": "Oenethora Hartwegii",
-      "trivname": "Hartweg'scher Sonnentropfen",
+      "id": "oenethora_hartwegii",
       "max_height": 0.3,
-      "scale": 1.0,
+      "name": "Oenethora Hartwegii",
+      "scale": 1,
+      "trivname": "Hartweg'scher Sonnentropfen",
       "vegetation": {
-        "1": "/oenethora-hartwegii-01.svg",
-        "2": "/oenethora-hartwegii-02.svg",
-        "3": "/oenethora-hartwegii-03.svg",
-        "4": "/oenethora-hartwegii-04.svg",
-        "5": "/oenethora-hartwegii-05.svg",
-        "6": "/oenethora-hartwegii-06.svg",
-        "7": "/oenethora-hartwegii-07.svg",
-        "8": "/oenethora-hartwegii-08.svg",
-        "9": "/oenethora-hartwegii-09.svg",
-        "10": "/oenethora-hartwegii-10.svg",
-        "11": "/oenethora-hartwegii-11.svg",
-        "12": "/oenethora-hartwegii-12.svg"
-      }
+        "icon": {
+          "1": "/oenethora-hartwegii-01.svg",
+          "2": "/oenethora-hartwegii-02.svg",
+          "3": "/oenethora-hartwegii-03.svg",
+          "4": "/oenethora-hartwegii-04.svg",
+          "5": "/oenethora-hartwegii-05.svg",
+          "6": "/oenethora-hartwegii-06.svg",
+          "7": "/oenethora-hartwegii-07.svg",
+          "8": "/oenethora-hartwegii-08.svg",
+          "9": "/oenethora-hartwegii-09.svg",
+          "10": "/oenethora-hartwegii-10.svg",
+          "11": "/oenethora-hartwegii-11.svg",
+          "12": "/oenethora-hartwegii-12.svg"
+        }
+      },
+      "type": "busch"
     },
     {
       "name": "Flora",
@@ -116,18 +128,20 @@
       "max_height": 0.15,
       "scale": 1.0,
       "vegetation": {
-        "1": "/flower.svg",
-        "2": "/flower.svg",
-        "3": "/flower.svg",
-        "4": "/flower.svg",
-        "5": "/flower.svg",
-        "6": "/flower.svg",
-        "7": "/flower.svg",
-        "8": "/flower.svg",
-        "9": "/flower.svg",
-        "10": "/flower.svg",
-        "11": "/flower.svg",
-        "12": "/flower.svg"
+        "icon": {
+          "1": "/flower.svg",
+          "2": "/flower.svg",
+          "3": "/flower.svg",
+          "4": "/flower.svg",
+          "5": "/flower.svg",
+          "6": "/flower.svg",
+          "7": "/flower.svg",
+          "8": "/flower.svg",
+          "9": "/flower.svg",
+          "10": "/flower.svg",
+          "11": "/flower.svg",
+          "12": "/flower.svg"
+        }
       }
     },
     {
@@ -136,18 +150,20 @@
       "id": "new",
       "type": "",
       "vegetation": {
-        "1": "/flower.svg",
-        "2": "/flower.svg",
-        "3": "/flower.svg",
-        "4": "/flower.svg",
-        "5": "/flower.svg",
-        "6": "/flower.svg",
-        "7": "/flower.svg",
-        "8": "/flower.svg",
-        "9": "/flower.svg",
-        "10": "/flower.svg",
-        "11": "/flower.svg",
-        "12": "/flower.svg"
+        "icon": {
+          "1": "/flower.svg",
+          "2": "/flower.svg",
+          "3": "/flower.svg",
+          "4": "/flower.svg",
+          "5": "/flower.svg",
+          "6": "/flower.svg",
+          "7": "/flower.svg",
+          "8": "/flower.svg",
+          "9": "/flower.svg",
+          "10": "/flower.svg",
+          "11": "/flower.svg",
+          "12": "/flower.svg"
+        }
       }
     }
   ]

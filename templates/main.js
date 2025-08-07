@@ -69,7 +69,7 @@ function plantPaletteRender() {
             plantPaletteEdit(plant);
         }
         const img = document.createElement('img');
-        img.src = plant['vegetation'][monthSelected];
+        img.src = plant['vegetation']['icon'][monthSelected];
         img.align = "right";
         div.appendChild(img);
         el.appendChild(div);
@@ -83,7 +83,9 @@ function plantPaletteAdd() {
         trivname: 'novum',
         id: 'new',
         type: '',
-        vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
+        vegetation: {
+            icon: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
+        }
     };
     fetch('/plants', {
             method: 'POST',
@@ -100,7 +102,7 @@ function plantPaletteEdit(plant) {
     /* build list of monthly images */
     const images = document.getElementById('edit-images');
     images.innerHTML = "";
-    for (const [month, veg] of Object.entries(plant.vegetation)) {
+    for (const [month, veg] of Object.entries(plant.vegetation.icon)) {
         const objDate = new Date();
         objDate.setDate(1);
         objDate.setMonth(month-1);
@@ -126,20 +128,27 @@ function plantPaletteEdit(plant) {
 }
 
 function plantPaletteSaveEdit() {
-    plantPaletteCurrentlyEdited.name = document.getElementById('edit-name').value;
-    plantPaletteCurrentlyEdited.trivname = document.getElementById('edit-name-trivial').value;
-    plantPaletteCurrentlyEdited.type = document.getElementById('edit-type').value;
-    plantPaletteCurrentlyEdited.scale = parseFloat(document.getElementById('edit-scale').value);
+    const plant = {...plantPaletteCurrentlyEdited}
+
+    delete plant.el;
+    plant.name = document.getElementById('edit-name').value;
+    plant.trivname = document.getElementById('edit-name-trivial').value;
+    plant.type = document.getElementById('edit-type').value;
+    plant.scale = parseFloat(document.getElementById('edit-scale').value);
 
     fetch('/plants', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(plantPaletteCurrentlyEdited)
+        body: JSON.stringify(plant)
     })
-    .then(() => { plantPaletteEditForm.hide(); plantPaletteLoad() })
-    .then(() => { gardenRender() });
-
-    plantPaletteCurrentlyEdited = null;
+    .then(() => {
+        plantPaletteEditForm.hide();
+        plantPaletteLoad();
+        plantPaletteCurrentlyEdited = null;
+    })
+    .then(() => {
+        gardenRender()
+    });
 }
 
 /* filter palette list by string */
@@ -204,7 +213,7 @@ function gardenRender() {
             el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
             el.setAttribute("class", "draggable");
             el.id = plant.id;
-            el.setAttribute("href", plants[plant.plant_id].vegetation[monthSelected]);
+            el.setAttribute("href", plants[plant.plant_id].vegetation.icon[monthSelected]);
             const title = document.createElement("title");
             title.textContent = plants[plant.plant_id].name + ' (' + plants[plant.plant_id].type + ')';
             el.appendChild(title);
@@ -489,7 +498,7 @@ svg.addEventListener("mouseup", (e) => {
                 });
             }
         });
-        selectionClear();
+        //selectionClear();
         selectionDragStartPositions = [];
     }
     /* finish rectangular selection? */
