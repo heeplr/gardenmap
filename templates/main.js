@@ -130,10 +130,12 @@ function plantPaletteSaveEdit() {
     fetch('/plants', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(model_plant)
+        body: JSON.stringify(plantPaletteCurrentlyEdited)
     })
-    .then(() => { plantPaletteLoad() })
+    .then(() => { plantPaletteEditForm.hide(); plantPaletteLoad() })
     .then(() => { gardenRender() });
+
+    plantPaletteCurrentlyEdited = null;
 }
 
 function gardenLoad() {
