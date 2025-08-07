@@ -3,7 +3,8 @@
     {
       "id": "forsythia",
       "max_height": 2,
-      "name": "Forsythie",
+      "name": "Forsytha",
+      "trivname": "Forsythie",
       "scale": 1.5,
       "type": "strauch",
       "vegetation": {
@@ -25,7 +26,8 @@
       "id": "vinca_minor_alba",
       "max_height": 0.15,
       "name": "Vinca Minor Alba",
-      "scale": 1,
+      "trivname": "Kleines Immergrün (weiß)",
+      "scale": 0.75,
       "type": "bodendecker",
       "vegetation": {
         "1": "/vinca-minor-alba-01.svg",
@@ -43,11 +45,12 @@
       }
     },
     {
-      "name": "Vinca Minor Purpura",
       "id": "vinca_minor_purpura",
-      "type": "bodendecker",
       "max_height": 0.15,
-      "scale": 1.0,
+      "name": "Vinca Minor Purpura",
+      "trivname": "Kleines Immergrün (violett)",
+      "scale": 0.75,
+      "type": "bodendecker",
       "vegetation": {
         "1": "/vinca-minor-purpura-01.svg",
         "2": "/vinca-minor-purpura-02.svg",
@@ -64,11 +67,12 @@
       }
     },
     {
-      "name": "Vinca Minor Rubra",
       "id": "vinca_minor_rubra",
-      "type": "bodendecker",
       "max_height": 0.15,
-      "scale": 1.0,
+      "name": "Vinca Minor Rubra",
+      "trivname": "Kleines Immergrün (lila)",
+      "scale": 0.75,
+      "type": "bodendecker",
       "vegetation": {
         "1": "/vinca-minor-rubra-01.svg",
         "2": "/vinca-minor-rubra-02.svg",
@@ -86,6 +90,7 @@
     },
     {
       "name": "Oenethora Hartwegii",
+      "trivname": "Hartweg'scher Sonnentropfen",
       "max_height": 0.3,
       "scale": 1.0,
       "vegetation": {
@@ -104,11 +109,32 @@
       }
     },
     {
-      "name": "Blume",
+      "name": "Flora",
+      "trivname": "Blume",
       "id": "flower",
       "type": "staude",
       "max_height": 0.15,
       "scale": 1.0,
+      "vegetation": {
+        "1": "/flower.svg",
+        "2": "/flower.svg",
+        "3": "/flower.svg",
+        "4": "/flower.svg",
+        "5": "/flower.svg",
+        "6": "/flower.svg",
+        "7": "/flower.svg",
+        "8": "/flower.svg",
+        "9": "/flower.svg",
+        "10": "/flower.svg",
+        "11": "/flower.svg",
+        "12": "/flower.svg"
+      }
+    },
+    {
+      "name": "Neu",
+      "trivname": "novum",
+      "id": "new",
+      "type": "",
       "vegetation": {
         "1": "/flower.svg",
         "2": "/flower.svg",

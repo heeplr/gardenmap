@@ -73,12 +73,14 @@ function plantPaletteRender() {
         img.align = "right";
         div.appendChild(img);
         el.appendChild(div);
+        plant.el = div;
     };
 }
 
 function plantPaletteAdd() {
     const newPlant = {
         name: 'Neu',
+        trivname: 'novum',
         id: 'new',
         type: '',
         vegetation: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
@@ -92,6 +94,7 @@ function plantPaletteAdd() {
 
 function plantPaletteEdit(plant) {
     document.getElementById('edit-name').value = plant.name;
+    document.getElementById('edit-name-trivial').value = plant.trivname;
     document.getElementById('edit-type').value = plant.type;
     document.getElementById('edit-scale').value = plant.scale;
     /* build list of monthly images */
@@ -124,6 +127,7 @@ function plantPaletteEdit(plant) {
 
 function plantPaletteSaveEdit() {
     plantPaletteCurrentlyEdited.name = document.getElementById('edit-name').value;
+    plantPaletteCurrentlyEdited.trivname = document.getElementById('edit-name-trivial').value;
     plantPaletteCurrentlyEdited.type = document.getElementById('edit-type').value;
     plantPaletteCurrentlyEdited.scale = parseFloat(document.getElementById('edit-scale').value);
 
@@ -136,6 +140,21 @@ function plantPaletteSaveEdit() {
     .then(() => { gardenRender() });
 
     plantPaletteCurrentlyEdited = null;
+}
+
+/* filter palette list by string */
+function plantPaletteFilter(string) {
+    const needle = string.toUpperCase();
+    for (const [id, plant] of Object.entries(plants)) {
+        if(
+            (plant.name.toUpperCase().indexOf(needle) > -1) ||
+            (plant.trivname.toUpperCase().indexOf(needle) > -1)
+          ) {
+          plant.el.style.display = "";
+        } else {
+          plant.el.style.display = "none";
+        }
+    }
 }
 
 function gardenLoad() {
