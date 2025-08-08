@@ -163,13 +163,12 @@ function plantPaletteSaveEdit() {
         body: JSON.stringify(plant)
     })
     .then(() => {
-        plantPaletteEditForm.hide();
-        plantPaletteLoad();
         plantPaletteCurrentlyEdited = null;
+        plantPaletteEditForm.hide();
+        plantPaletteLoad().then(() => {
+            gardenRender();
+        });
     })
-    .then(() => {
-        gardenRender()
-    });
 }
 
 /* filter palette list by string */
@@ -642,6 +641,15 @@ window.onkeyup = (e) => {
 
         /* redraw */
         gardenRender();
+    }
+    /* open edit dialog */
+    else if(e.code === "KeyE") {
+        if(selection.length <= 0) {
+            return;
+        }
+
+        const plant = selection[selection.length-1];
+        plantPaletteEdit(plants[plant.plant_id]);
     }
 }
 
