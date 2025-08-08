@@ -6,6 +6,7 @@
     <title>Garden Map</title>
     <style>
         html, body { margin: 0; overflow: hidden; }
+        .carousel-item { transition: transform .25s ease, opacity .25s ease-out !important }
         #toolbox { position: absolute; top: 1rem; left: 1rem; }
         .plants-item { padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         .plants-item img { width: 1.5em; height: 1.5em; margin-left: 1em; }
@@ -76,36 +77,66 @@
     </div>
 
     <div id="plant-edit-form" class="modal" tabindex="-1">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="container">
-              <div class="mb-2">
-                <label for="edit-name-trivial" class="form-label">Trivialname</label>
-                <input id="edit-name-trivial" type="text" class="form-control" placeholder="Trivialname" aria-label="Trivialname">
+              <div class="row mx-5 my-1">
+                <div class="col-2 my-auto">
+                    <span class="form-label">Name:</span>
+                </div>
+                <div class="col">
+                    <input id="edit-name" type="text" class="form-control" placeholder="Name" aria-label="Name">
+                </div>
               </div>
-              <div class="mb-2">
-                <label for="edit-name" class="form-label">Name</label>
-                <input id="edit-name" type="text" class="form-control" placeholder="Name" aria-label="Name">
+              <div class="row mx-5 my-1">
+                <div class="col-2 my-auto">
+                    <span class="form-label col-2">Trivialname:</span>
+                </div>
+                <div class="col">
+                    <input id="edit-name-trivial" type="text" class="form-control" placeholder="Trivialname" aria-label="Trivialname">
+                </div>
               </div>
-              <div class="mb-2">
-                <label for="edit-name-type" class="form-label">Typ</label>
-                <input id="edit-type" type="text" class="form-control" placeholder="Typ" aria-label="Typ">
+              <div class="row mx-5 my-1">
+                <div class="col-2 my-auto">
+                    <span class="form-label">Typ:</span>
+                </div>
+                <div class="col">
+                    <input id="edit-type" type="text" class="form-control" placeholder="Typ" aria-label="Typ">
+                </div>
               </div>
-              <div class="mb-2">
-                <label for="edit-name-scale" class="form-label">Skalierung</label>
-                <input id="edit-scale" type="text" class="form-control" placeholder="Skalierung" aria-label="Skalierung">
+              <div class="row mx-5 my-1">
+                <div class="col-2 my-auto">
+                    <span class="form-label">Skalierung:</span>
+                </div>
+                <div class="col">
+                    <input id="edit-scale" type="number" step="0.1" class="form-control" placeholder="Skalierung" aria-label="Skalierung">
+                </div>
               </div>
-              <div id="edit-vegetation" class="row mb-2">
+
+
+              <div class="row my-3 my-1">
+                <td class="align-middle" colspan="2">
+                  <div id="edit-vegetation-carousel" class="carousel slide">
+                    <button class="carousel-control-prev w-auto" type="button" data-bs-theme="dark" data-bs-target="#edit-vegetation-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <div class="carousel-inner mx-5 w-auto" id="edit-vegetation"></div>
+                    <button class="carousel-control-next w-auto" type="button" data-bs-theme="dark" data-bs-target="#edit-vegetation-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </td>
               </div>
-            </div>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" onclick="plantPaletteSaveEdit()">Save</button>
-            <button type="button" class="btn btn-alert" onclick="gardenDeletePlant()">Delete</button>
+            <button type="button" class="btn btn-danger" onclick="gardenDeletePlant()">Delete</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>

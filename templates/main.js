@@ -100,35 +100,47 @@ function plantPaletteEdit(plant) {
     document.getElementById('edit-name-trivial').value = plant.trivname;
     document.getElementById('edit-type').value = plant.type;
     document.getElementById('edit-scale').value = plant.scale;
-    /* build list of monthly images */
+    /* build list of monthly settings */
     const vegetation = document.getElementById('edit-vegetation');
     vegetation.innerHTML = "";
     for (let month=1; month <= 12; month++) {
-        const objDate = new Date();
-        objDate.setDate(1);
-        objDate.setMonth(month-1);
-        const monthname = objDate.toLocaleString(navigator.language, { month: "short" });
+        /* settings for one month */
+        const monthly = document.createElement('div');
+        monthly.className = 'carousel-item' + (month == 1 ? " active" : "");
 
         const img = document.createElement('img');
         img.src = plant.vegetation.icon[month];
-        img.title = monthname;
-        img.className = 'img-fluid mb-0 w-auto h-80 rounded'
+        img.title = monthNames[month-1];
+        img.className = 'img-fluid mx-auto d-block mb-1 w-auto h-80 rounded';
+        monthly.appendChild(img);
+
+        const div = document.createElement("div");
+        div.className = "row me-3";
+        monthly.appendChild(div);
+
+        let label = document.createElement("span");
+        label.className = "form-label col-2 my-auto";
+        label.textContent = "Höhe:";
+        div.appendChild(label);
 
         const height = document.createElement('input');
-        height.className = 'form-control';
+        height.className = 'form-control col';
         height.placeholder = "height";
         height.type = "number";
-        height.step = 0.1;
+        height.step = 0.01;
         height.value = plant.vegetation.height[month];
+        div.appendChild(height);
+
+        label = document.createElement("span");
+        label.className = "col-1 my-auto";
+        label.textContent = "m";
+        div.appendChild(label);
 
         const caption = document.createElement('div');
-        caption.className = 'text-center fs-6';
-        caption.textContent = monthname;
-        const monthly = document.createElement('div');
-        monthly.className = 'mb-3 col-2';
-        monthly.appendChild(img);
-        monthly.appendChild(height);
+        caption.className = 'text-center fw-bold fs-5 mt-2';
+        caption.textContent = monthNames[month-1];
         monthly.appendChild(caption);
+
         vegetation.appendChild(monthly);
     }
 
