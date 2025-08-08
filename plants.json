@@ -2,7 +2,6 @@
   "plantlist": [
     {
       "id": "forsythia",
-      "max_height": 2,
       "name": "Forsytha",
       "trivname": "Forsythie",
       "scale": 1.5,
@@ -21,12 +20,25 @@
           "10": "/forsythie-10.svg",
           "11": "/forsythie-11.svg",
           "12": "/forsythie-12.svg"
+        },
+        "height": {
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 2,
+          "11": 2,
+          "12": 2
         }
       }
     },
     {
       "id": "vinca_minor_alba",
-      "max_height": 0.15,
       "name": "Vinca Minor Alba",
       "trivname": "Kleines Immergr\u00fcn (wei\u00df)",
       "scale": 0.75,
@@ -45,12 +57,25 @@
           "10": "/vinca-minor-alba-10.svg",
           "11": "/vinca-minor-alba-11.svg",
           "12": "/vinca-minor-alba-12.svg"
+        },
+        "height": {
+          "1": 0.15,
+          "2": 0.15,
+          "3": 0.15,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.15,
+          "7": 0.15,
+          "8": 0.15,
+          "9": 0.15,
+          "10": 0.15,
+          "11": 0.15,
+          "12": 0.15
         }
       }
     },
     {
       "id": "vinca_minor_purpura",
-      "max_height": 0.15,
       "name": "Vinca Minor Purpura",
       "trivname": "Kleines Immergr\u00fcn (violett)",
       "scale": 0.75,
@@ -69,12 +94,25 @@
           "10": "/vinca-minor-purpura-10.svg",
           "11": "/vinca-minor-purpura-11.svg",
           "12": "/vinca-minor-purpura-12.svg"
+        },
+        "height": {
+          "1": 0.15,
+          "2": 0.15,
+          "3": 0.15,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.15,
+          "7": 0.15,
+          "8": 0.15,
+          "9": 0.15,
+          "10": 0.15,
+          "11": 0.15,
+          "12": 0.15
         }
       }
     },
     {
       "id": "vinca_minor_rubra",
-      "max_height": 0.15,
       "name": "Vinca Minor Rubra",
       "trivname": "Kleines Immergr\u00fcn (lila)",
       "scale": 0.75,
@@ -93,12 +131,25 @@
           "10": "/vinca-minor-rubra-10.svg",
           "11": "/vinca-minor-rubra-11.svg",
           "12": "/vinca-minor-rubra-12.svg"
+        },
+        "height": {
+          "1": 0.15,
+          "2": 0.15,
+          "3": 0.15,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.15,
+          "7": 0.15,
+          "8": 0.15,
+          "9": 0.15,
+          "10": 0.15,
+          "11": 0.15,
+          "12": 0.15
         }
       }
     },
     {
       "id": "oenethora_hartwegii",
-      "max_height": 0.3,
       "name": "Oenethora Hartwegii",
       "scale": 1,
       "trivname": "Hartweg'scher Sonnentropfen",
@@ -116,6 +167,20 @@
           "10": "/oenethora-hartwegii-10.svg",
           "11": "/oenethora-hartwegii-11.svg",
           "12": "/oenethora-hartwegii-12.svg"
+        },
+        "height": {
+          "1": 0.3,
+          "2": 0.3,
+          "3": 0.3,
+          "4": 0.3,
+          "5": 0.3,
+          "6": 0.3,
+          "7": 0.3,
+          "8": 0.3,
+          "9": 0.3,
+          "10": 0.3,
+          "11": 0.3,
+          "12": 0.3
         }
       },
       "type": "busch"
@@ -125,7 +190,6 @@
       "trivname": "Blume",
       "id": "flower",
       "type": "staude",
-      "max_height": 0.15,
       "scale": 1.0,
       "vegetation": {
         "icon": {
@@ -141,6 +205,20 @@
           "10": "/flower.svg",
           "11": "/flower.svg",
           "12": "/flower.svg"
+        },
+        "height": {
+          "1": 0.15,
+          "2": 0.15,
+          "3": 0.15,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.15,
+          "7": 0.15,
+          "8": 0.15,
+          "9": 0.15,
+          "10": 0.15,
+          "11": 0.15,
+          "12": 0.15
         }
       }
     },
@@ -163,6 +241,20 @@
           "10": "/flower.svg",
           "11": "/flower.svg",
           "12": "/flower.svg"
+        },
+        "height": {
+          "1": 0.15,
+          "2": 0.15,
+          "3": 0.15,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.15,
+          "7": 0.15,
+          "8": 0.15,
+          "9": 0.15,
+          "10": 0.15,
+          "11": 0.15,
+          "12": 0.15
         }
       }
     }

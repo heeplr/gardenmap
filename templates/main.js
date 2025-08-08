@@ -84,7 +84,8 @@ function plantPaletteAdd() {
         id: 'new',
         type: '',
         vegetation: {
-            icon: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg']))
+            icon: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg'])),
+            height: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, 0.15]))
         }
     };
     fetch('/plants', {
@@ -100,27 +101,35 @@ function plantPaletteEdit(plant) {
     document.getElementById('edit-type').value = plant.type;
     document.getElementById('edit-scale').value = plant.scale;
     /* build list of monthly images */
-    const images = document.getElementById('edit-images');
-    images.innerHTML = "";
-    for (const [month, veg] of Object.entries(plant.vegetation.icon)) {
+    const vegetation = document.getElementById('edit-vegetation');
+    vegetation.innerHTML = "";
+    for (let month=1; month <= 12; month++) {
         const objDate = new Date();
         objDate.setDate(1);
         objDate.setMonth(month-1);
         const monthname = objDate.toLocaleString(navigator.language, { month: "short" });
 
         const img = document.createElement('img');
-        img.src = veg;
+        img.src = plant.vegetation.icon[month];
         img.title = monthname;
-        img.className = 'figure-img img-fluid mb-0 h-100 rounded'
+        img.className = 'img-fluid mb-0 w-auto h-80 rounded'
 
-        const caption = document.createElement('figcaption');
-        caption.className = 'figure-caption text-center';
+        const height = document.createElement('input');
+        height.className = 'form-control';
+        height.placeholder = "height";
+        height.type = "number";
+        height.step = 0.1;
+        height.value = plant.vegetation.height[month];
+
+        const caption = document.createElement('div');
+        caption.className = 'text-center fs-6';
         caption.textContent = monthname;
-        const fig = document.createElement('figure');
-        fig.className = 'figure mb-3 col-2';
-        fig.appendChild(img);
-        fig.appendChild(caption);
-        images.appendChild(fig);
+        const monthly = document.createElement('div');
+        monthly.className = 'mb-3 col-2';
+        monthly.appendChild(img);
+        monthly.appendChild(height);
+        monthly.appendChild(caption);
+        vegetation.appendChild(monthly);
     }
 
     plantPaletteCurrentlyEdited = plant;
@@ -195,11 +204,11 @@ function gardenRender() {
         /* visualize max height? */
         if(viewMaxHeightMode) {
             /* calculate color shade from height */
-            let color = (255.0 / gardenMaxHeight) * plants[plant.plant_id].max_height;
+            let color = (255.0 / gardenMaxHeight) * plants[plant.plant_id].vegetation.height[monthSelected];
             el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             el.setAttribute("x", plant.x);
             el.setAttribute("y", plant.y);
-            el.setAttribute("fill", "rgb(" + color + ",0,0,0.5)");
+            el.setAttribute("fill", "rgb(" + color + ",0," + (255.0 - color) + ",0.5)");
             el.setAttribute("width", viewIconWidth * plants[plant.plant_id].scale + "px");
             el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
             el.setAttribute("class", "draggable");
