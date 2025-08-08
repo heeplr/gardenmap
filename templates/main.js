@@ -14,7 +14,7 @@ let plantPaletteCurrentlyEdited = null;
 let viewTransform = null;
 let viewIsPanning = false;
 let viewPanStart = null;
-let viewMaxHeightMode = false;
+let viewHeight = false;
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
@@ -214,7 +214,7 @@ function gardenRender() {
         /* DOM element for this plant */
         let el = null;
         /* visualize max height? */
-        if(viewMaxHeightMode) {
+        if(viewHeight) {
             /* calculate color shade from height */
             let color = (255.0 / gardenMaxHeight) * plants[plant.plant_id].vegetation.height[monthSelected];
             el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -291,7 +291,8 @@ function viewSaveSettings() {
         'offsetX': viewTransform.x,
         'offsetY': viewTransform.y,
         'scale': viewTransform.scale,
-        'monthSelected': monthSelected
+        'monthSelected': monthSelected,
+        'viewHeight': viewHeight
     }));
 }
 
@@ -308,9 +309,10 @@ function viewLoadSettings() {
     };
 
     monthSelected = viewSaved.monthSelected || 1;
-
     document.getElementById("monthSlider").value = monthSelected;
 
+    viewHeight = viewSaved.viewHeight;
+    document.getElementById("heightVisualizationToggle").checked = viewHeight;
 }
 
 /* change zoom */
@@ -344,8 +346,9 @@ function viewUpdateTransform() {
 
 /* activate/deactivate height visualization */
 function heightViewToggle(active) {
-    viewMaxHeightMode = active;
+    viewHeight = active;
     document.getElementById('heightVisualizationToggle').checked = active;
+    viewSaveSettings();
     gardenRender();
 }
 
