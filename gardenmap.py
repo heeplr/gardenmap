@@ -28,7 +28,11 @@ def plants():
                 fcntl.flock(f.fileno(), fcntl.LOCK_EX)
 
                 data = json.load(f)
-                data["plantlist"] += [ new_plant ]
+                # append list of plants?
+                if(isinstance(new_plant, list)):
+                    data["plantlist"] += new_plant
+                else:
+                    data["plantlist"] += [ new_plant ]
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
@@ -71,7 +75,11 @@ def garden():
                 fcntl.flock(f.fileno(), fcntl.LOCK_EX)
 
                 data = json.load(f)
-                data["plantlist"].append(new_plant)
+                # append list of plants?
+                if(isinstance(new_plant, list)):
+                    data["plantlist"] += new_plant
+                else:
+                    data["plantlist"] += [ new_plant ]
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
@@ -100,16 +108,20 @@ def garden():
             return jsonify({'status': 'updated'})
 
         case 'DELETE':
-            deleted_id = request.json['id']
+            # got single or multiple plants to delete?
+            if(isinstance(request.json, list)):
+                deleted_ids = [ p['id'] for p in request.json ]
+            else:
+                deleted_ids = request.json['id']
+
             with open(DATA_FILE, 'r+') as f:
                 # Acquire exclusive lock on the file
                 fcntl.flock(f.fileno(), fcntl.LOCK_EX)
 
                 data = json.load(f)
-                for i, plant in enumerate(data['plantlist']):
-                    if plant['id'] == deleted_id:
-                        data["plantlist"].remove(plant)
-                        break
+                # create new plantlist without deleted ones
+                data["plantlist"] = [ p for p in data['plantlist'] if p['id'] not in deleted_ids ]
+
                 f.seek(0)
                 json.dump(data, f, indent=2)
                 f.truncate()
