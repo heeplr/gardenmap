@@ -2,6 +2,7 @@
 /* our SVG with our map container */
 const svg = document.getElementById("gardensvg");
 const map = document.getElementById("viewport");
+const plantlist = document.getElementById("plantlist");
 const palette = document.getElementById("palette");
 
 /* complete model of garden with plant references to plant palette */
@@ -59,7 +60,7 @@ function plantPaletteLoad() {
 }
 
 function plantPaletteRender() {
-    const el = document.getElementById('plantlist');
+    const el = document.getElementById('palette-plantlist');
     el.innerHTML = '';
     for (const [id, plant] of Object.entries(plants)) {
         const div = document.createElement('div');
@@ -209,11 +210,9 @@ function gardenLoad() {
 }
 
 function gardenRender() {
+    /* remove all images */
+    plantlist.innerHTML = "";
     for (const [id, plant] of Object.entries(garden)) {
-        /* remove current image */
-        if(plant.el) {
-            plant.el.remove();
-        }
         /* DOM element for this plant */
         let el = null;
         /* visualize max height? */
@@ -248,7 +247,7 @@ function gardenRender() {
             el.classList.add("selected-plant");
         }
         /* append to DOM */
-        map.appendChild(el);
+        plantlist.appendChild(el);
         /* store in model */
         plant.el = el;
 
