@@ -220,27 +220,23 @@ function gardenRender() {
             /* calculate color shade from height */
             let color = (255.0 / gardenMaxHeight) * plants[plant.plant_id].vegetation.height[monthSelected];
             el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-            el.setAttribute("x", plant.x);
-            el.setAttribute("y", plant.y);
             el.setAttribute("fill", "rgb(" + color + ",0," + (255.0 - color) + ",0.5)");
-            el.setAttribute("width", viewIconWidth * plants[plant.plant_id].scale + "px");
-            el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
-            el.setAttribute("class", "draggable");
         }
+        /* visualize icons */
         else {
             /* create new image */
             el = document.createElementNS("http://www.w3.org/2000/svg", "image");
-            el.setAttribute("x", plant.x);
-            el.setAttribute("y", plant.y);
-            el.setAttribute("width", viewIconWidth * plants[plant.plant_id].scale + "px");
-            el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
-            el.setAttribute("class", "draggable");
-            el.id = plant.id;
             el.setAttribute("href", plants[plant.plant_id].vegetation.icon[monthSelected]);
             const title = document.createElement("title");
             title.textContent = plants[plant.plant_id].name + ' (' + plants[plant.plant_id].type + ')';
             el.appendChild(title);
         }
+        el.setAttribute("x", plant.x);
+        el.setAttribute("y", plant.y);
+        el.setAttribute("width", viewIconWidth * plants[plant.plant_id].scale + "px");
+        el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
+        el.setAttribute("class", "draggable");
+        el.id = plant.id;
 
         /* plant is selected? */
         if(selection.includes(plant)) {
