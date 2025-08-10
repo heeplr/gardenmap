@@ -1,11 +1,1047 @@
 {
   "plantlist": [
     {
+      "id": "cyclamen-coum",
+      "name": "Cyclamen coum",
+      "scale": 1.0,
+      "trivname": "Fr\u00fchlings-Alpenveilchen",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 10,
+          "3": 15,
+          "4": 15,
+          "5": 10,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/cyclamen-coum-1.svg",
+          "2": "/cyclamen-coum-2.svg",
+          "3": "/cyclamen-coum-3.svg",
+          "4": "/cyclamen-coum-4.svg",
+          "5": "/cyclamen-coum-5.svg",
+          "6": "/cyclamen-coum-6.svg",
+          "7": "/cyclamen-coum-7.svg",
+          "8": "/cyclamen-coum-8.svg",
+          "9": "/cyclamen-coum-9.svg",
+          "10": "/cyclamen-coum-10.svg",
+          "11": "/cyclamen-coum-11.svg",
+          "12": "/cyclamen-coum-12.svg"
+        }
+      }
+    },
+    {
+      "id": "narcissus",
+      "name": "Narcissus",
+      "scale": 1.0,
+      "trivname": "Narzisse",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 30,
+          "4": 50,
+          "5": 50,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/narcissus-1.svg",
+          "2": "/narcissus-2.svg",
+          "3": "/narcissus-3.svg",
+          "4": "/narcissus-4.svg",
+          "5": "/narcissus-5.svg",
+          "6": "/narcissus-6.svg",
+          "7": "/narcissus-7.svg",
+          "8": "/narcissus-8.svg",
+          "9": "/narcissus-9.svg",
+          "10": "/narcissus-10.svg",
+          "11": "/narcissus-11.svg",
+          "12": "/narcissus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "primula-acaulis",
+      "name": "Primula acaulis",
+      "scale": 1.0,
+      "trivname": "St\u00e4ngellose Schl\u00fcsselblume",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 5,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/primula-acaulis-1.svg",
+          "2": "/primula-acaulis-2.svg",
+          "3": "/primula-acaulis-3.svg",
+          "4": "/primula-acaulis-4.svg",
+          "5": "/primula-acaulis-5.svg",
+          "6": "/primula-acaulis-6.svg",
+          "7": "/primula-acaulis-7.svg",
+          "8": "/primula-acaulis-8.svg",
+          "9": "/primula-acaulis-9.svg",
+          "10": "/primula-acaulis-10.svg",
+          "11": "/primula-acaulis-11.svg",
+          "12": "/primula-acaulis-12.svg"
+        }
+      }
+    },
+    {
+      "id": "anemone-blanda",
+      "name": "Anemone blanda",
+      "scale": 1.0,
+      "trivname": "Buschwindr\u00f6schen",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 3,
+          "3": 10,
+          "4": 10,
+          "5": 5,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/anemone-blanda-1.svg",
+          "2": "/anemone-blanda-2.svg",
+          "3": "/anemone-blanda-3.svg",
+          "4": "/anemone-blanda-4.svg",
+          "5": "/anemone-blanda-5.svg",
+          "6": "/anemone-blanda-6.svg",
+          "7": "/anemone-blanda-7.svg",
+          "8": "/anemone-blanda-8.svg",
+          "9": "/anemone-blanda-9.svg",
+          "10": "/anemone-blanda-10.svg",
+          "11": "/anemone-blanda-11.svg",
+          "12": "/anemone-blanda-12.svg"
+        }
+      }
+    },
+    {
+      "id": "anemone-nemorosa",
+      "name": "Anemone nemorosa",
+      "scale": 1.0,
+      "trivname": "Waldwindr\u00f6schen",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 3,
+          "3": 10,
+          "4": 10,
+          "5": 5,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/anemone-nemorosa-1.svg",
+          "2": "/anemone-nemorosa-2.svg",
+          "3": "/anemone-nemorosa-3.svg",
+          "4": "/anemone-nemorosa-4.svg",
+          "5": "/anemone-nemorosa-5.svg",
+          "6": "/anemone-nemorosa-6.svg",
+          "7": "/anemone-nemorosa-7.svg",
+          "8": "/anemone-nemorosa-8.svg",
+          "9": "/anemone-nemorosa-9.svg",
+          "10": "/anemone-nemorosa-10.svg",
+          "11": "/anemone-nemorosa-11.svg",
+          "12": "/anemone-nemorosa-12.svg"
+        }
+      }
+    },
+    {
+      "id": "primula-x-pruhoniciana",
+      "name": "Primula x pruhoniciana",
+      "scale": 1.0,
+      "trivname": "Primel",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 15,
+          "5": 15,
+          "6": 10,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/primula-x-pruhoniciana-1.svg",
+          "2": "/primula-x-pruhoniciana-2.svg",
+          "3": "/primula-x-pruhoniciana-3.svg",
+          "4": "/primula-x-pruhoniciana-4.svg",
+          "5": "/primula-x-pruhoniciana-5.svg",
+          "6": "/primula-x-pruhoniciana-6.svg",
+          "7": "/primula-x-pruhoniciana-7.svg",
+          "8": "/primula-x-pruhoniciana-8.svg",
+          "9": "/primula-x-pruhoniciana-9.svg",
+          "10": "/primula-x-pruhoniciana-10.svg",
+          "11": "/primula-x-pruhoniciana-11.svg",
+          "12": "/primula-x-pruhoniciana-12.svg"
+        }
+      }
+    },
+    {
+      "id": "chaenomeles",
+      "name": "Chaenomeles",
+      "scale": 1.0,
+      "trivname": "Zierquitte",
+      "type": "strauch",
+      "vegetation": {
+        "height": {
+          "1": 100,
+          "2": 100,
+          "3": 150,
+          "4": 150,
+          "5": 150,
+          "6": 150,
+          "7": 150,
+          "8": 150,
+          "9": 150,
+          "10": 150,
+          "11": 150,
+          "12": 100
+        },
+        "icon": {
+          "1": "/chaenomeles-1.svg",
+          "2": "/chaenomeles-2.svg",
+          "3": "/chaenomeles-3.svg",
+          "4": "/chaenomeles-4.svg",
+          "5": "/chaenomeles-5.svg",
+          "6": "/chaenomeles-6.svg",
+          "7": "/chaenomeles-7.svg",
+          "8": "/chaenomeles-8.svg",
+          "9": "/chaenomeles-9.svg",
+          "10": "/chaenomeles-10.svg",
+          "11": "/chaenomeles-11.svg",
+          "12": "/chaenomeles-12.svg"
+        }
+      }
+    },
+    {
+      "id": "scilla-siberica",
+      "name": "Scilla siberica",
+      "scale": 1.0,
+      "trivname": "Sibirische Traubenhyazinthe",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 10,
+          "4": 15,
+          "5": 5,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/scilla-siberica-1.svg",
+          "2": "/scilla-siberica-2.svg",
+          "3": "/scilla-siberica-3.svg",
+          "4": "/scilla-siberica-4.svg",
+          "5": "/scilla-siberica-5.svg",
+          "6": "/scilla-siberica-6.svg",
+          "7": "/scilla-siberica-7.svg",
+          "8": "/scilla-siberica-8.svg",
+          "9": "/scilla-siberica-9.svg",
+          "10": "/scilla-siberica-10.svg",
+          "11": "/scilla-siberica-11.svg",
+          "12": "/scilla-siberica-12.svg"
+        }
+      }
+    },
+    {
+      "id": "viola-cornuta",
+      "name": "Viola cornuta",
+      "scale": 1.0,
+      "trivname": "Hornveilchen",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 10,
+          "4": 10,
+          "5": 10,
+          "6": 5,
+          "7": 0,
+          "8": 0,
+          "9": 5,
+          "10": 10,
+          "11": 10,
+          "12": 0
+        },
+        "icon": {
+          "1": "/viola-cornuta-1.svg",
+          "2": "/viola-cornuta-2.svg",
+          "3": "/viola-cornuta-3.svg",
+          "4": "/viola-cornuta-4.svg",
+          "5": "/viola-cornuta-5.svg",
+          "6": "/viola-cornuta-6.svg",
+          "7": "/viola-cornuta-7.svg",
+          "8": "/viola-cornuta-8.svg",
+          "9": "/viola-cornuta-9.svg",
+          "10": "/viola-cornuta-10.svg",
+          "11": "/viola-cornuta-11.svg",
+          "12": "/viola-cornuta-12.svg"
+        }
+      }
+    },
+    {
+      "id": "bergenia-cordifolia-rotblum",
+      "name": "Bergenia cordifolia 'Rotblum'",
+      "scale": 1.0,
+      "trivname": "Riesensteinbrech 'Rotblum'",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 10,
+          "2": 10,
+          "3": 20,
+          "4": 30,
+          "5": 30,
+          "6": 30,
+          "7": 30,
+          "8": 30,
+          "9": 20,
+          "10": 10,
+          "11": 10,
+          "12": 10
+        },
+        "icon": {
+          "1": "/bergenia-cordifolia-rotblum-1.svg",
+          "2": "/bergenia-cordifolia-rotblum-2.svg",
+          "3": "/bergenia-cordifolia-rotblum-3.svg",
+          "4": "/bergenia-cordifolia-rotblum-4.svg",
+          "5": "/bergenia-cordifolia-rotblum-5.svg",
+          "6": "/bergenia-cordifolia-rotblum-6.svg",
+          "7": "/bergenia-cordifolia-rotblum-7.svg",
+          "8": "/bergenia-cordifolia-rotblum-8.svg",
+          "9": "/bergenia-cordifolia-rotblum-9.svg",
+          "10": "/bergenia-cordifolia-rotblum-10.svg",
+          "11": "/bergenia-cordifolia-rotblum-11.svg",
+          "12": "/bergenia-cordifolia-rotblum-12.svg"
+        }
+      }
+    },
+    {
+      "id": "caltha-palustris",
+      "name": "Caltha palustris",
+      "scale": 1.0,
+      "trivname": "Sumpfdotterblume",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 20,
+          "4": 20,
+          "5": 20,
+          "6": 10,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/caltha-palustris-1.svg",
+          "2": "/caltha-palustris-2.svg",
+          "3": "/caltha-palustris-3.svg",
+          "4": "/caltha-palustris-4.svg",
+          "5": "/caltha-palustris-5.svg",
+          "6": "/caltha-palustris-6.svg",
+          "7": "/caltha-palustris-7.svg",
+          "8": "/caltha-palustris-8.svg",
+          "9": "/caltha-palustris-9.svg",
+          "10": "/caltha-palustris-10.svg",
+          "11": "/caltha-palustris-11.svg",
+          "12": "/caltha-palustris-12.svg"
+        }
+      }
+    },
+    {
+      "id": "muscari",
+      "name": "Muscari",
+      "scale": 1.0,
+      "trivname": "Traubenhyazinthe",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 10,
+          "4": 15,
+          "5": 10,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/muscari-1.svg",
+          "2": "/muscari-2.svg",
+          "3": "/muscari-3.svg",
+          "4": "/muscari-4.svg",
+          "5": "/muscari-5.svg",
+          "6": "/muscari-6.svg",
+          "7": "/muscari-7.svg",
+          "8": "/muscari-8.svg",
+          "9": "/muscari-9.svg",
+          "10": "/muscari-10.svg",
+          "11": "/muscari-11.svg",
+          "12": "/muscari-12.svg"
+        }
+      }
+    },
+    {
+      "id": "hyacinthus-orientalis",
+      "name": "Hyacinthus orientalis",
+      "scale": 1.0,
+      "trivname": "Hyazinthe",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 20,
+          "4": 25,
+          "5": 25,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/hyacinthus-orientalis-1.svg",
+          "2": "/hyacinthus-orientalis-2.svg",
+          "3": "/hyacinthus-orientalis-3.svg",
+          "4": "/hyacinthus-orientalis-4.svg",
+          "5": "/hyacinthus-orientalis-5.svg",
+          "6": "/hyacinthus-orientalis-6.svg",
+          "7": "/hyacinthus-orientalis-7.svg",
+          "8": "/hyacinthus-orientalis-8.svg",
+          "9": "/hyacinthus-orientalis-9.svg",
+          "10": "/hyacinthus-orientalis-10.svg",
+          "11": "/hyacinthus-orientalis-11.svg",
+          "12": "/hyacinthus-orientalis-12.svg"
+        }
+      }
+    },
+    {
+      "id": "vinca-minor-purpura",
+      "name": "Vinca minor purpura",
+      "scale": 1.0,
+      "trivname": "Kleines Immergr\u00fcn 'Purpur'",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/vinca-minor-1.svg",
+          "2": "/vinca-minor-2.svg",
+          "3": "/vinca-minor-3.svg",
+          "4": "/vinca-minor-purpura-4.svg",
+          "5": "/vinca-minor-5-12.svg",
+          "6": "/vinca-minor-5-12.svg",
+          "7": "/vinca-minor-5-12.svg",
+          "8": "/vinca-minor-5-12.svg",
+          "9": "/vinca-minor-5-12.svg",
+          "10": "/vinca-minor-5-12.svg",
+          "11": "/vinca-minor-5-12.svg",
+          "12": "/vinca-minor-5-12.svg"
+        }
+      }
+    },
+    {
+      "id": "vinca-minor-alba",
+      "name": "Vinca minor alba",
+      "scale": 1.0,
+      "trivname": "Kleines Immergr\u00fcn 'Weiss'",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/vinca-minor-1.svg",
+          "2": "/vinca-minor-2.svg",
+          "3": "/vinca-minor-3.svg",
+          "4": "/vinca-minor-alba-4.svg",
+          "5": "/vinca-minor-5-12.svg",
+          "6": "/vinca-minor-5-12.svg",
+          "7": "/vinca-minor-5-12.svg",
+          "8": "/vinca-minor-5-12.svg",
+          "9": "/vinca-minor-5-12.svg",
+          "10": "/vinca-minor-5-12.svg",
+          "11": "/vinca-minor-5-12.svg",
+          "12": "/vinca-minor-5-12.svg"
+        }
+      }
+    },
+    {
+      "id": "vinca-minor-rubra",
+      "name": "Vinca minor rubra",
+      "scale": 1.0,
+      "trivname": "Kleines Immergr\u00fcn 'Rubin'",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/vinca-minor-1.svg",
+          "2": "/vinca-minor-2.svg",
+          "3": "/vinca-minor-3.svg",
+          "4": "/vinca-minor-rubra-4.svg",
+          "5": "/vinca-minor-5-12.svg",
+          "6": "/vinca-minor-5-12.svg",
+          "7": "/vinca-minor-5-12.svg",
+          "8": "/vinca-minor-5-12.svg",
+          "9": "/vinca-minor-5-12.svg",
+          "10": "/vinca-minor-5-12.svg",
+          "11": "/vinca-minor-5-12.svg",
+          "12": "/vinca-minor-5-12.svg"
+        }
+      }
+    },
+    {
+      "id": "pulmonaria-rubra",
+      "name": "Pulmonaria rubra",
+      "scale": 1.0,
+      "trivname": "Rotes Lungenkraut",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 10,
+          "2": 15,
+          "3": 20,
+          "4": 20,
+          "5": 15,
+          "6": 5,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 5
+        },
+        "icon": {
+          "1": "/pulmonaria-rubra-1.svg",
+          "2": "/pulmonaria-rubra-2.svg",
+          "3": "/pulmonaria-rubra-3.svg",
+          "4": "/pulmonaria-rubra-4.svg",
+          "5": "/pulmonaria-rubra-5.svg",
+          "6": "/pulmonaria-rubra-6.svg",
+          "7": "/pulmonaria-rubra-7.svg",
+          "8": "/pulmonaria-rubra-8.svg",
+          "9": "/pulmonaria-rubra-9.svg",
+          "10": "/pulmonaria-rubra-10.svg",
+          "11": "/pulmonaria-rubra-11.svg",
+          "12": "/pulmonaria-rubra-12.svg"
+        }
+      }
+    },
+    {
       "id": "forsythia",
-      "name": "Forsytha",
-      "scale": 1.5,
+      "name": "Forsythia",
+      "scale": 1.0,
       "trivname": "Forsythie",
       "type": "strauch",
+      "vegetation": {
+        "height": {
+          "1": 200,
+          "2": 200,
+          "3": 200,
+          "4": 200,
+          "5": 200,
+          "6": 200,
+          "7": 200,
+          "8": 200,
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200
+        },
+        "icon": {
+          "1": "/forsythia-1.svg",
+          "2": "/forsythia-2.svg",
+          "3": "/forsythia-3.svg",
+          "4": "/forsythia-4.svg",
+          "5": "/forsythia-5.svg",
+          "6": "/forsythia-6.svg",
+          "7": "/forsythia-7.svg",
+          "8": "/forsythia-8.svg",
+          "9": "/forsythia-9.svg",
+          "10": "/forsythia-10.svg",
+          "11": "/forsythia-11.svg",
+          "12": "/forsythia-12.svg"
+        }
+      }
+    },
+    {
+      "id": "ajuga-reptans-atropurpurea",
+      "name": "Ajuga reptans atropurpurea",
+      "scale": 1.0,
+      "trivname": "Purpurroter Teppich-G\u00fcnsel",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/ajuga-reptans-atropurpurea-1.svg",
+          "2": "/ajuga-reptans-atropurpurea-2.svg",
+          "3": "/ajuga-reptans-atropurpurea-3.svg",
+          "4": "/ajuga-reptans-atropurpurea-4.svg",
+          "5": "/ajuga-reptans-atropurpurea-5.svg",
+          "6": "/ajuga-reptans-atropurpurea-6.svg",
+          "7": "/ajuga-reptans-atropurpurea-7.svg",
+          "8": "/ajuga-reptans-atropurpurea-8.svg",
+          "9": "/ajuga-reptans-atropurpurea-9.svg",
+          "10": "/ajuga-reptans-atropurpurea-10.svg",
+          "11": "/ajuga-reptans-atropurpurea-11.svg",
+          "12": "/ajuga-reptans-atropurpurea-12.svg"
+        }
+      }
+    },
+    {
+      "id": "phlox-subulata-emerald-cushion-blue",
+      "name": "Phlox subulata 'Emerald Cushion Blue'",
+      "scale": 1.0,
+      "trivname": "Polster-Phlox 'Emerald Cushion Blue'",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 10,
+          "4": 10,
+          "5": 10,
+          "6": 5,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/phlox-subulata-emerald-cushion-blue-1.svg",
+          "2": "/phlox-subulata-emerald-cushion-blue-2.svg",
+          "3": "/phlox-subulata-emerald-cushion-blue-3.svg",
+          "4": "/phlox-subulata-emerald-cushion-blue-4.svg",
+          "5": "/phlox-subulata-emerald-cushion-blue-5.svg",
+          "6": "/phlox-subulata-emerald-cushion-blue-6.svg",
+          "7": "/phlox-subulata-emerald-cushion-blue-7.svg",
+          "8": "/phlox-subulata-emerald-cushion-blue-8.svg",
+          "9": "/phlox-subulata-emerald-cushion-blue-9.svg",
+          "10": "/phlox-subulata-emerald-cushion-blue-10.svg",
+          "11": "/phlox-subulata-emerald-cushion-blue-11.svg",
+          "12": "/phlox-subulata-emerald-cushion-blue-12.svg"
+        }
+      }
+    },
+    {
+      "id": "phlox-subulata-samson",
+      "name": "Phlox subulata 'Samson'",
+      "scale": 1.0,
+      "trivname": "Polster-Phlox 'Samson'",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 10,
+          "4": 10,
+          "5": 10,
+          "6": 5,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/phlox-subulata-samson-1.svg",
+          "2": "/phlox-subulata-samson-2.svg",
+          "3": "/phlox-subulata-samson-3.svg",
+          "4": "/phlox-subulata-samson-4.svg",
+          "5": "/phlox-subulata-samson-5.svg",
+          "6": "/phlox-subulata-samson-6.svg",
+          "7": "/phlox-subulata-samson-7.svg",
+          "8": "/phlox-subulata-samson-8.svg",
+          "9": "/phlox-subulata-samson-9.svg",
+          "10": "/phlox-subulata-samson-10.svg",
+          "11": "/phlox-subulata-samson-11.svg",
+          "12": "/phlox-subulata-samson-12.svg"
+        }
+      }
+    },
+    {
+      "id": "waldsteinia-ternata",
+      "name": "Waldsteinia ternata",
+      "scale": 1.0,
+      "trivname": "Golderdbeere",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/waldsteinia-ternata-1.svg",
+          "2": "/waldsteinia-ternata-2.svg",
+          "3": "/waldsteinia-ternata-3.svg",
+          "4": "/waldsteinia-ternata-4.svg",
+          "5": "/waldsteinia-ternata-5.svg",
+          "6": "/waldsteinia-ternata-6.svg",
+          "7": "/waldsteinia-ternata-7.svg",
+          "8": "/waldsteinia-ternata-8.svg",
+          "9": "/waldsteinia-ternata-9.svg",
+          "10": "/waldsteinia-ternata-10.svg",
+          "11": "/waldsteinia-ternata-11.svg",
+          "12": "/waldsteinia-ternata-12.svg"
+        }
+      }
+    },
+    {
+      "id": "gentiana-acaulis",
+      "name": "Gentiana acaulis",
+      "scale": 1.0,
+      "trivname": "Kronen-Enzian",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/gentiana-acaulis-1.svg",
+          "2": "/gentiana-acaulis-2.svg",
+          "3": "/gentiana-acaulis-3.svg",
+          "4": "/gentiana-acaulis-4.svg",
+          "5": "/gentiana-acaulis-5.svg",
+          "6": "/gentiana-acaulis-6.svg",
+          "7": "/gentiana-acaulis-7.svg",
+          "8": "/gentiana-acaulis-8.svg",
+          "9": "/gentiana-acaulis-9.svg",
+          "10": "/gentiana-acaulis-10.svg",
+          "11": "/gentiana-acaulis-11.svg",
+          "12": "/gentiana-acaulis-12.svg"
+        }
+      }
+    },
+    {
+      "id": "ranunculus",
+      "name": "Ranunculus",
+      "scale": 1.0,
+      "trivname": "Ranunkel/Hahnenfu\u00df",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 10,
+          "4": 30,
+          "5": 30,
+          "6": 20,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/ranunculus-1.svg",
+          "2": "/ranunculus-2.svg",
+          "3": "/ranunculus-3.svg",
+          "4": "/ranunculus-4.svg",
+          "5": "/ranunculus-5.svg",
+          "6": "/ranunculus-6.svg",
+          "7": "/ranunculus-7.svg",
+          "8": "/ranunculus-8.svg",
+          "9": "/ranunculus-9.svg",
+          "10": "/ranunculus-10.svg",
+          "11": "/ranunculus-11.svg",
+          "12": "/ranunculus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "sempervivum",
+      "name": "Sempervivum",
+      "scale": 1.0,
+      "trivname": "Hauswurz",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/sempervivum-1.svg",
+          "2": "/sempervivum-2.svg",
+          "3": "/sempervivum-3.svg",
+          "4": "/sempervivum-4.svg",
+          "5": "/sempervivum-5.svg",
+          "6": "/sempervivum-6.svg",
+          "7": "/sempervivum-7.svg",
+          "8": "/sempervivum-8.svg",
+          "9": "/sempervivum-9.svg",
+          "10": "/sempervivum-10.svg",
+          "11": "/sempervivum-11.svg",
+          "12": "/sempervivum-12.svg"
+        }
+      }
+    },
+    {
+      "id": "oenothera-hartwegii",
+      "name": "Oenothera hartwegii",
+      "scale": 1.0,
+      "trivname": "Abend\u00f6rtchen",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 30,
+          "6": 60,
+          "7": 60,
+          "8": 30,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/oenothera-hartwegii-1.svg",
+          "2": "/oenothera-hartwegii-2.svg",
+          "3": "/oenothera-hartwegii-3.svg",
+          "4": "/oenothera-hartwegii-4.svg",
+          "5": "/oenothera-hartwegii-5.svg",
+          "6": "/oenothera-hartwegii-6.svg",
+          "7": "/oenothera-hartwegii-7.svg",
+          "8": "/oenothera-hartwegii-8.svg",
+          "9": "/oenothera-hartwegii-9.svg",
+          "10": "/oenothera-hartwegii-10.svg",
+          "11": "/oenothera-hartwegii-11.svg",
+          "12": "/oenothera-hartwegii-12.svg"
+        }
+      }
+    },
+    {
+      "id": "bracteantha-bracteata",
+      "name": "Bracteantha bracteata",
+      "scale": 1.0,
+      "trivname": "Mexikanische Strauchblume",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 30,
+          "5": 60,
+          "6": 60,
+          "7": 60,
+          "8": 60,
+          "9": 30,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/bracteantha-bracteata-1.svg",
+          "2": "/bracteantha-bracteata-2.svg",
+          "3": "/bracteantha-bracteata-3.svg",
+          "4": "/bracteantha-bracteata-4.svg",
+          "5": "/bracteantha-bracteata-5.svg",
+          "6": "/bracteantha-bracteata-6.svg",
+          "7": "/bracteantha-bracteata-7.svg",
+          "8": "/bracteantha-bracteata-8.svg",
+          "9": "/bracteantha-bracteata-9.svg",
+          "10": "/bracteantha-bracteata-10.svg",
+          "11": "/bracteantha-bracteata-11.svg",
+          "12": "/bracteantha-bracteata-12.svg"
+        }
+      }
+    },
+    {
+      "id": "coreopsis-grandiflora",
+      "name": "Coreopsis grandiflora",
+      "scale": 1.0,
+      "trivname": "Gro\u00dfblumiges M\u00e4dchenauge",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 20,
+          "6": 45,
+          "7": 45,
+          "8": 45,
+          "9": 20,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/coreopsis-grandiflora-1.svg",
+          "2": "/coreopsis-grandiflora-2.svg",
+          "3": "/coreopsis-grandiflora-3.svg",
+          "4": "/coreopsis-grandiflora-4.svg",
+          "5": "/coreopsis-grandiflora-5.svg",
+          "6": "/coreopsis-grandiflora-6.svg",
+          "7": "/coreopsis-grandiflora-7.svg",
+          "8": "/coreopsis-grandiflora-8.svg",
+          "9": "/coreopsis-grandiflora-9.svg",
+          "10": "/coreopsis-grandiflora-10.svg",
+          "11": "/coreopsis-grandiflora-11.svg",
+          "12": "/coreopsis-grandiflora-12.svg"
+        }
+      }
+    },
+    {
+      "id": "sagina-subulata",
+      "name": "Sagina subulata",
+      "scale": 1.0,
+      "trivname": "Spaghettigras",
+      "type": "staude",
       "vegetation": {
         "height": {
           "1": 2,
@@ -22,239 +1058,1054 @@
           "12": 2
         },
         "icon": {
-          "1": "/forsythie-01.svg",
-          "2": "/forsythie-02.svg",
-          "3": "/forsythie-03.svg",
-          "4": "/forsythie-04.svg",
-          "5": "/forsythie-05.svg",
-          "6": "/forsythie-06.svg",
-          "7": "/forsythie-07.svg",
-          "8": "/forsythie-08.svg",
-          "9": "/forsythie-09.svg",
-          "10": "/forsythie-10.svg",
-          "11": "/forsythie-11.svg",
-          "12": "/forsythie-12.svg"
+          "1": "/sagina-subulata-1.svg",
+          "2": "/sagina-subulata-2.svg",
+          "3": "/sagina-subulata-3.svg",
+          "4": "/sagina-subulata-4.svg",
+          "5": "/sagina-subulata-5.svg",
+          "6": "/sagina-subulata-6.svg",
+          "7": "/sagina-subulata-7.svg",
+          "8": "/sagina-subulata-8.svg",
+          "9": "/sagina-subulata-9.svg",
+          "10": "/sagina-subulata-10.svg",
+          "11": "/sagina-subulata-11.svg",
+          "12": "/sagina-subulata-12.svg"
         }
       }
     },
     {
-      "id": "vinca_minor_alba",
-      "name": "Vinca Minor Alba",
-      "scale": 0.5,
-      "trivname": "Kleines Immergr\u00fcn (wei\u00df)",
-      "type": "bodendecker",
-      "vegetation": {
-        "height": {
-          "1": 0.15,
-          "2": 0.15,
-          "3": 0.15,
-          "4": 0.15,
-          "5": 0.15,
-          "6": 0.15,
-          "7": 0.15,
-          "8": 0.15,
-          "9": 0.15,
-          "10": 0.15,
-          "11": 0.15,
-          "12": 0.15
-        },
-        "icon": {
-          "1": "/vinca-minor-alba-01.svg",
-          "2": "/vinca-minor-alba-02.svg",
-          "3": "/vinca-minor-alba-03.svg",
-          "4": "/vinca-minor-alba-04.svg",
-          "5": "/vinca-minor-alba-05.svg",
-          "6": "/vinca-minor-alba-06.svg",
-          "7": "/vinca-minor-alba-07.svg",
-          "8": "/vinca-minor-alba-08.svg",
-          "9": "/vinca-minor-alba-09.svg",
-          "10": "/vinca-minor-alba-10.svg",
-          "11": "/vinca-minor-alba-11.svg",
-          "12": "/vinca-minor-alba-12.svg"
-        }
-      }
-    },
-    {
-      "id": "vinca_minor_purpura",
-      "name": "Vinca Minor Purpura",
-      "scale": 0.5,
-      "trivname": "Kleines Immergr\u00fcn (violett)",
-      "type": "bodendecker",
-      "vegetation": {
-        "height": {
-          "1": 0.15,
-          "2": 0.15,
-          "3": 0.15,
-          "4": 0.15,
-          "5": 0.15,
-          "6": 0.15,
-          "7": 0.15,
-          "8": 0.15,
-          "9": 0.15,
-          "10": 0.15,
-          "11": 0.15,
-          "12": 0.15
-        },
-        "icon": {
-          "1": "/vinca-minor-purpura-01.svg",
-          "2": "/vinca-minor-purpura-02.svg",
-          "3": "/vinca-minor-purpura-03.svg",
-          "4": "/vinca-minor-purpura-04.svg",
-          "5": "/vinca-minor-purpura-05.svg",
-          "6": "/vinca-minor-purpura-06.svg",
-          "7": "/vinca-minor-purpura-07.svg",
-          "8": "/vinca-minor-purpura-08.svg",
-          "9": "/vinca-minor-purpura-09.svg",
-          "10": "/vinca-minor-purpura-10.svg",
-          "11": "/vinca-minor-purpura-11.svg",
-          "12": "/vinca-minor-purpura-12.svg"
-        }
-      }
-    },
-    {
-      "id": "vinca_minor_rubra",
-      "name": "Vinca Minor Rubra",
-      "scale": 0.5,
-      "trivname": "Kleines Immergr\u00fcn (lila)",
-      "type": "bodendecker",
-      "vegetation": {
-        "height": {
-          "1": 0.15,
-          "2": 0.15,
-          "3": 0.15,
-          "4": 0.15,
-          "5": 0.15,
-          "6": 0.15,
-          "7": 0.15,
-          "8": 0.15,
-          "9": 0.15,
-          "10": 0.15,
-          "11": 0.15,
-          "12": 0.15
-        },
-        "icon": {
-          "1": "/vinca-minor-rubra-01.svg",
-          "2": "/vinca-minor-rubra-02.svg",
-          "3": "/vinca-minor-rubra-03.svg",
-          "4": "/vinca-minor-rubra-04.svg",
-          "5": "/vinca-minor-rubra-05.svg",
-          "6": "/vinca-minor-rubra-06.svg",
-          "7": "/vinca-minor-rubra-07.svg",
-          "8": "/vinca-minor-rubra-08.svg",
-          "9": "/vinca-minor-rubra-09.svg",
-          "10": "/vinca-minor-rubra-10.svg",
-          "11": "/vinca-minor-rubra-11.svg",
-          "12": "/vinca-minor-rubra-12.svg"
-        }
-      }
-    },
-    {
-      "id": "oenethora_hartwegii",
-      "name": "Oenethora Hartwegii",
-      "scale": 1,
-      "trivname": "Hartweg'scher Sonnentropfen",
-      "vegetation": {
-        "icon": {
-          "1": "/oenethora-hartwegii-01.svg",
-          "2": "/oenethora-hartwegii-02.svg",
-          "3": "/oenethora-hartwegii-03.svg",
-          "4": "/oenethora-hartwegii-04.svg",
-          "5": "/oenethora-hartwegii-05.svg",
-          "6": "/oenethora-hartwegii-06.svg",
-          "7": "/oenethora-hartwegii-07.svg",
-          "8": "/oenethora-hartwegii-08.svg",
-          "9": "/oenethora-hartwegii-09.svg",
-          "10": "/oenethora-hartwegii-10.svg",
-          "11": "/oenethora-hartwegii-11.svg",
-          "12": "/oenethora-hartwegii-12.svg"
-        },
-        "height": {
-          "1": 0.3,
-          "2": 0.3,
-          "3": 0.3,
-          "4": 0.3,
-          "5": 0.3,
-          "6": 0.3,
-          "7": 0.3,
-          "8": 0.3,
-          "9": 0.3,
-          "10": 0.3,
-          "11": 0.3,
-          "12": 0.3
-        }
-      },
-      "type": "busch"
-    },
-    {
-      "name": "Flora",
-      "trivname": "Blume",
-      "id": "flower",
-      "type": "staude",
+      "id": "echinacea-purpurea",
+      "name": "Echinacea purpurea",
       "scale": 1.0,
+      "trivname": "Roter Sonnenhut",
+      "type": "staude",
       "vegetation": {
-        "icon": {
-          "1": "/flower.svg",
-          "2": "/flower.svg",
-          "3": "/flower.svg",
-          "4": "/flower.svg",
-          "5": "/flower.svg",
-          "6": "/flower.svg",
-          "7": "/flower.svg",
-          "8": "/flower.svg",
-          "9": "/flower.svg",
-          "10": "/flower.svg",
-          "11": "/flower.svg",
-          "12": "/flower.svg"
-        },
         "height": {
-          "1": 0.15,
-          "2": 0.15,
-          "3": 0.15,
-          "4": 0.15,
-          "5": 0.15,
-          "6": 0.15,
-          "7": 0.15,
-          "8": 0.15,
-          "9": 0.15,
-          "10": 0.15,
-          "11": 0.15,
-          "12": 0.15
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 10,
+          "5": 30,
+          "6": 60,
+          "7": 60,
+          "8": 60,
+          "9": 30,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/echinacea-purpurea-1.svg",
+          "2": "/echinacea-purpurea-2.svg",
+          "3": "/echinacea-purpurea-3.svg",
+          "4": "/echinacea-purpurea-4.svg",
+          "5": "/echinacea-purpurea-5.svg",
+          "6": "/echinacea-purpurea-6.svg",
+          "7": "/echinacea-purpurea-7.svg",
+          "8": "/echinacea-purpurea-8.svg",
+          "9": "/echinacea-purpurea-9.svg",
+          "10": "/echinacea-purpurea-10.svg",
+          "11": "/echinacea-purpurea-11.svg",
+          "12": "/echinacea-purpurea-12.svg"
         }
       }
     },
     {
-      "name": "Neu",
-      "trivname": "novum",
-      "id": "new",
-      "type": "",
+      "id": "chamaemelum-nobile",
+      "name": "Chamaemelum nobile",
+      "scale": 1.0,
+      "trivname": "Echte Kamille",
+      "type": "staude",
       "vegetation": {
-        "icon": {
-          "1": "/flower.svg",
-          "2": "/flower.svg",
-          "3": "/flower.svg",
-          "4": "/flower.svg",
-          "5": "/flower.svg",
-          "6": "/flower.svg",
-          "7": "/flower.svg",
-          "8": "/flower.svg",
-          "9": "/flower.svg",
-          "10": "/flower.svg",
-          "11": "/flower.svg",
-          "12": "/flower.svg"
-        },
         "height": {
-          "1": 0.15,
-          "2": 0.15,
-          "3": 0.15,
-          "4": 0.15,
-          "5": 0.15,
-          "6": 0.15,
-          "7": 0.15,
-          "8": 0.15,
-          "9": 0.15,
-          "10": 0.15,
-          "11": 0.15,
-          "12": 0.15
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 10,
+          "6": 30,
+          "7": 30,
+          "8": 10,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/chamaemelum-nobile-1.svg",
+          "2": "/chamaemelum-nobile-2.svg",
+          "3": "/chamaemelum-nobile-3.svg",
+          "4": "/chamaemelum-nobile-4.svg",
+          "5": "/chamaemelum-nobile-5.svg",
+          "6": "/chamaemelum-nobile-6.svg",
+          "7": "/chamaemelum-nobile-7.svg",
+          "8": "/chamaemelum-nobile-8.svg",
+          "9": "/chamaemelum-nobile-9.svg",
+          "10": "/chamaemelum-nobile-10.svg",
+          "11": "/chamaemelum-nobile-11.svg",
+          "12": "/chamaemelum-nobile-12.svg"
+        }
+      }
+    },
+    {
+      "id": "dianthus-deltoides",
+      "name": "Dianthus deltoides",
+      "scale": 1.0,
+      "trivname": "Steinnelke",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 10,
+          "6": 20,
+          "7": 20,
+          "8": 10,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/dianthus-deltoides-1.svg",
+          "2": "/dianthus-deltoides-2.svg",
+          "3": "/dianthus-deltoides-3.svg",
+          "4": "/dianthus-deltoides-4.svg",
+          "5": "/dianthus-deltoides-5.svg",
+          "6": "/dianthus-deltoides-6.svg",
+          "7": "/dianthus-deltoides-7.svg",
+          "8": "/dianthus-deltoides-8.svg",
+          "9": "/dianthus-deltoides-9.svg",
+          "10": "/dianthus-deltoides-10.svg",
+          "11": "/dianthus-deltoides-11.svg",
+          "12": "/dianthus-deltoides-12.svg"
+        }
+      }
+    },
+    {
+      "id": "dianthus-x-barbatus",
+      "name": "Dianthus x barbatus",
+      "scale": 1.0,
+      "trivname": "Bartnelke",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 20,
+          "6": 40,
+          "7": 40,
+          "8": 20,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/dianthus-x-barbatus-1.svg",
+          "2": "/dianthus-x-barbatus-2.svg",
+          "3": "/dianthus-x-barbatus-3.svg",
+          "4": "/dianthus-x-barbatus-4.svg",
+          "5": "/dianthus-x-barbatus-5.svg",
+          "6": "/dianthus-x-barbatus-6.svg",
+          "7": "/dianthus-x-barbatus-7.svg",
+          "8": "/dianthus-x-barbatus-8.svg",
+          "9": "/dianthus-x-barbatus-9.svg",
+          "10": "/dianthus-x-barbatus-10.svg",
+          "11": "/dianthus-x-barbatus-11.svg",
+          "12": "/dianthus-x-barbatus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "salvia-nemorosa",
+      "name": "Salvia nemorosa",
+      "scale": 1.0,
+      "trivname": "Steppen-Salbei",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 50,
+          "7": 50,
+          "8": 50,
+          "9": 30,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/salvia-nemorosa-1.svg",
+          "2": "/salvia-nemorosa-2.svg",
+          "3": "/salvia-nemorosa-3.svg",
+          "4": "/salvia-nemorosa-4.svg",
+          "5": "/salvia-nemorosa-5.svg",
+          "6": "/salvia-nemorosa-6.svg",
+          "7": "/salvia-nemorosa-7.svg",
+          "8": "/salvia-nemorosa-8.svg",
+          "9": "/salvia-nemorosa-9.svg",
+          "10": "/salvia-nemorosa-10.svg",
+          "11": "/salvia-nemorosa-11.svg",
+          "12": "/salvia-nemorosa-12.svg"
+        }
+      }
+    },
+    {
+      "id": "lupinus-polyphyllus",
+      "name": "Lupinus polyphyllus",
+      "scale": 1.0,
+      "trivname": "Hohe Lupine",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 50,
+          "6": 100,
+          "7": 100,
+          "8": 50,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/lupinus-polyphyllus-1.svg",
+          "2": "/lupinus-polyphyllus-2.svg",
+          "3": "/lupinus-polyphyllus-3.svg",
+          "4": "/lupinus-polyphyllus-4.svg",
+          "5": "/lupinus-polyphyllus-5.svg",
+          "6": "/lupinus-polyphyllus-6.svg",
+          "7": "/lupinus-polyphyllus-7.svg",
+          "8": "/lupinus-polyphyllus-8.svg",
+          "9": "/lupinus-polyphyllus-9.svg",
+          "10": "/lupinus-polyphyllus-10.svg",
+          "11": "/lupinus-polyphyllus-11.svg",
+          "12": "/lupinus-polyphyllus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "thymus-serpyllum",
+      "name": "Thymus serpyllum",
+      "scale": 1.0,
+      "trivname": "Sand-Thymian",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 3,
+          "2": 3,
+          "3": 3,
+          "4": 3,
+          "5": 3,
+          "6": 3,
+          "7": 3,
+          "8": 3,
+          "9": 3,
+          "10": 3,
+          "11": 3,
+          "12": 3
+        },
+        "icon": {
+          "1": "/thymus-serpyllum-1.svg",
+          "2": "/thymus-serpyllum-2.svg",
+          "3": "/thymus-serpyllum-3.svg",
+          "4": "/thymus-serpyllum-4.svg",
+          "5": "/thymus-serpyllum-5.svg",
+          "6": "/thymus-serpyllum-6.svg",
+          "7": "/thymus-serpyllum-7.svg",
+          "8": "/thymus-serpyllum-8.svg",
+          "9": "/thymus-serpyllum-9.svg",
+          "10": "/thymus-serpyllum-10.svg",
+          "11": "/thymus-serpyllum-11.svg",
+          "12": "/thymus-serpyllum-12.svg"
+        }
+      }
+    },
+    {
+      "id": "antirrhinum-majus",
+      "name": "Antirrhinum majus",
+      "scale": 1.0,
+      "trivname": "L\u00f6wenmaul",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 20,
+          "6": 60,
+          "7": 60,
+          "8": 30,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/antirrhinum-majus-1.svg",
+          "2": "/antirrhinum-majus-2.svg",
+          "3": "/antirrhinum-majus-3.svg",
+          "4": "/antirrhinum-majus-4.svg",
+          "5": "/antirrhinum-majus-5.svg",
+          "6": "/antirrhinum-majus-6.svg",
+          "7": "/antirrhinum-majus-7.svg",
+          "8": "/antirrhinum-majus-8.svg",
+          "9": "/antirrhinum-majus-9.svg",
+          "10": "/antirrhinum-majus-10.svg",
+          "11": "/antirrhinum-majus-11.svg",
+          "12": "/antirrhinum-majus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "echibeckia",
+      "name": "Echibeckia",
+      "scale": 1.0,
+      "trivname": "Sonnenhut-Scheinsonnenhut-Hybride",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 30,
+          "5": 60,
+          "6": 60,
+          "7": 60,
+          "8": 30,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/echibeckia-1.svg",
+          "2": "/echibeckia-2.svg",
+          "3": "/echibeckia-3.svg",
+          "4": "/echibeckia-4.svg",
+          "5": "/echibeckia-5.svg",
+          "6": "/echibeckia-6.svg",
+          "7": "/echibeckia-7.svg",
+          "8": "/echibeckia-8.svg",
+          "9": "/echibeckia-9.svg",
+          "10": "/echibeckia-10.svg",
+          "11": "/echibeckia-11.svg",
+          "12": "/echibeckia-12.svg"
+        }
+      }
+    },
+    {
+      "id": "tagetes-patula-nana",
+      "name": "Tagetes patula nana",
+      "scale": 1.0,
+      "trivname": "Studentenblume (Zwergform)",
+      "type": "einj\u00e4hrig",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 10,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 10,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/tagetes-patula-nana-1.svg",
+          "2": "/tagetes-patula-nana-2.svg",
+          "3": "/tagetes-patula-nana-3.svg",
+          "4": "/tagetes-patula-nana-4.svg",
+          "5": "/tagetes-patula-nana-5.svg",
+          "6": "/tagetes-patula-nana-6.svg",
+          "7": "/tagetes-patula-nana-7.svg",
+          "8": "/tagetes-patula-nana-8.svg",
+          "9": "/tagetes-patula-nana-9.svg",
+          "10": "/tagetes-patula-nana-10.svg",
+          "11": "/tagetes-patula-nana-11.svg",
+          "12": "/tagetes-patula-nana-12.svg"
+        }
+      }
+    },
+    {
+      "id": "scabiosa-caucasica",
+      "name": "Scabiosa caucasica",
+      "scale": 1.0,
+      "trivname": "Witwenblume",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 20,
+          "6": 60,
+          "7": 60,
+          "8": 30,
+          "9": 10,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/scabiosa-caucasica-1.svg",
+          "2": "/scabiosa-caucasica-2.svg",
+          "3": "/scabiosa-caucasica-3.svg",
+          "4": "/scabiosa-caucasica-4.svg",
+          "5": "/scabiosa-caucasica-5.svg",
+          "6": "/scabiosa-caucasica-6.svg",
+          "7": "/scabiosa-caucasica-7.svg",
+          "8": "/scabiosa-caucasica-8.svg",
+          "9": "/scabiosa-caucasica-9.svg",
+          "10": "/scabiosa-caucasica-10.svg",
+          "11": "/scabiosa-caucasica-11.svg",
+          "12": "/scabiosa-caucasica-12.svg"
+        }
+      }
+    },
+    {
+      "id": "plectranthus-ornatus",
+      "name": "Plectranthus ornatus",
+      "scale": 1.0,
+      "trivname": "Palmlilie",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 20,
+          "5": 50,
+          "6": 50,
+          "7": 50,
+          "8": 20,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/plectranthus-ornatus-1.svg",
+          "2": "/plectranthus-ornatus-2.svg",
+          "3": "/plectranthus-ornatus-3.svg",
+          "4": "/plectranthus-ornatus-4.svg",
+          "5": "/plectranthus-ornatus-5.svg",
+          "6": "/plectranthus-ornatus-6.svg",
+          "7": "/plectranthus-ornatus-7.svg",
+          "8": "/plectranthus-ornatus-8.svg",
+          "9": "/plectranthus-ornatus-9.svg",
+          "10": "/plectranthus-ornatus-10.svg",
+          "11": "/plectranthus-ornatus-11.svg",
+          "12": "/plectranthus-ornatus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "cosmea",
+      "name": "Cosmea",
+      "scale": 1.0,
+      "trivname": "Schmuckk\u00f6rbchen",
+      "type": "einj\u00e4hrig",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 10,
+          "6": 50,
+          "7": 100,
+          "8": 100,
+          "9": 50,
+          "10": 10,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/cosmea-1.svg",
+          "2": "/cosmea-2.svg",
+          "3": "/cosmea-3.svg",
+          "4": "/cosmea-4.svg",
+          "5": "/cosmea-5.svg",
+          "6": "/cosmea-6.svg",
+          "7": "/cosmea-7.svg",
+          "8": "/cosmea-8.svg",
+          "9": "/cosmea-9.svg",
+          "10": "/cosmea-10.svg",
+          "11": "/cosmea-11.svg",
+          "12": "/cosmea-12.svg"
+        }
+      }
+    },
+    {
+      "id": "stachys-officinalis",
+      "name": "Stachys officinalis",
+      "scale": 1.0,
+      "trivname": "Garten-Ziest",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 30,
+          "6": 70,
+          "7": 70,
+          "8": 20,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/stachys-officinalis-1.svg",
+          "2": "/stachys-officinalis-2.svg",
+          "3": "/stachys-officinalis-3.svg",
+          "4": "/stachys-officinalis-4.svg",
+          "5": "/stachys-officinalis-5.svg",
+          "6": "/stachys-officinalis-6.svg",
+          "7": "/stachys-officinalis-7.svg",
+          "8": "/stachys-officinalis-8.svg",
+          "9": "/stachys-officinalis-9.svg",
+          "10": "/stachys-officinalis-10.svg",
+          "11": "/stachys-officinalis-11.svg",
+          "12": "/stachys-officinalis-12.svg"
+        }
+      }
+    },
+    {
+      "id": "spiraea-bumalda-anthony-waterer",
+      "name": "Spiraea bumalda 'Anthony Waterer'",
+      "scale": 1.0,
+      "trivname": "Zwergspiere",
+      "type": "strauch",
+      "vegetation": {
+        "height": {
+          "1": 100,
+          "2": 100,
+          "3": 100,
+          "4": 100,
+          "5": 100,
+          "6": 100,
+          "7": 100,
+          "8": 100,
+          "9": 100,
+          "10": 100,
+          "11": 100,
+          "12": 100
+        },
+        "icon": {
+          "1": "/spiraea-bumalda-anthony-waterer-1.svg",
+          "2": "/spiraea-bumalda-anthony-waterer-2.svg",
+          "3": "/spiraea-bumalda-anthony-waterer-3.svg",
+          "4": "/spiraea-bumalda-anthony-waterer-4.svg",
+          "5": "/spiraea-bumalda-anthony-waterer-5.svg",
+          "6": "/spiraea-bumalda-anthony-waterer-6.svg",
+          "7": "/spiraea-bumalda-anthony-waterer-7.svg",
+          "8": "/spiraea-bumalda-anthony-waterer-8.svg",
+          "9": "/spiraea-bumalda-anthony-waterer-9.svg",
+          "10": "/spiraea-bumalda-anthony-waterer-10.svg",
+          "11": "/spiraea-bumalda-anthony-waterer-11.svg",
+          "12": "/spiraea-bumalda-anthony-waterer-12.svg"
+        }
+      }
+    },
+    {
+      "id": "monarda-didyma",
+      "name": "Monarda didyma",
+      "scale": 1.0,
+      "trivname": "Bergamotte",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 30,
+          "6": 60,
+          "7": 60,
+          "8": 30,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/monarda-didyma-1.svg",
+          "2": "/monarda-didyma-2.svg",
+          "3": "/monarda-didyma-3.svg",
+          "4": "/monarda-didyma-4.svg",
+          "5": "/monarda-didyma-5.svg",
+          "6": "/monarda-didyma-6.svg",
+          "7": "/monarda-didyma-7.svg",
+          "8": "/monarda-didyma-8.svg",
+          "9": "/monarda-didyma-9.svg",
+          "10": "/monarda-didyma-10.svg",
+          "11": "/monarda-didyma-11.svg",
+          "12": "/monarda-didyma-12.svg"
+        }
+      }
+    },
+    {
+      "id": "lavandula-angustifolia",
+      "name": "Lavandula angustifolia",
+      "scale": 1.0,
+      "trivname": "Echter Lavendel",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 20,
+          "2": 20,
+          "3": 30,
+          "4": 60,
+          "5": 60,
+          "6": 60,
+          "7": 60,
+          "8": 30,
+          "9": 30,
+          "10": 20,
+          "11": 20,
+          "12": 20
+        },
+        "icon": {
+          "1": "/lavandula-angustifolia-1.svg",
+          "2": "/lavandula-angustifolia-2.svg",
+          "3": "/lavandula-angustifolia-3.svg",
+          "4": "/lavandula-angustifolia-4.svg",
+          "5": "/lavandula-angustifolia-5.svg",
+          "6": "/lavandula-angustifolia-6.svg",
+          "7": "/lavandula-angustifolia-7.svg",
+          "8": "/lavandula-angustifolia-8.svg",
+          "9": "/lavandula-angustifolia-9.svg",
+          "10": "/lavandula-angustifolia-10.svg",
+          "11": "/lavandula-angustifolia-11.svg",
+          "12": "/lavandula-angustifolia-12.svg"
+        }
+      }
+    },
+    {
+      "id": "verbascum-thapsus",
+      "name": "Verbascum thapsus",
+      "scale": 1.0,
+      "trivname": "K\u00f6nigskerze",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 50,
+          "7": 200,
+          "8": 200,
+          "9": 50,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/verbascum-thapsus-1.svg",
+          "2": "/verbascum-thapsus-2.svg",
+          "3": "/verbascum-thapsus-3.svg",
+          "4": "/verbascum-thapsus-4.svg",
+          "5": "/verbascum-thapsus-5.svg",
+          "6": "/verbascum-thapsus-6.svg",
+          "7": "/verbascum-thapsus-7.svg",
+          "8": "/verbascum-thapsus-8.svg",
+          "9": "/verbascum-thapsus-9.svg",
+          "10": "/verbascum-thapsus-10.svg",
+          "11": "/verbascum-thapsus-11.svg",
+          "12": "/verbascum-thapsus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "lythrum-salicaria",
+      "name": "Lythrum salicaria",
+      "scale": 1.0,
+      "trivname": "Blut-Weiderich",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 30,
+          "6": 100,
+          "7": 100,
+          "8": 50,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/lythrum-salicaria-1.svg",
+          "2": "/lythrum-salicaria-2.svg",
+          "3": "/lythrum-salicaria-3.svg",
+          "4": "/lythrum-salicaria-4.svg",
+          "5": "/lythrum-salicaria-5.svg",
+          "6": "/lythrum-salicaria-6.svg",
+          "7": "/lythrum-salicaria-7.svg",
+          "8": "/lythrum-salicaria-8.svg",
+          "9": "/lythrum-salicaria-9.svg",
+          "10": "/lythrum-salicaria-10.svg",
+          "11": "/lythrum-salicaria-11.svg",
+          "12": "/lythrum-salicaria-12.svg"
+        }
+      }
+    },
+    {
+      "id": "delphinium-hybriden",
+      "name": "Delphinium hybriden",
+      "scale": 1.0,
+      "trivname": "Rittersporn",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 50,
+          "6": 150,
+          "7": 150,
+          "8": 50,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/delphinium-hybriden-1.svg",
+          "2": "/delphinium-hybriden-2.svg",
+          "3": "/delphinium-hybriden-3.svg",
+          "4": "/delphinium-hybriden-4.svg",
+          "5": "/delphinium-hybriden-5.svg",
+          "6": "/delphinium-hybriden-6.svg",
+          "7": "/delphinium-hybriden-7.svg",
+          "8": "/delphinium-hybriden-8.svg",
+          "9": "/delphinium-hybriden-9.svg",
+          "10": "/delphinium-hybriden-10.svg",
+          "11": "/delphinium-hybriden-11.svg",
+          "12": "/delphinium-hybriden-12.svg"
+        }
+      }
+    },
+    {
+      "id": "astilbe-chinensis-pumila",
+      "name": "Astilbe chinensis var. pumila",
+      "scale": 1.0,
+      "trivname": "Chinaschilf-Spierstrauch",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 10,
+          "6": 30,
+          "7": 30,
+          "8": 10,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/astilbe-chinensis-pumila-1.svg",
+          "2": "/astilbe-chinensis-pumila-2.svg",
+          "3": "/astilbe-chinensis-pumila-3.svg",
+          "4": "/astilbe-chinensis-pumila-4.svg",
+          "5": "/astilbe-chinensis-pumila-5.svg",
+          "6": "/astilbe-chinensis-pumila-6.svg",
+          "7": "/astilbe-chinensis-pumila-7.svg",
+          "8": "/astilbe-chinensis-pumila-8.svg",
+          "9": "/astilbe-chinensis-pumila-9.svg",
+          "10": "/astilbe-chinensis-pumila-10.svg",
+          "11": "/astilbe-chinensis-pumila-11.svg",
+          "12": "/astilbe-chinensis-pumila-12.svg"
+        }
+      }
+    },
+    {
+      "id": "anemone-hupehensis",
+      "name": "Anemone hupehensis",
+      "scale": 1.0,
+      "trivname": "Herbst-Anemone",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 20,
+          "9": 50,
+          "10": 50,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/anemone-hupehensis-1.svg",
+          "2": "/anemone-hupehensis-2.svg",
+          "3": "/anemone-hupehensis-3.svg",
+          "4": "/anemone-hupehensis-4.svg",
+          "5": "/anemone-hupehensis-5.svg",
+          "6": "/anemone-hupehensis-6.svg",
+          "7": "/anemone-hupehensis-7.svg",
+          "8": "/anemone-hupehensis-8.svg",
+          "9": "/anemone-hupehensis-9.svg",
+          "10": "/anemone-hupehensis-10.svg",
+          "11": "/anemone-hupehensis-11.svg",
+          "12": "/anemone-hupehensis-12.svg"
+        }
+      }
+    },
+    {
+      "id": "aster-ericoides-pansus",
+      "name": "Aster ericoides var. pansus",
+      "scale": 1.0,
+      "trivname": "Heideaster",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 10,
+          "8": 30,
+          "9": 30,
+          "10": 10,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/aster-ericoides-pansus-1.svg",
+          "2": "/aster-ericoides-pansus-2.svg",
+          "3": "/aster-ericoides-pansus-3.svg",
+          "4": "/aster-ericoides-pansus-4.svg",
+          "5": "/aster-ericoides-pansus-5.svg",
+          "6": "/aster-ericoides-pansus-6.svg",
+          "7": "/aster-ericoides-pansus-7.svg",
+          "8": "/aster-ericoides-pansus-8.svg",
+          "9": "/aster-ericoides-pansus-9.svg",
+          "10": "/aster-ericoides-pansus-10.svg",
+          "11": "/aster-ericoides-pansus-11.svg",
+          "12": "/aster-ericoides-pansus-12.svg"
+        }
+      }
+    },
+    {
+      "id": "bellis-perennis",
+      "name": "Bellis perennis",
+      "scale": 1.0,
+      "trivname": "G\u00e4nsebl\u00fcmchen",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 5,
+          "12": 5
+        },
+        "icon": {
+          "1": "/bellis-perennis-1.svg",
+          "2": "/bellis-perennis-2.svg",
+          "3": "/bellis-perennis-3.svg",
+          "4": "/bellis-perennis-4.svg",
+          "5": "/bellis-perennis-5.svg",
+          "6": "/bellis-perennis-6.svg",
+          "7": "/bellis-perennis-7.svg",
+          "8": "/bellis-perennis-8.svg",
+          "9": "/bellis-perennis-9.svg",
+          "10": "/bellis-perennis-10.svg",
+          "11": "/bellis-perennis-11.svg",
+          "12": "/bellis-perennis-12.svg"
+        }
+      }
+    },
+    {
+      "id": "phlox",
+      "name": "Phlox paniculata",
+      "scale": 1.0,
+      "trivname": "Flammenblume",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 40,
+          "6": 80,
+          "7": 80,
+          "8": 40,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/phlox-1.svg",
+          "2": "/phlox-2.svg",
+          "3": "/phlox-3.svg",
+          "4": "/phlox-4.svg",
+          "5": "/phlox-5.svg",
+          "6": "/phlox-6.svg",
+          "7": "/phlox-7.svg",
+          "8": "/phlox-8.svg",
+          "9": "/phlox-9.svg",
+          "10": "/phlox-10.svg",
+          "11": "/phlox-11.svg",
+          "12": "/phlox-12.svg"
+        }
+      }
+    },
+    {
+      "id": "dahlia",
+      "name": "Dahlia",
+      "scale": 1.0,
+      "trivname": "Dahlie",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 30,
+          "7": 100,
+          "8": 100,
+          "9": 100,
+          "10": 70,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/dahlia-1.svg",
+          "2": "/dahlia-2.svg",
+          "3": "/dahlia-3.svg",
+          "4": "/dahlia-4.svg",
+          "5": "/dahlia-5.svg",
+          "6": "/dahlia-6.svg",
+          "7": "/dahlia-7.svg",
+          "8": "/dahlia-8.svg",
+          "9": "/dahlia-9.svg",
+          "10": "/dahlia-10.svg",
+          "11": "/dahlia-11.svg",
+          "12": "/dahlia-12.svg"
+        }
+      }
+    },
+    {
+      "id": "aster",
+      "name": "Aster",
+      "scale": 1.0,
+      "trivname": "Aster",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 20,
+          "8": 80,
+          "9": 80,
+          "10": 40,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/aster-1.svg",
+          "2": "/aster-2.svg",
+          "3": "/aster-3.svg",
+          "4": "/aster-4.svg",
+          "5": "/aster-5.svg",
+          "6": "/aster-6.svg",
+          "7": "/aster-7.svg",
+          "8": "/aster-8.svg",
+          "9": "/aster-9.svg",
+          "10": "/aster-10.svg",
+          "11": "/aster-11.svg",
+          "12": "/aster-12.svg"
+        }
+      }
+    },
+    {
+      "id": "cuphea-hyssopifolia",
+      "name": "Cuphea hyssopifolia",
+      "scale": 1.0,
+      "trivname": "Feuerbusch",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 5,
+          "6": 20,
+          "7": 20,
+          "8": 20,
+          "9": 5,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/cuphea-hyssopifolia-1.svg",
+          "2": "/cuphea-hyssopifolia-2.svg",
+          "3": "/cuphea-hyssopifolia-3.svg",
+          "4": "/cuphea-hyssopifolia-4.svg",
+          "5": "/cuphea-hyssopifolia-5.svg",
+          "6": "/cuphea-hyssopifolia-6.svg",
+          "7": "/cuphea-hyssopifolia-7.svg",
+          "8": "/cuphea-hyssopifolia-8.svg",
+          "9": "/cuphea-hyssopifolia-9.svg",
+          "10": "/cuphea-hyssopifolia-10.svg",
+          "11": "/cuphea-hyssopifolia-11.svg",
+          "12": "/cuphea-hyssopifolia-12.svg"
         }
       }
     }
