@@ -1187,7 +1187,7 @@
     {
       "id": "dianthus-x-barbatus",
       "name": "Dianthus x barbatus",
-      "scale": 1.0,
+      "scale": 0.35,
       "trivname": "Bartnelke",
       "type": "staude",
       "vegetation": {
@@ -1224,7 +1224,7 @@
     {
       "id": "salvia-nemorosa",
       "name": "Salvia nemorosa",
-      "scale": 1.0,
+      "scale": 0.35,
       "trivname": "Steppen-Salbei",
       "type": "staude",
       "vegetation": {
