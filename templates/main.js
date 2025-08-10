@@ -2,6 +2,8 @@
 /* our SVG with our map container */
 const svg = document.getElementById("gardensvg");
 const map = document.getElementById("viewport");
+const palette = document.getElementById("palette");
+
 /* complete model of garden with plant references to plant palette */
 let garden = {};
 /* plant palette */
@@ -10,6 +12,7 @@ let plants = {};
 
 const plantPaletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let plantPaletteCurrentlyEdited = null;
+let plantPaletteShown = false;
 
 let viewTransform = null;
 let viewIsPanning = false;
@@ -289,7 +292,8 @@ function viewSaveSettings() {
         'offsetY': viewTransform.y,
         'scale': viewTransform.scale,
         'monthSelected': monthSelected,
-        'viewHeight': viewHeight
+        'viewHeight': viewHeight,
+        'paletteShown': plantPaletteShown
     }));
 }
 
@@ -304,6 +308,10 @@ function viewLoadSettings() {
         centerX: undefined,
         centerY: undefined
     };
+
+    plantPaletteShown = viewSaved.paletteShown || false;
+    const offcanvas = new bootstrap.Offcanvas(palette);
+    plantPaletteShown ? offcanvas.show() : offcanvas.hide();
 
     monthSelected = viewSaved.monthSelected || 1;
     document.getElementById("monthSlider").value = monthSelected;
@@ -605,6 +613,17 @@ svg.addEventListener("drop", (e) => {
         }).then(() => gardenLoad());
     }
     e.preventDefault();
+});
+
+/* remember current palette state */
+palette.addEventListener('shown.bs.offcanvas', event => {
+  plantPaletteShown = true;
+  viewSaveSettings();
+});
+
+palette.addEventListener('hidden.bs.offcanvas', event => {
+  plantPaletteShown = false;
+  viewSaveSettings();
 });
 
 window.onkeydown = (e) => {
