@@ -3,7 +3,7 @@
     {
       "id": "cyclamen-coum",
       "name": "Cyclamen coum",
-      "scale": 1.0,
+      "scale": 0.5,
       "trivname": "Fr\u00fchlings-Alpenveilchen",
       "type": "zwiebelpflanze",
       "vegetation": {
@@ -40,7 +40,7 @@
     {
       "id": "narcissus",
       "name": "Narcissus",
-      "scale": 0.75,
+      "scale": 0.5,
       "trivname": "Narzisse",
       "type": "zwiebelpflanze",
       "vegetation": {
