@@ -40,7 +40,7 @@ for(let i=0; i<12; i++) {
 
 /* config */
 const viewIconWidth = 5;
-const gardenMaxHeight = 2.0;
+const gardenMaxHeight = 200.0;          // max plant height (in cm)
 
 
 /* ---------------------------------------------------------------------------*/
@@ -86,7 +86,7 @@ function plantPaletteAdd() {
         type: '',
         vegetation: {
             icon: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, '/flower.svg'])),
-            height: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, 0.15]))
+            height: Object.fromEntries([...Array(12)].map((_, i) => [i + 1, 15]))
         }
     };
     fetch('/plants', {
