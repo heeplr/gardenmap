@@ -61,7 +61,7 @@ function plantPaletteRender() {
     for (const [id, plant] of Object.entries(plants)) {
         const div = document.createElement('div');
         div.className = 'plants-item';
-        div.innerText = plant.name;
+        div.innerText = plant.trivname;
         div.draggable = true;
         div.ondragstart = e => {
             e.dataTransfer.setData('plant-id', plant.id);
