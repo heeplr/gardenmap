@@ -668,13 +668,24 @@ document.oncopy = (e) => {
     }
 
     /* create copy of current selection */
-    copied_plants = JSON.parse(JSON.stringify(selection));
-    /* delete el */
-    copied_plants.forEach(plant => {
-        delete plant.el;
+    try {
+        copied_plants = JSON.parse(JSON.stringify(selection));
+        /* delete el */
+        copied_plants.forEach(plant => {
+            delete plant.el;
+        });
+    }
+    catch {
+        return;
+    }
+
+    e.preventDefault();
+
+    /* wait one frame to get transient user activation */
+    requestAnimationFrame(() => {
+        navigator.clipboard.writeText(JSON.stringify(copied_plants));
     });
-    /* copy selection to clipboard */
-    navigator.clipboard.writeText(JSON.stringify(copied_plants));
+
 }
 
 /* paste selection */
