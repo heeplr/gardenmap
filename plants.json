@@ -40,7 +40,7 @@
     {
       "id": "narcissus",
       "name": "Narcissus",
-      "scale": 1.0,
+      "scale": 0.75,
       "trivname": "Narzisse",
       "type": "zwiebelpflanze",
       "vegetation": {
@@ -50,7 +50,7 @@
           "3": 30,
           "4": 50,
           "5": 50,
-          "6": 30,
+          "6": 0,
           "7": 0,
           "8": 0,
           "9": 0,
@@ -64,7 +64,7 @@
           "3": "/narcissus-3.svg",
           "4": "/narcissus-4.svg",
           "5": "/narcissus-5.svg",
-          "6": "/narcissus-6.svg",
+          "6": "/empty.svg",
           "7": "/empty.svg",
           "8": "/empty.svg",
           "9": "/empty.svg",
@@ -632,7 +632,7 @@
     {
       "id": "forsythia",
       "name": "Forsythia",
-      "scale": 1.0,
+      "scale": 1.5,
       "trivname": "Forsythie",
       "type": "strauch",
       "vegetation": {
