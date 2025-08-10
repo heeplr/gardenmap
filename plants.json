@@ -8,7 +8,7 @@
       "type": "zwiebelpflanze",
       "vegetation": {
         "height": {
-          "1": 0,
+          "1": 10,
           "2": 10,
           "3": 15,
           "4": 15,
@@ -25,15 +25,15 @@
           "1": "/cyclamen-coum-1.svg",
           "2": "/cyclamen-coum-2.svg",
           "3": "/cyclamen-coum-3.svg",
-          "4": "/cyclamen-coum-4.svg",
+          "4": "/cyclamen-coum-3.svg",
           "5": "/cyclamen-coum-5.svg",
-          "6": "/cyclamen-coum-6.svg",
-          "7": "/cyclamen-coum-7.svg",
-          "8": "/cyclamen-coum-8.svg",
-          "9": "/cyclamen-coum-9.svg",
+          "6": "/cyclamen-coum-5.svg",
+          "7": "/cyclamen-coum-5.svg",
+          "8": "/cyclamen-coum-5.svg",
+          "9": "/cyclamen-coum-5.svg",
           "10": "/cyclamen-coum-10.svg",
-          "11": "/cyclamen-coum-11.svg",
-          "12": "/cyclamen-coum-12.svg"
+          "11": "/cyclamen-coum-10.svg",
+          "12": "/cyclamen-coum-10.svg"
         }
       }
     },
@@ -46,11 +46,11 @@
       "vegetation": {
         "height": {
           "1": 0,
-          "2": 0,
+          "2": 30,
           "3": 30,
           "4": 50,
           "5": 50,
-          "6": 0,
+          "6": 30,
           "7": 0,
           "8": 0,
           "9": 0,
@@ -59,18 +59,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/narcissus-1.svg",
+          "1": "/empty.svg",
           "2": "/narcissus-2.svg",
           "3": "/narcissus-3.svg",
           "4": "/narcissus-4.svg",
           "5": "/narcissus-5.svg",
           "6": "/narcissus-6.svg",
-          "7": "/narcissus-7.svg",
-          "8": "/narcissus-8.svg",
-          "9": "/narcissus-9.svg",
-          "10": "/narcissus-10.svg",
-          "11": "/narcissus-11.svg",
-          "12": "/narcissus-12.svg"
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -86,8 +86,8 @@
           "2": 5,
           "3": 15,
           "4": 15,
-          "5": 15,
-          "6": 0,
+          "5": 5,
+          "6": 5,
           "7": 0,
           "8": 0,
           "9": 0,
@@ -96,18 +96,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/primula-acaulis-1.svg",
+          "1": "/empty.svg",
           "2": "/primula-acaulis-2.svg",
           "3": "/primula-acaulis-3.svg",
           "4": "/primula-acaulis-4.svg",
-          "5": "/primula-acaulis-5.svg",
-          "6": "/primula-acaulis-6.svg",
-          "7": "/primula-acaulis-7.svg",
-          "8": "/primula-acaulis-8.svg",
-          "9": "/primula-acaulis-9.svg",
-          "10": "/primula-acaulis-10.svg",
-          "11": "/primula-acaulis-11.svg",
-          "12": "/primula-acaulis-12.svg"
+          "5": "/primula-acaulis-2.svg",
+          "6": "/primula-acaulis-2.svg",
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -115,7 +115,7 @@
       "id": "anemone-blanda",
       "name": "Anemone blanda",
       "scale": 1.0,
-      "trivname": "Buschwindr\u00f6schen",
+      "trivname": "Balkanwindr\u00f6schen",
       "type": "zwiebelpflanze",
       "vegetation": {
         "height": {
@@ -133,18 +133,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/anemone-blanda-1.svg",
+          "1": "/empty.svg",
           "2": "/anemone-blanda-2.svg",
           "3": "/anemone-blanda-3.svg",
           "4": "/anemone-blanda-4.svg",
           "5": "/anemone-blanda-5.svg",
-          "6": "/anemone-blanda-6.svg",
-          "7": "/anemone-blanda-7.svg",
-          "8": "/anemone-blanda-8.svg",
-          "9": "/anemone-blanda-9.svg",
-          "10": "/anemone-blanda-10.svg",
-          "11": "/anemone-blanda-11.svg",
-          "12": "/anemone-blanda-12.svg"
+          "6": "/empty.svg",
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -157,7 +157,7 @@
       "vegetation": {
         "height": {
           "1": 0,
-          "2": 3,
+          "2": 0,
           "3": 10,
           "4": 10,
           "5": 5,
@@ -170,18 +170,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/anemone-nemorosa-1.svg",
-          "2": "/anemone-nemorosa-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/anemone-nemorosa-3.svg",
-          "4": "/anemone-nemorosa-4.svg",
+          "4": "/anemone-nemorosa-3.svg",
           "5": "/anemone-nemorosa-5.svg",
-          "6": "/anemone-nemorosa-6.svg",
-          "7": "/anemone-nemorosa-7.svg",
-          "8": "/anemone-nemorosa-8.svg",
-          "9": "/anemone-nemorosa-9.svg",
-          "10": "/anemone-nemorosa-10.svg",
-          "11": "/anemone-nemorosa-11.svg",
-          "12": "/anemone-nemorosa-12.svg"
+          "6": "/empty.svg",
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -199,26 +199,26 @@
           "4": 15,
           "5": 15,
           "6": 10,
-          "7": 0,
-          "8": 0,
+          "7": 10,
+          "8": 10,
           "9": 0,
           "10": 0,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/primula-x-pruhoniciana-1.svg",
-          "2": "/primula-x-pruhoniciana-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/primula-x-pruhoniciana-3.svg",
-          "4": "/primula-x-pruhoniciana-4.svg",
+          "4": "/primula-x-pruhoniciana-3.svg",
           "5": "/primula-x-pruhoniciana-5.svg",
-          "6": "/primula-x-pruhoniciana-6.svg",
-          "7": "/primula-x-pruhoniciana-7.svg",
-          "8": "/primula-x-pruhoniciana-8.svg",
-          "9": "/primula-x-pruhoniciana-9.svg",
-          "10": "/primula-x-pruhoniciana-10.svg",
-          "11": "/primula-x-pruhoniciana-11.svg",
-          "12": "/primula-x-pruhoniciana-12.svg"
+          "6": "/primula-x-pruhoniciana-5.svg",
+          "7": "/primula-x-pruhoniciana-5.svg",
+          "8": "/primula-x-pruhoniciana-5.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -356,15 +356,15 @@
         },
         "icon": {
           "1": "/bergenia-cordifolia-rotblum-1.svg",
-          "2": "/bergenia-cordifolia-rotblum-2.svg",
-          "3": "/bergenia-cordifolia-rotblum-3.svg",
+          "2": "/bergenia-cordifolia-rotblum-1.svg",
+          "3": "/bergenia-cordifolia-rotblum-1.svg",
           "4": "/bergenia-cordifolia-rotblum-4.svg",
           "5": "/bergenia-cordifolia-rotblum-5.svg",
-          "6": "/bergenia-cordifolia-rotblum-6.svg",
-          "7": "/bergenia-cordifolia-rotblum-7.svg",
-          "8": "/bergenia-cordifolia-rotblum-8.svg",
-          "9": "/bergenia-cordifolia-rotblum-9.svg",
-          "10": "/bergenia-cordifolia-rotblum-10.svg",
+          "6": "/bergenia-cordifolia-rotblum-1.svg",
+          "7": "/bergenia-cordifolia-rotblum-1.svg",
+          "8": "/bergenia-cordifolia-rotblum-1.svg",
+          "9": "/bergenia-cordifolia-rotblum-1.svg",
+          "10": "/bergenia-cordifolia-rotblum-1.svg",
           "11": "/bergenia-cordifolia-rotblum-11.svg",
           "12": "/bergenia-cordifolia-rotblum-12.svg"
         }
@@ -384,26 +384,26 @@
           "4": 20,
           "5": 20,
           "6": 10,
-          "7": 0,
-          "8": 0,
+          "7": 10,
+          "8": 10,
           "9": 0,
           "10": 0,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/caltha-palustris-1.svg",
-          "2": "/caltha-palustris-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/caltha-palustris-3.svg",
           "4": "/caltha-palustris-4.svg",
           "5": "/caltha-palustris-5.svg",
           "6": "/caltha-palustris-6.svg",
-          "7": "/caltha-palustris-7.svg",
-          "8": "/caltha-palustris-8.svg",
+          "7": "/caltha-palustris-6.svg",
+          "8": "/caltha-palustris-6.svg",
           "9": "/caltha-palustris-9.svg",
-          "10": "/caltha-palustris-10.svg",
-          "11": "/caltha-palustris-11.svg",
-          "12": "/caltha-palustris-12.svg"
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -696,10 +696,10 @@
           "6": "/ajuga-reptans-atropurpurea-6.svg",
           "7": "/ajuga-reptans-atropurpurea-7.svg",
           "8": "/ajuga-reptans-atropurpurea-8.svg",
-          "9": "/ajuga-reptans-atropurpurea-9.svg",
-          "10": "/ajuga-reptans-atropurpurea-10.svg",
-          "11": "/ajuga-reptans-atropurpurea-11.svg",
-          "12": "/ajuga-reptans-atropurpurea-12.svg"
+          "9": "/ajuga-reptans-atropurpurea-8.svg",
+          "10": "/ajuga-reptans-atropurpurea-8.svg",
+          "11": "/ajuga-reptans-atropurpurea-8.svg",
+          "12": "/ajuga-reptans-atropurpurea-8.svg"
         }
       }
     },
@@ -713,30 +713,30 @@
         "height": {
           "1": 5,
           "2": 5,
-          "3": 10,
+          "3": 7,
           "4": 10,
           "5": 10,
-          "6": 5,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 5,
+          "6": 10,
+          "7": 7,
+          "8": 7,
+          "9": 7,
+          "10": 7,
           "11": 5,
           "12": 5
         },
         "icon": {
           "1": "/phlox-subulata-emerald-cushion-blue-1.svg",
-          "2": "/phlox-subulata-emerald-cushion-blue-2.svg",
+          "2": "/phlox-subulata-emerald-cushion-blue-1.svg",
           "3": "/phlox-subulata-emerald-cushion-blue-3.svg",
           "4": "/phlox-subulata-emerald-cushion-blue-4.svg",
-          "5": "/phlox-subulata-emerald-cushion-blue-5.svg",
-          "6": "/phlox-subulata-emerald-cushion-blue-6.svg",
-          "7": "/phlox-subulata-emerald-cushion-blue-7.svg",
-          "8": "/phlox-subulata-emerald-cushion-blue-8.svg",
-          "9": "/phlox-subulata-emerald-cushion-blue-9.svg",
-          "10": "/phlox-subulata-emerald-cushion-blue-10.svg",
-          "11": "/phlox-subulata-emerald-cushion-blue-11.svg",
-          "12": "/phlox-subulata-emerald-cushion-blue-12.svg"
+          "5": "/phlox-subulata-emerald-cushion-blue-4.svg",
+          "6": "/phlox-subulata-emerald-cushion-blue-4.svg",
+          "7": "/phlox-subulata-emerald-cushion-blue-3.svg",
+          "8": "/phlox-subulata-emerald-cushion-blue-3.svg",
+          "9": "/phlox-subulata-emerald-cushion-blue-3.svg",
+          "10": "/phlox-subulata-emerald-cushion-blue-3.svg",
+          "11": "/phlox-subulata-emerald-cushion-blue-1.svg",
+          "12": "/phlox-subulata-emerald-cushion-blue-1.svg"
         }
       }
     },
@@ -750,30 +750,30 @@
         "height": {
           "1": 5,
           "2": 5,
-          "3": 10,
+          "3": 5,
           "4": 10,
           "5": 10,
-          "6": 5,
-          "7": 0,
-          "8": 0,
-          "9": 0,
+          "6": 10,
+          "7": 5,
+          "8": 5,
+          "9": 5,
           "10": 5,
           "11": 5,
           "12": 5
         },
         "icon": {
           "1": "/phlox-subulata-samson-1.svg",
-          "2": "/phlox-subulata-samson-2.svg",
-          "3": "/phlox-subulata-samson-3.svg",
+          "2": "/phlox-subulata-samson-1.svg",
+          "3": "/phlox-subulata-samson-1.svg",
           "4": "/phlox-subulata-samson-4.svg",
-          "5": "/phlox-subulata-samson-5.svg",
-          "6": "/phlox-subulata-samson-6.svg",
-          "7": "/phlox-subulata-samson-7.svg",
-          "8": "/phlox-subulata-samson-8.svg",
-          "9": "/phlox-subulata-samson-9.svg",
-          "10": "/phlox-subulata-samson-10.svg",
-          "11": "/phlox-subulata-samson-11.svg",
-          "12": "/phlox-subulata-samson-12.svg"
+          "5": "/phlox-subulata-samson-4.svg",
+          "6": "/phlox-subulata-samson-4.svg",
+          "7": "/phlox-subulata-samson-1.svg",
+          "8": "/phlox-subulata-samson-1.svg",
+          "9": "/phlox-subulata-samson-1.svg",
+          "10": "/phlox-subulata-samson-1.svg",
+          "11": "/phlox-subulata-samson-1.svg",
+          "12": "/phlox-subulata-samson-1.svg"
         }
       }
     },
@@ -799,18 +799,18 @@
           "12": 5
         },
         "icon": {
-          "1": "/waldsteinia-ternata-1.svg",
+          "1": "/waldsteinia-ternata-8.svg",
           "2": "/waldsteinia-ternata-2.svg",
-          "3": "/waldsteinia-ternata-3.svg",
+          "3": "/waldsteinia-ternata-2.svg",
           "4": "/waldsteinia-ternata-4.svg",
           "5": "/waldsteinia-ternata-5.svg",
           "6": "/waldsteinia-ternata-6.svg",
           "7": "/waldsteinia-ternata-7.svg",
           "8": "/waldsteinia-ternata-8.svg",
-          "9": "/waldsteinia-ternata-9.svg",
-          "10": "/waldsteinia-ternata-10.svg",
-          "11": "/waldsteinia-ternata-11.svg",
-          "12": "/waldsteinia-ternata-12.svg"
+          "9": "/waldsteinia-ternata-8.svg",
+          "10": "/waldsteinia-ternata-8.svg",
+          "11": "/waldsteinia-ternata-8.svg",
+          "12": "/waldsteinia-ternata-8.svg"
         }
       }
     },
@@ -837,17 +837,17 @@
         },
         "icon": {
           "1": "/gentiana-acaulis-1.svg",
-          "2": "/gentiana-acaulis-2.svg",
-          "3": "/gentiana-acaulis-3.svg",
-          "4": "/gentiana-acaulis-4.svg",
+          "2": "/gentiana-acaulis-1.svg",
+          "3": "/gentiana-acaulis-1.svg",
+          "4": "/gentiana-acaulis-1.svg",
           "5": "/gentiana-acaulis-5.svg",
           "6": "/gentiana-acaulis-6.svg",
-          "7": "/gentiana-acaulis-7.svg",
-          "8": "/gentiana-acaulis-8.svg",
-          "9": "/gentiana-acaulis-9.svg",
-          "10": "/gentiana-acaulis-10.svg",
-          "11": "/gentiana-acaulis-11.svg",
-          "12": "/gentiana-acaulis-12.svg"
+          "7": "/gentiana-acaulis-1.svg",
+          "8": "/gentiana-acaulis-1.svg",
+          "9": "/gentiana-acaulis-1.svg",
+          "10": "/gentiana-acaulis-1.svg",
+          "11": "/gentiana-acaulis-1.svg",
+          "12": "/gentiana-acaulis-1.svg"
         }
       }
     },
@@ -873,18 +873,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/ranunculus-1.svg",
-          "2": "/ranunculus-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/ranunculus-3.svg",
-          "4": "/ranunculus-4.svg",
+          "4": "/ranunculus-3.svg",
           "5": "/ranunculus-5.svg",
           "6": "/ranunculus-6.svg",
-          "7": "/ranunculus-7.svg",
-          "8": "/ranunculus-8.svg",
-          "9": "/ranunculus-9.svg",
-          "10": "/ranunculus-10.svg",
-          "11": "/ranunculus-11.svg",
-          "12": "/ranunculus-12.svg"
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -929,35 +929,35 @@
       "id": "oenothera-hartwegii",
       "name": "Oenothera hartwegii",
       "scale": 1.0,
-      "trivname": "Abend\u00f6rtchen",
+      "trivname": "Hartweg'scher Sonnentropfen",
       "type": "staude",
       "vegetation": {
         "height": {
           "1": 0,
           "2": 0,
           "3": 0,
-          "4": 0,
+          "4": 30,
           "5": 30,
           "6": 60,
           "7": 60,
           "8": 30,
-          "9": 0,
-          "10": 0,
-          "11": 0,
+          "9": 30,
+          "10": 30,
+          "11": 30,
           "12": 0
         },
         "icon": {
-          "1": "/oenothera-hartwegii-1.svg",
-          "2": "/oenothera-hartwegii-2.svg",
-          "3": "/oenothera-hartwegii-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/oenothera-hartwegii-4.svg",
           "5": "/oenothera-hartwegii-5.svg",
           "6": "/oenothera-hartwegii-6.svg",
-          "7": "/oenothera-hartwegii-7.svg",
-          "8": "/oenothera-hartwegii-8.svg",
-          "9": "/oenothera-hartwegii-9.svg",
+          "7": "/oenothera-hartwegii-6.svg",
+          "8": "/oenothera-hartwegii-6.svg",
+          "9": "/oenothera-hartwegii-6.svg",
           "10": "/oenothera-hartwegii-10.svg",
-          "11": "/oenothera-hartwegii-11.svg",
+          "11": "/oenothera-hartwegii-10.svg",
           "12": "/oenothera-hartwegii-12.svg"
         }
       }
@@ -984,18 +984,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/bracteantha-bracteata-1.svg",
-          "2": "/bracteantha-bracteata-2.svg",
-          "3": "/bracteantha-bracteata-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/bracteantha-bracteata-4.svg",
           "5": "/bracteantha-bracteata-5.svg",
           "6": "/bracteantha-bracteata-6.svg",
-          "7": "/bracteantha-bracteata-7.svg",
-          "8": "/bracteantha-bracteata-8.svg",
+          "7": "/bracteantha-bracteata-6.svg",
+          "8": "/bracteantha-bracteata-6.svg",
           "9": "/bracteantha-bracteata-9.svg",
-          "10": "/bracteantha-bracteata-10.svg",
-          "11": "/bracteantha-bracteata-11.svg",
-          "12": "/bracteantha-bracteata-12.svg"
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1040,7 +1040,7 @@
       "id": "sagina-subulata",
       "name": "Sagina subulata",
       "scale": 1.0,
-      "trivname": "Spaghettigras",
+      "trivname": "Irisches Sternmoos",
       "type": "staude",
       "vegetation": {
         "height": {
@@ -1059,17 +1059,17 @@
         },
         "icon": {
           "1": "/sagina-subulata-1.svg",
-          "2": "/sagina-subulata-2.svg",
-          "3": "/sagina-subulata-3.svg",
-          "4": "/sagina-subulata-4.svg",
-          "5": "/sagina-subulata-5.svg",
+          "2": "/sagina-subulata-1.svg",
+          "3": "/sagina-subulata-1.svg",
+          "4": "/sagina-subulata-1.svg",
+          "5": "/sagina-subulata-1.svg",
           "6": "/sagina-subulata-6.svg",
           "7": "/sagina-subulata-7.svg",
-          "8": "/sagina-subulata-8.svg",
-          "9": "/sagina-subulata-9.svg",
-          "10": "/sagina-subulata-10.svg",
-          "11": "/sagina-subulata-11.svg",
-          "12": "/sagina-subulata-12.svg"
+          "8": "/sagina-subulata-1.svg",
+          "9": "/sagina-subulata-1.svg",
+          "10": "/sagina-subulata-1.svg",
+          "11": "/sagina-subulata-1.svg",
+          "12": "/sagina-subulata-1.svg"
         }
       }
     },
@@ -1095,18 +1095,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/echinacea-purpurea-1.svg",
-          "2": "/echinacea-purpurea-2.svg",
-          "3": "/echinacea-purpurea-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/echinacea-purpurea-4.svg",
           "5": "/echinacea-purpurea-5.svg",
           "6": "/echinacea-purpurea-6.svg",
-          "7": "/echinacea-purpurea-7.svg",
+          "7": "/echinacea-purpurea-6.svg",
           "8": "/echinacea-purpurea-8.svg",
           "9": "/echinacea-purpurea-9.svg",
-          "10": "/echinacea-purpurea-10.svg",
-          "11": "/echinacea-purpurea-11.svg",
-          "12": "/echinacea-purpurea-12.svg"
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1132,18 +1132,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/chamaemelum-nobile-1.svg",
-          "2": "/chamaemelum-nobile-2.svg",
-          "3": "/chamaemelum-nobile-3.svg",
-          "4": "/chamaemelum-nobile-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/chamaemelum-nobile-5.svg",
           "6": "/chamaemelum-nobile-6.svg",
           "7": "/chamaemelum-nobile-7.svg",
-          "8": "/chamaemelum-nobile-8.svg",
-          "9": "/chamaemelum-nobile-9.svg",
-          "10": "/chamaemelum-nobile-10.svg",
-          "11": "/chamaemelum-nobile-11.svg",
-          "12": "/chamaemelum-nobile-12.svg"
+          "8": "/chamaemelum-nobile-7.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1169,18 +1169,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/dianthus-deltoides-1.svg",
-          "2": "/dianthus-deltoides-2.svg",
-          "3": "/dianthus-deltoides-3.svg",
-          "4": "/dianthus-deltoides-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/dianthus-deltoides-5.svg",
           "6": "/dianthus-deltoides-6.svg",
           "7": "/dianthus-deltoides-7.svg",
           "8": "/dianthus-deltoides-8.svg",
-          "9": "/dianthus-deltoides-9.svg",
-          "10": "/dianthus-deltoides-10.svg",
-          "11": "/dianthus-deltoides-11.svg",
-          "12": "/dianthus-deltoides-12.svg"
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1199,25 +1199,25 @@
           "5": 20,
           "6": 40,
           "7": 40,
-          "8": 20,
-          "9": 0,
-          "10": 0,
+          "8": 40,
+          "9": 20,
+          "10": 20,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/dianthus-x-barbatus-1.svg",
-          "2": "/dianthus-x-barbatus-2.svg",
-          "3": "/dianthus-x-barbatus-3.svg",
-          "4": "/dianthus-x-barbatus-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/dianthus-x-barbatus-5.svg",
           "6": "/dianthus-x-barbatus-6.svg",
           "7": "/dianthus-x-barbatus-7.svg",
-          "8": "/dianthus-x-barbatus-8.svg",
+          "8": "/dianthus-x-barbatus-7.svg",
           "9": "/dianthus-x-barbatus-9.svg",
           "10": "/dianthus-x-barbatus-10.svg",
-          "11": "/dianthus-x-barbatus-11.svg",
-          "12": "/dianthus-x-barbatus-12.svg"
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1269,29 +1269,29 @@
           "1": 0,
           "2": 0,
           "3": 0,
-          "4": 0,
+          "4": 30,
           "5": 50,
           "6": 100,
           "7": 100,
-          "8": 50,
-          "9": 0,
+          "8": 100,
+          "9": 50,
           "10": 0,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/lupinus-polyphyllus-1.svg",
-          "2": "/lupinus-polyphyllus-2.svg",
-          "3": "/lupinus-polyphyllus-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/lupinus-polyphyllus-4.svg",
           "5": "/lupinus-polyphyllus-5.svg",
           "6": "/lupinus-polyphyllus-6.svg",
-          "7": "/lupinus-polyphyllus-7.svg",
-          "8": "/lupinus-polyphyllus-8.svg",
+          "7": "/lupinus-polyphyllus-6.svg",
+          "8": "/lupinus-polyphyllus-6.svg",
           "9": "/lupinus-polyphyllus-9.svg",
-          "10": "/lupinus-polyphyllus-10.svg",
-          "11": "/lupinus-polyphyllus-11.svg",
-          "12": "/lupinus-polyphyllus-12.svg"
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1347,25 +1347,25 @@
           "5": 20,
           "6": 60,
           "7": 60,
-          "8": 30,
-          "9": 0,
+          "8": 60,
+          "9": 30,
           "10": 0,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/antirrhinum-majus-1.svg",
-          "2": "/antirrhinum-majus-2.svg",
-          "3": "/antirrhinum-majus-3.svg",
-          "4": "/antirrhinum-majus-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/antirrhinum-majus-5.svg",
           "6": "/antirrhinum-majus-6.svg",
           "7": "/antirrhinum-majus-7.svg",
-          "8": "/antirrhinum-majus-8.svg",
-          "9": "/antirrhinum-majus-9.svg",
-          "10": "/antirrhinum-majus-10.svg",
-          "11": "/antirrhinum-majus-11.svg",
-          "12": "/antirrhinum-majus-12.svg"
+          "8": "/antirrhinum-majus-7.svg",
+          "9": "/antirrhinum-majus-7.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1373,7 +1373,7 @@
       "id": "echibeckia",
       "name": "Echibeckia",
       "scale": 1.0,
-      "trivname": "Sonnenhut-Scheinsonnenhut-Hybride",
+      "trivname": "Sonnenhut",
       "type": "staude",
       "vegetation": {
         "height": {
@@ -1385,15 +1385,15 @@
           "6": 60,
           "7": 60,
           "8": 30,
-          "9": 0,
-          "10": 0,
+          "9": 30,
+          "10": 30,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/echibeckia-1.svg",
-          "2": "/echibeckia-2.svg",
-          "3": "/echibeckia-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/echibeckia-4.svg",
           "5": "/echibeckia-5.svg",
           "6": "/echibeckia-6.svg",
@@ -1401,8 +1401,8 @@
           "8": "/echibeckia-8.svg",
           "9": "/echibeckia-9.svg",
           "10": "/echibeckia-10.svg",
-          "11": "/echibeckia-11.svg",
-          "12": "/echibeckia-12.svg"
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1459,24 +1459,24 @@
           "6": 60,
           "7": 60,
           "8": 30,
-          "9": 10,
-          "10": 0,
+          "9": 30,
+          "10": 10,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/scabiosa-caucasica-1.svg",
-          "2": "/scabiosa-caucasica-2.svg",
-          "3": "/scabiosa-caucasica-3.svg",
-          "4": "/scabiosa-caucasica-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/scabiosa-caucasica-5.svg",
           "6": "/scabiosa-caucasica-6.svg",
           "7": "/scabiosa-caucasica-7.svg",
-          "8": "/scabiosa-caucasica-8.svg",
-          "9": "/scabiosa-caucasica-9.svg",
+          "8": "/scabiosa-caucasica-7.svg",
+          "9": "/scabiosa-caucasica-7.svg",
           "10": "/scabiosa-caucasica-10.svg",
-          "11": "/scabiosa-caucasica-11.svg",
-          "12": "/scabiosa-caucasica-12.svg"
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1502,18 +1502,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/plectranthus-ornatus-1.svg",
-          "2": "/plectranthus-ornatus-2.svg",
-          "3": "/plectranthus-ornatus-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/plectranthus-ornatus-4.svg",
           "5": "/plectranthus-ornatus-5.svg",
           "6": "/plectranthus-ornatus-6.svg",
           "7": "/plectranthus-ornatus-7.svg",
-          "8": "/plectranthus-ornatus-8.svg",
-          "9": "/plectranthus-ornatus-9.svg",
+          "8": "/plectranthus-ornatus-7.svg",
+          "9": "/plectranthus-ornatus-7.svg",
           "10": "/plectranthus-ornatus-10.svg",
-          "11": "/plectranthus-ornatus-11.svg",
-          "12": "/plectranthus-ornatus-12.svg"
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1539,18 +1539,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/cosmea-1.svg",
-          "2": "/cosmea-2.svg",
-          "3": "/cosmea-3.svg",
-          "4": "/cosmea-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/cosmea-5.svg",
           "6": "/cosmea-6.svg",
           "7": "/cosmea-7.svg",
-          "8": "/cosmea-8.svg",
-          "9": "/cosmea-9.svg",
+          "8": "/cosmea-7.svg",
+          "9": "/cosmea-7.svg",
           "10": "/cosmea-10.svg",
-          "11": "/cosmea-11.svg",
-          "12": "/cosmea-12.svg"
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1576,18 +1576,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/stachys-officinalis-1.svg",
-          "2": "/stachys-officinalis-2.svg",
-          "3": "/stachys-officinalis-3.svg",
-          "4": "/stachys-officinalis-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/stachys-officinalis-5.svg",
           "6": "/stachys-officinalis-6.svg",
           "7": "/stachys-officinalis-7.svg",
           "8": "/stachys-officinalis-8.svg",
           "9": "/stachys-officinalis-9.svg",
-          "10": "/stachys-officinalis-10.svg",
-          "11": "/stachys-officinalis-11.svg",
-          "12": "/stachys-officinalis-12.svg"
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
@@ -1614,14 +1614,14 @@
         },
         "icon": {
           "1": "/spiraea-bumalda-anthony-waterer-1.svg",
-          "2": "/spiraea-bumalda-anthony-waterer-2.svg",
-          "3": "/spiraea-bumalda-anthony-waterer-3.svg",
-          "4": "/spiraea-bumalda-anthony-waterer-4.svg",
-          "5": "/spiraea-bumalda-anthony-waterer-5.svg",
-          "6": "/spiraea-bumalda-anthony-waterer-6.svg",
+          "2": "/spiraea-bumalda-anthony-waterer-1.svg",
+          "3": "/spiraea-bumalda-anthony-waterer-1.svg",
+          "4": "/spiraea-bumalda-anthony-waterer-1.svg",
+          "5": "/spiraea-bumalda-anthony-waterer-1.svg",
+          "6": "/spiraea-bumalda-anthony-waterer-1.svg",
           "7": "/spiraea-bumalda-anthony-waterer-7.svg",
-          "8": "/spiraea-bumalda-anthony-waterer-8.svg",
-          "9": "/spiraea-bumalda-anthony-waterer-9.svg",
+          "8": "/spiraea-bumalda-anthony-waterer-7.svg",
+          "9": "/spiraea-bumalda-anthony-waterer-7.svg",
           "10": "/spiraea-bumalda-anthony-waterer-10.svg",
           "11": "/spiraea-bumalda-anthony-waterer-11.svg",
           "12": "/spiraea-bumalda-anthony-waterer-12.svg"
@@ -1680,25 +1680,25 @@
           "5": 60,
           "6": 60,
           "7": 60,
-          "8": 30,
-          "9": 30,
-          "10": 20,
-          "11": 20,
-          "12": 20
+          "8": 60,
+          "9": 60,
+          "10": 60,
+          "11": 60,
+          "12": 60
         },
         "icon": {
           "1": "/lavandula-angustifolia-1.svg",
-          "2": "/lavandula-angustifolia-2.svg",
+          "2": "/lavandula-angustifolia-1.svg",
           "3": "/lavandula-angustifolia-3.svg",
-          "4": "/lavandula-angustifolia-4.svg",
+          "4": "/lavandula-angustifolia-3.svg",
           "5": "/lavandula-angustifolia-5.svg",
           "6": "/lavandula-angustifolia-6.svg",
           "7": "/lavandula-angustifolia-7.svg",
           "8": "/lavandula-angustifolia-8.svg",
-          "9": "/lavandula-angustifolia-9.svg",
-          "10": "/lavandula-angustifolia-10.svg",
-          "11": "/lavandula-angustifolia-11.svg",
-          "12": "/lavandula-angustifolia-12.svg"
+          "9": "/lavandula-angustifolia-8.svg",
+          "10": "/lavandula-angustifolia-8.svg",
+          "11": "/lavandula-angustifolia-8.svg",
+          "12": "/lavandula-angustifolia-9.svg"
         }
       }
     },
@@ -1789,27 +1789,27 @@
           "3": 0,
           "4": 0,
           "5": 50,
-          "6": 150,
-          "7": 150,
-          "8": 50,
-          "9": 0,
-          "10": 0,
+          "6": 50,
+          "7": 100,
+          "8": 100,
+          "9": 100,
+          "10": 50,
           "11": 0,
           "12": 0
         },
         "icon": {
-          "1": "/delphinium-hybriden-1.svg",
-          "2": "/delphinium-hybriden-2.svg",
-          "3": "/delphinium-hybriden-3.svg",
-          "4": "/delphinium-hybriden-4.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
           "5": "/delphinium-hybriden-5.svg",
           "6": "/delphinium-hybriden-6.svg",
           "7": "/delphinium-hybriden-7.svg",
           "8": "/delphinium-hybriden-8.svg",
           "9": "/delphinium-hybriden-9.svg",
           "10": "/delphinium-hybriden-10.svg",
-          "11": "/delphinium-hybriden-11.svg",
-          "12": "/delphinium-hybriden-12.svg"
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       }
     },
