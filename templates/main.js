@@ -350,7 +350,7 @@ function viewUpdateTransform() {
 }
 
 /* activate/deactivate height visualization */
-function heightViewToggle(active) {
+function viewHeightToggle(active) {
     viewHeight = active;
     document.getElementById('heightVisualizationToggle').checked = active;
     viewSaveSettings();
