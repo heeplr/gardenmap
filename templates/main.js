@@ -14,7 +14,8 @@ let plantPaletteCurrentlyEdited = null;
 let viewTransform = null;
 let viewIsPanning = false;
 let viewPanStart = null;
-let viewHeight = false;
+let viewHeight = false;                 // visualize height, not icons
+let viewMouse = { x: 0, y: 0};          // remember last SVG coords of mouse
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
@@ -257,15 +258,12 @@ function gardenRender() {
 }
 
 function gardenDeletePlant() {
-    let last_promise = null;
-    selection.forEach(plant => {
-        last_promise = fetch('/garden', {
-            method: 'DELETE',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id: plant.id })
-        });
-    });
-    last_promise.then(() => {
+    fetch('/garden', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(selection)
+    }).then(() => {
+        selection = [];
         gardenLoad();
     });
 }
@@ -415,6 +413,13 @@ function getSVGCoords(e) {
     return pt.matrixTransform(map.getCTM().inverse());
 }
 
+/* generate a random id */
+function randomId() {
+  return "100000000000".replace(/[018]/g, c =>
+    (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
+  );
+}
+
 /* ---------------------------------------------------------------------------*/
 viewLoadSettings();
 
@@ -467,6 +472,9 @@ svg.addEventListener("mousedown", (e) => {
 svg.addEventListener("mousemove", (e) => {
 
     const pt = getSVGCoords(e);
+    /* remember last mouse position */
+    viewMouse.x = pt.x;
+    viewMouse.y = pt.y;
 
     /* move dragged image */
     if (selectionDragStartPositions.length > 0) {
@@ -588,7 +596,7 @@ svg.addEventListener("drop", (e) => {
             x,
             y,
             plant_id: id,
-            id: Date.now()
+            id: randomId()
         };
         fetch('/garden', {
             method: 'POST',
@@ -651,6 +659,83 @@ window.onkeyup = (e) => {
         const plant = selection[selection.length-1];
         plantPaletteEdit(plants[plant.plant_id]);
     }
+}
+
+/* copy selection */
+document.oncopy = (e) => {
+    if(selection.length <= 0) {
+        return;
+    }
+
+    /* create copy of current selection */
+    copied_plants = JSON.parse(JSON.stringify(selection));
+    /* delete el */
+    copied_plants.forEach(plant => {
+        delete plant.el;
+    });
+    /* copy selection to clipboard */
+    navigator.clipboard.writeText(JSON.stringify(copied_plants));
+}
+
+/* paste selection */
+document.onpaste = (e) => {
+    let pasted_plants;
+
+    navigator.clipboard.readText().then((text) => {
+        if(!text) {
+            return;
+        }
+        /* parse json */
+        try {
+            pasted_plants = JSON.parse(text);
+            /* generate new ID for all pasted plants */
+            pasted_plants.forEach(plant => {
+                plant.id = randomId();
+                delete plant.el;
+            });
+        }
+        catch {
+            /* do nothing if parsing fails */
+            return;
+        }
+
+        /* add pasted plants to garden */
+        fetch('/garden', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(pasted_plants)
+        }).then(() => {
+            /* reload & redraw garden */
+            gardenLoad().then(() => {
+
+                /* get pasted plants */
+                const loaded_plants = [];
+                pasted_plants.forEach(plant => {
+                    loaded_plants.push(garden[plant.id]);
+                });
+
+                /* start dragging newly pasted plants for placement */
+                selectionDragStart = { x: loaded_plants[0].x, y: loaded_plants[0].y };
+                const dx = viewMouse.x - selectionDragStart.x;
+                const dy = viewMouse.y - selectionDragStart.y;
+
+                /* Prepare for group dragging */
+                selectionDragStartPositions = loaded_plants.map(plant => ({
+                    el: plant.el,
+                    x: parseFloat(plant.el.getAttribute("x")),
+                    y: parseFloat(plant.el.getAttribute("y"))
+                }));
+
+                /* initial move */
+                selectionDragStartPositions.forEach(({ el, x, y }) => {
+                    el.setAttribute("x", x + dx);
+                    el.setAttribute("y", y + dy);
+                });
+
+            });
+        });
+    });
+
 }
 
 window.onload = () => {
