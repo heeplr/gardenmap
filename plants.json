@@ -3,24 +3,10 @@
     {
       "id": "forsythia",
       "name": "Forsytha",
-      "trivname": "Forsythie",
       "scale": 1.5,
+      "trivname": "Forsythie",
       "type": "strauch",
       "vegetation": {
-        "icon": {
-          "1": "/forsythie-01.svg",
-          "2": "/forsythie-02.svg",
-          "3": "/forsythie-03.svg",
-          "4": "/forsythie-04.svg",
-          "5": "/forsythie-05.svg",
-          "6": "/forsythie-06.svg",
-          "7": "/forsythie-07.svg",
-          "8": "/forsythie-08.svg",
-          "9": "/forsythie-09.svg",
-          "10": "/forsythie-10.svg",
-          "11": "/forsythie-11.svg",
-          "12": "/forsythie-12.svg"
-        },
         "height": {
           "1": 2,
           "2": 2,
@@ -34,16 +20,44 @@
           "10": 2,
           "11": 2,
           "12": 2
+        },
+        "icon": {
+          "1": "/forsythie-01.svg",
+          "2": "/forsythie-02.svg",
+          "3": "/forsythie-03.svg",
+          "4": "/forsythie-04.svg",
+          "5": "/forsythie-05.svg",
+          "6": "/forsythie-06.svg",
+          "7": "/forsythie-07.svg",
+          "8": "/forsythie-08.svg",
+          "9": "/forsythie-09.svg",
+          "10": "/forsythie-10.svg",
+          "11": "/forsythie-11.svg",
+          "12": "/forsythie-12.svg"
         }
       }
     },
     {
       "id": "vinca_minor_alba",
       "name": "Vinca Minor Alba",
+      "scale": 0.5,
       "trivname": "Kleines Immergr\u00fcn (wei\u00df)",
-      "scale": 0.75,
       "type": "bodendecker",
       "vegetation": {
+        "height": {
+          "1": 0.15,
+          "2": 0.15,
+          "3": 0.15,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.15,
+          "7": 0.15,
+          "8": 0.15,
+          "9": 0.15,
+          "10": 0.15,
+          "11": 0.15,
+          "12": 0.15
+        },
         "icon": {
           "1": "/vinca-minor-alba-01.svg",
           "2": "/vinca-minor-alba-02.svg",
@@ -57,7 +71,16 @@
           "10": "/vinca-minor-alba-10.svg",
           "11": "/vinca-minor-alba-11.svg",
           "12": "/vinca-minor-alba-12.svg"
-        },
+        }
+      }
+    },
+    {
+      "id": "vinca_minor_purpura",
+      "name": "Vinca Minor Purpura",
+      "scale": 0.5,
+      "trivname": "Kleines Immergr\u00fcn (violett)",
+      "type": "bodendecker",
+      "vegetation": {
         "height": {
           "1": 0.15,
           "2": 0.15,
@@ -71,16 +94,7 @@
           "10": 0.15,
           "11": 0.15,
           "12": 0.15
-        }
-      }
-    },
-    {
-      "id": "vinca_minor_purpura",
-      "name": "Vinca Minor Purpura",
-      "trivname": "Kleines Immergr\u00fcn (violett)",
-      "scale": 0.75,
-      "type": "bodendecker",
-      "vegetation": {
+        },
         "icon": {
           "1": "/vinca-minor-purpura-01.svg",
           "2": "/vinca-minor-purpura-02.svg",
@@ -94,7 +108,16 @@
           "10": "/vinca-minor-purpura-10.svg",
           "11": "/vinca-minor-purpura-11.svg",
           "12": "/vinca-minor-purpura-12.svg"
-        },
+        }
+      }
+    },
+    {
+      "id": "vinca_minor_rubra",
+      "name": "Vinca Minor Rubra",
+      "scale": 0.5,
+      "trivname": "Kleines Immergr\u00fcn (lila)",
+      "type": "bodendecker",
+      "vegetation": {
         "height": {
           "1": 0.15,
           "2": 0.15,
@@ -108,16 +131,7 @@
           "10": 0.15,
           "11": 0.15,
           "12": 0.15
-        }
-      }
-    },
-    {
-      "id": "vinca_minor_rubra",
-      "name": "Vinca Minor Rubra",
-      "trivname": "Kleines Immergr\u00fcn (lila)",
-      "scale": 0.75,
-      "type": "bodendecker",
-      "vegetation": {
+        },
         "icon": {
           "1": "/vinca-minor-rubra-01.svg",
           "2": "/vinca-minor-rubra-02.svg",
@@ -131,20 +145,6 @@
           "10": "/vinca-minor-rubra-10.svg",
           "11": "/vinca-minor-rubra-11.svg",
           "12": "/vinca-minor-rubra-12.svg"
-        },
-        "height": {
-          "1": 0.15,
-          "2": 0.15,
-          "3": 0.15,
-          "4": 0.15,
-          "5": 0.15,
-          "6": 0.15,
-          "7": 0.15,
-          "8": 0.15,
-          "9": 0.15,
-          "10": 0.15,
-          "11": 0.15,
-          "12": 0.15
         }
       }
     },
