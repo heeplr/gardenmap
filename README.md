@@ -1,6 +1,8 @@
 
 # gardenmap
 
+![1754824133527435938](https://github.com/user-attachments/assets/bfb83598-d0c7-4295-b27e-aa205627a263)
+
 I needed a tool for hobby garden planning, to visualize a garden over the year.
 
 This is a **very** simple webapp to do just that.
@@ -25,3 +27,4 @@ DON'T RUN THIS ON THE PUBLIC INTERNET!
 * box group selection
 * keyboard shortcuts
 * copy/paste
+
