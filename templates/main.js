@@ -66,6 +66,7 @@ function plantPaletteRender() {
         const div = document.createElement('div');
         div.className = 'plants-item';
         div.innerText = plant.trivname;
+        div.title = plant.name;
         div.draggable = true;
         div.ondragstart = e => {
             e.dataTransfer.setData('plant-id', plant.id);
@@ -76,6 +77,7 @@ function plantPaletteRender() {
         const img = document.createElement('img');
         img.src = plant['vegetation']['icon'][monthSelected];
         img.align = "right";
+        img.title = plant.name;
         div.appendChild(img);
         el.appendChild(div);
         plant.el = div;
@@ -134,6 +136,7 @@ function plantPaletteEdit(plant) {
         height.type = "number";
         height.step = 0.01;
         height.value = plant.vegetation.height[month];
+        height.title = "height of plant in this month"
         div.appendChild(height);
 
         label = document.createElement("span");
