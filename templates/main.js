@@ -216,12 +216,14 @@ function gardenRender() {
     /* remove all images */
     plantlist.innerHTML = "";
     for (const [id, plant] of Object.entries(garden)) {
+        /* get the plant model belonging to this plant */
+        const plant_model = plants[plant.plant_id];
         /* DOM element for this plant */
         let el = null;
         /* visualize max height? */
         if(viewHeight) {
             /* calculate color shade from height */
-            let color = (255.0 / gardenMaxHeight) * plants[plant.plant_id].vegetation.height[monthSelected];
+            let color = (255.0 / gardenMaxHeight) * plant_model.vegetation.height[monthSelected];
             el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             el.setAttribute("fill", "rgb(" + color + ",0," + (255.0 - color) + ",0.5)");
         }
@@ -229,17 +231,28 @@ function gardenRender() {
         else {
             /* create new image */
             el = document.createElementNS("http://www.w3.org/2000/svg", "image");
-            el.setAttribute("href", plants[plant.plant_id].vegetation.icon[monthSelected]);
-            const title = document.createElement("title");
-            title.textContent = plants[plant.plant_id].name + ' (' + plants[plant.plant_id].type + ')';
-            el.appendChild(title);
+            el.setAttribute("href", plant_model.vegetation.icon[monthSelected]);
         }
         el.setAttribute("x", plant.x);
         el.setAttribute("y", plant.y);
-        el.setAttribute("width", viewIconWidth * plants[plant.plant_id].scale + "px");
-        el.setAttribute("height", viewIconWidth * plants[plant.plant_id].scale + "px");
+        el.setAttribute("width", viewIconWidth * plant_model.scale + "px");
+        el.setAttribute("height", viewIconWidth * plant_model.scale + "px");
         el.setAttribute("class", "draggable");
         el.id = plant.id;
+
+        const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+        title.textContent = `${plant_model.trivname} - ${plant_model.name}\n` +
+            `Typ:\t\t\t\t${plant_model.type}\n` +
+            `Schnitt:\t\t\t${plant_model.cutting}\n` +
+            `Schnittzeit:\t\t${plant_model.cutting_time}\n` +
+            `Standort:\t\t\t${plant_model.location}\n` +
+            `Standort (ideal):\t${plant_model.location_ideal}\n` +
+            `Boden:\t\t\t${plant_model.soil}\n` +
+            `Boden (ideal):\t\t${plant_model.soil_ideal}\n` +
+            `Wasser:\t\t\t${plant_model.watering}\n` +
+            `Wasser (ideal):\t${plant_model.watering_ideal}\n` +
+            (plant_model.note ? `\nBeachte:\t\t\t${plant_model.note}\n` : "");
+        el.appendChild(title);
 
         /* plant is selected? */
         if(selection.includes(plant)) {
