@@ -138,7 +138,7 @@ function plantPaletteEdit(plant) {
 
         label = document.createElement("span");
         label.className = "col-1 my-auto";
-        label.textContent = "m";
+        label.textContent = "cm";
         div.appendChild(label);
 
         const caption = document.createElement('div');
