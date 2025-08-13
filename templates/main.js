@@ -796,8 +796,6 @@ window.onload = () => {
     monthRender();
     plantPaletteLoad()
         .then(() => {
-            /* filter once */
-            plantPaletteFilter(document.getElementById("plant-edit-search").value);
             /* load garden plants */
             gardenLoad();
         })
