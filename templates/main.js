@@ -20,6 +20,7 @@ let viewIsPanning = false;
 let viewPanStart = null;
 let viewHeight = false;                 // visualize height, not icons
 let viewMouse = { x: 0, y: 0};          // remember last SVG coords of mouse
+let viewPaletteFilter = document.getElementById("plant-palette-search").value;  // current search string for plant palette
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
@@ -82,6 +83,8 @@ function plantPaletteRender() {
         el.appendChild(div);
         plant.el = div;
     };
+    /* apply any search term */
+    plantPaletteFilter();
 }
 
 function plantPaletteAdd() {
@@ -179,9 +182,19 @@ function plantPaletteSaveEdit() {
     })
 }
 
+/* filter term changed */
+function plantPaletteFilterChanged(string) {
+    viewPaletteFilter = string;
+    plantPaletteFilter();
+}
+
 /* filter palette list by string */
-function plantPaletteFilter(string) {
-    const needle = string.toUpperCase();
+function plantPaletteFilter() {
+    const needle = viewPaletteFilter.toUpperCase();
+    if(needle == "") {
+        return;
+    }
+
     for (const [id, plant] of Object.entries(plants)) {
         if(
             (plant.name.toUpperCase().indexOf(needle) > -1) ||
