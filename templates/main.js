@@ -109,7 +109,26 @@ function plantPaletteEdit(plant) {
     document.getElementById('edit-name').value = plant.name;
     document.getElementById('edit-name-trivial').value = plant.trivname;
     document.getElementById('edit-type').value = plant.type;
+    document.getElementById('edit-cutting').value = plant.cutting;
+    document.getElementById('edit-cutting-time').value = plant.cutting_time;
+    document.getElementById('edit-location').value = plant.location;
+    document.getElementById('edit-location-ideal').value = plant.location_ideal;
+    document.getElementById('edit-soil').value = plant.soil;
+    document.getElementById('edit-soil-ideal').value = plant.soil_ideal;
+    document.getElementById('edit-watering').value = plant.watering;
+    document.getElementById('edit-watering-ideal').value = plant.watering_ideal;
+    document.getElementById('edit-nutrition').value = plant.nutrition;
+    document.getElementById('edit-nutrition-ideal').value = plant.nutrition_ideal;
+    document.getElementById('edit-notes').value = plant.notes;
     document.getElementById('edit-scale').value = plant.scale;
+    document.getElementById('edit-bloom-start').value = plant.bloom_start;
+    document.getElementById('edit-bloom-end').value = plant.bloom_end;
+    document.getElementById('edit-max-lifetime').value = plant.max_lifetime;
+    document.getElementById('edit-max-width').value = plant.max_width;
+    document.getElementById('edit-min-temperature').value = plant.min_temperature;
+    document.getElementById('edit-propagation').value = plant.propagation;
+    document.getElementById('edit-snails').value = plant.snails;
+
     /* build list of monthly settings */
     const vegetation = document.getElementById('edit-vegetation');
     vegetation.innerHTML = "";
@@ -166,7 +185,25 @@ function plantPaletteSaveEdit() {
     plant.name = document.getElementById('edit-name').value;
     plant.trivname = document.getElementById('edit-name-trivial').value;
     plant.type = document.getElementById('edit-type').value;
+    plant.cutting = document.getElementById('edit-cutting').value;
+    plant.cutting_time = document.getElementById('edit-cutting-time').value;
+    plant.location = document.getElementById('edit-location').value.split(",");
+    plant.location_ideal = document.getElementById('edit-location-ideal').value.split(",");
+    plant.soil = document.getElementById('edit-soil').value.split(",");
+    plant.soil_ideal = document.getElementById('edit-soil-ideal').value.split(",");
+    plant.watering = document.getElementById('edit-watering').value;
+    plant.watering_ideal = document.getElementById('edit-watering-ideal').value;
+    plant.nutrition = document.getElementById('edit-nutrition').value;
+    plant.nutrition_ideal = document.getElementById('edit-nutrition-ideal').value;
+    plant.notes = document.getElementById('edit-notes').value;
     plant.scale = parseFloat(document.getElementById('edit-scale').value);
+    plant.bloom_start = document.getElementById('edit-bloom-start').value;
+    plant.bloom_end = parseFloat(document.getElementById('edit-bloom-end').value);
+    plant.max_lifetime = parseInt(document.getElementById('edit-max-lifetime').value);
+    plant.max_width = parseInt(document.getElementById('edit-max-width').value);
+    plant.min_temperature = parseInt(document.getElementById('edit-min-temperature').value);
+    plant.propagation = document.getElementById('edit-propagation').value.splite(",");
+    plant.snails = document.getElementById('edit-snails').value.splite(",");
 
     fetch('/plants', {
         method: 'PUT',
