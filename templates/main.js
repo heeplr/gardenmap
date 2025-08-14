@@ -332,6 +332,24 @@ function gardenDeletePlant() {
     });
 }
 
+/* export SVG */
+function gardenExportSvg() {
+    /* serialize SVG */
+    let xml = new XMLSerializer().serializeToString(svg);
+    /* add FQDN to image hrefs */
+    xml = xml.replaceAll('href=\"/', `href="${location}`);
+    /* append as hidden element to document */
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(xml));
+    element.setAttribute('download', `garden-${monthSelected}.svg`);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    /* emulate click to download */
+    element.click();
+    /* clean up */
+    document.body.removeChild(element);
+}
+
 /* change currently displayed month */
 function monthUpdateIcons(month) {
     monthSelected = month;

@@ -12,6 +12,7 @@
         .plants-item img { width: auto; height: 2.5rem; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
         #zoom-controls { position: absolute; bottom: 1rem; left: 1rem; }
+        #export-svg { position: absolute; bottom: 1rem; right: 1rem; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
         image { cursor: grab; }
         #selection-rect {
@@ -54,6 +55,8 @@
       <button type="button" class="btn btn-light" onclick="viewZoom(1.2)" title="zoom in">+</button>
       <button type="button" class="btn btn-light" onclick="viewZoom(1/1.2)" title="zoom out">-</button>
     </div>
+
+    <button type="button" id="export-svg" class="btn btn-light" onclick="gardenExportSvg()" title="export svg">📥</button>
 
     <div class="btn-group-vertical" id="toolbox" role="group" aria-label="toolbox">
       <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#palette" title="open plant palette">🎨</button>
