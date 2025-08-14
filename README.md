@@ -70,5 +70,4 @@ Contains your garden data (will be created if not existing)
 
 ## TODO
 - export SVG
-- tooltips for plants
 - mobile support
