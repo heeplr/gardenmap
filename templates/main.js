@@ -202,8 +202,8 @@ function plantPaletteSaveEdit() {
     plant.max_lifetime = parseInt(document.getElementById('edit-max-lifetime').value);
     plant.max_width = parseInt(document.getElementById('edit-max-width').value);
     plant.min_temperature = parseInt(document.getElementById('edit-min-temperature').value);
-    plant.propagation = document.getElementById('edit-propagation').value.splite(",");
-    plant.snails = document.getElementById('edit-snails').value.splite(",");
+    plant.propagation = document.getElementById('edit-propagation').value.split(",");
+    plant.snails = document.getElementById('edit-snails').value.split(",");
 
     fetch('/plants', {
         method: 'PUT',
