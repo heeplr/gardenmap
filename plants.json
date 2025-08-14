@@ -493,12 +493,12 @@
           "3": "/chaenomeles-3.svg",
           "4": "/chaenomeles-4.svg",
           "5": "/chaenomeles-5.svg",
-          "6": "/chaenomeles-6.svg",
+          "6": "/chaenomeles-5.svg",
           "7": "/chaenomeles-7.svg",
-          "8": "/chaenomeles-8.svg",
+          "8": "/chaenomeles-7.svg",
           "9": "/chaenomeles-9.svg",
           "10": "/chaenomeles-10.svg",
-          "11": "/chaenomeles-11.svg",
+          "11": "/chaenomeles-10.svg",
           "12": "/chaenomeles-12.svg"
         }
       },
@@ -559,18 +559,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/scilla-siberica-1.svg",
-          "2": "/scilla-siberica-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/scilla-siberica-3.svg",
           "4": "/scilla-siberica-4.svg",
-          "5": "/scilla-siberica-5.svg",
+          "5": "/scilla-siberica-4.svg",
           "6": "/scilla-siberica-6.svg",
           "7": "/scilla-siberica-7.svg",
           "8": "/scilla-siberica-8.svg",
           "9": "/scilla-siberica-9.svg",
-          "10": "/scilla-siberica-10.svg",
+          "10": "/scilla-siberica-9.svg",
           "11": "/scilla-siberica-11.svg",
-          "12": "/scilla-siberica-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "im Fr\u00fchjahr frisch; im Sommer trocken",
@@ -581,7 +581,7 @@
       "bloom_start": 4,
       "cutting": "Nach der ersten Bl\u00fcte kr\u00e4ftig zur\u00fcckschneiden (ca. 5 cm)",
       "cutting_time": 6,
-      "id": "viola-cornuta",
+      "id": "viola-cornuta-molly-sanderson",
       "location": [
         "sonnig",
         "halbschattig"
@@ -592,7 +592,7 @@
       "max_lifetime": 3,
       "max_width": 30,
       "min_temperature": -15,
-      "name": "Viola cornuta",
+      "name": "Viola cornuta 'Molly Sanderson'",
       "notes": "Bl\u00fcht bei k\u00fchler Witterung am l\u00e4ngsten; R\u00fcckschnitt f\u00f6rdert Nachbl\u00fcte.",
       "nutrition": "m\u00e4\u00dfig",
       "nutrition_ideal": "im Fr\u00fchjahr leicht nachd\u00fcngen",
@@ -614,7 +614,7 @@
         "gleichm\u00e4\u00dfig feucht",
         "durchl\u00e4ssig"
       ],
-      "trivname": "Hornveilchen",
+      "trivname": "Hornveilchen 'Molly Sanderson'",
       "type": "staude",
       "vegetation": {
         "height": {
@@ -632,18 +632,18 @@
           "12": 10
         },
         "icon": {
-          "1": "/viola-cornuta-1.svg",
-          "2": "/viola-cornuta-2.svg",
-          "3": "/viola-cornuta-3.svg",
-          "4": "/viola-cornuta-4.svg",
-          "5": "/viola-cornuta-5.svg",
-          "6": "/viola-cornuta-6.svg",
-          "7": "/viola-cornuta-7.svg",
-          "8": "/viola-cornuta-8.svg",
-          "9": "/viola-cornuta-9.svg",
-          "10": "/viola-cornuta-10.svg",
-          "11": "/viola-cornuta-11.svg",
-          "12": "/viola-cornuta-12.svg"
+          "1": "/viola-cornuta-molly-sanderson-2.svg",
+          "2": "/viola-cornuta-molly-sanderson-2.svg",
+          "3": "/viola-cornuta-molly-sanderson-3.svg",
+          "4": "/viola-cornuta-molly-sanderson-4.svg",
+          "5": "/viola-cornuta-molly-sanderson-4.svg",
+          "6": "/viola-cornuta-molly-sanderson-6.svg",
+          "7": "/viola-cornuta-molly-sanderson-2.svg",
+          "8": "/viola-cornuta-molly-sanderson-4.svg",
+          "9": "/viola-cornuta-molly-sanderson-6.svg",
+          "10": "/viola-cornuta-molly-sanderson-4.svg",
+          "11": "/viola-cornuta-molly-sanderson-2.svg",
+          "12": "/viola-cornuta-molly-sanderson-2.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig gie\u00dfen; Hitze vermeiden",
@@ -847,17 +847,17 @@
         },
         "icon": {
           "1": "/muscari-1.svg",
-          "2": "/muscari-2.svg",
+          "2": "/muscari-1.svg",
           "3": "/muscari-3.svg",
           "4": "/muscari-4.svg",
-          "5": "/muscari-5.svg",
+          "5": "/muscari-4.svg",
           "6": "/muscari-6.svg",
-          "7": "/muscari-7.svg",
-          "8": "/muscari-8.svg",
-          "9": "/muscari-9.svg",
-          "10": "/muscari-10.svg",
-          "11": "/muscari-11.svg",
-          "12": "/muscari-12.svg"
+          "7": "/muscari-6.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       },
       "watering": "im Fr\u00fchjahr frisch; Ruhephase trocken",
@@ -919,7 +919,7 @@
           "12": 0
         },
         "icon": {
-          "1": "/hyacinthus-orientalis-1.svg",
+          "1": "/empty.svg",
           "2": "/hyacinthus-orientalis-2.svg",
           "3": "/hyacinthus-orientalis-3.svg",
           "4": "/hyacinthus-orientalis-4.svg",
@@ -927,10 +927,10 @@
           "6": "/hyacinthus-orientalis-6.svg",
           "7": "/hyacinthus-orientalis-7.svg",
           "8": "/hyacinthus-orientalis-8.svg",
-          "9": "/hyacinthus-orientalis-9.svg",
-          "10": "/hyacinthus-orientalis-10.svg",
-          "11": "/hyacinthus-orientalis-11.svg",
-          "12": "/hyacinthus-orientalis-12.svg"
+          "9": "/hyacinthus-orientalis-8.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
         }
       },
       "watering": "im Fr\u00fchjahr frisch; Sommer trocken",
@@ -1209,17 +1209,17 @@
         },
         "icon": {
           "1": "/pulmonaria-rubra-1.svg",
-          "2": "/pulmonaria-rubra-2.svg",
+          "2": "/pulmonaria-rubra-1.svg",
           "3": "/pulmonaria-rubra-3.svg",
           "4": "/pulmonaria-rubra-4.svg",
           "5": "/pulmonaria-rubra-5.svg",
           "6": "/pulmonaria-rubra-6.svg",
-          "7": "/pulmonaria-rubra-7.svg",
-          "8": "/pulmonaria-rubra-8.svg",
-          "9": "/pulmonaria-rubra-9.svg",
-          "10": "/pulmonaria-rubra-10.svg",
-          "11": "/pulmonaria-rubra-11.svg",
-          "12": "/pulmonaria-rubra-12.svg"
+          "7": "/pulmonaria-rubra-6.svg",
+          "8": "/pulmonaria-rubra-6.svg",
+          "9": "/pulmonaria-rubra-6.svg",
+          "10": "/pulmonaria-rubra-6.svg",
+          "11": "/pulmonaria-rubra-6.svg",
+          "12": "/pulmonaria-rubra-1.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch halten",
@@ -1783,17 +1783,17 @@
         },
         "icon": {
           "1": "/sempervivum-1.svg",
-          "2": "/sempervivum-2.svg",
+          "2": "/sempervivum-1.svg",
           "3": "/sempervivum-3.svg",
-          "4": "/sempervivum-4.svg",
+          "4": "/sempervivum-3.svg",
           "5": "/sempervivum-5.svg",
           "6": "/sempervivum-6.svg",
-          "7": "/sempervivum-7.svg",
+          "7": "/sempervivum-6.svg",
           "8": "/sempervivum-8.svg",
-          "9": "/sempervivum-9.svg",
-          "10": "/sempervivum-10.svg",
-          "11": "/sempervivum-11.svg",
-          "12": "/sempervivum-12.svg"
+          "9": "/sempervivum-8.svg",
+          "10": "/sempervivum-1.svg",
+          "11": "/sempervivum-1.svg",
+          "12": "/sempervivum-1.svg"
         }
       },
       "watering": "sehr sparsam gie\u00dfen; trockenheitsvertr\u00e4glich",
@@ -1992,18 +1992,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/coreopsis-grandiflora-1.svg",
+          "1": "/empty.svg",
           "2": "/coreopsis-grandiflora-2.svg",
           "3": "/coreopsis-grandiflora-3.svg",
           "4": "/coreopsis-grandiflora-4.svg",
           "5": "/coreopsis-grandiflora-5.svg",
           "6": "/coreopsis-grandiflora-6.svg",
           "7": "/coreopsis-grandiflora-7.svg",
-          "8": "/coreopsis-grandiflora-8.svg",
-          "9": "/coreopsis-grandiflora-9.svg",
+          "8": "/coreopsis-grandiflora-7.svg",
+          "9": "/coreopsis-grandiflora-6.svg",
           "10": "/coreopsis-grandiflora-10.svg",
           "11": "/coreopsis-grandiflora-11.svg",
-          "12": "/coreopsis-grandiflora-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "trockenheitsvertr\u00e4glich; bei anhaltender Trockenheit gie\u00dfen",
@@ -2420,17 +2420,17 @@
         },
         "icon": {
           "1": "/salvia-nemorosa-1.svg",
-          "2": "/salvia-nemorosa-2.svg",
+          "2": "/salvia-nemorosa-1.svg",
           "3": "/salvia-nemorosa-3.svg",
           "4": "/salvia-nemorosa-4.svg",
           "5": "/salvia-nemorosa-5.svg",
           "6": "/salvia-nemorosa-6.svg",
           "7": "/salvia-nemorosa-7.svg",
-          "8": "/salvia-nemorosa-8.svg",
-          "9": "/salvia-nemorosa-9.svg",
+          "8": "/salvia-nemorosa-6.svg",
+          "9": "/salvia-nemorosa-6.svg",
           "10": "/salvia-nemorosa-10.svg",
-          "11": "/salvia-nemorosa-11.svg",
-          "12": "/salvia-nemorosa-12.svg"
+          "11": "/salvia-nemorosa-10.svg",
+          "12": "/salvia-nemorosa-1.svg"
         }
       },
       "watering": "trockenheitsvertr\u00e4glich; nur bei langer Trockenheit gie\u00dfen",
@@ -2563,17 +2563,17 @@
         },
         "icon": {
           "1": "/thymus-serpyllum-1.svg",
-          "2": "/thymus-serpyllum-2.svg",
+          "2": "/thymus-serpyllum-1.svg",
           "3": "/thymus-serpyllum-3.svg",
           "4": "/thymus-serpyllum-4.svg",
           "5": "/thymus-serpyllum-5.svg",
           "6": "/thymus-serpyllum-6.svg",
           "7": "/thymus-serpyllum-7.svg",
           "8": "/thymus-serpyllum-8.svg",
-          "9": "/thymus-serpyllum-9.svg",
+          "9": "/thymus-serpyllum-8.svg",
           "10": "/thymus-serpyllum-10.svg",
           "11": "/thymus-serpyllum-11.svg",
-          "12": "/thymus-serpyllum-12.svg"
+          "12": "/thymus-serpyllum-1.svg"
         }
       },
       "watering": "sehr sparsam gie\u00dfen; trockenheitsvertr\u00e4glich",
@@ -2769,18 +2769,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/tagetes-patula-nana-1.svg",
-          "2": "/tagetes-patula-nana-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/tagetes-patula-nana-3.svg",
           "4": "/tagetes-patula-nana-4.svg",
           "5": "/tagetes-patula-nana-5.svg",
           "6": "/tagetes-patula-nana-6.svg",
           "7": "/tagetes-patula-nana-7.svg",
-          "8": "/tagetes-patula-nana-8.svg",
+          "8": "/tagetes-patula-nana-7.svg",
           "9": "/tagetes-patula-nana-9.svg",
-          "10": "/tagetes-patula-nana-10.svg",
+          "10": "/tagetes-patula-nana-9.svg",
           "11": "/tagetes-patula-nana-11.svg",
-          "12": "/tagetes-patula-nana-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch halten",
@@ -2911,13 +2911,13 @@
         "icon": {
           "1": "/empty.svg",
           "2": "/empty.svg",
-          "3": "/empty.svg",
+          "3": "/plectranthus-ornatus-3.svg",
           "4": "/plectranthus-ornatus-4.svg",
           "5": "/plectranthus-ornatus-5.svg",
           "6": "/plectranthus-ornatus-6.svg",
           "7": "/plectranthus-ornatus-7.svg",
-          "8": "/plectranthus-ornatus-7.svg",
-          "9": "/plectranthus-ornatus-7.svg",
+          "8": "/plectranthus-ornatus-8.svg",
+          "9": "/plectranthus-ornatus-8.svg",
           "10": "/plectranthus-ornatus-10.svg",
           "11": "/empty.svg",
           "12": "/empty.svg"
@@ -3054,7 +3054,7 @@
           "3": "/empty.svg",
           "4": "/empty.svg",
           "5": "/stachys-officinalis-5.svg",
-          "6": "/stachys-officinalis-6.svg",
+          "6": "/stachys-officinalis-5.svg",
           "7": "/stachys-officinalis-7.svg",
           "8": "/stachys-officinalis-8.svg",
           "9": "/stachys-officinalis-9.svg",
@@ -3190,18 +3190,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/monarda-didyma-1.svg",
-          "2": "/monarda-didyma-2.svg",
-          "3": "/monarda-didyma-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/monarda-didyma-4.svg",
           "5": "/monarda-didyma-5.svg",
           "6": "/monarda-didyma-6.svg",
           "7": "/monarda-didyma-7.svg",
-          "8": "/monarda-didyma-8.svg",
+          "8": "/monarda-didyma-7.svg",
           "9": "/monarda-didyma-9.svg",
           "10": "/monarda-didyma-10.svg",
           "11": "/monarda-didyma-11.svg",
-          "12": "/monarda-didyma-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch; Mehltau durch Trockenstress beg\u00fcnstigt",
@@ -3332,18 +3332,18 @@
           "12": 6
         },
         "icon": {
-          "1": "/verbascum-thapsus-1.svg",
-          "2": "/verbascum-thapsus-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/verbascum-thapsus-3.svg",
           "4": "/verbascum-thapsus-4.svg",
           "5": "/verbascum-thapsus-5.svg",
           "6": "/verbascum-thapsus-6.svg",
           "7": "/verbascum-thapsus-7.svg",
-          "8": "/verbascum-thapsus-8.svg",
+          "8": "/verbascum-thapsus-7.svg",
           "9": "/verbascum-thapsus-9.svg",
-          "10": "/verbascum-thapsus-10.svg",
+          "10": "/verbascum-thapsus-9.svg",
           "11": "/verbascum-thapsus-11.svg",
-          "12": "/verbascum-thapsus-12.svg"
+          "12": "/empty-12.svg"
         }
       },
       "watering": "sehr trockenheitsvertr\u00e4glich",
@@ -3403,17 +3403,17 @@
         },
         "icon": {
           "1": "/lythrum-salicaria-1.svg",
-          "2": "/lythrum-salicaria-2.svg",
+          "2": "/lythrum-salicaria-1.svg",
           "3": "/lythrum-salicaria-3.svg",
           "4": "/lythrum-salicaria-4.svg",
           "5": "/lythrum-salicaria-5.svg",
           "6": "/lythrum-salicaria-6.svg",
           "7": "/lythrum-salicaria-7.svg",
           "8": "/lythrum-salicaria-8.svg",
-          "9": "/lythrum-salicaria-9.svg",
+          "9": "/lythrum-salicaria-7.svg",
           "10": "/lythrum-salicaria-10.svg",
-          "11": "/lythrum-salicaria-11.svg",
-          "12": "/lythrum-salicaria-12.svg"
+          "11": "/lythrum-salicaria-10.svg",
+          "12": "/lythrum-salicaria-1.svg"
         }
       },
       "watering": "dauerfeucht halten",
@@ -3544,8 +3544,8 @@
           "12": 0
         },
         "icon": {
-          "1": "/astilbe-chinensis-pumila-1.svg",
-          "2": "/astilbe-chinensis-pumila-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/astilbe-chinensis-pumila-3.svg",
           "4": "/astilbe-chinensis-pumila-4.svg",
           "5": "/astilbe-chinensis-pumila-5.svg",
@@ -3554,7 +3554,7 @@
           "8": "/astilbe-chinensis-pumila-8.svg",
           "9": "/astilbe-chinensis-pumila-9.svg",
           "10": "/astilbe-chinensis-pumila-10.svg",
-          "11": "/astilbe-chinensis-pumila-11.svg",
+          "11": "/astilbe-chinensis-pumila-10.svg",
           "12": "/astilbe-chinensis-pumila-12.svg"
         }
       },
@@ -3622,10 +3622,10 @@
           "6": "/anemone-hupehensis-6.svg",
           "7": "/anemone-hupehensis-7.svg",
           "8": "/anemone-hupehensis-8.svg",
-          "9": "/anemone-hupehensis-9.svg",
+          "9": "/anemone-hupehensis-8.svg",
           "10": "/anemone-hupehensis-10.svg",
-          "11": "/anemone-hupehensis-11.svg",
-          "12": "/anemone-hupehensis-12.svg"
+          "11": "/anemone-hupehensis-1.svg",
+          "12": "/anemone-hupehensis-1.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch halten",
@@ -3685,15 +3685,15 @@
         },
         "icon": {
           "1": "/aster-ericoides-pansus-1.svg",
-          "2": "/aster-ericoides-pansus-2.svg",
+          "2": "/aster-ericoides-pansus-1.svg",
           "3": "/aster-ericoides-pansus-3.svg",
-          "4": "/aster-ericoides-pansus-4.svg",
-          "5": "/aster-ericoides-pansus-5.svg",
-          "6": "/aster-ericoides-pansus-6.svg",
+          "4": "/aster-ericoides-pansus-3.svg",
+          "5": "/aster-ericoides-pansus-3.svg",
+          "6": "/aster-ericoides-pansus-3.svg",
           "7": "/aster-ericoides-pansus-7.svg",
-          "8": "/aster-ericoides-pansus-8.svg",
+          "8": "/aster-ericoides-pansus-7.svg",
           "9": "/aster-ericoides-pansus-9.svg",
-          "10": "/aster-ericoides-pansus-10.svg",
+          "10": "/aster-ericoides-pansus-9.svg",
           "11": "/aster-ericoides-pansus-11.svg",
           "12": "/aster-ericoides-pansus-12.svg"
         }
@@ -3756,17 +3756,17 @@
         },
         "icon": {
           "1": "/bellis-perennis-1.svg",
-          "2": "/bellis-perennis-2.svg",
+          "2": "/bellis-perennis-1.svg",
           "3": "/bellis-perennis-3.svg",
           "4": "/bellis-perennis-4.svg",
           "5": "/bellis-perennis-5.svg",
           "6": "/bellis-perennis-6.svg",
-          "7": "/bellis-perennis-7.svg",
+          "7": "/bellis-perennis-6.svg",
           "8": "/bellis-perennis-8.svg",
-          "9": "/bellis-perennis-9.svg",
+          "9": "/bellis-perennis-8.svg",
           "10": "/bellis-perennis-10.svg",
           "11": "/bellis-perennis-11.svg",
-          "12": "/bellis-perennis-12.svg"
+          "12": "/bellis-perennis-1.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch",
@@ -3776,8 +3776,8 @@
       "bloom_end": 9,
       "bloom_start": 7,
       "cutting": "Vor Austrieb altes St\u00e4ngelwerk bodennah entfernen",
-      "cutting_time": 3,
-      "id": "phlox",
+      "cutting_time": "3",
+      "id": "phlox-paniculata",
       "location": [
         "sonnig"
       ],
@@ -3795,7 +3795,7 @@
         "teilung",
         "stecklinge"
       ],
-      "scale": 1.0,
+      "scale": 1,
       "snails": [
         "m\u00e4\u00dfig attraktiv"
       ],
@@ -3825,18 +3825,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/phlox-1.svg",
-          "2": "/phlox-2.svg",
-          "3": "/phlox-3.svg",
-          "4": "/phlox-4.svg",
-          "5": "/phlox-5.svg",
-          "6": "/phlox-6.svg",
-          "7": "/phlox-7.svg",
-          "8": "/phlox-8.svg",
-          "9": "/phlox-9.svg",
-          "10": "/phlox-10.svg",
-          "11": "/phlox-11.svg",
-          "12": "/phlox-12.svg"
+          "1": "/phlox-paniculata-1.svg",
+          "2": "/phlox-paniculata-1.svg",
+          "3": "/phlox-paniculata-3.svg",
+          "4": "/phlox-paniculata-3.svg",
+          "5": "/phlox-paniculata-5.svg",
+          "6": "/phlox-paniculata-6.svg",
+          "7": "/phlox-paniculata-7.svg",
+          "8": "/phlox-paniculata-8.svg",
+          "9": "/phlox-paniculata-9.svg",
+          "10": "/phlox-paniculata-10.svg",
+          "11": "/phlox-paniculata-11.svg",
+          "12": "/phlox-paniculata-1.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch; Trockenheit f\u00f6rdert Mehltau",
@@ -3895,18 +3895,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/dahlia-1.svg",
-          "2": "/dahlia-2.svg",
-          "3": "/dahlia-3.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
           "4": "/dahlia-4.svg",
           "5": "/dahlia-5.svg",
           "6": "/dahlia-6.svg",
           "7": "/dahlia-7.svg",
           "8": "/dahlia-8.svg",
-          "9": "/dahlia-9.svg",
-          "10": "/dahlia-10.svg",
+          "9": "/dahlia-8.svg",
+          "10": "/dahlia-8.svg",
           "11": "/dahlia-11.svg",
-          "12": "/dahlia-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig feucht; Staun\u00e4sse vermeiden",
@@ -3964,18 +3964,18 @@
           "12": 0
         },
         "icon": {
-          "1": "/aster-1.svg",
-          "2": "/aster-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/aster-3.svg",
           "4": "/aster-4.svg",
           "5": "/aster-5.svg",
           "6": "/aster-6.svg",
           "7": "/aster-7.svg",
           "8": "/aster-8.svg",
-          "9": "/aster-9.svg",
+          "9": "/aster-8.svg",
           "10": "/aster-10.svg",
           "11": "/aster-11.svg",
-          "12": "/aster-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch",
@@ -4034,22 +4034,807 @@
           "12": 0
         },
         "icon": {
-          "1": "/cuphea-hyssopifolia-1.svg",
-          "2": "/cuphea-hyssopifolia-2.svg",
+          "1": "/empty.svg",
+          "2": "/empty.svg",
           "3": "/cuphea-hyssopifolia-3.svg",
           "4": "/cuphea-hyssopifolia-4.svg",
           "5": "/cuphea-hyssopifolia-5.svg",
           "6": "/cuphea-hyssopifolia-6.svg",
           "7": "/cuphea-hyssopifolia-7.svg",
-          "8": "/cuphea-hyssopifolia-8.svg",
-          "9": "/cuphea-hyssopifolia-9.svg",
-          "10": "/cuphea-hyssopifolia-10.svg",
+          "8": "/cuphea-hyssopifolia-7.svg",
+          "9": "/cuphea-hyssopifolia-7.svg",
+          "10": "/cuphea-hyssopifolia-7.svg",
           "11": "/cuphea-hyssopifolia-11.svg",
-          "12": "/cuphea-hyssopifolia-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch halten",
       "watering_ideal": "frisch; keine Staun\u00e4sse"
+    },
+    {
+      "id": "ipomoea-purpurea",
+      "name": "Ipomoea Purpurea",
+      "trivname": "Purpur-Prunkwinde",
+      "type": "sommerblume (einj\u00e4hrige kletterpflanze)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 25,
+          "6": 150,
+          "7": 250,
+          "8": 300,
+          "9": 260,
+          "10": 80,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/ipomoea-purpurea-4.svg",
+          "5": "/ipomoea-purpurea-5.svg",
+          "6": "/ipomoea-purpurea-6.svg",
+          "7": "/ipomoea-purpurea-7.svg",
+          "8": "/ipomoea-purpurea-8.svg",
+          "9": "/ipomoea-purpurea-9.svg",
+          "10": "/ipomoea-purpurea-9.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 5,
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": 100,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 7,
+      "bloom_end": 10,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "frisch",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "windgesch\u00fctzt"
+      ],
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit mindert Bl\u00fcte",
+      "watering_ideal": "frisch bis leicht feucht; Staun\u00e4sse vermeiden",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff f\u00f6rdert Blatt statt Bl\u00fcte",
+      "cutting_time": "None",
+      "cutting": "Kein Schnitt n\u00f6tig; Verbl\u00fchtes ausputzen, Pflanzen nach dem ersten Frost entfernen",
+      "notes": "Samen giftig (LSA); Rankhilfe n\u00f6tig; Jungpflanzen vor Schnecken sch\u00fctzen"
+    },
+    {
+      "id": "lathyrus-odoratus",
+      "name": "Lathyrus Odoratus",
+      "trivname": "Duftwicke (Edelwicke)",
+      "type": "sommerblume (einj\u00e4hrige kletterpflanze)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 15,
+          "5": 60,
+          "6": 150,
+          "7": 180,
+          "8": 180,
+          "9": 120,
+          "10": 40,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/lathyrus-odoratus-3.svg",
+          "4": "/lathyrus-odoratus-4.svg",
+          "5": "/lathyrus-odoratus-5.svg",
+          "6": "/lathyrus-odoratus-6.svg",
+          "7": "/lathyrus-odoratus-7.svg",
+          "8": "/lathyrus-odoratus-7.svg",
+          "9": "/lathyrus-odoratus-9.svg",
+          "10": "/lathyrus-odoratus-9.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": -4,
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": 45,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "n\u00e4hrstoffreich",
+        "gleichm\u00e4\u00dfig feucht",
+        "gut drainiert",
+        "kalkvertr\u00e4glich"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "luftig"
+      ],
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit mindert Bl\u00fcte",
+      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse",
+      "nutrition": "mittel",
+      "nutrition_ideal": "vor dem Pflanzen Kompost; w\u00e4hrend der Saison 14\u2011t\u00e4gig ausgewogen, eher kalibetont",
+      "cutting_time": "None",
+      "cutting": "Regelm\u00e4\u00dfig pfl\u00fccken/ausputzen; Triebe an Rankhilfe leiten",
+      "notes": "Samen giftig (Lathyrismus-Risiko bei gr\u00f6\u00dferen Mengen); ben\u00f6tigt stabile Rankhilfe; liebt k\u00fchles Wetter, in Hitze bl\u00fchfaul"
+    },
+    {
+      "id": "convolvulus-tricolor",
+      "name": "Convolvulus Tricolor",
+      "trivname": "Dreifarbige Winde (Zwergwinde)",
+      "type": "sommerblume (einj\u00e4hrige winde, buschig)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 15,
+          "6": 25,
+          "7": 35,
+          "8": 40,
+          "9": 35,
+          "10": 15,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/convolvulus-tricolor-3.svg",
+          "4": "/convolvulus-tricolor-4.svg",
+          "5": "/convolvulus-tricolor-5.svg",
+          "6": "/convolvulus-tricolor-6.svg",
+          "7": "/convolvulus-tricolor-7.svg",
+          "8": "/convolvulus-tricolor-8.svg",
+          "9": "/convolvulus-tricolor-8.svg",
+          "10": "/convolvulus-tricolor-7.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 0,
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": 45,
+      "snails": [
+        "m\u00e4\u00dfig attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "kiesig-sandig",
+        "gut drainiert",
+        "m\u00e4\u00dfig n\u00e4hrstoffreich"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "gesch\u00fctzt"
+      ],
+      "watering": "m\u00e4\u00dfig gie\u00dfen; Trockenheit nur kurzzeitig toleriert; Staun\u00e4sse vermeiden",
+      "watering_ideal": "m\u00e4\u00dfig frisch bis leicht trocken bei sehr guter Drainage",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff f\u00f6rdert Blatt statt Bl\u00fcte",
+      "cutting_time": "None",
+      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen, das verl\u00e4ngert die Bl\u00fcte",
+      "notes": "Buschiger, nicht kletternder Wuchs; ideal f\u00fcr Topf/Beet und trockene, magere Lagen; frostempfindlich \u2013 als Einj\u00e4hrige kultivieren"
+    },
+    {
+      "id": "cucurbita-pepo",
+      "name": "Cucurbita Pepo",
+      "trivname": "Garten-K\u00fcrbis (Zucchini/Sommerk\u00fcrbis)",
+      "type": "gem\u00fcse (einj\u00e4hrige rankpflanze)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 10,
+          "6": 30,
+          "7": 50,
+          "8": 50,
+          "9": 40,
+          "10": 15,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/cucurbita-pepo-3.svg",
+          "4": "/cucurbita-pepo-4.svg",
+          "5": "/cucurbita-pepo-5.svg",
+          "6": "/cucurbita-pepo-6.svg",
+          "7": "/cucurbita-pepo-7.svg",
+          "8": "/cucurbita-pepo-8.svg",
+          "9": "/cucurbita-pepo-9.svg",
+          "10": "/cucurbita-pepo-9.svg",
+          "11": "/cucurbita-pepo-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 0,
+      "propagation": [
+        "samen"
+      ],
+      "max_width": 240,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "n\u00e4hrstoffreich",
+        "gleichm\u00e4\u00dfig feucht",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "windgesch\u00fctzt"
+      ],
+      "watering": "gleichm\u00e4\u00dfig feucht halten; hoher Wasserbedarf; keine Staun\u00e4sse",
+      "watering_ideal": "st\u00e4ndig leicht feucht, bodennah gie\u00dfen und mulchen",
+      "nutrition": "hoch",
+      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; ab Fruchtansatz alle 10\u201314 Tage leicht nachd\u00fcngen",
+      "cutting_time": "None",
+      "cutting": "Kein Schnitt n\u00f6tig; Ranken bei Platzbedarf leiten oder leicht eink\u00fcrzen; Fruchtansatz bei Bedarf ausd\u00fcnnen",
+      "notes": "Einh\u00e4usig mit getrennten m\u00e4nnlichen/weiblichen Bl\u00fcten; Best\u00e4ubung v. a. durch Bienen (Squash-Bees). Sehr frostempfindlich \u2013 erst nach den Eisheiligen pflanzen. Bitter schmeckende Fr\u00fcchte (Cucurbitacine) nicht verzehren."
+    },
+    {
+      "id": "phaseolus-coccineus",
+      "name": "Phaseolus Coccineus",
+      "trivname": "Feuerbohne (Prunkbohne)",
+      "type": "gem\u00fcse (einj\u00e4hrige kletterpflanze; mehrj\u00e4hrig nur frostfrei)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 20,
+          "6": 150,
+          "7": 300,
+          "8": 320,
+          "9": 260,
+          "10": 60,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/empty.svg",
+          "5": "/phaseolus-coccineus-5.svg",
+          "6": "/phaseolus-coccineus-6.svg",
+          "7": "/phaseolus-coccineus-7.svg",
+          "8": "/phaseolus-coccineus-8.svg",
+          "9": "/phaseolus-coccineus-9.svg",
+          "10": "/phaseolus-coccineus-8.svg",
+          "11": "/phaseolus-coccineus-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 1,
+      "propagation": [
+        "samen"
+      ],
+      "max_width": 150,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "n\u00e4hrstoffreich",
+        "humos",
+        "feuchthaltend",
+        "gut drainiert",
+        "nahe neutral"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "gesch\u00fctzt"
+      ],
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenstress mindert Ansatz",
+      "watering_ideal": "st\u00e4ndig leicht feucht, mulchen; keine Staun\u00e4sse",
+      "nutrition": "hoch",
+      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; w\u00e4hrend der Saison regelm\u00e4\u00dfig moderat nachd\u00fcngen",
+      "cutting_time": "None",
+      "cutting": "Kein Schnitt n\u00f6tig; Triebe an Stangen/Netz leiten, Spitzen bei Erreichen der H\u00f6he eink\u00fcrzen",
+      "notes": "Roh (Schoten/Samen) gesundheitssch\u00e4dlich wegen Lectinen \u2013 nur gegart verzehren. S\u00e4mlinge vor Schnecken sch\u00fctzen."
+    },
+    {
+      "id": "helianthus-annuus",
+      "name": "Helianthus Annuus",
+      "trivname": "Gew\u00f6hnliche Sonnenblume",
+      "type": "sommerblume (einj\u00e4hrig)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 20,
+          "6": 80,
+          "7": 180,
+          "8": 220,
+          "9": 200,
+          "10": 80,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/helianthus-annuus-4.svg",
+          "5": "/helianthus-annuus-5.svg",
+          "6": "/helianthus-annuus-5.svg",
+          "7": "/helianthus-annuus-7.svg",
+          "8": "/helianthus-annuus-8.svg",
+          "9": "/helianthus-annuus-9.svg",
+          "10": "/helianthus-annuus-10.svg",
+          "11": "/helianthus-annuus-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 0,
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": 60,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 7,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "m\u00e4\u00dfig bis n\u00e4hrstoffreich",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert",
+        "tiefgr\u00fcndig"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "windgesch\u00fctzt"
+      ],
+      "watering": "gleichm\u00e4\u00dfig frisch halten; tiefgr\u00fcndig gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "st\u00e4ndig leicht feucht, tiefgr\u00fcndig gie\u00dfen; Boden mulchen",
+      "nutrition": "mittel bis hoch",
+      "nutrition_ideal": "vor dem Pflanzen Kompost einarbeiten; in der Saison ma\u00dfvoll nachd\u00fcngen",
+      "cutting_time": "None",
+      "cutting": "Kein Schnitt n\u00f6tig; bei verzweigten Sorten Verbl\u00fchtes entfernen; hohe Sorten anbinden",
+      "notes": "Einj\u00e4hrig; Aussaat/ Auspflanzen erst nach Frostende. Sehr gute Bienen- und Vogelpflanze (Samen)."
+    },
+    {
+      "id": "cosmos-bipinnatus",
+      "name": "Cosmos Bipinnatus",
+      "trivname": "Schmuckk\u00f6rbchen (Cosmea)",
+      "type": "sommerblume (einj\u00e4hrig)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 25,
+          "6": 70,
+          "7": 110,
+          "8": 130,
+          "9": 120,
+          "10": 50,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/cosmos-bipinnatus-4.svg",
+          "5": "/cosmos-bipinnatus-5.svg",
+          "6": "/cosmos-bipinnatus-6.svg",
+          "7": "/cosmos-bipinnatus-7.svg",
+          "8": "/cosmos-bipinnatus-8.svg",
+          "9": "/cosmos-bipinnatus-9.svg",
+          "10": "/cosmos-bipinnatus-9.svg",
+          "11": "/cosmos-bipinnatus-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 0,
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": 60,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 7,
+      "bloom_end": 10,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "luftig"
+      ],
+      "watering": "m\u00e4\u00dfig gie\u00dfen; trockenheitsvertr\u00e4glich; Staun\u00e4sse vermeiden",
+      "watering_ideal": "m\u00e4\u00dfig frisch, durchdringend aber selten gie\u00dfen",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff mindert Bl\u00fcte",
+      "cutting_time": "None",
+      "cutting": "Regelm\u00e4\u00dfig ausputzen (Deadheading) verl\u00e4ngert die Bl\u00fcte; fr\u00fches Pinzieren f\u00f6rdert Verzweigung",
+      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Sorten variieren stark in H\u00f6he. Jungpflanzen vor Schnecken sch\u00fctzen."
+    },
+    {
+      "id": "coreopsis-tinctoria",
+      "name": "Coreopsis Tinctoria",
+      "trivname": "F\u00e4rber-M\u00e4dchenauge",
+      "type": "sommerblume (einj\u00e4hrig)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 25,
+          "6": 50,
+          "7": 80,
+          "8": 90,
+          "9": 80,
+          "10": 30,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/coreopsis-tinctoria-4.svg",
+          "5": "/coreopsis-tinctoria-5.svg",
+          "6": "/coreopsis-tinctoria-6.svg",
+          "7": "/coreopsis-tinctoria-7.svg",
+          "8": "/coreopsis-tinctoria-8.svg",
+          "9": "/coreopsis-tinctoria-9.svg",
+          "10": "/coreopsis-tinctoria-10.svg",
+          "11": "/coreopsis-tinctoria-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 0,
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": 45,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "sandig/kiesig",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt"
+      ],
+      "watering": "m\u00e4\u00dfig gie\u00dfen; trockenheitsvertr\u00e4glich nach Anwachsen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch bei sehr guter Drainage",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen; in eher mageren B\u00f6den w\u00e4chst und bl\u00fcht sie zuverl\u00e4ssig",
+      "cutting_time": 7,
+      "cutting": "Regelm\u00e4\u00dfig ausputzen (Deadheading) verl\u00e4ngert die Bl\u00fcte; nach erstem Flor ggf. um ca. ein Drittel zur\u00fcckschneiden",
+      "notes": "Einj\u00e4hrige Sommerblume; nach den Eisheiligen auss\u00e4en/pflanzen. Versamt sich an offenen Stellen. S\u00e4mlinge sind f\u00fcr Schnecken attraktiv\u2014jung sch\u00fctzen."
+    },
+    {
+      "id": "agastache-foeniculum",
+      "name": "Agastache Foeniculum",
+      "trivname": "Anis-Duftnessel (Anis-Ysop)",
+      "type": "staude (kurzlebig)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 10,
+          "5": 30,
+          "6": 60,
+          "7": 90,
+          "8": 100,
+          "9": 90,
+          "10": 30,
+          "11": 5,
+          "12": 0
+        },
+        "icon": {
+          "1": "/agastache-foeniculum-1.svg",
+          "2": "/agastache-foeniculum-1.svg",
+          "3": "/agastache-foeniculum-1.svg",
+          "4": "/agastache-foeniculum-4.svg",
+          "5": "/agastache-foeniculum-4.svg",
+          "6": "/agastache-foeniculum-6.svg",
+          "7": "/agastache-foeniculum-7.svg",
+          "8": "/agastache-foeniculum-8.svg",
+          "9": "/agastache-foeniculum-8.svg",
+          "10": "/agastache-foeniculum-10.svg",
+          "11": "/agastache-foeniculum-11.svg",
+          "12": "/agastache-foeniculum-12.svg"
+        }
+      },
+      "max_lifetime": 5,
+      "min_temperature": -30,
+      "propagation": [
+        "samen",
+        "selbstaussaat",
+        "teilung",
+        "stecklinge"
+      ],
+      "max_width": 60,
+      "snails": [
+        "m\u00e4\u00dfig attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert",
+        "trocken bis frisch"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt"
+      ],
+      "watering": "m\u00e4\u00dfig gie\u00dfen; nach Anwachsen trockenheitsvertr\u00e4glich; Wintern\u00e4sse vermeiden",
+      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch bei sehr guter Drainage",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff mindert Standfestigkeit und Bl\u00fcte",
+      "cutting_time": 3,
+      "cutting": "Altes St\u00e4ngelwerk im zeitigen Fr\u00fchjahr bodennah entfernen; in der Saison Verbl\u00fchtes ausputzen",
+      "notes": "Duftende Bienenweide; kurzlebige Staude mit Selbstaussaat. Hauptproblem ist Wintern\u00e4sse, nicht K\u00e4lte."
+    },
+    {
+      "id": "tropaeolum-majus",
+      "name": "Tropaeolum Majus",
+      "trivname": "Kapuzinerkresse",
+      "type": "sommerblume (einj\u00e4hrige kletter-/kriechpflanze)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 20,
+          "6": 60,
+          "7": 120,
+          "8": 150,
+          "9": 130,
+          "10": 40,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/tropaeolum-majus-4.svg",
+          "5": "/tropaeolum-majus-4.svg",
+          "6": "/tropaeolum-majus-6.svg",
+          "7": "/tropaeolum-majus-7.svg",
+          "8": "/tropaeolum-majus-7.svg",
+          "9": "/tropaeolum-majus-9.svg",
+          "10": "/tropaeolum-majus-10.svg",
+          "11": "/tropaeolum-majus-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 1,
+      "min_temperature": 0,
+      "propagation": [
+        "samen",
+        "selbstaussaat",
+        "stecklinge (selten)"
+      ],
+      "max_width": 150,
+      "snails": [
+        "m\u00e4\u00dfig attraktiv"
+      ],
+      "bloom_start": 6,
+      "bloom_end": 10,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "gesch\u00fctzt"
+      ],
+      "watering": "m\u00e4\u00dfig gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "m\u00e4\u00dfig frisch, zwischen den Gaben leicht abtrocknen lassen",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen (bl\u00fcht auf magerem Boden besser)",
+      "cutting_time": "None",
+      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen; Triebe nach Bedarf leiten",
+      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Essbare Bl\u00e4tter/Bl\u00fcten mit pfeffrigem Aroma; h\u00e4ufige L\u00e4use-Fangpflanze (Trap Crop)."
+    },
+    {
+      "id": "monarda-fistulosa",
+      "name": "Monarda fistulosa",
+      "trivname": "Wilde Bergamotte (Indianernessel)",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 15,
+          "5": 35,
+          "6": 70,
+          "7": 100,
+          "8": 110,
+          "9": 90,
+          "10": 25,
+          "11": 5,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/empty.svg",
+          "4": "/monarda-fistulosa-4.svg",
+          "5": "/monarda-fistulosa-5.svg",
+          "6": "/monarda-fistulosa-6.svg",
+          "7": "/monarda-fistulosa-7.svg",
+          "8": "/monarda-fistulosa-8.svg",
+          "9": "/monarda-fistulosa-8.svg",
+          "10": "/monarda-fistulosa-10.svg",
+          "11": "/monarda-fistulosa-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 10,
+      "min_temperature": -34,
+      "propagation": [
+        "samen",
+        "selbstaussaat",
+        "teilung",
+        "stecklinge"
+      ],
+      "max_width": 80,
+      "snails": [
+        "schneckenfest"
+      ],
+      "bloom_start": 7,
+      "bloom_end": 9,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "trocken bis frisch",
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert",
+        "luftiger stand"
+      ],
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "mit guter luftzirkulation"
+      ],
+      "watering": "m\u00e4\u00dfig gie\u00dfen; Trockenstress beg\u00fcnstigt Mehltau",
+      "watering_ideal": "m\u00e4\u00dfig frisch, gut drainiert; Wintern\u00e4sse vermeiden",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "cutting_time": 3,
+      "cutting": "Alte St\u00e4ngel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; Verbl\u00fchtes ausputzen. (Einige St\u00e4ngel \u00fcber Winter teils stehen lassen.)",
+      "notes": "Duftende, langlebige Bienenpflanze; relativ mehltauresistent bei luftigem Stand. St\u00e4ngel \u00fcber Winter teilweise stehen lassen \u2013 Nistpl\u00e4tze f\u00fcr Wildbienen."
     }
   ]
 }
