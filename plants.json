@@ -4835,6 +4835,77 @@
       "cutting_time": 3,
       "cutting": "Alte St\u00e4ngel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; Verbl\u00fchtes ausputzen. (Einige St\u00e4ngel \u00fcber Winter teils stehen lassen.)",
       "notes": "Duftende, langlebige Bienenpflanze; relativ mehltauresistent bei luftigem Stand. St\u00e4ngel \u00fcber Winter teilweise stehen lassen \u2013 Nistpl\u00e4tze f\u00fcr Wildbienen."
+    },
+    {
+      "bloom_end": 9,
+      "bloom_start": "6",
+      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen (verl\u00e4ngert die Bl\u00fcte); nach der Bl\u00fcte zur\u00fcckschneiden",
+      "cutting_time": "None",
+      "id": "eschscholzia-californica",
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt"
+      ],
+      "max_lifetime": 3,
+      "max_width": 40,
+      "min_temperature": -5,
+      "name": "Eschscholzia californica",
+      "notes": "\u00d6ffnet Bl\u00fcten in Sonne, schlie\u00dft bei K\u00e4lte/N\u00e4sse; kurzlebig, versamt sich; Jungpflanzen vor Schnecken sch\u00fctzen; enth\u00e4lt Alkaloide \u2013 nicht verzehren.",
+      "nutrition": "gering",
+      "nutrition_ideal": "nicht oder nur sehr sparsam d\u00fcngen",
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "snails": [
+        "schneckenfest"
+      ],
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "sandig/leicht",
+        "gut drainiert"
+      ],
+      "trivname": "Kalifornischer Mohn (Goldmohn)",
+      "type": "sommerblume (einj\u00e4hrig/kurzlebig)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 8,
+          "5": 20,
+          "6": 30,
+          "7": 40,
+          "8": 40,
+          "9": 30,
+          "10": 10,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/eschscholzia-californica-3.svg",
+          "4": "/eschscholzia-californica-4.svg",
+          "5": "/eschscholzia-californica-5.svg",
+          "6": "/eschscholzia-californica-6.svg",
+          "7": "/eschscholzia-californica-7.svg",
+          "8": "/eschscholzia-californica-7.svg",
+          "9": "/eschscholzia-californica-8.svg",
+          "10": "/eschscholzia-californica-10.svg",
+          "11": "/eschscholzia-californica-11.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "watering": "sparsam gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "trocken bis frisch bei sehr guter Drainage",
+      "scale": null
     }
   ]
 }
