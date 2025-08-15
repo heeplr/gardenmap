@@ -4701,8 +4701,42 @@
       "notes": "Duftende Bienenweide; kurzlebige Staude mit Selbstaussaat. Hauptproblem ist Wintern\u00e4sse, nicht K\u00e4lte."
     },
     {
+      "bloom_end": 10,
+      "bloom_start": "6",
+      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen; Triebe nach Bedarf leiten",
+      "cutting_time": "None",
       "id": "tropaeolum-majus",
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "gesch\u00fctzt"
+      ],
+      "max_lifetime": 1,
+      "max_width": 150,
+      "min_temperature": 0,
       "name": "Tropaeolum Majus",
+      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Essbare Bl\u00e4tter/Bl\u00fcten mit pfeffrigem Aroma; h\u00e4ufige L\u00e4use-Fangpflanze (Trap Crop).",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen (bl\u00fcht auf magerem Boden besser)",
+      "propagation": [
+        "samen",
+        "selbstaussaat",
+        "stecklinge (selten)"
+      ],
+      "scale": 0.5,
+      "snails": [
+        "m\u00e4\u00dfig attraktiv"
+      ],
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert"
+      ],
       "trivname": "Kapuzinerkresse",
       "type": "sommerblume (einj\u00e4hrige kletter-/kriechpflanze)",
       "vegetation": {
@@ -4735,42 +4769,8 @@
           "12": "/empty.svg"
         }
       },
-      "max_lifetime": 1,
-      "min_temperature": 0,
-      "propagation": [
-        "samen",
-        "selbstaussaat",
-        "stecklinge (selten)"
-      ],
-      "max_width": 150,
-      "scale": 1.0,
-      "snails": [
-        "m\u00e4\u00dfig attraktiv"
-      ],
-      "bloom_start": 6,
-      "bloom_end": 10,
-      "soil": [
-        "durchl\u00e4ssig"
-      ],
-      "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
-        "gut drainiert"
-      ],
-      "location": [
-        "sonnig"
-      ],
-      "location_ideal": [
-        "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
-        "gesch\u00fctzt"
-      ],
       "watering": "m\u00e4\u00dfig gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig frisch, zwischen den Gaben leicht abtrocknen lassen",
-      "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen (bl\u00fcht auf magerem Boden besser)",
-      "cutting_time": "None",
-      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen; Triebe nach Bedarf leiten",
-      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Essbare Bl\u00e4tter/Bl\u00fcten mit pfeffrigem Aroma; h\u00e4ufige L\u00e4use-Fangpflanze (Trap Crop)."
+      "watering_ideal": "m\u00e4\u00dfig frisch, zwischen den Gaben leicht abtrocknen lassen"
     },
     {
       "id": "monarda-fistulosa",
