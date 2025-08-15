@@ -19,13 +19,13 @@ POC CODE WITHOUT ANY SECURITY CONSIDERATIONS! DON'T RUN THIS ON THE PUBLIC INTER
 
 ## Features
 
-* uses SVG
-* pannable with click on map
+* visualize plant appearance for every month
+* visualize plant height over year with gradient blue = small, red = tall (📏 button)
+* export map view as SVG
+* pan map with click + drag
 * zoom with +/- buttons or scrollwheel
 * searchable plant palette (🎨 button)
-* add plants via drag/drop
-* month slider updates visualized vegetation
-* visualize plant height over year with gradient blue = small, red = tall (📏 button)
+* add plants from palette via drag/drop
 * keyboard shortcuts
   * e to edit selected plant (or doubleclick plant in palette)
   * del to delete selected plant(s) (or click 🗑  button)
