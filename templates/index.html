@@ -74,14 +74,50 @@
 
       <div class="offcanvas-header">
         <div class="input-group mt-auto">
-          <span class="input-group-text" id="input-search">🔍</span>
-          <input id="palette-search" type="text" class="form-control" placeholder="Suchen" aria-label="Suchen" aria-describedby="input-search" onkeyup="paletteFilterChanged(this.value)" title="enter searchterm to filter list">
-          <button type="button" class="btn bg-transparent" style="margin-left: -40px; z-index: 100;" onclick="paletteFilterClear()">✕</button>
+          <span class="input-group-text" id="palette-filter-search-label">🔍</span>
+          <input id="palette-filter-search" type="text" class="form-control" placeholder="Suchen" aria-label="Suchen" aria-describedby="palette-filter-search-label" onkeyup="paletteFilterChanged()" title="enter searchterm to filter list">
+          <button type="button" class="btn bg-transparent" style="margin-left: -40px; z-index: 100;" onclick="paletteFilterSearchClear()">✕</button>
         </div>
         <button type="button" class="btn-close text-reset mb-5" data-bs-dismiss="offcanvas" aria-label="Close" title="close palette"></button>
       </div>
-      <div class="offcanvas-body" id="palette-plantlist">
+
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordion-filter">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-filter">
+              <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-filter" aria-expanded="false" aria-controls="collapse-filter">
+                Filter
+              </button>
+            </h2>
+            <div id="collapse-filter" class="accordion-collapse collapse" aria-labelledby="heading-filter" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row pb-2">
+                  <label class="col my-auto" for="palette-filter-snails" title="filter by snail resistance">Schnecken:</label>
+                  <select id="palette-filter-snails"class="form-select col" aria-label="Schnecken" onchange="paletteFilterChanged()">
+                    <option value="all" selected>nicht filtern</option>
+                    <option value="hardened">schneckenfest</option>
+                    <option value="little">mäßig attraktiv</option>
+                    <option value="very">sehr attraktiv</option>
+                  </select>
+                </div>
+
+                <div class="row pb-2">
+                  <label class="col my-auto" for="palette-filter-lifetime" title="filter by snail lifetime">Lebensdauer:</label>
+                  <select id="palette-filter-lifetime"class="form-select col" aria-label="Lebensdauer" onchange="paletteFilterChanged()">
+                    <option value="all" selected>nicht filtern</option>
+                    <option value="perennial">nur mehrjährig</option>
+                    <option value="annual">nur einjährig</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="palette-plantlist"></div>
       </div>
+
       <div class="offcanvas-footer plants-toolbar">
         <button type="button" class="btn btn-light" onclick="paletteAdd()" title="add new plant species">+</button>
       </div>

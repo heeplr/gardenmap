@@ -14,7 +14,9 @@ let plants = {};
 const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let paletteCurrentlyEdited = null;
 let paletteShown = false;
-let paletteFilterSearch = document.getElementById("palette-search").value;  // current search string for plant palette
+let paletteFilterSearch = document.getElementById("palette-filter-search").value;  // current search string for plant palette
+let paletteFilterSnails = document.getElementById("palette-filter-snails").value;
+let paletteFilterLifetime = document.getElementById("palette-filter-lifetime").value;
 
 let viewTransform = null;
 let viewIsPanning = false;
@@ -220,14 +222,16 @@ function paletteSaveEdit() {
 }
 
 /* clear search filter */
-function paletteFilterClear() {
-    document.getElementById("palette-search").value = "";
+function paletteFilterSearchClear() {
+    document.getElementById("palette-filter-search").value = "";
     paletteFilterChanged("");
 }
 
-/* filter term changed */
-function paletteFilterChanged(string) {
-    paletteFilterSearch = string;
+/* filter settings changed */
+function paletteFilterChanged() {
+    paletteFilterSearch = document.getElementById("palette-filter-search").value;
+    paletteFilterSnails = document.getElementById("palette-filter-snails").value;
+    paletteFilterLifetime = document.getElementById("palette-filter-lifetime").value;
     paletteFilter();
 }
 
@@ -236,13 +240,45 @@ function paletteFilter() {
     const needle = paletteFilterSearch.toUpperCase();
 
     for (const [id, plant] of Object.entries(plants)) {
-        if(
+        /* show by default */
+        plant.el.style.display = "";
+        /* filter by snail attractiveness */
+        if(paletteFilterSnails == "hardened" && plant.snails != "hardened") {
+            /* doesn't match filter */
+            plant.el.style.display = "none";
+            continue;
+        }
+        if(paletteFilterSnails == "little" && plant.snails != "little") {
+            /* doesn't match filter */
+            plant.el.style.display = "none";
+            continue;
+        }
+        if(paletteFilterSnails == "very" && plant.snails != "very") {
+            /* doesn't match filter */
+            plant.el.style.display = "none";
+            continue;
+        }
+        /* filter by lifetime */
+        if(paletteFilterLifetime == "perennial" && parseInt(plant.max_lifetime) <= 1) {
+            /* doesn't match filter */
+            plant.el.style.display = "none";
+            continue;
+        }
+        if(paletteFilterLifetime == "annual" && parseInt(plant.max_lifetime) > 1) {
+            /* doesn't match filter */
+            plant.el.style.display = "none";
+            continue;
+        }
+
+        /* filter by text search */
+        if(!(
             (plant.name.toUpperCase().indexOf(needle) > -1) ||
-            (plant.trivname.toUpperCase().indexOf(needle) > -1)
-          ) {
-          plant.el.style.display = "";
-        } else {
-          plant.el.style.display = "none";
+            (plant.trivname.toUpperCase().indexOf(needle) > -1) ||
+            (plant.notes.toUpperCase().indexOf(needle) > -1)
+          )) {
+            /* no string matches filter */
+            plant.el.style.display = "none";
+            continue;
         }
     }
 }
