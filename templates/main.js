@@ -199,13 +199,13 @@ function paletteSaveEdit() {
     plant.nutrition_ideal = document.getElementById('edit-nutrition-ideal').value;
     plant.notes = document.getElementById('edit-notes').value;
     plant.scale = parseFloat(document.getElementById('edit-scale').value);
-    plant.bloom_start = document.getElementById('edit-bloom-start').value;
-    plant.bloom_end = parseFloat(document.getElementById('edit-bloom-end').value);
+    plant.bloom_start = parseInt(document.getElementById('edit-bloom-start').value);
+    plant.bloom_end = parseInt(document.getElementById('edit-bloom-end').value);
     plant.max_lifetime = parseInt(document.getElementById('edit-max-lifetime').value);
     plant.max_width = parseInt(document.getElementById('edit-max-width').value);
     plant.min_temperature = parseInt(document.getElementById('edit-min-temperature').value);
     plant.propagation = document.getElementById('edit-propagation').value.split(",");
-    plant.snails = document.getElementById('edit-snails').value.split(",");
+    plant.snails = document.getElementById('edit-snails').value;
 
     fetch('/plants', {
         method: 'PUT',

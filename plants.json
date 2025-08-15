@@ -27,9 +27,7 @@
         "teilung"
       ],
       "scale": 0.5,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig",
         "humos"
@@ -100,9 +98,7 @@
         "samen (selten)"
       ],
       "scale": 0.5,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -171,9 +167,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "humos",
         "frisch"
@@ -244,9 +238,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -315,9 +307,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "humos"
       ],
@@ -385,9 +375,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "humos",
         "frisch"
@@ -460,9 +448,7 @@
         "samen"
       ],
       "scale": 1,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -530,9 +516,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -602,9 +586,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "humos",
         "frisch"
@@ -675,9 +657,7 @@
         "rhizomstecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -746,9 +726,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "nass",
         "humos"
@@ -817,9 +795,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -889,9 +865,7 @@
         "samen (selten)"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -962,9 +936,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1034,9 +1006,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1106,9 +1076,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1177,9 +1145,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "humos",
         "frisch"
@@ -1251,9 +1217,7 @@
         "absenker"
       ],
       "scale": 1.5,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1322,9 +1286,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "frisch",
         "durchl\u00e4ssig"
@@ -1394,9 +1356,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1465,9 +1425,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1536,9 +1494,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "frisch",
         "durchl\u00e4ssig"
@@ -1608,9 +1564,7 @@
         "teilung (schwierig)"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "sauer",
         "durchl\u00e4ssig"
@@ -1681,9 +1635,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1752,9 +1704,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1823,9 +1773,7 @@
         "selbstaussaat"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1893,9 +1841,7 @@
         "stecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -1963,9 +1909,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2034,9 +1978,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "frisch",
         "durchl\u00e4ssig"
@@ -2105,9 +2047,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2176,9 +2116,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2247,9 +2185,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2319,9 +2255,7 @@
         "teilung"
       ],
       "scale": 0.35,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2390,9 +2324,7 @@
         "samen"
       ],
       "scale": 0.35,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2461,9 +2393,7 @@
         "teilung (selten)"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2533,9 +2463,7 @@
         "absenker"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2603,9 +2531,7 @@
         "selbstaussaat"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2672,9 +2598,7 @@
         "stecklinge (sorten)"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2741,9 +2665,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2810,9 +2732,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2880,9 +2800,7 @@
         "stecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -2950,9 +2868,7 @@
         "selbstaussaat"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3020,9 +2936,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3091,9 +3005,7 @@
         "absenker"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3161,9 +3073,7 @@
         "stecklinge (sorten)"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "frisch"
       ],
@@ -3232,9 +3142,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3303,9 +3211,7 @@
         "selbstaussaat"
       ],
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3373,9 +3279,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "nass",
         "humos"
@@ -3444,9 +3348,7 @@
         "samen"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3515,9 +3417,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "frisch"
       ],
@@ -3585,9 +3485,7 @@
         "wurzelstecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "frisch"
       ],
@@ -3655,9 +3553,7 @@
         "stecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3727,9 +3623,7 @@
         "selbstaussaat"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "frisch"
       ],
@@ -3796,9 +3690,7 @@
         "stecklinge"
       ],
       "scale": 1,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "frisch"
       ],
@@ -3866,9 +3758,7 @@
         "stecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -3935,9 +3825,7 @@
         "teilung"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -4005,9 +3893,7 @@
         "stecklinge"
       ],
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -4094,9 +3980,7 @@
       ],
       "max_width": 100,
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "bloom_start": 7,
       "bloom_end": 10,
       "soil": [
@@ -4165,9 +4049,7 @@
       ],
       "max_width": 45,
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
@@ -4238,9 +4120,7 @@
       ],
       "max_width": 45,
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
@@ -4309,9 +4189,7 @@
       ],
       "max_width": 240,
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
@@ -4363,9 +4241,7 @@
         "samen"
       ],
       "scale": 1,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -4454,9 +4330,7 @@
       ],
       "max_width": 60,
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "bloom_start": 7,
       "bloom_end": 9,
       "soil": [
@@ -4528,9 +4402,7 @@
       ],
       "max_width": 60,
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "bloom_start": 7,
       "bloom_end": 10,
       "soil": [
@@ -4599,9 +4471,7 @@
       ],
       "max_width": 45,
       "scale": 1.0,
-      "snails": [
-        "very"
-      ],
+      "snails": "very",
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
@@ -4672,9 +4542,7 @@
       ],
       "max_width": 60,
       "scale": 1.0,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
@@ -4727,9 +4595,7 @@
         "stecklinge (selten)"
       ],
       "scale": 0.5,
-      "snails": [
-        "little"
-      ],
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -4817,9 +4683,7 @@
       ],
       "max_width": 80,
       "scale": 1.0,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "bloom_start": 7,
       "bloom_end": 9,
       "soil": [
@@ -4871,9 +4735,7 @@
         "samen",
         "selbstaussaat"
       ],
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -4962,9 +4824,7 @@
         "selbstaussaat"
       ],
       "max_width": -1,
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "bloom_start": 2,
       "bloom_end": 3,
       "soil": [
@@ -5016,9 +4876,7 @@
         "rhizome",
         "samen"
       ],
-      "snails": [
-        "hardened"
-      ],
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
