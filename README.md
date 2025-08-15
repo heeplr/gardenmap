@@ -69,5 +69,7 @@ Contains your garden data (will be created if not existing)
 
 
 ## TODO
-- export SVG
-- mobile support
+- better UI
+- visualize more stuff (snail attractiveness, soil/watering requirements, ...)
+- better backend? (marshmallow)
+- mobile/touch support?
