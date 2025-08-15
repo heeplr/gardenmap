@@ -219,6 +219,12 @@ function plantPaletteSaveEdit() {
     })
 }
 
+/* clear search filter */
+function plantPaletteFilterClear() {
+    document.getElementById("plant-palette-search").value = "";
+    plantPaletteFilterChanged("");
+}
+
 /* filter term changed */
 function plantPaletteFilterChanged(string) {
     viewPaletteFilter = string;
@@ -228,9 +234,6 @@ function plantPaletteFilterChanged(string) {
 /* filter palette list by string */
 function plantPaletteFilter() {
     const needle = viewPaletteFilter.toUpperCase();
-    if(needle == "") {
-        return;
-    }
 
     for (const [id, plant] of Object.entries(plants)) {
         if(
