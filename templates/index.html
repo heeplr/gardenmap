@@ -71,18 +71,19 @@
     </div>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="palette" aria-labelledby="paletteLabel">
+
       <div class="offcanvas-header">
         <div class="input-group mt-auto">
           <span class="input-group-text" id="input-search">🔍</span>
-          <input id="plant-palette-search" type="text" class="form-control" placeholder="Suchen" aria-label="Suchen" aria-describedby="input-search" onkeyup="plantPaletteFilterChanged(this.value)" title="enter searchterm to filter list">
-          <button type="button" class="btn bg-transparent" style="margin-left: -40px; z-index: 100;" onclick="plantPaletteFilterClear()">✕</button>
+          <input id="palette-search" type="text" class="form-control" placeholder="Suchen" aria-label="Suchen" aria-describedby="input-search" onkeyup="paletteFilterChanged(this.value)" title="enter searchterm to filter list">
+          <button type="button" class="btn bg-transparent" style="margin-left: -40px; z-index: 100;" onclick="paletteFilterClear()">✕</button>
         </div>
         <button type="button" class="btn-close text-reset mb-5" data-bs-dismiss="offcanvas" aria-label="Close" title="close palette"></button>
       </div>
       <div class="offcanvas-body" id="palette-plantlist">
       </div>
       <div class="offcanvas-footer plants-toolbar">
-        <button type="button" class="btn btn-light" onclick="plantPaletteAdd()" title="add new plant species">+</button>
+        <button type="button" class="btn btn-light" onclick="paletteAdd()" title="add new plant species">+</button>
       </div>
     </div>
 
@@ -306,7 +307,7 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" onclick="plantPaletteSaveEdit()">Save</button>
+            <button type="button" class="btn btn-primary" onclick="paletteSaveEdit()">Save</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>

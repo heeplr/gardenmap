@@ -11,16 +11,16 @@ let garden = {};
 let plants = {};
 
 
-const plantPaletteEditForm = new bootstrap.Modal('#plant-edit-form');
-let plantPaletteCurrentlyEdited = null;
-let plantPaletteShown = false;
+const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
+let paletteCurrentlyEdited = null;
+let paletteShown = false;
+let paletteFilterSearch = document.getElementById("palette-search").value;  // current search string for plant palette
 
 let viewTransform = null;
 let viewIsPanning = false;
 let viewPanStart = null;
 let viewHeight = false;                 // visualize height, not icons
 let viewMouse = { x: 0, y: 0};          // remember last SVG coords of mouse
-let viewPaletteFilter = document.getElementById("plant-palette-search").value;  // current search string for plant palette
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
@@ -49,7 +49,7 @@ const gardenMaxHeight = 200.0;          // max plant height (in cm)
 
 
 /* ---------------------------------------------------------------------------*/
-function plantPaletteLoad() {
+function paletteLoad() {
     /* load plants */
     return fetch('/plants')
         .then(res => res.json())
@@ -57,10 +57,10 @@ function plantPaletteLoad() {
             data.plantlist.forEach(plant => {
                 plants[plant['id']] = plant;
             });
-        }).then(() => plantPaletteRender());
+        }).then(() => paletteRender());
 }
 
-function plantPaletteRender() {
+function paletteRender() {
     const el = document.getElementById('palette-plantlist');
     el.innerHTML = '';
     for (const [id, plant] of Object.entries(plants)) {
@@ -73,7 +73,7 @@ function plantPaletteRender() {
             e.dataTransfer.setData('plant-id', plant.id);
         };
         div.ondblclick = (e) => {
-            plantPaletteEdit(plant);
+            paletteEdit(plant);
         }
         const img = document.createElement('img');
         img.src = plant['vegetation']['icon'][monthSelected];
@@ -84,10 +84,10 @@ function plantPaletteRender() {
         plant.el = div;
     };
     /* apply any search term */
-    plantPaletteFilter();
+    paletteFilter();
 }
 
-function plantPaletteAdd() {
+function paletteAdd() {
     const newPlant = {
         name: 'Neu',
         trivname: 'novum',
@@ -102,10 +102,10 @@ function plantPaletteAdd() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newPlant)
-        }).then(() => plantPaletteLoad());
+        }).then(() => paletteLoad());
 }
 
-function plantPaletteEdit(plant) {
+function paletteEdit(plant) {
     document.getElementById('edit-name').value = plant.name;
     document.getElementById('edit-name-trivial').value = plant.trivname;
     document.getElementById('edit-type').value = plant.type;
@@ -174,12 +174,12 @@ function plantPaletteEdit(plant) {
         vegetation.appendChild(monthly);
     }
 
-    plantPaletteCurrentlyEdited = plant;
-    plantPaletteEditForm.show();
+    paletteCurrentlyEdited = plant;
+    paletteEditForm.show();
 }
 
-function plantPaletteSaveEdit() {
-    const plant = {...plantPaletteCurrentlyEdited}
+function paletteSaveEdit() {
+    const plant = {...paletteCurrentlyEdited}
 
     delete plant.el;
     plant.name = document.getElementById('edit-name').value;
@@ -211,29 +211,29 @@ function plantPaletteSaveEdit() {
         body: JSON.stringify(plant)
     })
     .then(() => {
-        plantPaletteCurrentlyEdited = null;
-        plantPaletteEditForm.hide();
-        plantPaletteLoad().then(() => {
+        paletteCurrentlyEdited = null;
+        paletteEditForm.hide();
+        paletteLoad().then(() => {
             gardenRender();
         });
     })
 }
 
 /* clear search filter */
-function plantPaletteFilterClear() {
-    document.getElementById("plant-palette-search").value = "";
-    plantPaletteFilterChanged("");
+function paletteFilterClear() {
+    document.getElementById("palette-search").value = "";
+    paletteFilterChanged("");
 }
 
 /* filter term changed */
-function plantPaletteFilterChanged(string) {
-    viewPaletteFilter = string;
-    plantPaletteFilter();
+function paletteFilterChanged(string) {
+    paletteFilterSearch = string;
+    paletteFilter();
 }
 
 /* filter palette list by string */
-function plantPaletteFilter() {
-    const needle = viewPaletteFilter.toUpperCase();
+function paletteFilter() {
+    const needle = paletteFilterSearch.toUpperCase();
 
     for (const [id, plant] of Object.entries(plants)) {
         if(
@@ -359,7 +359,7 @@ function monthUpdateIcons(month) {
     viewSaveSettings();
     monthRender();
     gardenRender();
-    plantPaletteRender();
+    paletteRender();
 }
 
 /* display name of currently shown month */
@@ -375,7 +375,7 @@ function viewSaveSettings() {
         'scale': viewTransform.scale,
         'monthSelected': monthSelected,
         'viewHeight': viewHeight,
-        'paletteShown': plantPaletteShown
+        'paletteShown': paletteShown
     }));
 }
 
@@ -391,9 +391,9 @@ function viewLoadSettings() {
         centerY: undefined
     };
 
-    plantPaletteShown = viewSaved.paletteShown || false;
+    paletteShown = viewSaved.paletteShown || false;
     const offcanvas = new bootstrap.Offcanvas(palette);
-    plantPaletteShown ? offcanvas.show() : offcanvas.hide();
+    paletteShown ? offcanvas.show() : offcanvas.hide();
 
     monthSelected = viewSaved.monthSelected || 1;
     document.getElementById("monthSlider").value = monthSelected;
@@ -699,12 +699,12 @@ svg.addEventListener("drop", (e) => {
 
 /* remember current palette state */
 palette.addEventListener('shown.bs.offcanvas', event => {
-  plantPaletteShown = true;
+  paletteShown = true;
   viewSaveSettings();
 });
 
 palette.addEventListener('hidden.bs.offcanvas', event => {
-  plantPaletteShown = false;
+  paletteShown = false;
   viewSaveSettings();
 });
 
@@ -758,7 +758,7 @@ window.onkeyup = (e) => {
         }
 
         const plant = selection[selection.length-1];
-        plantPaletteEdit(plants[plant.plant_id]);
+        paletteEdit(plants[plant.plant_id]);
     }
 }
 
@@ -852,7 +852,7 @@ document.onpaste = (e) => {
 
 window.onload = () => {
     monthRender();
-    plantPaletteLoad()
+    paletteLoad()
         .then(() => {
             /* load garden plants */
             gardenLoad();
