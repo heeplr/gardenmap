@@ -4093,6 +4093,7 @@
         "selbstaussaat"
       ],
       "max_width": 100,
+      "scale": 1.0,
       "snails": [
         "sehr attraktiv"
       ],
@@ -4163,6 +4164,7 @@
         "selbstaussaat"
       ],
       "max_width": 45,
+      "scale": 1.0,
       "snails": [
         "sehr attraktiv"
       ],
@@ -4235,6 +4237,7 @@
         "selbstaussaat"
       ],
       "max_width": 45,
+      "scale": 1.0,
       "snails": [
         "m\u00e4\u00dfig attraktiv"
       ],
@@ -4305,6 +4308,7 @@
         "samen"
       ],
       "max_width": 240,
+      "scale": 1.0,
       "snails": [
         "sehr attraktiv"
       ],
@@ -4336,8 +4340,42 @@
       "notes": "Einh\u00e4usig mit getrennten m\u00e4nnlichen/weiblichen Bl\u00fcten; Best\u00e4ubung v. a. durch Bienen (Squash-Bees). Sehr frostempfindlich \u2013 erst nach den Eisheiligen pflanzen. Bitter schmeckende Fr\u00fcchte (Cucurbitacine) nicht verzehren."
     },
     {
+      "bloom_end": 9,
+      "bloom_start": "6",
+      "cutting": "Kein Schnitt n\u00f6tig; Triebe an Stangen/Netz leiten, Spitzen bei Erreichen der H\u00f6he eink\u00fcrzen",
+      "cutting_time": "None",
       "id": "phaseolus-coccineus",
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "gesch\u00fctzt"
+      ],
+      "max_lifetime": 1,
+      "max_width": 150,
+      "min_temperature": 1,
       "name": "Phaseolus Coccineus",
+      "notes": "Roh (Schoten/Samen) gesundheitssch\u00e4dlich wegen Lectinen \u2013 nur gegart verzehren. S\u00e4mlinge vor Schnecken sch\u00fctzen.",
+      "nutrition": "hoch",
+      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; w\u00e4hrend der Saison regelm\u00e4\u00dfig moderat nachd\u00fcngen",
+      "propagation": [
+        "samen"
+      ],
+      "scale": 1,
+      "snails": [
+        "sehr attraktiv"
+      ],
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "n\u00e4hrstoffreich",
+        "humos",
+        "feuchthaltend",
+        "gut drainiert",
+        "nahe neutral"
+      ],
       "trivname": "Feuerbohne (Prunkbohne)",
       "type": "gem\u00fcse (einj\u00e4hrige kletterpflanze; mehrj\u00e4hrig nur frostfrei)",
       "vegetation": {
@@ -4370,41 +4408,8 @@
           "12": "/empty.svg"
         }
       },
-      "max_lifetime": 1,
-      "min_temperature": 1,
-      "propagation": [
-        "samen"
-      ],
-      "max_width": 150,
-      "snails": [
-        "sehr attraktiv"
-      ],
-      "bloom_start": 6,
-      "bloom_end": 9,
-      "soil": [
-        "durchl\u00e4ssig"
-      ],
-      "soil_ideal": [
-        "n\u00e4hrstoffreich",
-        "humos",
-        "feuchthaltend",
-        "gut drainiert",
-        "nahe neutral"
-      ],
-      "location": [
-        "sonnig"
-      ],
-      "location_ideal": [
-        "vollsonnig",
-        "gesch\u00fctzt"
-      ],
       "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenstress mindert Ansatz",
-      "watering_ideal": "st\u00e4ndig leicht feucht, mulchen; keine Staun\u00e4sse",
-      "nutrition": "hoch",
-      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; w\u00e4hrend der Saison regelm\u00e4\u00dfig moderat nachd\u00fcngen",
-      "cutting_time": "None",
-      "cutting": "Kein Schnitt n\u00f6tig; Triebe an Stangen/Netz leiten, Spitzen bei Erreichen der H\u00f6he eink\u00fcrzen",
-      "notes": "Roh (Schoten/Samen) gesundheitssch\u00e4dlich wegen Lectinen \u2013 nur gegart verzehren. S\u00e4mlinge vor Schnecken sch\u00fctzen."
+      "watering_ideal": "st\u00e4ndig leicht feucht, mulchen; keine Staun\u00e4sse"
     },
     {
       "id": "helianthus-annuus",
@@ -4448,6 +4453,7 @@
         "selbstaussaat"
       ],
       "max_width": 60,
+      "scale": 1.0,
       "snails": [
         "sehr attraktiv"
       ],
@@ -4521,6 +4527,7 @@
         "selbstaussaat"
       ],
       "max_width": 60,
+      "scale": 1.0,
       "snails": [
         "sehr attraktiv"
       ],
@@ -4591,6 +4598,7 @@
         "selbstaussaat"
       ],
       "max_width": 45,
+      "scale": 1.0,
       "snails": [
         "sehr attraktiv"
       ],
@@ -4663,6 +4671,7 @@
         "stecklinge"
       ],
       "max_width": 60,
+      "scale": 1.0,
       "snails": [
         "m\u00e4\u00dfig attraktiv"
       ],
@@ -4734,6 +4743,7 @@
         "stecklinge (selten)"
       ],
       "max_width": 150,
+      "scale": 1.0,
       "snails": [
         "m\u00e4\u00dfig attraktiv"
       ],
@@ -4806,6 +4816,7 @@
         "stecklinge"
       ],
       "max_width": 80,
+      "scale": 1.0,
       "snails": [
         "schneckenfest"
       ],
@@ -4905,7 +4916,152 @@
       },
       "watering": "sparsam gie\u00dfen; Staun\u00e4sse vermeiden",
       "watering_ideal": "trocken bis frisch bei sehr guter Drainage",
-      "scale": null
+      "scale": 1.0
+    },
+    {
+      "id": "galanthus-nivalis",
+      "name": "Galanthus nivalis",
+      "trivname": "Schneegl\u00f6ckchen",
+      "type": "zwiebelpflanze (geophyt)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 10,
+          "3": 15,
+          "4": 10,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/galanthus-nivalis-2.svg",
+          "3": "/galanthus-nivalis-3.svg",
+          "4": "/galanthus-nivalis-4.svg",
+          "5": "/galanthus-nivalis-5.svg",
+          "6": "/empty.svg",
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 30,
+      "min_temperature": -30,
+      "propagation": [
+        "tochterzwiebeln",
+        "teilung",
+        "samen",
+        "selbstaussaat"
+      ],
+      "max_width": -1,
+      "snails": [
+        "schneckenfest"
+      ],
+      "bloom_start": 2,
+      "bloom_end": 3,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "frisch im Fr\u00fchjahr",
+        "gut drainiert"
+      ],
+      "location": [
+        "halbschattig",
+        "schattig"
+      ],
+      "location_ideal": [
+        "lichter Schatten unter Laubgeh\u00f6lzen",
+        "Wintersonne m\u00f6glich"
+      ],
+      "watering": "im Fr\u00fchjahr frisch; im Sommer trocken",
+      "watering_ideal": "w\u00e4hrend Austrieb gleichm\u00e4\u00dfig frisch, danach abtrocknen lassen",
+      "nutrition": "gering",
+      "nutrition_ideal": "Laubmulch im Herbst; keine regelm\u00e4\u00dfige D\u00fcngung n\u00f6tig",
+      "cutting_time": "None",
+      "cutting": "Verbl\u00fchtes entfernen; Laub erst nach Vergilben schneiden",
+      "notes": "Bildet mit der Zeit gro\u00dfe Best\u00e4nde (Ameisen verbreiten Samen). Horste am besten 'in the green' teilen. Nicht aus Wildbest\u00e4nden entnehmen."
+    },
+    {
+      "bloom_end": 5,
+      "bloom_start": "4",
+      "cutting": "Nur eingetrocknete/vergilbte Bl\u00e4tter nach der Saison entfernen",
+      "cutting_time": "None",
+      "id": "convallaria-majalis",
+      "location": [
+        "halbschattig",
+        "schattig"
+      ],
+      "location_ideal": [
+        "lichter bis voller Schatten unter Geh\u00f6lzen"
+      ],
+      "max_lifetime": 40,
+      "max_width": -1,
+      "min_temperature": -34,
+      "name": "Convallaria majalis",
+      "notes": "Sehr langlebig, breitet sich mit Rhizomen teppichbildend aus (ggf. Wurzelsperre). Stark giftig (kardenolide Glykoside) \u2013 nicht verzehren, Vorsicht bei Kindern/Haustieren.",
+      "nutrition": "gering",
+      "nutrition_ideal": "j\u00e4hrlich d\u00fcnne Laub-/Kompostgabe",
+      "propagation": [
+        "teilung",
+        "rhizome",
+        "samen"
+      ],
+      "snails": [
+        "schneckenfest"
+      ],
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "frisch bis feucht",
+        "gut drainiert"
+      ],
+      "trivname": "Maigl\u00f6ckchen",
+      "type": "rhizomstaude (geophyt)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 15,
+          "5": 20,
+          "6": 20,
+          "7": 15,
+          "8": 10,
+          "9": 5,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/convallaria-majalis-3.svg",
+          "4": "/convallaria-majalis-4.svg",
+          "5": "/convallaria-majalis-4.svg",
+          "6": "/convallaria-majalis-6.svg",
+          "7": "/convallaria-majalis-7.svg",
+          "8": "/convallaria-majalis-8.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse vermeiden",
+      "watering_ideal": "frisch bis feucht, humoser Boden h\u00e4lt Feuchte",
+      "scale": 1.0
     }
   ]
 }
