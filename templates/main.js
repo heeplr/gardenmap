@@ -745,6 +745,11 @@ palette.addEventListener('hidden.bs.offcanvas', event => {
 });
 
 window.onkeydown = (e) => {
+    /* don't do anything if text is entered */
+    if(document.activeElement.id != "") {
+        return true;
+    }
+
     /* set flag if shift key is pressed */
     if(e.code === "ShiftLeft" || e.code === "ShiftRight" ) {
         shiftKeyPressed = true;
@@ -756,6 +761,10 @@ window.onkeydown = (e) => {
 }
 
 window.onkeyup = (e) => {
+    /* don't do anything if text is entered */
+    if(document.activeElement.id != "") {
+        return true;
+    }
     /* clear flag if shift key is released */
     if(e.code === "ShiftLeft" || e.code === "ShiftRight" ) {
         shiftKeyPressed = false;
