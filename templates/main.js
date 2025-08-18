@@ -14,9 +14,11 @@ let plants = {};
 const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let paletteCurrentlyEdited = null;
 let paletteShown = false;
-let paletteFilterSearch = document.getElementById("palette-filter-search").value;  // current search string for plant palette
-let paletteFilterSnails = parseInt(document.getElementById("palette-filter-snails").value);
-let paletteFilterLifetime = parseInt(document.getElementById("palette-filter-lifetime").value);
+let paletteFilter = {
+    "search": document.getElementById("palette-filter-search").value,  // current search string for plant palette
+    "snails": document.getElementById("palette-filter-snails").value, // snail resistence
+    "lifetime": document.getElementById("palette-filter-lifetime").value // max. lifetime
+};
 
 let viewTransform = null;
 let viewIsPanning = false;
@@ -86,7 +88,7 @@ function paletteRender() {
         plant.el = div;
     };
     /* apply any search term */
-    paletteFilter();
+    paletteFilterNow();
 }
 
 function paletteAdd() {
@@ -229,10 +231,10 @@ function paletteFilterSearchClear() {
 
 /* filter settings changed */
 function paletteFilterChanged() {
-    paletteFilterSearch = document.getElementById("palette-filter-search").value;
-    paletteFilterLifetime = parseInt(document.getElementById("palette-filter-lifetime").value);
-    paletteFilterSnails = parseInt(document.getElementById("palette-filter-snails").value);
-    switch(paletteFilterSnails) {
+    paletteFilter.search = document.getElementById("palette-filter-search").value;
+    paletteFilter.lifetime = document.getElementById("palette-filter-lifetime").value;
+    paletteFilter.snails = parseInt(document.getElementById("palette-filter-snails").value);
+    switch(paletteFilter.snails) {
 
         case 2:
             document.getElementById("palette-filter-snails-label").textContent = "resistent";
@@ -247,34 +249,35 @@ function paletteFilterChanged() {
             break;
 
     }
-    paletteFilter();
+    paletteFilterNow();
+    viewSaveSettings();
 }
 
 /* filter palette list by string */
-function paletteFilter() {
-    const needle = paletteFilterSearch.toUpperCase();
+function paletteFilterNow() {
+    const needle = paletteFilter.search.toUpperCase();
 
     for (const [id, plant] of Object.entries(plants)) {
         /* show by default */
         plant.el.style.display = "";
         /* filter by snail attractiveness */
-        if(paletteFilterSnails == 2 && plant.snails != "hardened") {
+        if(paletteFilter.snails == 2 && plant.snails != "hardened") {
             /* show only hardened */
             plant.el.style.display = "none";
             continue;
         }
-        if(paletteFilterSnails == 1 && plant.snails == "very") {
+        if(paletteFilter.snails == 1 && plant.snails == "very") {
             /* hide very attractive plants */
             plant.el.style.display = "none";
             continue;
         }
         /* filter by lifetime */
-        if(paletteFilterLifetime == "perennial" && parseInt(plant.max_lifetime) <= 1) {
+        if(paletteFilter.lifetime == "perennial" && parseInt(plant.max_lifetime) <= 1) {
             /* doesn't match filter */
             plant.el.style.display = "none";
             continue;
         }
-        if(paletteFilterLifetime == "annual" && parseInt(plant.max_lifetime) > 1) {
+        if(paletteFilter.lifetime == "annual" && parseInt(plant.max_lifetime) > 1) {
             /* doesn't match filter */
             plant.el.style.display = "none";
             continue;
@@ -421,7 +424,8 @@ function viewSaveSettings() {
         'scale': viewTransform.scale,
         'monthSelected': monthSelected,
         'viewHeight': viewHeight,
-        'paletteShown': paletteShown
+        'paletteShown': paletteShown,
+        'filter': paletteFilter
     }));
 }
 
@@ -444,8 +448,11 @@ function viewLoadSettings() {
     monthSelected = viewSaved.monthSelected || 1;
     document.getElementById("monthSlider").value = monthSelected;
 
-    viewHeight = viewSaved.viewHeight;
+    viewHeight = viewSaved.viewHeight || 0;
     document.getElementById("heightVisualizationToggle").checked = viewHeight;
+
+    paletteFilter = viewSaved.filter || paletteFilter;
+    paletteFilterChanged();
 }
 
 /* change zoom */
