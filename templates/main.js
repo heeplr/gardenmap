@@ -15,8 +15,8 @@ const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let paletteCurrentlyEdited = null;
 let paletteShown = false;
 let paletteFilterSearch = document.getElementById("palette-filter-search").value;  // current search string for plant palette
-let paletteFilterSnails = document.getElementById("palette-filter-snails").value;
-let paletteFilterLifetime = document.getElementById("palette-filter-lifetime").value;
+let paletteFilterSnails = parseInt(document.getElementById("palette-filter-snails").value);
+let paletteFilterLifetime = parseInt(document.getElementById("palette-filter-lifetime").value);
 
 let viewTransform = null;
 let viewIsPanning = false;
@@ -230,8 +230,23 @@ function paletteFilterSearchClear() {
 /* filter settings changed */
 function paletteFilterChanged() {
     paletteFilterSearch = document.getElementById("palette-filter-search").value;
-    paletteFilterSnails = document.getElementById("palette-filter-snails").value;
-    paletteFilterLifetime = document.getElementById("palette-filter-lifetime").value;
+    paletteFilterLifetime = parseInt(document.getElementById("palette-filter-lifetime").value);
+    paletteFilterSnails = parseInt(document.getElementById("palette-filter-snails").value);
+    switch(paletteFilterSnails) {
+
+        case 2:
+            document.getElementById("palette-filter-snails-label").textContent = "resistent";
+            break;
+
+        case 1:
+            document.getElementById("palette-filter-snails-label").textContent = "wenig";
+            break;
+
+        default:
+            document.getElementById("palette-filter-snails-label").textContent = "alle";
+            break;
+
+    }
     paletteFilter();
 }
 
@@ -243,18 +258,13 @@ function paletteFilter() {
         /* show by default */
         plant.el.style.display = "";
         /* filter by snail attractiveness */
-        if(paletteFilterSnails == "hardened" && plant.snails != "hardened") {
-            /* doesn't match filter */
+        if(paletteFilterSnails == 2 && plant.snails != "hardened") {
+            /* show only hardened */
             plant.el.style.display = "none";
             continue;
         }
-        if(paletteFilterSnails == "little" && plant.snails != "little") {
-            /* doesn't match filter */
-            plant.el.style.display = "none";
-            continue;
-        }
-        if(paletteFilterSnails == "very" && plant.snails != "very") {
-            /* doesn't match filter */
+        if(paletteFilterSnails == 1 && plant.snails == "very") {
+            /* hide very attractive plants */
             plant.el.style.display = "none";
             continue;
         }

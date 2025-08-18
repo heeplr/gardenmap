@@ -92,13 +92,11 @@
             <div id="collapse-filter" class="accordion-collapse collapse" aria-labelledby="heading-filter" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <div class="row pb-2">
-                  <label class="col my-auto" for="palette-filter-snails" title="filter by snail resistance">Schnecken:</label>
-                  <select id="palette-filter-snails"class="form-select col" aria-label="Schnecken" onchange="paletteFilterChanged()">
-                    <option value="all" selected>nicht filtern</option>
-                    <option value="hardened">schneckenfest</option>
-                    <option value="little">mäßig attraktiv</option>
-                    <option value="very">sehr attraktiv</option>
-                  </select>
+                  <div class="input-group">
+                    <label class="col my-auto" for="palette-filter-snails" title="filter by snail resistance">Schnecken:</label>
+                    <input type="range" value="2" min="0" max="2" step="1" class="form-control-range" id="palette-filter-snails" title="filter by snail resistance" oninput="paletteFilterChanged()">
+                  </div>
+                  <output class="fw-bold" name="snails" id="palette-filter-snails-label" for="palette-filter-snails">alle</output>
                 </div>
 
                 <div class="row pb-2">
