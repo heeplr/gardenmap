@@ -23,8 +23,8 @@ let paletteFilter = {
 let viewTransform = null;
 let viewIsPanning = false;
 let viewPanStart = null;
-let viewHeight = false;                 // visualize height, not icons
-let viewMouse = { x: 0, y: 0};          // remember last SVG coords of mouse
+let viewMode = "iconVisMode";          // visualize height, not icons
+let viewMouse = { x: 0, y: 0};         // remember last SVG coords of mouse
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
@@ -322,19 +322,56 @@ function gardenRender() {
         const plant_model = plants[plant.plant_id];
         /* DOM element for this plant */
         let el = null;
-        /* visualize max height? */
-        if(viewHeight) {
-            /* calculate color shade from height */
-            let color = (255.0 / gardenMaxHeight) * plant_model.vegetation.height[monthSelected];
-            el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-            el.setAttribute("fill", "rgb(" + color + ",0," + (255.0 - color) + ",0.5)");
+
+        switch(viewMode) {
+            /* draw icons */
+            case "iconVisMode":
+                /* create new image */
+                el = document.createElementNS("http://www.w3.org/2000/svg", "image");
+                el.setAttribute("href", plant_model.vegetation.icon[monthSelected]);
+                break;
+
+            /* visualize max height */
+            case "heightVisMode":
+                /* calculate color shade from height */
+                const height_color = (255.0 / gardenMaxHeight) * plant_model.vegetation.height[monthSelected];
+                el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                el.setAttribute("fill", "rgb(" + height_color + ",0," + (255.0 - height_color) + ",0.5)");
+                break;
+
+            /* visualize cut time */
+            case "cutVisMode":
+                let cut_color = "white";
+                if(plant_model.cutting_time == monthSelected) {
+                    cut_color = "green";
+                } else {
+                    cut_color = "red";
+                }
+                el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                el.setAttribute("fill", cut_color);
+                break;
+
+            /* visualize snail resistance */
+            case "snailVisMode":
+                let snail_color = "white";
+                switch(plant_model.snails) {
+                    case "very":
+                        snail_color = "red";
+                        break;
+
+                    case "little":
+                        snail_color = "yellow";
+                        break;
+
+                    case "hardened":
+                        snail_color = "green";
+                        break;
+                }
+                el = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                el.setAttribute("fill", snail_color);
+                break;
         }
-        /* visualize icons */
-        else {
-            /* create new image */
-            el = document.createElementNS("http://www.w3.org/2000/svg", "image");
-            el.setAttribute("href", plant_model.vegetation.icon[monthSelected]);
-        }
+
         el.setAttribute("x", plant.x);
         el.setAttribute("y", plant.y);
         el.setAttribute("width", viewIconWidth * plant_model.scale + "px");
@@ -423,7 +460,7 @@ function viewSaveSettings() {
         'offsetY': viewTransform.y,
         'scale': viewTransform.scale,
         'monthSelected': monthSelected,
-        'viewHeight': viewHeight,
+        'viewMode': viewMode,
         'paletteShown': paletteShown,
         'filter': paletteFilter
     }));
@@ -448,8 +485,8 @@ function viewLoadSettings() {
     monthSelected = viewSaved.monthSelected || 1;
     document.getElementById("monthSlider").value = monthSelected;
 
-    viewHeight = viewSaved.viewHeight || 0;
-    document.getElementById("heightVisualizationToggle").checked = viewHeight;
+    viewMode = viewSaved.viewMode || "iconVisMode";
+    viewModeChanged(viewMode);
 
     paletteFilter = viewSaved.filter || paletteFilter;
     paletteFilterChanged();
@@ -484,10 +521,14 @@ function viewUpdateTransform() {
     viewSaveSettings();
 }
 
-/* activate/deactivate height visualization */
-function viewHeightToggle(active) {
-    viewHeight = active;
-    document.getElementById('heightVisualizationToggle').checked = active;
+/* change visualization mode */
+function viewModeChanged(mode) {
+    /* deselect current mode toggle */
+    document.getElementById(viewMode).checked = false;
+    /* set new mode */
+    viewMode = mode;
+    /* update UI */
+    document.getElementById(viewMode).checked = true;
     viewSaveSettings();
     gardenRender();
 }
