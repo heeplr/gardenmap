@@ -13,8 +13,9 @@ POC CODE WITHOUT ANY SECURITY CONSIDERATIONS! DON'T RUN THIS ON THE PUBLIC INTER
 
 ## Requirements
 
-* python + flask
-* bootstrap (included)
+* python
+ * flask
+ * filelock
 
 
 ## Features
