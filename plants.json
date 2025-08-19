@@ -2845,73 +2845,6 @@
       "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, keine Staun\u00e4sse"
     },
     {
-      "bloom_end": 10,
-      "bloom_start": 7,
-      "cutting": "Regelm\u00e4\u00dfig ausputzen; f\u00fcr Vasenschnitt lange Stiele schneiden",
-      "cutting_time": 8,
-      "id": "cosmea",
-      "location": [
-        "sonnig"
-      ],
-      "location_ideal": [
-        "vollsonnig, windgesch\u00fctzt"
-      ],
-      "max_lifetime": 1,
-      "max_width": 60,
-      "min_temperature": 0,
-      "name": "Cosmea",
-      "notes": "Hohe Sorten ggf. st\u00fctzen",
-      "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen",
-      "propagation": [
-        "samen",
-        "selbstaussaat"
-      ],
-      "scale": 1.0,
-      "snails": "little",
-      "soil": [
-        "durchl\u00e4ssig"
-      ],
-      "soil_ideal": [
-        "mager bis m\u00e4\u00dfig",
-        "gut drainiert"
-      ],
-      "trivname": "Schmuckk\u00f6rbchen",
-      "type": "sommerblume (einj\u00e4hrig)",
-      "vegetation": {
-        "height": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 10,
-          "5": 30,
-          "6": 60,
-          "7": 100,
-          "8": 120,
-          "9": 110,
-          "10": 40,
-          "11": 0,
-          "12": 0
-        },
-        "icon": {
-          "1": "/empty.svg",
-          "2": "/empty.svg",
-          "3": "/empty.svg",
-          "4": "/empty.svg",
-          "5": "/cosmea-5.svg",
-          "6": "/cosmea-6.svg",
-          "7": "/cosmea-7.svg",
-          "8": "/cosmea-7.svg",
-          "9": "/cosmea-7.svg",
-          "10": "/cosmea-10.svg",
-          "11": "/empty.svg",
-          "12": "/empty.svg"
-        }
-      },
-      "watering": "m\u00e4\u00dfig gie\u00dfen; nicht \u00fcberversorgen",
-      "watering_ideal": "m\u00e4\u00dfig frisch; zu viel N = viel Blatt, wenig Bl\u00fcte"
-    },
-    {
       "bloom_end": 8,
       "bloom_start": 6,
       "cutting": "Altes Laub im Fr\u00fchjahr entfernen; nach Bl\u00fcte eink\u00fcrzen",
@@ -4361,9 +4294,40 @@
       "notes": "Einj\u00e4hrig; Aussaat/ Auspflanzen erst nach Frostende. Sehr gute Bienen- und Vogelpflanze (Samen)."
     },
     {
+      "bloom_end": 10,
+      "bloom_start": 7,
+      "cutting": "Regelm\u00e4\u00dfig ausputzen (Deadheading) verl\u00e4ngert die Bl\u00fcte; fr\u00fches Pinzieren f\u00f6rdert Verzweigung",
+      "cutting_time": "None",
       "id": "cosmos-bipinnatus",
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "w\u00e4rmebeg\u00fcnstigt",
+        "luftig"
+      ],
+      "max_lifetime": 1,
+      "max_width": 60,
+      "min_temperature": 0,
       "name": "Cosmos Bipinnatus",
-      "trivname": "Schmuckk\u00f6rbchen (Cosmea)",
+      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Sorten variieren stark in H\u00f6he. Jungpflanzen vor Schnecken sch\u00fctzen.",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff mindert Bl\u00fcte",
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "scale": 1,
+      "snails": "very",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert"
+      ],
+      "trivname": "Schmuckk\u00f6rbchen / Cosmea",
       "type": "sommerblume (einj\u00e4hrig)",
       "vegetation": {
         "height": {
@@ -4395,39 +4359,8 @@
           "12": "/empty.svg"
         }
       },
-      "max_lifetime": 1,
-      "min_temperature": 0,
-      "propagation": [
-        "samen",
-        "selbstaussaat"
-      ],
-      "max_width": 60,
-      "scale": 1.0,
-      "snails": "very",
-      "bloom_start": 7,
-      "bloom_end": 10,
-      "soil": [
-        "durchl\u00e4ssig"
-      ],
-      "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
-        "gut drainiert"
-      ],
-      "location": [
-        "sonnig"
-      ],
-      "location_ideal": [
-        "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
-        "luftig"
-      ],
       "watering": "m\u00e4\u00dfig gie\u00dfen; trockenheitsvertr\u00e4glich; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig frisch, durchdringend aber selten gie\u00dfen",
-      "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff mindert Bl\u00fcte",
-      "cutting_time": "None",
-      "cutting": "Regelm\u00e4\u00dfig ausputzen (Deadheading) verl\u00e4ngert die Bl\u00fcte; fr\u00fches Pinzieren f\u00f6rdert Verzweigung",
-      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Sorten variieren stark in H\u00f6he. Jungpflanzen vor Schnecken sch\u00fctzen."
+      "watering_ideal": "m\u00e4\u00dfig frisch, durchdringend aber selten gie\u00dfen"
     },
     {
       "id": "coreopsis-tinctoria",
