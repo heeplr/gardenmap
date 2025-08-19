@@ -1977,7 +1977,7 @@
         "ausl\u00e4ufer",
         "samen"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "little",
       "soil": [
         "frisch",
@@ -3327,13 +3327,14 @@
       "bloom_end": 7,
       "bloom_start": 6,
       "cutting": "Nach der Hauptbl\u00fcte stark zur\u00fcckschneiden f\u00fcr Nachbl\u00fcte; St\u00e4be zur St\u00fctze",
-      "cutting_time": 7,
+      "cutting_time": "7",
       "id": "delphinium-hybriden",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
-        "sonnig, windgesch\u00fctzt"
+        "sonnig",
+        " windgesch\u00fctzt"
       ],
       "max_lifetime": 6,
       "max_width": 60,
@@ -3347,7 +3348,7 @@
         "stecklinge (sorten)",
         "samen"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "very",
       "soil": [
         "durchl\u00e4ssig"
