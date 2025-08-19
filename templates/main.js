@@ -229,6 +229,13 @@ function paletteFilterSearchClear() {
     paletteFilterChanged("");
 }
 
+/* reset other filters */
+function paletteFilterReset() {
+    document.getElementById("palette-filter-lifetime").value = "all";
+    document.getElementById("palette-filter-snails").value = 0;
+    paletteFilterChanged();
+}
+
 /* filter settings changed */
 function paletteFilterChanged() {
     paletteFilter.search = document.getElementById("palette-filter-search").value;
