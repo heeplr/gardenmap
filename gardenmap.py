@@ -69,14 +69,14 @@ def garden():
     match request.method:
         case 'POST':
             new_plant = request.json
+            if(not isinstance(new_plant, list)):
+                new_plant = [ new_plant ]
+
             with garden_lock:
                 with open(DATA_FILE, 'r+') as f:
                     data = json.load(f)
                     # append list of plants?
-                    if(isinstance(new_plant, list)):
-                        data["plantlist"] += new_plant
-                    else:
-                        data["plantlist"] += [ new_plant ]
+                    data["plantlist"] += new_plant
                     f.seek(0)
                     json.dump(data, f, indent=2)
                     f.truncate()
@@ -84,14 +84,18 @@ def garden():
             return jsonify({'status': 'success'})
 
         case 'PUT':
-            updated_plant = request.json
+            updated_plants = request.json
+            if(not isinstance(updated_plants, list)):
+                updated_plants = [ updated_plants ]
+
             with garden_lock:
                 with open(DATA_FILE, 'r+') as f:
                     data = json.load(f)
-                    for i, plant in enumerate(data["plantlist"]):
-                        if plant['id'] == updated_plant['id']:
-                            data["plantlist"][i] = updated_plant
-                            break
+                    for updated_plant in updated_plants:
+                        for i, plant in enumerate(data["plantlist"]):
+                            if plant['id'] == updated_plant['id']:
+                                data["plantlist"][i] = plant | updated_plant
+                                break
                     f.seek(0)
                     json.dump(data, f, indent=2)
                     f.truncate()

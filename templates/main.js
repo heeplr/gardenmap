@@ -703,25 +703,31 @@ svg.addEventListener("mousemove", (e) => {
 });
 
 svg.addEventListener("mouseup", (e) => {
-    /* dropped a dragged image? */
+    /* dropped dragged plant(s)? */
     if(selectionDragStartPositions.length > 0) {
+        const dragged_plants = [];
+
         selectionDragStartPositions.forEach(({ el }) => {
             const id = el.id;
             if (garden[id]) {
                 garden[id].x = parseFloat(el.getAttribute("x"));
                 garden[id].y = parseFloat(el.getAttribute("y"));
-                const plant_copy = { ...garden[id] };
-                delete plant_copy.el;
-
-                fetch('/garden', {
-                    method: 'PUT',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(plant_copy)
+                /* remember plants to modify */
+                dragged_plants.push({
+                    x: garden[id].x,
+                    y: garden[id].y,
+                    id: id
                 });
             }
         });
-        //selectionClear();
-        selectionDragStartPositions = [];
+        fetch('/garden', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dragged_plants)
+        }).then(() => {
+           //selectionClear();
+            selectionDragStartPositions = [];
+        });
     }
     /* finish rectangular selection? */
     else if(selectionBoxMode && selectionRect) {
