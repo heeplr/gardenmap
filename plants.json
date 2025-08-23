@@ -4854,6 +4854,79 @@
       "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse vermeiden",
       "watering_ideal": "frisch bis feucht, humoser Boden h\u00e4lt Feuchte",
       "scale": 1.0
+    },
+    {
+      "bloom_end": 5,
+      "bloom_start": 4,
+      "cutting": "Hecken nach der Bl\u00fcte im sp\u00e4ten Fr\u00fchjahr/Fr\u00fchsommer schneiden; ggf. zweiter Pflegeschnitt Ende Sommer. Starken R\u00fcckschnitt au\u00dferhalb der Brutzeit.",
+      "cutting_time": "6",
+      "id": "prunus-laurocerasus",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "sonnig bis halbschattig",
+        "in hei\u00dfen Lagen eher halbschattig"
+      ],
+      "max_lifetime": 50,
+      "max_width": 300,
+      "min_temperature": -15,
+      "name": "Prunus laurocerasus",
+      "notes": "Gro\u00dfer, schneller Sichtschutzstrauch; in Kultur oft auf 2\u20133 m gehalten (arttypisch bis >4 m). Samenkerne/Laub giftig (Blaus\u00e4ureglykoside). Kann sich in einigen Regionen invasiv verhalten \u2013 Ausbreitung kontrollieren.",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr Kompost; nicht \u00fcberd\u00fcngen",
+      "propagation": [
+        "samen",
+        "stecklinge (halbholz)",
+        "stecklinge (reifholz)"
+      ],
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert",
+        "kalktolerant"
+      ],
+      "trivname": "Kirschlorbeer (Lorbeerkirsche)",
+      "type": "immergr\u00fcner strauch",
+      "vegetation": {
+        "height": {
+          "1": 300,
+          "2": 300,
+          "3": 300,
+          "4": 300,
+          "5": 300,
+          "6": 300,
+          "7": 300,
+          "8": 300,
+          "9": 300,
+          "10": 300,
+          "11": 300,
+          "12": 300
+        },
+        "icon": {
+          "1": "/prunus-laurocerasus-1.svg",
+          "2": "/prunus-laurocerasus-1.svg",
+          "3": "/prunus-laurocerasus-3.svg",
+          "4": "/prunus-laurocerasus-4.svg",
+          "5": "/prunus-laurocerasus-5.svg",
+          "6": "/prunus-laurocerasus-6.svg",
+          "7": "/prunus-laurocerasus-7.svg",
+          "8": "/prunus-laurocerasus-7.svg",
+          "9": "/prunus-laurocerasus-1.svg",
+          "10": "/prunus-laurocerasus-1.svg",
+          "11": "/prunus-laurocerasus-1.svg",
+          "12": "/prunus-laurocerasus-1.svg"
+        }
+      },
+      "watering": "nur bei anhaltender Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch auf gut drainiertem Boden; nach Anwachsen relativ trockenheitsvertr\u00e4glich",
+      "scale": 1.0
     }
   ]
 }
