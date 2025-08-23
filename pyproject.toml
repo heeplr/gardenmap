@@ -1,0 +1,40 @@
+[project]
+name = "gardenmap"
+version = "0.0.1"
+dependencies = [
+  "flask",
+  "filelock"
+]
+requires-python = ">= 3.11"
+authors = [
+  { name="Daniel Hiepler", email="d-gardenmap@coderdu.de" },
+]
+description = "webapp to visualize a garden over the year "
+readme = "README.md"
+license-files = ["LICENSE"]
+keywords = ["garden", "map", "planner", "plants", "gardening"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Other/Nonlisted Topic",
+    "Framework :: Flask",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.11"
+]
+
+[project.scripts]
+gardenmap = "gardenmap:main"
+
+[tool.setuptools]
+#packages = ["gardenmap"]
+#py-modules = ['gardenmap']
+
+[tool.setuptools.package-data]
+'gardenmap' = ['plants.json', 'templates/*.html', 'templates/*.js', 'templates/*.svg', 'static/*.svg', 'static/js/*.js', 'static/css/*.css']
+
+[project.urls]
+Homepage = "https://github.com/heeplr/gardenmap"
+Repository = "https://github.com/heeplr/gardenmap"
+Issues = "https://github.com/heeplr/gardenmap/issues"

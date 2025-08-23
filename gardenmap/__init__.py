@@ -4,11 +4,14 @@ from filelock import FileLock
 from flask import Flask, render_template, request, jsonify
 import json
 import os
+import pathlib
 
 app = Flask(__name__, static_url_path='')
 
-PALETTE_FILE = 'plants.json'
-DATA_FILE = 'garden.json'
+cwd = pathlib.Path(__file__).parent.resolve()
+
+PALETTE_FILE = f'{cwd}/plants.json'
+DATA_FILE = f'{cwd}/garden.json'
 # locks for data files
 palette_lock = FileLock(f"{PALETTE_FILE}.lock", timeout=1)
 garden_lock = FileLock(f"{DATA_FILE}.lock", timeout=1)
@@ -127,6 +130,8 @@ def garden():
                     data = json.load(f)
             return jsonify(data)
 
+def main():
+    app.run(debug=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    main()
