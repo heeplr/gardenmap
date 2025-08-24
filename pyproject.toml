@@ -28,11 +28,11 @@ classifiers = [
 gardenmap = "gardenmap:main"
 
 [tool.setuptools]
-#packages = ["gardenmap"]
+packages = ["gardenmap"]
 #py-modules = ['gardenmap']
 
 [tool.setuptools.package-data]
-'gardenmap' = ['plants.json', 'templates/*.html', 'templates/*.js', 'templates/*.svg', 'static/*.svg', 'static/js/*.js', 'static/css/*.css']
+'gardenmap' = ['*.json', 'templates/*.html', 'templates/*.js', 'templates/*.svg', 'static/*.svg', 'static/js/*.js', 'static/css/*.css']
 
 [project.urls]
 Homepage = "https://github.com/heeplr/gardenmap"
