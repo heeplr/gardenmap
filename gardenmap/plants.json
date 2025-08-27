@@ -761,7 +761,7 @@
           "6": "/caltha-palustris-6.svg",
           "7": "/caltha-palustris-6.svg",
           "8": "/caltha-palustris-6.svg",
-          "9": "/caltha-palustris-9.svg",
+          "9": "/caltha-palustris-6.svg",
           "10": "/empty.svg",
           "11": "/empty.svg",
           "12": "/empty.svg"
@@ -2027,7 +2027,7 @@
       "bloom_end": 9,
       "bloom_start": 7,
       "cutting": "Im Sp\u00e4twinter/Fr\u00fchjahr alte St\u00e4ngel bodennah entfernen",
-      "cutting_time": 3,
+      "cutting_time": "3",
       "id": "echinacea-purpurea",
       "location": [
         "sonnig"
@@ -2046,7 +2046,7 @@
         "samen",
         "teilung"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
@@ -2578,13 +2578,14 @@
       "bloom_end": 10,
       "bloom_start": 6,
       "cutting": "Im Herbst bodennah eink\u00fcrzen oder St\u00e4ngel bis Fr\u00fchjahr stehen lassen",
-      "cutting_time": 10,
+      "cutting_time": "10",
       "id": "echibeckia",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
-        "vollsonnig, warm"
+        "vollsonnig",
+        " warm"
       ],
       "max_lifetime": 4,
       "max_width": 60,
@@ -2597,7 +2598,7 @@
         "teilung",
         "stecklinge (sorten)"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
@@ -3182,7 +3183,7 @@
           "9": "/verbascum-thapsus-9.svg",
           "10": "/verbascum-thapsus-9.svg",
           "11": "/verbascum-thapsus-11.svg",
-          "12": "/empty-12.svg"
+          "12": "/empty.svg"
         }
       },
       "watering": "sehr trockenheitsvertr\u00e4glich",
@@ -4954,6 +4955,7 @@
         "stecklinge (reifholz)",
         "samen"
       ],
+      "scale": 1.5,
       "snails": "schneckenfest",
       "soil": [
         "durchl\u00e4ssig"
@@ -4997,8 +4999,7 @@
         }
       },
       "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse und lange Trockenheit vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch bei sehr guter Drainage; Mulch h\u00e4lt Bodenfeuchte",
-      "scale": 1.0
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch bei sehr guter Drainage; Mulch h\u00e4lt Bodenfeuchte"
     },
     {
       "bloom_end": 5,
