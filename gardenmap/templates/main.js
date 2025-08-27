@@ -17,7 +17,9 @@ let paletteShown = false;
 let paletteFilter = {
     "search": document.getElementById("palette-filter-search").value,  // current search string for plant palette
     "snails": document.getElementById("palette-filter-snails").value, // snail resistence
-    "lifetime": document.getElementById("palette-filter-lifetime").value // max. lifetime
+    "lifetime": document.getElementById("palette-filter-lifetime").value, // max. lifetime
+    "location": document.getElementById("palette-filter-location").value,
+    "soil": document.getElementById("palette-filter-soil").value
 };
 
 let viewTransform = null;
@@ -65,8 +67,11 @@ function paletteLoad() {
 }
 
 function paletteRender() {
+    /* render plantlist */
     const el = document.getElementById('palette-plantlist');
-    el.innerHTML = '';
+    el.innerHTML = "";
+    var locations = [ "all" ];   // list of location tags for filter
+    var soils = [ "all" ];       // list of soil tags for filter
     for (const [id, plant] of Object.entries(plants)) {
         const div = document.createElement('div');
         div.className = 'plants-item';
@@ -86,7 +91,44 @@ function paletteRender() {
         div.appendChild(img);
         el.appendChild(div);
         plant.el = div;
+
+        locations = locations.concat(plant.location);
+        locations = locations.concat(plant.location_ideal);
+        soils = soils.concat(plant.soil);
+        soils = soils.concat(plant.soil_ideal);
     };
+    /* remove duplicates */
+    locations_uniq = [...new Set(locations)];
+    soils_uniq = [...new Set(soils)];
+    /* render palette location filter */
+    const l_filter = document.getElementById('palette-filter-location');
+    l_filter.innerHTML = "";
+    for(var i = 0; i < locations_uniq.length; i++) {
+        const option = document.createElement("option");
+        option.value = locations_uniq[i];
+        if(option.value === "all") {
+            option.innerText = "alle";
+        }
+        else {
+            option.innerText = locations_uniq[i];
+        }
+        l_filter.appendChild(option);
+    }
+    /* render palette soil filter */
+    const s_filter = document.getElementById('palette-filter-soil');
+    s_filter.innerHTML = "";
+    for(var i = 0; i < soils_uniq.length; i++) {
+        const option = document.createElement("option");
+        option.value = soils_uniq[i];
+        if(option.value === "all") {
+            option.innerText = "alle";
+        }
+        else {
+            option.innerText = soils_uniq[i];
+        }
+        s_filter.appendChild(option);
+    }
+
     /* apply any search term */
     paletteFilterNow();
 }
@@ -231,6 +273,8 @@ function paletteFilterSearchClear() {
 
 /* reset other filters */
 function paletteFilterReset() {
+    document.getElementById("palette-filter-location").value = "all";
+    document.getElementById("palette-filter-soil").value = "all";
     document.getElementById("palette-filter-lifetime").value = "all";
     document.getElementById("palette-filter-snails").value = 0;
     paletteFilterChanged();
@@ -241,6 +285,8 @@ function paletteFilterChanged() {
     paletteFilter.search = document.getElementById("palette-filter-search").value;
     paletteFilter.lifetime = document.getElementById("palette-filter-lifetime").value;
     paletteFilter.snails = parseInt(document.getElementById("palette-filter-snails").value);
+    paletteFilter.location = document.getElementById("palette-filter-location").value;
+    paletteFilter.soil = document.getElementById("palette-filter-soil").value;
     switch(paletteFilter.snails) {
 
         case 2:
@@ -289,7 +335,20 @@ function paletteFilterNow() {
             plant.el.style.display = "none";
             continue;
         }
-
+        /* filter by location */
+        if(paletteFilter.location != "all" && paletteFilter.soil != "" &&
+          !plant.location.includes(paletteFilter.location) &&
+          !plant.location_ideal.includes(paletteFilter.location) ) {
+            plant.el.style.display = "none";
+            continue;
+        }
+        /* filter by soil */
+        if(paletteFilter.soil != "all" && paletteFilter.soil != "" &&
+           !plant.soil.includes(paletteFilter.soil) &&
+           !plant.soil_ideal.includes(paletteFilter.soil) ) {
+            plant.el.style.display = "none";
+            continue;
+        }
         /* filter by text search */
         if(!(
             (plant.name.toUpperCase().indexOf(needle) > -1) ||

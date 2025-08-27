@@ -109,13 +109,26 @@
                 </div>
 
                 <div class="row pb-2">
-                  <label class="col my-auto" for="palette-filter-lifetime" title="filter by snail lifetime">Lebensdauer:</label>
+                  <label class="col my-auto" for="palette-filter-lifetime" title="filter by lifetime">Lebensdauer:</label>
                   <select id="palette-filter-lifetime"class="form-select col" aria-label="Lebensdauer" onchange="paletteFilterChanged()">
                     <option value="all" selected>alle</option>
                     <option value="perennial">nur mehrjährig</option>
                     <option value="annual">nur einjährig</option>
                   </select>
                 </div>
+
+                <div class="row pb-2">
+                  <label class="col my-auto" for="palette-filter-location" title="filter by location">Standort:</label>
+                  <select id="palette-filter-location" class="form-select col" aria-label="Standort" onchange="paletteFilterChanged()">
+                  </select>
+                </div>
+
+                <div class="row pb-2">
+                  <label class="col my-auto" for="palette-filter-soil" title="filter by soil">Erde:</label>
+                  <select id="palette-filter-soil" class="form-select col" aria-label="Erde" onchange="paletteFilterChanged()">
+                  </select>
+                </div>
+
                 <div class="row mt-2">
                     <button class="btn btn-primary" type="button" onclick="paletteFilterReset();">Reset</button>
                 </div>
