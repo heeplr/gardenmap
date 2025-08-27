@@ -70,7 +70,6 @@ Contains your garden data (will be created if not existing)
 
 
 ## TODO
-- better UI
-- visualize more stuff (snail attractiveness, soil/watering requirements, ...)
-- better backend? (marshmallow)
+- better backend? (marshmallow, error handling)
 - mobile/touch support?
+- better UI/more bootstrap
