@@ -4927,6 +4927,151 @@
       "watering": "nur bei anhaltender Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
       "watering_ideal": "frisch bis m\u00e4\u00dfig frisch auf gut drainiertem Boden; nach Anwachsen relativ trockenheitsvertr\u00e4glich",
       "scale": 1.0
+    },
+    {
+      "bloom_end": 4,
+      "bloom_start": 3,
+      "cutting": "Nur leicht formen (Juni/Juli); nicht ins alte Holz schneiden \u2013 treibt dort schlecht aus",
+      "cutting_time": "6",
+      "id": "chamaecyparis-pisifera",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "sonnig bis heller Halbschatten",
+        "windgesch\u00fctzt"
+      ],
+      "max_lifetime": 100,
+      "max_width": 250,
+      "min_temperature": -30,
+      "name": "Chamaecyparis pisifera",
+      "notes": "Sehr sortenreich (von Zwergformen bis gr\u00f6\u00dfere Str\u00e4ucher). Vertr\u00e4gt R\u00fcckschnitt nur begrenzt; innen neigt das Geh\u00f6lz zum Verkahlen bei zu dichter Pflanzung.",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch, nicht \u00fcberd\u00fcngen (Kalk meiden)",
+      "propagation": [
+        "stecklinge (halbholz)",
+        "stecklinge (reifholz)",
+        "samen"
+      ],
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "leicht sauer",
+        "humos",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert"
+      ],
+      "trivname": "Sawara-Zypresse",
+      "type": "immergr\u00fcner nadelstrauch",
+      "vegetation": {
+        "height": {
+          "1": 300,
+          "2": 300,
+          "3": 300,
+          "4": 300,
+          "5": 300,
+          "6": 300,
+          "7": 300,
+          "8": 300,
+          "9": 300,
+          "10": 300,
+          "11": 300,
+          "12": 300
+        },
+        "icon": {
+          "1": "/chamaecyparis-pisifera-1.svg",
+          "2": "/chamaecyparis-pisifera-1.svg",
+          "3": "/chamaecyparis-pisifera-1.svg",
+          "4": "/chamaecyparis-pisifera-1.svg",
+          "5": "/chamaecyparis-pisifera-1.svg",
+          "6": "/chamaecyparis-pisifera-1.svg",
+          "7": "/chamaecyparis-pisifera-1.svg",
+          "8": "/chamaecyparis-pisifera-1.svg",
+          "9": "/chamaecyparis-pisifera-1.svg",
+          "10": "/chamaecyparis-pisifera-1.svg",
+          "11": "/chamaecyparis-pisifera-1.svg",
+          "12": "/chamaecyparis-pisifera-1.svg"
+        }
+      },
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse und lange Trockenheit vermeiden",
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch bei sehr guter Drainage; Mulch h\u00e4lt Bodenfeuchte",
+      "scale": 1.0
+    },
+    {
+      "bloom_end": 5,
+      "bloom_start": 4,
+      "cutting": "Direkt nach der Bl\u00fcte altes Holz auslichten; zur Verj\u00fcngung einzelne Triebe stark auf 20\u201330 cm eink\u00fcrzen (treibt aus der Basis nach)",
+      "cutting_time": "5",
+      "id": "mahonia-aquifolium",
+      "location": [
+        "halbschattig",
+        "schattig"
+      ],
+      "location_ideal": [
+        "halbschattig",
+        "sonnig nur bei ausreichend Bodenfeuchte",
+        "windgesch\u00fctzt"
+      ],
+      "max_lifetime": 50,
+      "max_width": 250,
+      "min_temperature": -29,
+      "name": "Mahonia aquifolium",
+      "notes": "Breitet sich \u00fcber Ausl\u00e4ufer teppichartig aus (ggf. Wurzelsperre). Fr\u00fchbl\u00fcher und gute Bienenpflanze. Blauschwarze Beeren essbar verarbeitet (z. B. Gelee), \u00fcbrige Pflanzenteile enthalten Berberin \u2013 nicht verzehren.",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "propagation": [
+        "samen",
+        "stecklinge (halbholz)",
+        "ausl\u00e4ufer"
+      ],
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert",
+        "leicht sauer bis neutral"
+      ],
+      "trivname": "Gew\u00f6hnliche Mahonie (Oregon-Traubenholly)",
+      "type": "immergr\u00fcner strauch",
+      "vegetation": {
+        "height": {
+          "1": 150,
+          "2": 150,
+          "3": 150,
+          "4": 150,
+          "5": 150,
+          "6": 150,
+          "7": 150,
+          "8": 150,
+          "9": 150,
+          "10": 150,
+          "11": 150,
+          "12": 150
+        },
+        "icon": {
+          "1": "/mahonia-aquifolium-1.svg",
+          "2": "/mahonia-aquifolium-1.svg",
+          "3": "/mahonia-aquifolium-3.svg",
+          "4": "/mahonia-aquifolium-4.svg",
+          "5": "/mahonia-aquifolium-4.svg",
+          "6": "/mahonia-aquifolium-6.svg",
+          "7": "/mahonia-aquifolium-7.svg",
+          "8": "/mahonia-aquifolium-7.svg",
+          "9": "/mahonia-aquifolium-7.svg",
+          "10": "/mahonia-aquifolium-10.svg",
+          "11": "/mahonia-aquifolium-10.svg",
+          "12": "/mahonia-aquifolium-10.svg"
+        }
+      },
+      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, Mulch h\u00e4lt Feuchte",
+      "scale": 1.0
     }
   ]
 }
