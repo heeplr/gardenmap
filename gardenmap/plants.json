@@ -5073,6 +5073,149 @@
       "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
       "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, Mulch h\u00e4lt Feuchte",
       "scale": 1.0
+    },
+    {
+      "bloom_end": 9,
+      "bloom_start": 7,
+      "cutting": "Alte/abgestorbene Wedel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; junge Triebe nicht besch\u00e4digen",
+      "cutting_time": "3",
+      "id": "dryopteris-filix-mas",
+      "location": [
+        "halbschattig",
+        "schattig"
+      ],
+      "location_ideal": [
+        "schattig",
+        "luftig-k\u00fchl",
+        "windgesch\u00fctzt"
+      ],
+      "max_lifetime": 30,
+      "max_width": 100,
+      "min_temperature": -34,
+      "name": "Dryopteris filix-mas",
+      "notes": "Sehr schattenvertr\u00e4glich, robuste Waldstaude. \u201aBl\u00fctezeit\u2018 hier als Zeitraum der Sporenreife (Sori) verstanden. Rhizom historisch als Wurmmittel genutzt, Pflanze (v. a. Rhizom) jedoch giftig.",
+      "nutrition": "gering",
+      "nutrition_ideal": "j\u00e4hrlich Laub-/Kompostmulch; nicht \u00fcberd\u00fcngen",
+      "propagation": [
+        "teilung",
+        "sporen"
+      ],
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert",
+        "leicht sauer"
+      ],
+      "trivname": "Gemeiner Wurmfarn",
+      "type": "farn (staude, rhizom)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 25,
+          "5": 60,
+          "6": 90,
+          "7": 100,
+          "8": 100,
+          "9": 80,
+          "10": 30,
+          "11": 5,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/dryopteris-filix-mas-3.svg",
+          "4": "/dryopteris-filix-mas-4.svg",
+          "5": "/dryopteris-filix-mas-4.svg",
+          "6": "/dryopteris-filix-mas-4.svg",
+          "7": "/dryopteris-filix-mas-4.svg",
+          "8": "/dryopteris-filix-mas-8.svg",
+          "9": "/dryopteris-filix-mas-8.svg",
+          "10": "/dryopteris-filix-mas-10.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit vermeiden",
+      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse; Mulch erh\u00e4lt Bodenfeuchte",
+      "scale": 1
+    },
+    {
+      "bloom_end": 6,
+      "bloom_start": 5,
+      "cutting": "Unmittelbar nach der Bl\u00fcte auslichten: 1\u20443 der \u00e4ltesten Triebe bodennah entfernen, verbl\u00fchte Triebe um etwa 1\u20443 eink\u00fcrzen; Winterschnitt vermeiden (bl\u00fcht am vorj\u00e4hrigen Holz).",
+      "cutting_time": "6",
+      "id": "deutzia-gracilis",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "sonnig (beste Bl\u00fcte)"
+      ],
+      "max_lifetime": 30,
+      "max_width": 100,
+      "min_temperature": -25,
+      "name": "Deutzia gracilis",
+      "notes": "Kompakter, reich bl\u00fchender Kleinstrauch; St\u00e4ngel sind kurzlebig \u2013 regelm\u00e4\u00dfige Verj\u00fcngung erh\u00e4lt Bl\u00fchfreude.",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "propagation": [
+        "stecklinge (weichholz)",
+        "stecklinge (halbholz)",
+        "stecklinge (reifholz)",
+        "samen"
+      ],
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert"
+      ],
+      "trivname": "Zierliche Deutzie (Maiblumenstrauch)",
+      "type": "laubabwerfender strauch",
+      "vegetation": {
+        "height": {
+          "1": 100,
+          "2": 100,
+          "3": 100,
+          "4": 100,
+          "5": 100,
+          "6": 100,
+          "7": 100,
+          "8": 100,
+          "9": 100,
+          "10": 100,
+          "11": 100,
+          "12": 100
+        },
+        "icon": {
+          "1": "/deutzia-gracilis-1.svg",
+          "2": "/deutzia-gracilis-1.svg",
+          "3": "/deutzia-gracilis-3.svg",
+          "4": "/deutzia-gracilis-3.svg",
+          "5": "/deutzia-gracilis-5.svg",
+          "6": "/deutzia-gracilis-5.svg",
+          "7": "/deutzia-gracilis-3.svg",
+          "8": "/deutzia-gracilis-3.svg",
+          "9": "/deutzia-gracilis-9.svg",
+          "10": "/deutzia-gracilis-10.svg",
+          "11": "/deutzia-gracilis-1.svg",
+          "12": "/deutzia-gracilis-1.svg"
+        }
+      },
+      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen",
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch; Staun\u00e4sse vermeiden",
+      "scale": 1
     }
   ]
 }
