@@ -1753,7 +1753,7 @@
       "bloom_end": 9,
       "bloom_start": 6,
       "cutting": "Nach der Bl\u00fcte zur\u00fcckschneiden, um Selbstaussaat zu steuern",
-      "cutting_time": 9,
+      "cutting_time": "9",
       "id": "oenothera-hartwegii",
       "location": [
         "sonnig"
@@ -1772,7 +1772,7 @@
         "samen",
         "selbstaussaat"
       ],
-      "scale": 1.0,
+      "scale": 0.45,
       "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
@@ -4505,7 +4505,7 @@
     },
     {
       "bloom_end": 10,
-      "bloom_start": "6",
+      "bloom_start": 6,
       "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen; Triebe nach Bedarf leiten",
       "cutting_time": "None",
       "id": "tropaeolum-majus",
@@ -4529,7 +4529,7 @@
         "selbstaussaat",
         "stecklinge (selten)"
       ],
-      "scale": 0.5,
+      "scale": 0.35,
       "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
@@ -5360,6 +5360,153 @@
       "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit und Staun\u00e4sse vermeiden",
       "watering_ideal": "st\u00e4ndig leicht feucht auf gut drainiertem, kalkfreiem Substrat",
       "scale": 0.5
+    },
+    {
+      "bloom_end": 5,
+      "bloom_start": 4,
+      "cutting": "Nur minimal schneiden (Totholz/fehlstehende Triebe) nach Laubfall bis vor Januar; gr\u00f6\u00dfere Schnitte vermeiden \u2013 Ahorn blutet sonst stark.",
+      "cutting_time": "12",
+      "id": "acer-japonicum",
+      "location": [
+        "halbschattig",
+        "sonnig (bodenfeucht)"
+      ],
+      "location_ideal": [
+        "halbschattig",
+        "gesch\u00fctzt vor Wind & hei\u00dfer Nachmittagssonne"
+      ],
+      "max_lifetime": 80,
+      "max_width": 400,
+      "min_temperature": -28,
+      "name": "Acer japonicum",
+      "notes": "Bevorzugt k\u00fchle Sommer und gesch\u00fctzte Lagen; Bl\u00e4tter k\u00f6nnen in voller Sonne und Trockenheit verbrennen. Sp\u00e4tfrostempfindlicher fr\u00fcher Austrieb; Jungpflanzen vor Wind/Sonne sch\u00fctzen.",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "propagation": [
+        "samen",
+        "veredlung",
+        "stecklinge (selten)"
+      ],
+      "scale": 2,
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gleichm\u00e4\u00dfig frisch",
+        "gut drainiert",
+        "leicht sauer bis neutral"
+      ],
+      "trivname": "Vollmond-Ahorn (Japanischer Ahorn)",
+      "type": "laubabwerfender strauch/kleiner baum",
+      "vegetation": {
+        "height": {
+          "1": 400,
+          "2": 400,
+          "3": 400,
+          "4": 400,
+          "5": 400,
+          "6": 400,
+          "7": 400,
+          "8": 400,
+          "9": 400,
+          "10": 400,
+          "11": 400,
+          "12": 400
+        },
+        "icon": {
+          "1": "/acer-japonicum-1.svg",
+          "2": "/acer-japonicum-1.svg",
+          "3": "/acer-japonicum-1.svg",
+          "4": "/acer-japonicum-4.svg",
+          "5": "/acer-japonicum-4.svg",
+          "6": "/acer-japonicum-4.svg",
+          "7": "/acer-japonicum-4.svg",
+          "8": "/acer-japonicum-8.svg",
+          "9": "/acer-japonicum-9.svg",
+          "10": "/acer-japonicum-10.svg",
+          "11": "/acer-japonicum-1.svg",
+          "12": "/acer-japonicum-1.svg"
+        }
+      },
+      "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse und Sommerd\u00fcrre vermeiden",
+      "watering_ideal": "feuchtigkeitsbewahrender, gut drainierter Boden; mulchen"
+    },
+    {
+      "bloom_end": 5,
+      "bloom_start": 5,
+      "cutting": "Direkt nach der Bl\u00fcte auslichten: Verbl\u00fchtes \u00fcber einem Blattpaar entfernen; j\u00e4hrlich 1\u20133 der \u00e4ltesten Triebe bodennah herausnehmen (bl\u00fcht am vorj\u00e4hrigen Holz).",
+      "cutting_time": "6",
+      "id": "syringa-vulgaris",
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "luftig (gute Luftzirkulation)"
+      ],
+      "max_lifetime": 80,
+      "max_width": 300,
+      "min_temperature": -34,
+      "name": "Syringa vulgaris",
+      "notes": "Beste Bl\u00fcte in voller Sonne auf gut drainierten, leicht kalkhaltigen B\u00f6den; meidet nasse Standorte. Bl\u00fcte meist im Mai. Gr\u00f6\u00dfere Verj\u00fcngungsschnitte kosten die Bl\u00fcte im Folgejahr.",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im zeitigen Fr\u00fchjahr leicht organisch; Stickstoff zur\u00fcckhaltend (zu viel mindert Bl\u00fcte)",
+      "propagation": [
+        "ausl\u00e4ufer",
+        "stecklinge (weichholz)",
+        "stecklinge (halbholz)",
+        "absenker",
+        "samen",
+        "veredlung"
+      ],
+      "snails": "schneckenfest",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "gut drainiert",
+        "neutral bis alkalisch",
+        "kalktolerant"
+      ],
+      "trivname": "Gew\u00f6hnlicher Flieder",
+      "type": "laubabwerfender strauch",
+      "vegetation": {
+        "height": {
+          "1": 350,
+          "2": 350,
+          "3": 350,
+          "4": 350,
+          "5": 350,
+          "6": 350,
+          "7": 350,
+          "8": 350,
+          "9": 350,
+          "10": 350,
+          "11": 350,
+          "12": 350
+        },
+        "icon": {
+          "1": "/syringa-vulgaris-1.svg",
+          "2": "/syringa-vulgaris-2.svg",
+          "3": "/syringa-vulgaris-3.svg",
+          "4": "/syringa-vulgaris-4.svg",
+          "5": "/syringa-vulgaris-4.svg",
+          "6": "/syringa-vulgaris-6.svg",
+          "7": "/syringa-vulgaris-6.svg",
+          "8": "/syringa-vulgaris-6.svg",
+          "9": "/syringa-vulgaris-9.svg",
+          "10": "/syringa-vulgaris-10.svg",
+          "11": "/syringa-vulgaris-1.svg",
+          "12": "/syringa-vulgaris-1.svg"
+        }
+      },
+      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, gut drainiert; nach Anwachsen relativ trockenheitsvertr\u00e4glich",
+      "scale": 1
     }
   ]
 }
