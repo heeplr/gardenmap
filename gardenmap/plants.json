@@ -447,7 +447,7 @@
         "absenker",
         "samen"
       ],
-      "scale": 1,
+      "scale": 2,
       "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
@@ -5461,6 +5461,7 @@
         "samen",
         "veredlung"
       ],
+      "scale": 1.5,
       "snails": "schneckenfest",
       "soil": [
         "durchl\u00e4ssig"
@@ -5505,8 +5506,7 @@
         }
       },
       "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, gut drainiert; nach Anwachsen relativ trockenheitsvertr\u00e4glich",
-      "scale": 1
+      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, gut drainiert; nach Anwachsen relativ trockenheitsvertr\u00e4glich"
     }
   ]
 }
