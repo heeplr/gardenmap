@@ -5778,7 +5778,8 @@
         "humos",
         "gut drainiert",
         "trocken bis frisch",
-        "neutral bis alkalisch", "kalktolerant"
+        "neutral bis alkalisch",
+        "kalktolerant"
       ],
       "location": [
         "sonnig",
@@ -5797,56 +5798,77 @@
       "notes": "Dornenreicher, sehr robuster Heckenstrauch; bl\u00fcht sp\u00e4t im Fr\u00fchjahr, rote essbare Beeren (verarbeitet). Bildet Ausl\u00e4ufer. Historisch Zwischenwirt von Schwarzrost am Getreide \u2013 Anbau war teils eingeschr\u00e4nkt; heute meist wieder erlaubt."
     },
     {
-  "id": "symphoricarpos-albus",
-  "name": "Symphoricarpos albus",
-  "scale": 1.0,
-  "trivname": "Gewöhnliche Schneebeere",
-  "type": "strauch",
-  "vegetation": {
-    "height": {
-      "1": 80,
-      "2": 90,
-      "3": 100,
-      "4": 120,
-      "5": 140,
-      "6": 150,
-      "7": 160,
-      "8": 160,
-      "9": 160,
-      "10": 150,
-      "11": 120,
-      "12": 100
-    },
-    "icon": {
-      "1": "/symphoricarpos-albus-1.svg",
-      "2": "/symphoricarpos-albus-1.svg",
-      "3": "/symphoricarpos-albus-3.svg",
-      "4": "/symphoricarpos-albus-4.svg",
-      "5": "/symphoricarpos-albus-4.svg",
-      "6": "/symphoricarpos-albus-4.svg",
-      "7": "/symphoricarpos-albus-4.svg",
-      "8": "/symphoricarpos-albus-4.svg",
-      "9": "/symphoricarpos-albus-9.svg",
-      "10": "/symphoricarpos-albus-10.svg",
-      "11": "/symphoricarpos-albus-11.svg",
-      "12": "/symphoricarpos-albus-1.svg"
+      "bloom_end": 3,
+      "bloom_start": 3,
+      "cutting": "Sp\u00e4twinter oder nach Bl\u00fcte, kr\u00e4ftiger R\u00fcckschnitt zur Verj\u00fcngung m\u00f6glich",
+      "cutting_time": "4",
+      "id": "symphoricarpos-albus",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "lichte Geh\u00f6lzr\u00e4nder",
+        "Heckenstandorte"
+      ],
+      "max_age": "25\u201340 Jahre",
+      "max_lifetime": 40,
+      "max_width": 50,
+      "min_temperature": -15,
+      "name": "Symphoricarpos albus",
+      "notes": "robust, starkw\u00fcchsig, bildet Ausl\u00e4ufer, Fr\u00fcchte giftig f\u00fcr Menschen",
+      "nutrition": "gering",
+      "nutrition_ideal": "Kompostgabe im Fr\u00fchjahr ausreichend",
+      "propagation": [
+        "Ausl\u00e4ufer",
+        " Stecklinge",
+        " Teilung"
+      ],
+      "scale": 1,
+      "snails": "hardened",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "n\u00e4hrstoffreich",
+        "locker",
+        "lehmig",
+        "kaltolerant"
+      ],
+      "trivname": "Gew\u00f6hnliche Schneebeere",
+      "type": "strauch",
+      "vegetation": {
+        "height": {
+          "1": 80,
+          "2": 90,
+          "3": 100,
+          "4": 120,
+          "5": 140,
+          "6": 150,
+          "7": 160,
+          "8": 160,
+          "9": 160,
+          "10": 150,
+          "11": 120,
+          "12": 100
+        },
+        "icon": {
+          "1": "/symphoricarpos-albus-1.svg",
+          "2": "/symphoricarpos-albus-1.svg",
+          "3": "/symphoricarpos-albus-3.svg",
+          "4": "/symphoricarpos-albus-4.svg",
+          "5": "/symphoricarpos-albus-4.svg",
+          "6": "/symphoricarpos-albus-4.svg",
+          "7": "/symphoricarpos-albus-4.svg",
+          "8": "/symphoricarpos-albus-4.svg",
+          "9": "/symphoricarpos-albus-9.svg",
+          "10": "/symphoricarpos-albus-10.svg",
+          "11": "/symphoricarpos-albus-11.svg",
+          "12": "/symphoricarpos-albus-1.svg"
+        }
+      },
+      "watering": "gering bis mittel",
+      "watering_ideal": "bei l\u00e4ngerer Trockenheit gie\u00dfen, sonst pflegeleicht"
     }
-  },
-  "bloom_start": 3,
-  "bloom_end": 3,
-  "soil": [ "durchlässig" ],
-  "soil_ideal": [ "nährstoffreich", "locker", "lehmig", kaltolerant" ],
-  "location": [ "sonnig", "halbschattig"],
-  "location_ideal": [ "lichte Gehölzränder", "Heckenstandorte"],
-  "watering": "gering bis mittel",
-  "watering_ideal": "bei längerer Trockenheit gießen, sonst pflegeleicht",
-  "nutrition": "gering",
-  "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
-  "cutting_time": 4,
-  "cutting": "Spätwinter oder nach Blüte, kräftiger Rückschnitt zur Verjüngung möglich",
-  "notes": "robust, starkwüchsig, bildet Ausläufer, Früchte giftig für Menschen",
-  "max_age": "25–40 Jahre",
-  "propagation": "Ausläufer, Stecklinge, Teilung"
-}
   ]
 }
