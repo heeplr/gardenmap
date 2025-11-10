@@ -26,7 +26,7 @@
         "selbstaussaat",
         "teilung"
       ],
-      "scale": 0.5,
+      "scale": 0.25,
       "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig",
@@ -65,6 +65,78 @@
           "8": "/cyclamen-coum-5.svg",
           "9": "/cyclamen-coum-5.svg",
           "10": "/cyclamen-coum-10.svg",
+          "11": "/cyclamen-coum-10.svg",
+          "12": "/cyclamen-coum-10.svg"
+        }
+      },
+      "watering": "nur bei l\u00e4ngerer Trockenheit im Herbst/Fr\u00fchjahr leicht gie\u00dfen; Sommer trocken",
+      "watering_ideal": "Herbst/Fr\u00fchjahr gleichm\u00e4\u00dfig frisch, Sommer trocken"
+    },
+    {
+      "bloom_end": 3,
+      "bloom_start": 1,
+      "cutting": "Kein Schnitt n\u00f6tig; nur eingetrocknete Bl\u00e4tter entfernen",
+      "cutting_time": "None",
+      "id": "cyclamen",
+      "location": [
+        "halbschattig",
+        "schattig"
+      ],
+      "location_ideal": [
+        "lichter schatten",
+        "wintersonne m\u00f6glich"
+      ],
+      "max_lifetime": 30,
+      "max_width": 40,
+      "min_temperature": -20,
+      "name": "Cyclamen coum",
+      "notes": "Wintergr\u00fcnes Laub, Sommerruhe; bl\u00fcht trotz Frost.",
+      "nutrition": "anspruchslos; keine Pflichtd\u00fcngung",
+      "nutrition_ideal": "im Herbst d\u00fcnne Laubmulchschicht",
+      "propagation": [
+        "samen",
+        "selbstaussaat",
+        "teilung"
+      ],
+      "scale": 0.25,
+      "snails": "hardened",
+      "soil": [
+        "durchl\u00e4ssig",
+        "humos"
+      ],
+      "soil_ideal": [
+        "humos",
+        "locker",
+        "im sommer eher trocken"
+      ],
+      "trivname": "Alpenveilchen",
+      "type": "knollenstaude (geophyt)",
+      "vegetation": {
+        "height": {
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 8,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 3,
+          "10": 8,
+          "11": 10,
+          "12": 10
+        },
+        "icon": {
+          "1": "/cyclamen-coum-5.svg",
+          "2": "/cyclamen-coum-5.svg",
+          "3": "/cyclamen-coum-5.svg",
+          "4": "/cyclamen-coum-10.svg",
+          "5": "/cyclamen-coum-10.svg",
+          "6": "/cyclamen-coum-10.svg",
+          "7": "/cyclamen-coum-2.svg",
+          "8": "/cyclamen-coum-3.svg",
+          "9": "/cyclamen-coum-3.svg",
+          "10": "/cyclamen-coum-3.svg",
           "11": "/cyclamen-coum-10.svg",
           "12": "/cyclamen-coum-10.svg"
         }
@@ -774,7 +846,7 @@
       "bloom_end": 4,
       "bloom_start": 3,
       "cutting": "Verbl\u00fchtes abschneiden; Laub erst nach Vergilben entfernen",
-      "cutting_time": 5,
+      "cutting_time": "5",
       "id": "muscari",
       "location": [
         "sonnig",
@@ -794,7 +866,7 @@
         "tochterzwiebeln",
         "samen"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
@@ -1493,7 +1565,7 @@
         "ausl\u00e4ufer",
         "teilung"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "hardened",
       "soil": [
         "frisch",
@@ -2918,7 +2990,7 @@
       "bloom_end": 8,
       "bloom_start": 6,
       "cutting": "Im zeitigen Fr\u00fchjahr Auslichtungs- und Formschnitt; Verbl\u00fchtes nach der Bl\u00fcte entfernen",
-      "cutting_time": 3,
+      "cutting_time": "3",
       "id": "spiraea-bumalda-anthony-waterer",
       "location": [
         "sonnig",
@@ -2938,7 +3010,7 @@
         "stecklinge",
         "absenker"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
@@ -3942,8 +4014,41 @@
       "notes": "Samen giftig (LSA); Rankhilfe n\u00f6tig; Jungpflanzen vor Schnecken sch\u00fctzen"
     },
     {
+      "bloom_end": 9,
+      "bloom_start": 6,
+      "cutting": "Regelm\u00e4\u00dfig pfl\u00fccken/ausputzen; Triebe an Rankhilfe leiten",
+      "cutting_time": "None",
       "id": "lathyrus-odoratus",
+      "location": [
+        "sonnig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "luftig"
+      ],
+      "max_lifetime": 1,
+      "max_width": 45,
+      "min_temperature": -4,
       "name": "Lathyrus Odoratus",
+      "notes": "Samen giftig (Lathyrismus-Risiko bei gr\u00f6\u00dferen Mengen); ben\u00f6tigt stabile Rankhilfe; liebt k\u00fchles Wetter, in Hitze bl\u00fchfaul",
+      "nutrition": "mittel",
+      "nutrition_ideal": "vor dem Pflanzen Kompost; w\u00e4hrend der Saison 14\u2011t\u00e4gig ausgewogen, eher kalibetont",
+      "propagation": [
+        "samen",
+        "selbstaussaat"
+      ],
+      "scale": 0.5,
+      "snails": "very",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "n\u00e4hrstoffreich",
+        "gleichm\u00e4\u00dfig feucht",
+        "gut drainiert",
+        "kalkvertr\u00e4glich"
+      ],
       "trivname": "Duftwicke (Edelwicke)",
       "type": "sommerblume (einj\u00e4hrige kletterpflanze)",
       "vegetation": {
@@ -3976,41 +4081,8 @@
           "12": "/empty.svg"
         }
       },
-      "max_lifetime": 1,
-      "min_temperature": -4,
-      "propagation": [
-        "samen",
-        "selbstaussaat"
-      ],
-      "max_width": 45,
-      "scale": 1.0,
-      "snails": "very",
-      "bloom_start": 6,
-      "bloom_end": 9,
-      "soil": [
-        "durchl\u00e4ssig"
-      ],
-      "soil_ideal": [
-        "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht",
-        "gut drainiert",
-        "kalkvertr\u00e4glich"
-      ],
-      "location": [
-        "sonnig"
-      ],
-      "location_ideal": [
-        "vollsonnig",
-        "luftig"
-      ],
       "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit mindert Bl\u00fcte",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse",
-      "nutrition": "mittel",
-      "nutrition_ideal": "vor dem Pflanzen Kompost; w\u00e4hrend der Saison 14\u2011t\u00e4gig ausgewogen, eher kalibetont",
-      "cutting_time": "None",
-      "cutting": "Regelm\u00e4\u00dfig pfl\u00fccken/ausputzen; Triebe an Rankhilfe leiten",
-      "notes": "Samen giftig (Lathyrismus-Risiko bei gr\u00f6\u00dferen Mengen); ben\u00f6tigt stabile Rankhilfe; liebt k\u00fchles Wetter, in Hitze bl\u00fchfaul"
+      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
     },
     {
       "id": "convolvulus-tricolor",
@@ -4882,7 +4954,7 @@
         "stecklinge (halbholz)",
         "stecklinge (reifholz)"
       ],
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -4956,7 +5028,7 @@
         "samen"
       ],
       "scale": 1.5,
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5028,7 +5100,7 @@
         "stecklinge (halbholz)",
         "ausl\u00e4ufer"
       ],
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5100,7 +5172,7 @@
         "teilung",
         "sporen"
       ],
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5172,7 +5244,7 @@
         "stecklinge (reifholz)",
         "samen"
       ],
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5244,7 +5316,7 @@
         "ausl\u00e4ufer"
       ],
       "scale": 0.5,
-      "snails": "m\u00e4\u00dfig attraktiv",
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5314,7 +5386,7 @@
         "samen",
         "teilung"
       ],
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5388,7 +5460,7 @@
         "stecklinge (selten)"
       ],
       "scale": 2,
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5424,7 +5496,7 @@
           "6": "/acer-japonicum-4.svg",
           "7": "/acer-japonicum-4.svg",
           "8": "/acer-japonicum-8.svg",
-          "9": "/acer-japonicum-9.svg",
+          "9": "/acer-japonicum-10.svg",
           "10": "/acer-japonicum-10.svg",
           "11": "/acer-japonicum-1.svg",
           "12": "/acer-japonicum-1.svg"
@@ -5462,7 +5534,7 @@
         "veredlung"
       ],
       "scale": 1.5,
-      "snails": "schneckenfest",
+      "snails": "hardened",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5507,6 +5579,222 @@
       },
       "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
       "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, gut drainiert; nach Anwachsen relativ trockenheitsvertr\u00e4glich"
+    },
+    {
+      "bloom_end": 9,
+      "bloom_start": 7,
+      "cutting": "Alte St\u00e4ngel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; Verbl\u00fchtes in der Saison ausputzen",
+      "cutting_time": "3",
+      "id": "solidago-virgaurea",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig bis lichter Halbschatten"
+      ],
+      "max_lifetime": 15,
+      "max_width": 40,
+      "min_temperature": -34,
+      "name": "Solidago virgaurea",
+      "notes": "Heimische Art; gute Insektenpflanze. Bevorzuge S. virgaurea oder horstige Sorten, da einige neophytische Goldruten (z. B. S. canadensis, S. gigantea) stark wuchern.",
+      "nutrition": "gering",
+      "nutrition_ideal": "sparsam d\u00fcngen; zu reich n\u00e4hrt Blatt statt Bl\u00fcte",
+      "propagation": [
+        "teilung",
+        "samen"
+      ],
+      "scale": 1.5,
+      "snails": "little",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "trocken bis frisch",
+        "gut drainiert",
+        "leicht sauer bis neutral"
+      ],
+      "trivname": "Gew\u00f6hnliche Goldrute",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 15,
+          "5": 40,
+          "6": 60,
+          "7": 80,
+          "8": 90,
+          "9": 90,
+          "10": 35,
+          "11": 5,
+          "12": 0
+        },
+        "icon": {
+          "1": "/solidago-virgaurea-1.svg",
+          "2": "/solidago-virgaurea-1.svg",
+          "3": "/solidago-virgaurea-3.svg",
+          "4": "/solidago-virgaurea-3.svg",
+          "5": "/solidago-virgaurea-5.svg",
+          "6": "/solidago-virgaurea-5.svg",
+          "7": "/solidago-virgaurea-7.svg",
+          "8": "/solidago-virgaurea-8.svg",
+          "9": "/solidago-virgaurea-8.svg",
+          "10": "/solidago-virgaurea-10.svg",
+          "11": "/solidago-virgaurea-10.svg",
+          "12": "/solidago-virgaurea-1.svg"
+        }
+      },
+      "watering": "m\u00e4\u00dfig gie\u00dfen; nach Anwachsen trockenheitsvertr\u00e4glich",
+      "watering_ideal": "m\u00e4\u00dfig frisch, sehr gut drainiert; Staun\u00e4sse vermeiden"
+    },
+    {
+      "bloom_end": 5,
+      "bloom_start": 4,
+      "cutting": "Nur Bl\u00fctenstiele nach der Samenreife entfernen; Laub erst nach Vergilben abschneiden",
+      "cutting_time": "6",
+      "id": "fritillaria-imperialis-aurora",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig bis lichter Halbschatten",
+        "warm",
+        "windgesch\u00fctzt"
+      ],
+      "max_lifetime": 15,
+      "max_width": 40,
+      "min_temperature": -20,
+      "name": "Fritillaria imperialis 'Aurora'",
+      "notes": "Zwiebeln im Herbst z\u00fcgig und ca. 4\u00d7 so tief pflanzen, leicht schr\u00e4g/seitlich (Wasser sammelt sich sonst im St\u00e4ngelhohlraum). Mag n\u00e4hrstoffreiche, gut drainierte B\u00f6den; Versetzen/Teilung nur selten. Achtung Lilienh\u00e4hnchen; Jungtriebe k\u00f6nnen von Schnecken befallen werden.",
+      "nutrition": "mittel",
+      "nutrition_ideal": "im Herbst/Fr\u00fchjahr leicht organisch bzw. Zwiebelblumend\u00fcnger",
+      "propagation": [
+        "tochterzwiebeln/teilung",
+        "samen (Sorten nicht sortenecht)"
+      ],
+      "snails": "m\u00e4\u00dfig attraktiv",
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "m\u00e4\u00dfig bis n\u00e4hrstoffreich",
+        "gut drainiert",
+        "gleichm\u00e4\u00dfig frisch im Fr\u00fchjahr"
+      ],
+      "trivname": "Kaiserkrone 'Aurora'",
+      "type": "zwiebelpflanze (geophyt)",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 20,
+          "4": 70,
+          "5": 90,
+          "6": 20,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/fritillaria-imperialis-aurora-3.svg",
+          "4": "/fritillaria-imperialis-aurora-4.svg",
+          "5": "/fritillaria-imperialis-aurora-5.svg",
+          "6": "/fritillaria-imperialis-aurora-6.svg",
+          "7": "/fritillaria-imperialis-aurora-6.svg",
+          "8": "/fritillaria-imperialis-aurora-6.svg",
+          "9": "/fritillaria-imperialis-aurora-6.svg",
+          "10": "/fritillaria-imperialis-aurora-10.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "watering": "w\u00e4hrend Austrieb gleichm\u00e4\u00dfig frisch; Staun\u00e4sse vermeiden",
+      "watering_ideal": "Fr\u00fchjahr frisch, Sommer eher trocken; sehr gute Drainage",
+      "scale": 0.5
+    },
+    {
+      "id": "berberis-vulgaris",
+      "name": "Berberis vulgaris",
+      "trivname": "Gew\u00f6hnliche Berberitze (Sauerdorn)",
+      "type": "laubabwerfender strauch",
+      "vegetation": {
+        "height": {
+          "1": 250,
+          "2": 250,
+          "3": 250,
+          "4": 250,
+          "5": 250,
+          "6": 250,
+          "7": 250,
+          "8": 250,
+          "9": 250,
+          "10": 250,
+          "11": 250,
+          "12": 250
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/empty.svg",
+          "3": "/berberis-vulgaris-3.svg",
+          "4": "/berberis-vulgaris-4.svg",
+          "5": "/berberis-vulgaris-5.svg",
+          "6": "/berberis-vulgaris-6.svg",
+          "7": "/berberis-vulgaris-6.svg",
+          "8": "/berberis-vulgaris-6.svg",
+          "9": "/berberis-vulgaris-6.svg",
+          "10": "/berberis-vulgaris-10.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "max_lifetime": 40,
+      "min_temperature": -30,
+      "propagation": [
+        "samen",
+        "stecklinge (halbholz)",
+        "stecklinge (reifholz)",
+        "ausl\u00e4ufer"
+      ],
+      "max_width": 250,
+      "snails": [
+        "schneckenfest"
+      ],
+      "bloom_start": 5,
+      "bloom_end": 6,
+      "soil": [
+        "durchl\u00e4ssig"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gut drainiert",
+        "trocken bis frisch",
+        "neutral bis alkalisch (kalktolerant)"
+      ],
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig bis lichter Halbschatten",
+        "windfest"
+      ],
+      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch; nach Anwachsen recht trockenheitsvertr\u00e4glich",
+      "nutrition": "gering bis mittel",
+      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "cutting_time": 6,
+      "cutting": "Direkt nach der Bl\u00fcte auslichten/formen; \u00e4ltere Triebe bodennah entfernen. Starkverj\u00fcngung bei laubabwerfenden Formen auch im Winter m\u00f6glich (dann Bl\u00fcte im Folgejahr geringer).",
+      "notes": "Dornenreicher, sehr robuster Heckenstrauch; bl\u00fcht sp\u00e4t im Fr\u00fchjahr, rote essbare Beeren (verarbeitet). Bildet Ausl\u00e4ufer. Historisch Zwischenwirt von Schwarzrost am Getreide \u2013 Anbau war teils eingeschr\u00e4nkt; heute meist wieder erlaubt."
     }
   ]
 }
