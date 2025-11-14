@@ -5676,7 +5676,7 @@
         "tochterzwiebeln/teilung",
         "samen (Sorten nicht sortenecht)"
       ],
-      "snails": "m\u00e4\u00dfig attraktiv",
+      "snails": "little",
       "soil": [
         "durchl\u00e4ssig"
       ],
@@ -5766,9 +5766,7 @@
         "ausl\u00e4ufer"
       ],
       "max_width": 250,
-      "snails": [
-        "schneckenfest"
-      ],
+      "snails": "hardened",
       "bloom_start": 5,
       "bloom_end": 6,
       "soil": [
@@ -5869,6 +5867,83 @@
       },
       "watering": "gering bis mittel",
       "watering_ideal": "bei l\u00e4ngerer Trockenheit gie\u00dfen, sonst pflegeleicht"
+    },
+    {
+      "bloom_end": 3,
+      "bloom_start": 12,
+      "cutting": "alte Bl\u00e4tter vor dem Austrieb bodennah entfernen",
+      "cutting_time": "im Sp\u00e4twinter",
+      "id": "helleborus-niger",
+      "location": [
+        "halbschattig",
+        "schattig"
+      ],
+      "location_ideal": [
+        "leichter Schatten unter laubabwerfenden Geh\u00f6lzen",
+        "windgesch\u00fctzt",
+        "k\u00fchl und luftig"
+      ],
+      "max_age": "30\u201340 Jahre",
+      "max_lifetime": 30,
+      "max_width": 40,
+      "min_temperature": -25,
+      "name": "Helleborus niger",
+      "notes": "winterbl\u00fchend, giftig, empfindlich gegen\u00fcber Wurzelst\u00f6rungen",
+      "nutrition": "mittel",
+      "nutrition_ideal": "Kompostgabe im Fr\u00fchjahr ausreichend",
+      "propagation": [
+        "Teilung",
+        "Samen (langsam keimend)",
+        "Selbstaussaat"
+      ],
+      "scale": 0.5,
+      "snails": "little",
+      "soil": [
+        "humos",
+        "kalkhaltig",
+        "n\u00e4hrstoffreich",
+        "gut drainiert"
+      ],
+      "soil_ideal": [
+        "humoser Lehmboden",
+        "kalkreich",
+        "dauerhaft frisch aber niemals staunass",
+        "mit organischem Material angereichert"
+      ],
+      "trivname": "Christrose",
+      "type": "staude",
+      "vegetation": {
+        "height": {
+          "1": 20,
+          "2": 20,
+          "3": 22,
+          "4": 23,
+          "5": 25,
+          "6": 25,
+          "7": 25,
+          "8": 25,
+          "9": 25,
+          "10": 25,
+          "11": 23,
+          "12": 20
+        },
+        "icon": {
+          "1": "/helleborus-niger-12.svg",
+          "2": "/helleborus-niger-12.svg",
+          "3": "/helleborus-niger-12.svg",
+          "4": "/helleborus-niger-4.svg",
+          "5": "/helleborus-niger-4.svg",
+          "6": "/helleborus-niger-4.svg",
+          "7": "/helleborus-niger-4.svg",
+          "8": "/helleborus-niger-4.svg",
+          "9": "/helleborus-niger-4.svg",
+          "10": "/helleborus-niger-4.svg",
+          "11": "/helleborus-niger-4.svg",
+          "12": "/helleborus-niger-12.svg"
+        }
+      },
+      "watering": "m\u00e4\u00dfig feucht halten",
+      "watering_ideal": "gleichm\u00e4\u00dfig frisch, keine Staun\u00e4sse"
     }
   ]
 }
