@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info
+*.whl
+build/
+dist_sync/
+*~
+*.log
+*.lock
+*.bak
+*.bck
+*.db
