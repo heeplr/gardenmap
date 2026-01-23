@@ -12,6 +12,7 @@
         .plants-item img { width: auto; height: 2.5rem; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
         #zoom-controls { position: absolute; bottom: 1rem; left: 1rem; }
+        #export-controls { position: absolute; bottom: 1rem; right: 4rem; }
         #export-svg { position: absolute; bottom: 1rem; right: 1rem; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
         image { cursor: grab; }
@@ -44,6 +45,7 @@
 <body>
     <script src="/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
+    <!-- slider to select month -->
     <div id="month-controls" class="card">
         <div class="card-body">
             <div class="display-6 text-center" id="month"></div>
@@ -51,13 +53,24 @@
         </div>
     </div>
 
+    <!-- +/- buttons to zoom -->
     <div id="zoom-controls" class="btn-group-vertical" role="group" aria-label="zoom">
       <button type="button" class="btn btn-light" onclick="viewZoom(1.2)" title="zoom in">+</button>
       <button type="button" class="btn btn-light" onclick="viewZoom(1/1.2)" title="zoom out">-</button>
     </div>
 
+    <!-- import/export plants into garden -->
+    <div id="export-controls" role="group" aria-label="import/export garden" aria-hidden="false">
+      <button type="button" id="export-garden" class="btn btn-light" onclick="gardenExportJson()" title="export garden JSON">📥</button>
+      <button type="button" id="import-garden" class="btn btn-light" onclick="gardenImportTrigger()" title="import garden JSON">📤</button>
+    </div>
+    <input type="file" id="importGardenFile" accept="application/json" style="display:none" aria-hidden="true" />
+    <input type="file" id="importPlantsFile" accept="application/json" style="display:none" aria-hidden="true" />
+
+    <!-- export current svg view -->
     <button type="button" id="export-svg" class="btn btn-light" onclick="gardenExportSvg()" title="export svg">📥</button>
 
+    <!-- the main toolbox -->
     <div class="btn-group-vertical" id="toolbox" role="group" aria-label="toolbox">
       <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#palette" title="open plant palette">🎨</button>
 
@@ -79,6 +92,7 @@
       <button type="button" class="btn btn-light" onclick="gardenDeletePlant()" title="delete selected plant(s)">🗑️</button>
     </div>
 
+    <!-- plant palette -->
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="palette" aria-labelledby="paletteLabel">
 
       <div class="offcanvas-header">
@@ -142,9 +156,12 @@
 
       <div class="offcanvas-footer plants-toolbar">
         <button type="button" class="btn btn-light" onclick="paletteAdd()" title="add new plant species">+</button>
+        <button type="button" class="btn btn-light" onclick="plantExportJson()" title="export plant species JSON">📥</button>
+        <button type="button" class="btn btn-light" onclick="plantImportTrigger()" title="import plant species JSON">📤</button>
       </div>
     </div>
 
+    <!-- form to edit a single plant -->
     <div id="plant-edit-form" class="modal" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -372,6 +389,7 @@
       </div>
     </div>
 
+    <!-- map with plants -->
     {% include "map.svg" %}
 
     <script>

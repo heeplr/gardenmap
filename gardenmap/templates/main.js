@@ -1,6 +1,8 @@
 
-/* our SVG with our map container */
-const svg = document.getElementById("gardensvg");
+/* our SVG with our map container - we just take the first svg we
+ * encounter - if you embed another SVG before the map, you need to
+ * account for that here */
+const svg = document.querySelector("svg");
 const map = document.getElementById("viewport");
 const plantlist = document.getElementById("plantlist");
 const palette = document.getElementById("palette");
@@ -25,7 +27,7 @@ let paletteFilter = {
 let viewTransform = null;
 let viewIsPanning = false;
 let viewPanStart = null;
-let viewMode = "iconVisMode";          // visualize height, not icons
+let viewMode = "iconVisMode";          // visualize plant height, not icons
 let viewMouse = { x: 0, y: 0};         // remember last SVG coords of mouse
 
 let selectionBoxMode = false;
@@ -487,6 +489,218 @@ function gardenDeletePlant() {
     });
 }
 
+/* export garden JSON (all attributes from DB) */
+function gardenExportJson() {
+    fetch('/garden')
+        .then(res => {
+            if (!res.ok) throw new Error('Failed to fetch garden data');
+            return res.json();
+        })
+        .then(data => {
+            const text = JSON.stringify(data, null, 2);
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', `garden-all.json`);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        })
+        .catch(err => {
+            alert('Export failed: ' + err.message);
+        });
+}
+
+/* trigger import (open file picker) */
+function gardenImportTrigger() {
+    const input = document.getElementById('importGardenFile');
+    if (!input) {
+        alert('Import not supported in this environment.');
+        return;
+    }
+    input.value = ''; // clear previous selection
+    input.click();
+}
+
+/* handle import file selection */
+const importGardenInput = document.getElementById('importGardenFile');
+if (importGardenInput) {
+    importGardenInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+
+        // Optional: client-side size check against common server MAX_CONTENT_LENGTH (1MB)
+        const MAX_CLIENT_FILE_SIZE = 40 * 1024 * 1024; // 40 MB
+        if (file.size > MAX_CLIENT_FILE_SIZE) {
+            const proceed = confirm('Selected file is larger than 40 MB. The server may reject large uploads. Proceed?');
+            if (!proceed) {
+                importGardenInput.value = '';
+                return;
+            }
+        }
+
+        const reader = new FileReader();
+        reader.onload = () => {
+            let parsed;
+            try {
+                parsed = JSON.parse(reader.result);
+            } catch (ex) {
+                alert('Invalid JSON file: ' + ex.message);
+                importGardenInput.value = '';
+                return;
+            }
+
+            let plantsToPost = null;
+            if (Array.isArray(parsed)) {
+                // file contains an array of plant objects
+                plantsToPost = parsed;
+            } else if (parsed && Array.isArray(parsed.plantlist)) {
+                // file uses wrapped format { plantlist: [...] }
+                plantsToPost = parsed.plantlist;
+            } else if (parsed && typeof parsed === 'object' && parsed.id) {
+                // single plant object
+                plantsToPost = [parsed];
+            } else {
+                alert('JSON does not appear to contain plant data (expected array or {plantlist: [...] }).');
+                importGardenInput.value = '';
+                return;
+            }
+
+            // POST to /garden to preserve existing behavior (accepts single or list)
+            fetch('/garden', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(plantsToPost)
+            })
+            .then(res => {
+                if (!res.ok) {
+                    return res.text().then(t => { throw new Error(t || 'Server rejected import'); });
+                }
+                return res.json();
+            })
+            .then(() => {
+                // reload data and UI
+                gardenLoad().then(() => {
+                    alert('Import successful');
+                });
+            })
+            .catch(err => {
+                alert('Import failed: ' + err.message);
+            })
+            .finally(() => {
+                importGardenInput.value = '';
+            });
+        };
+        reader.readAsText(file);
+    });
+}
+
+/* export plant species JSON (all attributes from DB) */
+function plantExportJson() {
+    fetch('/plants')
+        .then(res => {
+            if (!res.ok) throw new Error('Failed to fetch plant palette');
+            return res.json();
+        })
+        .then(data => {
+            const text = JSON.stringify(data, null, 2);
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', `plants-all.json`);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        })
+        .catch(err => {
+            alert('Export failed: ' + err.message);
+        });
+}
+
+/* trigger plant import (open file picker) */
+function plantImportTrigger() {
+    const input = document.getElementById('importPlantsFile');
+    if (!input) {
+        alert('Import not supported in this environment.');
+        return;
+    }
+    input.value = ''; // clear previous selection
+    input.click();
+}
+
+/* handle plant import file selection */
+const importPlantsInput = document.getElementById('importPlantsFile');
+if (importPlantsInput) {
+    importPlantsInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+
+        const MAX_CLIENT_FILE_SIZE = 1 * 1024 * 1024; // 1 MB
+        if (file.size > MAX_CLIENT_FILE_SIZE) {
+            const proceed = confirm('Selected file is larger than 1 MB. The server may reject large uploads. Proceed?');
+            if (!proceed) {
+                importPlantsInput.value = '';
+                return;
+            }
+        }
+
+        const reader = new FileReader();
+        reader.onload = () => {
+            let parsed;
+            try {
+                parsed = JSON.parse(reader.result);
+            } catch (ex) {
+                alert('Invalid JSON file: ' + ex.message);
+                importPlantsInput.value = '';
+                return;
+            }
+
+            let plantsToPost = null;
+            if (Array.isArray(parsed)) {
+                // file contains an array of plant objects
+                plantsToPost = parsed;
+            } else if (parsed && Array.isArray(parsed.plantlist)) {
+                // file uses wrapped format { plantlist: [...] }
+                plantsToPost = parsed.plantlist;
+            } else if (parsed && typeof parsed === 'object' && parsed.id) {
+                // single plant object
+                plantsToPost = [parsed];
+            } else {
+                alert('JSON does not appear to contain plant species data (expected array or {plantlist: [...] }).');
+                importPlantsInput.value = '';
+                return;
+            }
+
+            // POST to /plants to append species; /plants endpoint accepts list or single object
+            fetch('/plants', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(plantsToPost)
+            })
+            .then(res => {
+                if (!res.ok) {
+                    return res.text().then(t => { throw new Error(t || 'Server rejected import'); });
+                }
+                return res.json();
+            })
+            .then(() => {
+                // reload palette and garden render (palette used by gardenRender)
+                paletteLoad().then(() => {
+                    gardenRender();
+                    alert('Plant import successful');
+                });
+            })
+            .catch(err => {
+                alert('Import failed: ' + err.message);
+            })
+            .finally(() => {
+                importPlantsInput.value = '';
+            });
+        };
+        reader.readAsText(file);
+    });
+}
+
 /* export SVG */
 function gardenExportSvg() {
     /* serialize SVG */
@@ -775,6 +989,7 @@ svg.addEventListener("mouseup", (e) => {
                 dragged_plants.push({
                     x: garden[id].x,
                     y: garden[id].y,
+                    plant_id: garden[id].plant_id,
                     id: id
                 });
             }
