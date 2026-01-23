@@ -1849,18 +1849,6 @@
       "id": "1635072f834d"
     },
     {
-      "id": "e5dcf1c1ff7e",
-      "plant_id": "aster",
-      "x": 245.29202270507812,
-      "y": 371.44378662109375
-    },
-    {
-      "id": "81df84345a7d",
-      "plant_id": "aster",
-      "x": 245.29202270507812,
-      "y": 371.44378662109375
-    },
-    {
       "id": "cd8ad5ae7458",
       "plant_id": "aster",
       "x": 238.6449737548828,
@@ -1883,6 +1871,60 @@
       "plant_id": "aster",
       "x": 231.9197235107422,
       "y": 365.187744140625
+    },
+    {
+      "x": 190.07373046875,
+      "y": 323.489501953125,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "2ff922b6af25"
+    },
+    {
+      "x": 194.19703674316406,
+      "y": 325.6387023925781,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "f31d4197740d"
+    },
+    {
+      "x": 198.72103881835938,
+      "y": 327.28375244140625,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "e17cc7ecc2a2"
+    },
+    {
+      "x": 202.645751953125,
+      "y": 329.0933837890625,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "b22f2c617847"
+    },
+    {
+      "x": 149.31163024902344,
+      "y": 529.107666015625,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "f0bd6ebd802a"
+    },
+    {
+      "x": 149.09095764160156,
+      "y": 526.1500854492188,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "3888024be552"
+    },
+    {
+      "x": 149.26751708984375,
+      "y": 523.1484375,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "8060f72d8f1b"
+    },
+    {
+      "x": 209.2564239501953,
+      "y": 331.9048767089844,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "fcb3c84e04d9"
+    },
+    {
+      "x": 211.44711303710938,
+      "y": 333.135986328125,
+      "plant_id": "hyacinthus-orientalis",
+      "id": "2dc537d986fe"
     }
   ]
 }

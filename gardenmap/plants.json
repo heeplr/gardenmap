@@ -1,35 +1,29 @@
 {
   "plantlist": [
     {
-      "bloom_end": 3,
-      "bloom_start": 1,
-      "cutting": "Kein Schnitt n\u00f6tig; nur eingetrocknete Bl\u00e4tter entfernen",
-      "cutting_time": "None",
       "id": "cyclamen-coum",
+      "name": "Cyclamen coum",
+      "trivname": "Frühlings-Alpenveilchen",
+      "type": "knollenstaude (geophyt)",
+      "bloom_start": 1,
+      "bloom_end": 3,
+      "cutting": "Kein Schnitt nötig; nur eingetrocknete Blätter entfernen",
+      "cutting_time": -1,
+      "max_lifetime": 30,
+      "max_width": 40,
+      "min_temperature": -20,
       "location": [
         "halbschattig",
         "schattig"
       ],
       "location_ideal": [
         "lichter schatten",
-        "wintersonne m\u00f6glich"
+        "wintersonne möglich"
       ],
-      "max_lifetime": 30,
-      "max_width": 40,
-      "min_temperature": -20,
-      "name": "Cyclamen coum",
-      "notes": "Wintergr\u00fcnes Laub, Sommerruhe; bl\u00fcht trotz Frost.",
-      "nutrition": "anspruchslos; keine Pflichtd\u00fcngung",
-      "nutrition_ideal": "im Herbst d\u00fcnne Laubmulchschicht",
-      "propagation": [
-        "samen",
-        "selbstaussaat",
-        "teilung"
-      ],
-      "scale": 0.25,
-      "snails": "hardened",
+      "nutrition": "anspruchslos; keine Pflichtdüngung",
+      "nutrition_ideal": "im Herbst dünne Laubmulchschicht",
       "soil": [
-        "durchl\u00e4ssig",
+        "durchlässig",
         "humos"
       ],
       "soil_ideal": [
@@ -37,22 +31,29 @@
         "locker",
         "im sommer eher trocken"
       ],
-      "trivname": "Fr\u00fchlings-Alpenveilchen",
-      "type": "knollenstaude (geophyt)",
+      "watering": "nur bei längerer Trockenheit im Herbst/Frühjahr leicht gießen; Sommer trocken",
+      "watering_ideal": "Herbst/Frühjahr gleichmäßig frisch, Sommer trocken",
+      "snails": "hardened",
+      "propagation": [
+        "samen",
+        "selbstaussaat",
+        "teilung"
+      ],
+      "scale": 0.25,
       "vegetation": {
         "height": {
-          "1": 10,
-          "2": 10,
-          "3": 10,
-          "4": 8,
-          "5": 3,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 3,
-          "10": 8,
-          "11": 10,
-          "12": 10
+          "1": 10.0,
+          "2": 10.0,
+          "3": 10.0,
+          "4": 8.0,
+          "5": 3.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 3.0,
+          "10": 8.0,
+          "11": 10.0,
+          "12": 10.0
         },
         "icon": {
           "1": "/cyclamen-coum-1.svg",
@@ -69,14 +70,13 @@
           "12": "/cyclamen-coum-10.svg"
         }
       },
-      "watering": "nur bei l\u00e4ngerer Trockenheit im Herbst/Fr\u00fchjahr leicht gie\u00dfen; Sommer trocken",
-      "watering_ideal": "Herbst/Fr\u00fchjahr gleichm\u00e4\u00dfig frisch, Sommer trocken"
+      "notes": "Wintergrünes Laub, Sommerruhe; blüht trotz Frost."
     },
     {
       "bloom_end": 3,
       "bloom_start": 1,
-      "cutting": "Kein Schnitt n\u00f6tig; nur eingetrocknete Bl\u00e4tter entfernen",
-      "cutting_time": "None",
+      "cutting": "Kein Schnitt nötig; nur eingetrocknete Blätter entfernen",
+      "cutting_time": -1,
       "id": "cyclamen",
       "location": [
         "halbschattig",
@@ -84,15 +84,15 @@
       ],
       "location_ideal": [
         "lichter schatten",
-        "wintersonne m\u00f6glich"
+        "wintersonne möglich"
       ],
       "max_lifetime": 30,
       "max_width": 40,
       "min_temperature": -20,
       "name": "Cyclamen coum",
-      "notes": "Wintergr\u00fcnes Laub, Sommerruhe; bl\u00fcht trotz Frost.",
-      "nutrition": "anspruchslos; keine Pflichtd\u00fcngung",
-      "nutrition_ideal": "im Herbst d\u00fcnne Laubmulchschicht",
+      "notes": "Wintergrünes Laub, Sommerruhe; blüht trotz Frost.",
+      "nutrition": "anspruchslos; keine Pflichtdüngung",
+      "nutrition_ideal": "im Herbst dünne Laubmulchschicht",
       "propagation": [
         "samen",
         "selbstaussaat",
@@ -101,7 +101,7 @@
       "scale": 0.25,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig",
+        "durchlässig",
         "humos"
       ],
       "soil_ideal": [
@@ -141,13 +141,13 @@
           "12": "/cyclamen-coum-10.svg"
         }
       },
-      "watering": "nur bei l\u00e4ngerer Trockenheit im Herbst/Fr\u00fchjahr leicht gie\u00dfen; Sommer trocken",
-      "watering_ideal": "Herbst/Fr\u00fchjahr gleichm\u00e4\u00dfig frisch, Sommer trocken"
+      "watering": "nur bei längerer Trockenheit im Herbst/Frühjahr leicht gießen; Sommer trocken",
+      "watering_ideal": "Herbst/Frühjahr gleichmäßig frisch, Sommer trocken"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Verbl\u00fchtes entfernen; Laub erst nach Vergilben schneiden (6\u20138 Wochen nach Bl\u00fcte)",
+      "cutting": "Verblühtes entfernen; Laub erst nach Vergilben schneiden (6–8 Wochen nach Blüte)",
       "cutting_time": 5,
       "id": "narcissus",
       "location": [
@@ -161,9 +161,9 @@
       "max_width": 30,
       "min_temperature": -20,
       "name": "Narcissus 'Carlton'",
-      "notes": "Staun\u00e4sse vermeiden; Zwiebeln nicht zu flach setzen.",
-      "nutrition": "keine Pflicht; optional Zwiebelblumend\u00fcnger im Fr\u00fchling",
-      "nutrition_ideal": "vor und nach der Bl\u00fcte leicht organisch nachd\u00fcngen",
+      "notes": "Staunässe vermeiden; Zwiebeln nicht zu flach setzen.",
+      "nutrition": "keine Pflicht; optional Zwiebelblumendünger im Frühling",
+      "nutrition_ideal": "vor und nach der Blüte leicht organisch nachdüngen",
       "propagation": [
         "tochterzwiebeln",
         "teilung",
@@ -172,11 +172,11 @@
       "scale": 0.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Narzisse",
@@ -211,29 +211,29 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "im Fr\u00fchjahr frisch halten, danach trocken",
-      "watering_ideal": "gleichm\u00e4\u00dfig feucht w\u00e4hrend Blattphase; Ruhezeit trocken"
+      "watering": "im Frühjahr frisch halten, danach trocken",
+      "watering_ideal": "gleichmäßig feucht während Blattphase; Ruhezeit trocken"
     },
     {
       "bloom_end": 4,
       "bloom_start": 2,
-      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen",
-      "cutting_time": "None",
+      "cutting": "Verblühtes regelmäßig ausputzen",
+      "cutting_time": -1,
       "id": "primula-acaulis",
       "location": [
         "halbschattig",
         "schattig"
       ],
       "location_ideal": [
-        "k\u00fchl-halbschattig"
+        "kühl-halbschattig"
       ],
       "max_lifetime": 5,
       "max_width": 30,
       "min_temperature": -25,
       "name": "Primula acaulis",
-      "notes": "Kann Primin enthalten (Hautreizungen) \u2013 Handschuhe tragen.",
-      "nutrition": "m\u00e4ssiger Bedarf",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch d\u00fcngen",
+      "notes": "Kann Primin enthalten (Hautreizungen) – Handschuhe tragen.",
+      "nutrition": "mässiger Bedarf",
+      "nutrition_ideal": "im Frühjahr leicht organisch düngen",
       "propagation": [
         "teilung",
         "samen"
@@ -246,11 +246,11 @@
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht",
-        "durchl\u00e4ssig"
+        "nährstoffreich",
+        "gleichmäßig feucht",
+        "durchlässig"
       ],
-      "trivname": "St\u00e4ngellose Schl\u00fcsselblume",
+      "trivname": "Stängellose Schlüsselblume",
       "type": "staude",
       "vegetation": {
         "height": {
@@ -282,14 +282,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; nicht austrocknen lassen",
-      "watering_ideal": "st\u00e4ndig leicht feucht, aber ohne Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten; nicht austrocknen lassen",
+      "watering_ideal": "ständig leicht feucht, aber ohne Staunässe"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
       "cutting": "Kein Schnitt; eingetrocknetes Laub liegen lassen",
-      "cutting_time": "None",
+      "cutting_time": -1,
       "id": "anemone-blanda",
       "location": [
         "sonnig",
@@ -302,9 +302,9 @@
       "max_width": 40,
       "min_temperature": -25,
       "name": "Anemone blanda",
-      "notes": "Zieht kurz nach der Bl\u00fcte ein; Samenstand l\u00e4sst Selbstaussaat zu.",
+      "notes": "Zieht kurz nach der Blüte ein; Samenstand lässt Selbstaussaat zu.",
       "nutrition": "geringer Bedarf",
-      "nutrition_ideal": "keine D\u00fcngung n\u00f6tig bei humosem Boden",
+      "nutrition_ideal": "keine Düngung nötig bei humosem Boden",
       "propagation": [
         "knollen",
         "samen"
@@ -312,14 +312,14 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
         "locker",
         "sommerlich trocken"
       ],
-      "trivname": "Balkanwindr\u00f6schen",
+      "trivname": "Balkanwindröschen",
       "type": "knollenstaude (geophyt)",
       "vegetation": {
         "height": {
@@ -351,21 +351,21 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "im Fr\u00fchjahr frisch; Sommer trocken",
-      "watering_ideal": "w\u00e4hrend Austrieb m\u00e4\u00dfig feucht, danach trocken"
+      "watering": "im Frühjahr frisch; Sommer trocken",
+      "watering_ideal": "während Austrieb mäßig feucht, danach trocken"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Kein Schnitt; Best\u00e4nde ungest\u00f6rt lassen",
-      "cutting_time": "None",
+      "cutting": "Kein Schnitt; Bestände ungestört lassen",
+      "cutting_time": -1,
       "id": "anemone-nemorosa",
       "location": [
         "halbschattig",
         "schattig"
       ],
       "location_ideal": [
-        "laubwald\u00e4hnlicher Halbschatten"
+        "laubwaldähnlicher Halbschatten"
       ],
       "max_lifetime": 20,
       "max_width": -1,
@@ -373,7 +373,7 @@
       "name": "Anemone nemorosa",
       "notes": "Giftig; bildet mit der Zeit dichte Teppiche.",
       "nutrition": "geringer Bedarf",
-      "nutrition_ideal": "Laubmulch im Herbst gen\u00fcgt",
+      "nutrition_ideal": "Laubmulch im Herbst genügt",
       "propagation": [
         "rhizome",
         "samen"
@@ -388,7 +388,7 @@
         "locker",
         "kalkarm bis neutral"
       ],
-      "trivname": "Waldwindr\u00f6schen",
+      "trivname": "Buschwindröschen",
       "type": "rhizomstaude (geophyt)",
       "vegetation": {
         "height": {
@@ -420,28 +420,28 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "Fr\u00fchjahr frisch; Sommer trocken",
-      "watering_ideal": "frisch bis feucht w\u00e4hrend Austrieb, danach abtrocknen lassen"
+      "watering": "Frühjahr frisch; Sommer trocken",
+      "watering_ideal": "frisch bis feucht während Austrieb, danach abtrocknen lassen"
     },
     {
       "bloom_end": 4,
       "bloom_start": 2,
-      "cutting": "Verbl\u00fchtes ausputzen",
-      "cutting_time": "None",
+      "cutting": "Verblühtes ausputzen",
+      "cutting_time": -1,
       "id": "primula-x-pruhoniciana",
       "location": [
         "halbschattig"
       ],
       "location_ideal": [
-        "k\u00fchl-halbschattig"
+        "kühl-halbschattig"
       ],
       "max_lifetime": 5,
       "max_width": 30,
       "min_temperature": -23,
       "name": "Primula x pruhoniciana",
-      "notes": "Fr\u00fchbl\u00fcher; viele Sorten.",
-      "nutrition": "m\u00e4ssiger Bedarf",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch d\u00fcngen",
+      "notes": "Frühblüher; viele Sorten.",
+      "nutrition": "mässiger Bedarf",
+      "nutrition_ideal": "im Frühjahr leicht organisch düngen",
       "propagation": [
         "teilung",
         "samen"
@@ -454,9 +454,9 @@
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht",
-        "durchl\u00e4ssig"
+        "nährstoffreich",
+        "gleichmäßig feucht",
+        "durchlässig"
       ],
       "trivname": "Primel",
       "type": "staude",
@@ -490,14 +490,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch; nie austrocknen lassen",
-      "watering_ideal": "st\u00e4ndig leicht feucht, ohne Staun\u00e4sse"
+      "watering": "gleichmäßig frisch; nie austrocknen lassen",
+      "watering_ideal": "ständig leicht feucht, ohne Staunässe"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Direkt nach der Bl\u00fcte Seitentriebe auf 5\u20136 Bl\u00e4tter eink\u00fcrzen; \u00e4lteres Holz auslichten",
-      "cutting_time": "5",
+      "cutting": "Direkt nach der Blüte Seitentriebe auf 5–6 Blätter einkürzen; älteres Holz auslichten",
+      "cutting_time": 5,
       "id": "chaenomeles",
       "location": [
         "sonnig",
@@ -505,15 +505,15 @@
       ],
       "location_ideal": [
         "sonnig",
-        "w\u00e4rmebeg\u00fcnstigt"
+        "wärmebegünstigt"
       ],
       "max_lifetime": 40,
       "max_width": 200,
       "min_temperature": -20,
       "name": "Chaenomeles",
-      "notes": "Essbare, sehr saure Fr\u00fcchte im Herbst; gut als Hecken- und Wandgeh\u00f6lz.",
+      "notes": "Essbare, sehr saure Früchte im Herbst; gut als Hecken- und Wandgehölz.",
       "nutrition": "anspruchslos",
-      "nutrition_ideal": "Fr\u00fchjahr leichte Kompostgabe",
+      "nutrition_ideal": "Frühjahr leichte Kompostgabe",
       "propagation": [
         "stecklinge",
         "absenker",
@@ -522,11 +522,11 @@
       "scale": 2,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "durchl\u00e4ssig",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich"
+        "durchlässig",
+        "mäßig nährstoffreich"
       ],
       "trivname": "Zierquitte",
       "type": "strauch",
@@ -560,14 +560,14 @@
           "12": "/chaenomeles-12.svg"
         }
       },
-      "watering": "nach Anwachsen trockenheitsvertr\u00e4glich",
-      "watering_ideal": "nur bei l\u00e4ngerer Trockenheit w\u00e4ssern"
+      "watering": "nach Anwachsen trockenheitsverträglich",
+      "watering_ideal": "nur bei längerer Trockenheit wässern"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
       "cutting": "Kein Schnitt; Laub erst nach Vergilben entfernen",
-      "cutting_time": "None",
+      "cutting_time": -1,
       "id": "scilla-siberica",
       "location": [
         "sonnig",
@@ -580,9 +580,9 @@
       "max_width": 40,
       "min_temperature": -25,
       "name": "Scilla siberica",
-      "notes": "Breitet sich gut durch Samen aus; fr\u00fche Bienenweide.",
+      "notes": "Breitet sich gut durch Samen aus; frühe Bienenweide.",
       "nutrition": "geringer Bedarf",
-      "nutrition_ideal": "keine D\u00fcngung n\u00f6tig",
+      "nutrition_ideal": "keine Düngung nötig",
       "propagation": [
         "tochterzwiebeln",
         "samen"
@@ -590,14 +590,14 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "frisch im Fr\u00fchjahr",
+        "frisch im Frühjahr",
         "sommerlich trocken"
       ],
-      "trivname": "Sibirische Traubenhyazinthe",
+      "trivname": "Blaustern",
       "type": "zwiebelpflanze (geophyt)",
       "vegetation": {
         "height": {
@@ -629,13 +629,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "im Fr\u00fchjahr frisch; im Sommer trocken",
-      "watering_ideal": "gleichm\u00e4\u00dfig feucht w\u00e4hrend Austrieb, danach abtrocknen lassen"
+      "watering": "im Frühjahr frisch; im Sommer trocken",
+      "watering_ideal": "gleichmäßig feucht während Austrieb, danach abtrocknen lassen"
     },
     {
       "bloom_end": 10,
       "bloom_start": 4,
-      "cutting": "Nach der ersten Bl\u00fcte kr\u00e4ftig zur\u00fcckschneiden (ca. 5 cm)",
+      "cutting": "Nach der ersten Blüte kräftig zurückschneiden (ca. 5 cm)",
       "cutting_time": 6,
       "id": "viola-cornuta-molly-sanderson",
       "location": [
@@ -643,15 +643,15 @@
         "halbschattig"
       ],
       "location_ideal": [
-        "helle Halbschattenlage, nicht hei\u00df"
+        "helle Halbschattenlage, nicht heiß"
       ],
       "max_lifetime": 3,
       "max_width": 30,
       "min_temperature": -15,
       "name": "Viola cornuta 'Molly Sanderson'",
-      "notes": "Bl\u00fcht bei k\u00fchler Witterung am l\u00e4ngsten; R\u00fcckschnitt f\u00f6rdert Nachbl\u00fcte.",
-      "nutrition": "m\u00e4\u00dfig",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht nachd\u00fcngen",
+      "notes": "Blüht bei kühler Witterung am längsten; Rückschnitt fördert Nachblüte.",
+      "nutrition": "mäßig",
+      "nutrition_ideal": "im Frühjahr leicht nachdüngen",
       "propagation": [
         "samen",
         "stecklinge",
@@ -665,8 +665,8 @@
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig feucht",
-        "durchl\u00e4ssig"
+        "gleichmäßig feucht",
+        "durchlässig"
       ],
       "trivname": "Hornveilchen 'Molly Sanderson'",
       "type": "staude",
@@ -700,13 +700,13 @@
           "12": "/viola-cornuta-molly-sanderson-2.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig gie\u00dfen; Hitze vermeiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht ohne Staun\u00e4sse"
+      "watering": "gleichmäßig gießen; Hitze vermeiden",
+      "watering_ideal": "ständig leicht feucht ohne Staunässe"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Verwelkte/erfrorene Bl\u00e4tter im Fr\u00fchling bodennah entfernen; Bl\u00fctenstiele nach der Bl\u00fcte schneiden",
+      "cutting": "Verwelkte/erfrorene Blätter im Frühling bodennah entfernen; Blütenstiele nach der Blüte schneiden",
       "cutting_time": 3,
       "id": "bergenia-cordifolia-rotblum",
       "location": [
@@ -721,9 +721,9 @@
       "max_width": 80,
       "min_temperature": -30,
       "name": "Bergenia cordifolia 'Rotblum'",
-      "notes": "Immergr\u00fcn; Laub f\u00e4rbt sich im Winter r\u00f6tlich.",
+      "notes": "Immergrün; Laub färbt sich im Winter rötlich.",
       "nutrition": "gering",
-      "nutrition_ideal": "Fr\u00fchjahr Kompostgabe",
+      "nutrition_ideal": "Frühjahr Kompostgabe",
       "propagation": [
         "teilung",
         "rhizomstecklinge"
@@ -731,15 +731,15 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "frisch bis m\u00e4\u00dfig trocken"
+        "nährstoffreich",
+        "frisch bis mäßig trocken"
       ],
       "trivname": "Riesensteinbrech 'Rotblum'",
-      "type": "staude (immergr\u00fcn)",
+      "type": "staude (immergrün)",
       "vegetation": {
         "height": {
           "1": 25,
@@ -770,13 +770,13 @@
           "12": "/bergenia-cordifolia-rotblum-12.svg"
         }
       },
-      "watering": "nur bei anhaltender Trockenheit gie\u00dfen",
-      "watering_ideal": "gleichm\u00e4\u00dfig frisch; Staun\u00e4sse vermeiden"
+      "watering": "nur bei anhaltender Trockenheit gießen",
+      "watering_ideal": "gleichmäßig frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 5,
       "bloom_start": 3,
-      "cutting": "Nach der Hauptbl\u00fcte zur\u00fcckschneiden \u2013 kann Zweitbl\u00fcte f\u00f6rdern",
+      "cutting": "Nach der Hauptblüte zurückschneiden – kann Zweitblüte fördern",
       "cutting_time": 6,
       "id": "caltha-palustris",
       "location": [
@@ -790,9 +790,9 @@
       "max_width": 80,
       "min_temperature": -25,
       "name": "Caltha palustris",
-      "notes": "Giftig; ideal f\u00fcr Bachlauf und Teichrand.",
-      "nutrition": "m\u00e4\u00dfig",
-      "nutrition_ideal": "j\u00e4hrlich Kompost; kein Salz",
+      "notes": "Giftig; ideal für Bachlauf und Teichrand.",
+      "nutrition": "mäßig",
+      "nutrition_ideal": "jährlich Kompost; kein Salz",
       "propagation": [
         "teilung",
         "samen"
@@ -804,8 +804,8 @@
         "humos"
       ],
       "soil_ideal": [
-        "st\u00e4ndig feucht bis nass",
-        "n\u00e4hrstoffreich"
+        "ständig feucht bis nass",
+        "nährstoffreich"
       ],
       "trivname": "Sumpfdotterblume",
       "type": "staude (sumpfpflanze)",
@@ -845,8 +845,8 @@
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Verbl\u00fchtes abschneiden; Laub erst nach Vergilben entfernen",
-      "cutting_time": "5",
+      "cutting": "Verblühtes abschneiden; Laub erst nach Vergilben entfernen",
+      "cutting_time": 5,
       "id": "muscari",
       "location": [
         "sonnig",
@@ -861,7 +861,7 @@
       "name": "Muscari",
       "notes": "Viele Arten treiben im Herbst Laub; verwildert gern.",
       "nutrition": "gering",
-      "nutrition_ideal": "keine D\u00fcngung n\u00f6tig",
+      "nutrition_ideal": "keine Düngung nötig",
       "propagation": [
         "tochterzwiebeln",
         "samen"
@@ -869,11 +869,11 @@
       "scale": 0.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "locker",
-        "durchl\u00e4ssig",
+        "durchlässig",
         "sommerlich trocken"
       ],
       "trivname": "Traubenhyazinthe",
@@ -908,13 +908,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "im Fr\u00fchjahr frisch; Ruhephase trocken",
-      "watering_ideal": "gleichm\u00e4\u00dfig feucht w\u00e4hrend Austrieb, sommerlich trocken"
+      "watering": "im Frühjahr frisch; Ruhephase trocken",
+      "watering_ideal": "gleichmäßig feucht während Austrieb, sommerlich trocken"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Verbl\u00fchtes entfernen; Laub erst nach Vergilben schneiden",
+      "cutting": "Verblühtes entfernen; Laub erst nach Vergilben schneiden",
       "cutting_time": 5,
       "id": "hyacinthus-orientalis",
       "location": [
@@ -928,22 +928,22 @@
       "max_width": 30,
       "min_temperature": -20,
       "name": "Hyacinthus orientalis",
-      "notes": "Giftig; stark duftend; schwere Bl\u00fctenst\u00e4nde ggf. st\u00fctzen.",
-      "nutrition": "m\u00e4\u00dfig",
-      "nutrition_ideal": "vor Austrieb leicht organisch nachd\u00fcngen",
+      "notes": "Giftig; stark duftend; schwere Blütenstände ggf. stützen.",
+      "nutrition": "mäßig",
+      "nutrition_ideal": "vor Austrieb leicht organisch nachdüngen",
       "propagation": [
         "tochterzwiebeln",
         "teilung",
         "samen (selten)"
       ],
-      "scale": 1.0,
+      "scale": 0.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "gut drainiert",
         "sommerlich trocken"
       ],
@@ -979,14 +979,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "im Fr\u00fchjahr frisch; Sommer trocken",
-      "watering_ideal": "gleichm\u00e4\u00dfig feucht w\u00e4hrend Austrieb, Ruhezeit trocken"
+      "watering": "im Frühjahr frisch; Sommer trocken",
+      "watering_ideal": "gleichmäßig feucht während Austrieb, Ruhezeit trocken"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nach der Bl\u00fcte fl\u00e4chig zur\u00fcckschneiden, treibt dichter aus",
-      "cutting_time": "6",
+      "cutting": "Nach der Blüte flächig zurückschneiden, treibt dichter aus",
+      "cutting_time": 6,
       "id": "vinca-minor-purpura",
       "location": [
         "halbschattig",
@@ -1001,24 +1001,24 @@
       "name": "Vinca minor purpura",
       "notes": "Wuchsstarker Bodendecker; alle Pflanzenteile giftig.",
       "nutrition": "gering",
-      "nutrition_ideal": "im Fr\u00fchjahr d\u00fcnn Kompost",
+      "nutrition_ideal": "im Frühjahr dünn Kompost",
       "propagation": [
         "stecklinge",
-        "ausl\u00e4ufer",
+        "ausläufer",
         "teilung"
       ],
       "scale": 0.5,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "frisch bis m\u00e4\u00dfig trocken",
-        "kalkvertr\u00e4glich"
+        "frisch bis mäßig trocken",
+        "kalkverträglich"
       ],
-      "trivname": "Kleines Immergr\u00fcn 'Purpur'",
-      "type": "immergr\u00fcne staude (bodendecker)",
+      "trivname": "Kleines Immergrün 'Purpur'",
+      "type": "immergrüne staude (bodendecker)",
       "vegetation": {
         "height": {
           "1": 15,
@@ -1049,14 +1049,14 @@
           "12": "/vinca-minor-5-12.svg"
         }
       },
-      "watering": "nach Anwachsen trockenheitsvertr\u00e4glich",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig trocken; keine Staun\u00e4sse"
+      "watering": "nach Anwachsen trockenheitsverträglich",
+      "watering_ideal": "frisch bis mäßig trocken; keine Staunässe"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nach der Bl\u00fcte fl\u00e4chig zur\u00fcckschneiden, treibt dichter aus",
-      "cutting_time": "6",
+      "cutting": "Nach der Blüte flächig zurückschneiden, treibt dichter aus",
+      "cutting_time": 6,
       "id": "vinca-minor-alba",
       "location": [
         "halbschattig",
@@ -1069,26 +1069,26 @@
       "max_width": -1,
       "min_temperature": -25,
       "name": "Vinca minor alba",
-      "notes": "Wei\u00dfe Bl\u00fcte; wuchsstark; alle Pflanzenteile giftig.",
+      "notes": "Weiße Blüte; wuchsstark; alle Pflanzenteile giftig.",
       "nutrition": "gering",
-      "nutrition_ideal": "im Fr\u00fchjahr d\u00fcnn Kompost",
+      "nutrition_ideal": "im Frühjahr dünn Kompost",
       "propagation": [
         "stecklinge",
-        "ausl\u00e4ufer",
+        "ausläufer",
         "teilung"
       ],
       "scale": 0.5,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "frisch bis m\u00e4\u00dfig trocken",
-        "kalkvertr\u00e4glich"
+        "frisch bis mäßig trocken",
+        "kalkverträglich"
       ],
-      "trivname": "Kleines Immergr\u00fcn 'Weiss'",
-      "type": "immergr\u00fcne staude (bodendecker)",
+      "trivname": "Kleines Immergrün 'Weiss'",
+      "type": "immergrüne staude (bodendecker)",
       "vegetation": {
         "height": {
           "1": 15,
@@ -1119,13 +1119,13 @@
           "12": "/vinca-minor-5-12.svg"
         }
       },
-      "watering": "nach Anwachsen trockenheitsvertr\u00e4glich",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig trocken; keine Staun\u00e4sse"
+      "watering": "nach Anwachsen trockenheitsverträglich",
+      "watering_ideal": "frisch bis mäßig trocken; keine Staunässe"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nach der Bl\u00fcte fl\u00e4chig zur\u00fcckschneiden, treibt dichter aus",
+      "cutting": "Nach der Blüte flächig zurückschneiden, treibt dichter aus",
       "cutting_time": 6,
       "id": "vinca-minor-rubra",
       "location": [
@@ -1139,26 +1139,26 @@
       "max_width": -1,
       "min_temperature": -25,
       "name": "Vinca minor rubra",
-      "notes": "Rosa\u2011violette Bl\u00fcte; wuchsstark; alle Pflanzenteile giftig.",
+      "notes": "Rosa‑violette Blüte; wuchsstark; alle Pflanzenteile giftig.",
       "nutrition": "gering",
-      "nutrition_ideal": "im Fr\u00fchjahr d\u00fcnn Kompost",
+      "nutrition_ideal": "im Frühjahr dünn Kompost",
       "propagation": [
         "stecklinge",
-        "ausl\u00e4ufer",
+        "ausläufer",
         "teilung"
       ],
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "frisch bis m\u00e4\u00dfig trocken",
-        "kalkvertr\u00e4glich"
+        "frisch bis mäßig trocken",
+        "kalkverträglich"
       ],
-      "trivname": "Kleines Immergr\u00fcn 'Rubin'",
-      "type": "immergr\u00fcne staude (bodendecker)",
+      "trivname": "Kleines Immergrün 'Rubin'",
+      "type": "immergrüne staude (bodendecker)",
       "vegetation": {
         "height": {
           "1": 15,
@@ -1189,13 +1189,13 @@
           "12": "/vinca-minor-5-12.svg"
         }
       },
-      "watering": "nach Anwachsen trockenheitsvertr\u00e4glich",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig trocken; keine Staun\u00e4sse"
+      "watering": "nach Anwachsen trockenheitsverträglich",
+      "watering_ideal": "frisch bis mäßig trocken; keine Staunässe"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Nach der Bl\u00fcte altes Laub bodennah entfernen",
+      "cutting": "Nach der Blüte altes Laub bodennah entfernen",
       "cutting_time": 6,
       "id": "pulmonaria-rubra",
       "location": [
@@ -1203,15 +1203,15 @@
         "schattig"
       ],
       "location_ideal": [
-        "k\u00fchl-halbschattig"
+        "kühl-halbschattig"
       ],
       "max_lifetime": 10,
       "max_width": 50,
       "min_temperature": -25,
       "name": "Pulmonaria rubra",
-      "notes": "Fr\u00fche Bienen- und Hummelweide; mehltauanf\u00e4llig bei Trockenheit.",
-      "nutrition": "m\u00e4\u00dfig",
-      "nutrition_ideal": "im Fr\u00fchjahr Kompost",
+      "notes": "Frühe Bienen- und Hummelweide; mehltauanfällig bei Trockenheit.",
+      "nutrition": "mäßig",
+      "nutrition_ideal": "im Frühjahr Kompost",
       "propagation": [
         "teilung",
         "samen"
@@ -1224,8 +1224,8 @@
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig feucht",
-        "durchl\u00e4ssig",
+        "gleichmäßig feucht",
+        "durchlässig",
         "leicht lehmig"
       ],
       "trivname": "Rotes Lungenkraut",
@@ -1260,13 +1260,13 @@
           "12": "/pulmonaria-rubra-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe"
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Direkt nach der Bl\u00fcte auslichten; je Jahr 1/3 der \u00e4ltesten Triebe bodennah entfernen",
+      "cutting": "Direkt nach der Blüte auslichten; je Jahr 1/3 der ältesten Triebe bodennah entfernen",
       "cutting_time": 5,
       "id": "forsythia",
       "location": [
@@ -1275,15 +1275,15 @@
       ],
       "location_ideal": [
         "sonnig",
-        "w\u00e4rmebeg\u00fcnstigt"
+        "wärmebegünstigt"
       ],
       "max_lifetime": 50,
       "max_width": 300,
       "min_temperature": -25,
       "name": "Forsythia",
-      "notes": "Bl\u00fcht am vorj\u00e4hrigen Holz; R\u00fcckschnitt im Sommer/Herbst mindert die Bl\u00fcte.",
+      "notes": "Blüht am vorjährigen Holz; Rückschnitt im Sommer/Herbst mindert die Blüte.",
       "nutrition": "gering",
-      "nutrition_ideal": "im Fr\u00fchjahr Kompostgabe",
+      "nutrition_ideal": "im Frühjahr Kompostgabe",
       "propagation": [
         "stecklinge",
         "absenker"
@@ -1291,10 +1291,10 @@
       "scale": 1.5,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "frisch",
         "gut drainiert"
       ],
@@ -1330,13 +1330,13 @@
           "12": "/forsythia-12.svg"
         }
       },
-      "watering": "nach Anwachsen trockenheitsvertr\u00e4glich",
-      "watering_ideal": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen"
+      "watering": "nach Anwachsen trockenheitsverträglich",
+      "watering_ideal": "nur bei längerer Trockenheit gießen"
     },
     {
       "bloom_end": 6,
       "bloom_start": 5,
-      "cutting": "Bl\u00fctenst\u00e4nde nach der Bl\u00fcte abm\u00e4hen",
+      "cutting": "Blütenstände nach der Blüte abmähen",
       "cutting_time": 6,
       "id": "ajuga-reptans-atropurpurea",
       "location": [
@@ -1350,25 +1350,25 @@
       "max_width": -1,
       "min_temperature": -25,
       "name": "Ajuga reptans atropurpurea",
-      "notes": "Breitet sich \u00fcber Ausl\u00e4ufer rasch aus; gute Unkrautunterdr\u00fcckung.",
+      "notes": "Breitet sich über Ausläufer rasch aus; gute Unkrautunterdrückung.",
       "nutrition": "gering",
-      "nutrition_ideal": "d\u00fcnne Kompostgabe im Fr\u00fchjahr",
+      "nutrition_ideal": "dünne Kompostgabe im Frühjahr",
       "propagation": [
-        "ausl\u00e4ufer",
+        "ausläufer",
         "teilung"
       ],
       "scale": 1.0,
       "snails": "little",
       "soil": [
         "frisch",
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
         "frisch",
         "locker"
       ],
-      "trivname": "Purpurroter Teppich-G\u00fcnsel",
+      "trivname": "Purpurroter Teppich-Günsel",
       "type": "staude (bodendecker)",
       "vegetation": {
         "height": {
@@ -1401,12 +1401,12 @@
         }
       },
       "watering": "frisch halten",
-      "watering_ideal": "gleichm\u00e4\u00dfig leicht feucht"
+      "watering_ideal": "gleichmäßig leicht feucht"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nach der Bl\u00fcte leicht zur\u00fcckschneiden, f\u00f6rdert Polsterbildung",
+      "cutting": "Nach der Blüte leicht zurückschneiden, fördert Polsterbildung",
       "cutting_time": 6,
       "id": "phlox-subulata-emerald-cushion-blue",
       "location": [
@@ -1420,9 +1420,9 @@
       "max_width": 80,
       "min_temperature": -30,
       "name": "Phlox subulata 'Emerald Cushion Blue'",
-      "notes": "Staun\u00e4sse vermeiden; ideal f\u00fcr Steing\u00e4rten und Mauerkrone.",
+      "notes": "Staunässe vermeiden; ideal für Steingärten und Mauerkrone.",
       "nutrition": "gering",
-      "nutrition_ideal": "keine D\u00fcngung auf magerem Boden",
+      "nutrition_ideal": "keine Düngung auf magerem Boden",
       "propagation": [
         "stecklinge",
         "teilung"
@@ -1430,11 +1430,11 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "sandig",
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "sehr gut drainiert"
       ],
       "trivname": "Polster-Phlox 'Emerald Cushion Blue'",
@@ -1469,13 +1469,13 @@
           "12": "/phlox-subulata-emerald-cushion-blue-1.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich",
-      "watering_ideal": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen"
+      "watering": "trockenheitsverträglich",
+      "watering_ideal": "nur bei längerer Trockenheit gießen"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nach der Bl\u00fcte leicht zur\u00fcckschneiden, f\u00f6rdert Polsterbildung",
+      "cutting": "Nach der Blüte leicht zurückschneiden, fördert Polsterbildung",
       "cutting_time": 6,
       "id": "phlox-subulata-samson",
       "location": [
@@ -1489,9 +1489,9 @@
       "max_width": 80,
       "min_temperature": -30,
       "name": "Phlox subulata 'Samson'",
-      "notes": "Kompakter Wuchs; Staun\u00e4sse vermeiden.",
+      "notes": "Kompakter Wuchs; Staunässe vermeiden.",
       "nutrition": "gering",
-      "nutrition_ideal": "keine D\u00fcngung auf magerem Boden",
+      "nutrition_ideal": "keine Düngung auf magerem Boden",
       "propagation": [
         "stecklinge",
         "teilung"
@@ -1499,11 +1499,11 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "sandig",
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "sehr gut drainiert"
       ],
       "trivname": "Polster-Phlox 'Samson'",
@@ -1538,14 +1538,14 @@
           "12": "/phlox-subulata-samson-1.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich",
-      "watering_ideal": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen"
+      "watering": "trockenheitsverträglich",
+      "watering_ideal": "nur bei längerer Trockenheit gießen"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
       "cutting": "Nur bei Bedarf auslichten",
-      "cutting_time": "None",
+      "cutting_time": -1,
       "id": "waldsteinia-ternata",
       "location": [
         "halbschattig",
@@ -1558,23 +1558,23 @@
       "max_width": -1,
       "min_temperature": -25,
       "name": "Waldsteinia ternata",
-      "notes": "Vertr\u00e4gt Wurzeldruck von Geh\u00f6lzen; guter Ersatz f\u00fcr Immergr\u00fcn.",
+      "notes": "Verträgt Wurzeldruck von Gehölzen; guter Ersatz für Immergrün.",
       "nutrition": "gering",
-      "nutrition_ideal": "Fr\u00fchjahr Laubkompost",
+      "nutrition_ideal": "Frühjahr Laubkompost",
       "propagation": [
-        "ausl\u00e4ufer",
+        "ausläufer",
         "teilung"
       ],
       "scale": 0.5,
       "snails": "hardened",
       "soil": [
         "frisch",
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
         "frisch",
-        "kalkvertr\u00e4glich"
+        "kalkverträglich"
       ],
       "trivname": "Golderdbeere",
       "type": "staude (bodendecker)",
@@ -1609,28 +1609,28 @@
         }
       },
       "watering": "frisch halten",
-      "watering_ideal": "gleichm\u00e4\u00dfig leicht feucht, ohne Staun\u00e4sse"
+      "watering_ideal": "gleichmäßig leicht feucht, ohne Staunässe"
     },
     {
       "bloom_end": 6,
       "bloom_start": 4,
-      "cutting": "Nur Verbl\u00fchtes und Altes entfernen",
-      "cutting_time": "None",
+      "cutting": "Nur Verblühtes und Altes entfernen",
+      "cutting_time": -1,
       "id": "gentiana-acaulis",
       "location": [
         "sonnig",
         "halbschattig"
       ],
       "location_ideal": [
-        "sonnig, k\u00fchl; Wurzelbereich nie staunass"
+        "sonnig, kühl; Wurzelbereich nie staunass"
       ],
       "max_lifetime": 20,
       "max_width": 25,
       "min_temperature": -30,
       "name": "Gentiana acaulis",
-      "notes": "Kalkempfindlich; empfindlich gegen Staun\u00e4sse.",
+      "notes": "Kalkempfindlich; empfindlich gegen Staunässe.",
       "nutrition": "sehr gering",
-      "nutrition_ideal": "keine D\u00fcngung; mager halten",
+      "nutrition_ideal": "keine Düngung; mager halten",
       "propagation": [
         "samen",
         "teilung (schwierig)"
@@ -1639,7 +1639,7 @@
       "snails": "hardened",
       "soil": [
         "sauer",
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
@@ -1680,20 +1680,20 @@
         }
       },
       "watering": "nie ganz austrocknen lassen",
-      "watering_ideal": "gleichm\u00e4\u00dfig leicht feucht mit kalkfreiem Wasser"
+      "watering_ideal": "gleichmäßig leicht feucht mit kalkfreiem Wasser"
     },
     {
       "bloom_end": 6,
       "bloom_start": 4,
-      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausschneiden",
-      "cutting_time": "None",
+      "cutting": "Verblühtes regelmäßig ausschneiden",
+      "cutting_time": -1,
       "id": "ranunculus",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "sonnig",
-        "windgesch\u00fctzt"
+        "windgeschützt"
       ],
       "max_lifetime": 5,
       "max_width": 30,
@@ -1701,7 +1701,7 @@
       "name": "Ranunculus",
       "notes": "Nicht winterhart; Knollen im Herbst ausgraben und frostfrei lagern.",
       "nutrition": "mittel",
-      "nutrition_ideal": "w\u00e4hrend Knospenbildung fl\u00fcssig nachd\u00fcngen",
+      "nutrition_ideal": "während Knospenbildung flüssig nachdüngen",
       "propagation": [
         "knollen (teilung)",
         "samen"
@@ -1709,14 +1709,14 @@
       "scale": 1.0,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "gut drainiert"
       ],
-      "trivname": "Ranunkel/Hahnenfu\u00df",
+      "trivname": "Ranunkel/Hahnenfuß",
       "type": "knollenstaude (geophyt)",
       "vegetation": {
         "height": {
@@ -1748,37 +1748,37 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig feucht w\u00e4hrend der Bl\u00fcte",
-      "watering_ideal": "feucht aber durchl\u00e4ssig; keine Staun\u00e4sse"
+      "watering": "gleichmäßig feucht während der Blüte",
+      "watering_ideal": "feucht aber durchlässig; keine Staunässe"
     },
     {
       "bloom_end": 8,
       "bloom_start": 6,
-      "cutting": "Abgebl\u00fchte Triebe und abgestorbene Rosetten entfernen",
+      "cutting": "Abgeblühte Triebe und abgestorbene Rosetten entfernen",
       "cutting_time": 8,
       "id": "sempervivum",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
-        "vollsonnig, w\u00e4rmebeg\u00fcnstigt"
+        "vollsonnig, wärmebegünstigt"
       ],
       "max_lifetime": 10,
       "max_width": -1,
       "min_temperature": -30,
       "name": "Sempervivum",
-      "notes": "Rosetten monokarp; Wintern\u00e4sse unbedingt vermeiden",
+      "notes": "Rosetten monokarp; Winternässe unbedingt vermeiden",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht d\u00fcngen oder nur minimal",
+      "nutrition_ideal": "nicht düngen oder nur minimal",
       "propagation": [
         "ableger",
-        "ausl\u00e4ufer",
+        "ausläufer",
         "teilung"
       ],
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "mager",
@@ -1787,7 +1787,7 @@
         "gut drainiert"
       ],
       "trivname": "Hauswurz",
-      "type": "sukkulente staude (immergr\u00fcn)",
+      "type": "sukkulente staude (immergrün)",
       "vegetation": {
         "height": {
           "1": 6,
@@ -1818,14 +1818,14 @@
           "12": "/sempervivum-1.svg"
         }
       },
-      "watering": "sehr sparsam gie\u00dfen; trockenheitsvertr\u00e4glich",
-      "watering_ideal": "trocken bis m\u00e4\u00dfig trocken, sehr gute Drainage"
+      "watering": "sehr sparsam gießen; trockenheitsverträglich",
+      "watering_ideal": "trocken bis mäßig trocken, sehr gute Drainage"
     },
     {
       "bloom_end": 9,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte zur\u00fcckschneiden, um Selbstaussaat zu steuern",
-      "cutting_time": "9",
+      "cutting": "Nach der Blüte zurückschneiden, um Selbstaussaat zu steuern",
+      "cutting_time": 9,
       "id": "oenothera-hartwegii",
       "location": [
         "sonnig"
@@ -1839,7 +1839,7 @@
       "name": "Oenothera hartwegii",
       "notes": "Kurzlebig; in rauen Lagen besser als Sommerblume kultivieren",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen",
+      "nutrition_ideal": "sparsam düngen",
       "propagation": [
         "samen",
         "selbstaussaat"
@@ -1847,7 +1847,7 @@
       "scale": 0.45,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "sandig",
@@ -1855,7 +1855,7 @@
         "trocken bis frisch"
       ],
       "trivname": "Hartweg'scher Sonnentropfen",
-      "type": "kurzlebige staude (oft einj\u00e4hrig)",
+      "type": "kurzlebige staude (oft einjährig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -1886,14 +1886,14 @@
           "12": "/oenothera-hartwegii-12.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich; nur bei l\u00e4ngerer Trockenheit gie\u00dfen",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch; Staun\u00e4sse vermeiden"
+      "watering": "trockenheitsverträglich; nur bei längerer Trockenheit gießen",
+      "watering_ideal": "mäßig trocken bis frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 10,
       "bloom_start": 6,
-      "cutting": "Verbl\u00fchtes laufend ausputzen f\u00fcr lange Bl\u00fcte",
-      "cutting_time": "None",
+      "cutting": "Verblühtes laufend ausputzen für lange Blüte",
+      "cutting_time": -1,
       "id": "bracteantha-bracteata",
       "location": [
         "sonnig"
@@ -1905,9 +1905,9 @@
       "max_width": 40,
       "min_temperature": -2,
       "name": "Bracteantha bracteata",
-      "notes": "Nicht winterhart; ideal f\u00fcr K\u00fcbel und Sommerbeete",
+      "notes": "Nicht winterhart; ideal für Kübel und Sommerbeete",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "sparsam fl\u00fcssig d\u00fcngen im Sommer",
+      "nutrition_ideal": "sparsam flüssig düngen im Sommer",
       "propagation": [
         "samen",
         "stecklinge"
@@ -1915,14 +1915,14 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Mexikanische Strauchblume",
-      "type": "einj\u00e4hrige sommerblume",
+      "type": "einjährige sommerblume",
       "vegetation": {
         "height": {
           "1": 0,
@@ -1953,13 +1953,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "regelm\u00e4\u00dfig, aber m\u00e4\u00dfig gie\u00dfen",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch; keine Staun\u00e4sse"
+      "watering": "regelmäßig, aber mäßig gießen",
+      "watering_ideal": "frisch bis mäßig frisch; keine Staunässe"
     },
     {
       "bloom_end": 9,
       "bloom_start": 6,
-      "cutting": "Nach der ersten Hauptbl\u00fcte stark zur\u00fcckschneiden (10\u201315\u202fcm)",
+      "cutting": "Nach der ersten Hauptblüte stark zurückschneiden (10–15 cm)",
       "cutting_time": 7,
       "id": "coreopsis-grandiflora",
       "location": [
@@ -1972,9 +1972,9 @@
       "max_width": 60,
       "min_temperature": -25,
       "name": "Coreopsis grandiflora",
-      "notes": "R\u00fcckschnitt f\u00f6rdert Nachbl\u00fcte; Staun\u00e4sse vermeiden",
+      "notes": "Rückschnitt fördert Nachblüte; Staunässe vermeiden",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht \u00fcberd\u00fcngen; zu viel Stickstoff mindert Standfestigkeit",
+      "nutrition_ideal": "nicht überdüngen; zu viel Stickstoff mindert Standfestigkeit",
       "propagation": [
         "teilung",
         "stecklinge",
@@ -1983,14 +1983,14 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig",
+        "mager bis mäßig",
         "sandig-kiesig",
         "gut drainiert"
       ],
-      "trivname": "Gro\u00dfblumiges M\u00e4dchenauge",
+      "trivname": "Großblumiges Mädchenauge",
       "type": "staude (kurzlebig)",
       "vegetation": {
         "height": {
@@ -2022,14 +2022,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich; bei anhaltender Trockenheit gie\u00dfen",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch"
+      "watering": "trockenheitsverträglich; bei anhaltender Trockenheit gießen",
+      "watering_ideal": "mäßig trocken bis frisch"
     },
     {
       "bloom_end": 6,
       "bloom_start": 5,
-      "cutting": "Kein Schnitt n\u00f6tig; bei Verfilzung mit dem Rechen aufrauen",
-      "cutting_time": "None",
+      "cutting": "Kein Schnitt nötig; bei Verfilzung mit dem Rechen aufrauen",
+      "cutting_time": -1,
       "id": "sagina-subulata",
       "location": [
         "halbschattig"
@@ -2043,25 +2043,25 @@
       "name": "Sagina subulata",
       "notes": "Nur leicht trittfest; Hitzestress im Hochsommer vermeiden",
       "nutrition": "gering",
-      "nutrition_ideal": "keine regelm\u00e4\u00dfige D\u00fcngung; ggf. d\u00fcnn Kompost",
+      "nutrition_ideal": "keine regelmäßige Düngung; ggf. dünn Kompost",
       "propagation": [
         "teilung",
-        "ausl\u00e4ufer",
+        "ausläufer",
         "samen"
       ],
       "scale": 0.5,
       "snails": "little",
       "soil": [
         "frisch",
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig feucht",
+        "gleichmäßig feucht",
         "gut drainiert"
       ],
       "trivname": "Irisches Sternmoos",
-      "type": "bodendecker-staude (immergr\u00fcn)",
+      "type": "bodendecker-staude (immergrün)",
       "vegetation": {
         "height": {
           "1": 2,
@@ -2092,14 +2092,14 @@
           "12": "/sagina-subulata-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit meiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten; Trockenheit meiden",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe"
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Im Sp\u00e4twinter/Fr\u00fchjahr alte St\u00e4ngel bodennah entfernen",
-      "cutting_time": "3",
+      "cutting": "Im Spätwinter/Frühjahr alte Stängel bodennah entfernen",
+      "cutting_time": 3,
       "id": "echinacea-purpurea",
       "location": [
         "sonnig"
@@ -2111,9 +2111,9 @@
       "max_width": 60,
       "min_temperature": -30,
       "name": "Echinacea purpurea",
-      "notes": "Samenst\u00e4nde im Winter f\u00fcr Insekten/V\u00f6gel stehen lassen",
+      "notes": "Samenstände im Winter für Insekten/Vögel stehen lassen",
       "nutrition": "gering",
-      "nutrition_ideal": "im Fr\u00fchjahr d\u00fcnn Kompost gen\u00fcgt",
+      "nutrition_ideal": "im Frühjahr dünn Kompost genügt",
       "propagation": [
         "samen",
         "teilung"
@@ -2121,7 +2121,7 @@
       "scale": 0.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
@@ -2160,13 +2160,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich; bei langanhaltender Trockenheit gie\u00dfen",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch"
+      "watering": "trockenheitsverträglich; bei langanhaltender Trockenheit gießen",
+      "watering_ideal": "mäßig trocken bis frisch"
     },
     {
       "bloom_end": 8,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte kurz scheren, um Teppich dicht zu halten",
+      "cutting": "Nach der Blüte kurz scheren, um Teppich dicht zu halten",
       "cutting_time": 8,
       "id": "chamaemelum-nobile",
       "location": [
@@ -2179,9 +2179,9 @@
       "max_width": -1,
       "min_temperature": -20,
       "name": "Chamaemelum nobile",
-      "notes": "Duftende Trittpflanze; vertr\u00e4gt nur leichte Belastung",
+      "notes": "Duftende Trittpflanze; verträgt nur leichte Belastung",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht d\u00fcngen oder sehr sparsam",
+      "nutrition_ideal": "nicht düngen oder sehr sparsam",
       "propagation": [
         "teilung",
         "stecklinge",
@@ -2190,15 +2190,15 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "mager",
         "sandig",
-        "m\u00e4\u00dfig trocken bis frisch"
+        "mäßig trocken bis frisch"
       ],
       "trivname": "Echte Kamille",
-      "type": "staude (halbimmergr\u00fcn)",
+      "type": "staude (halbimmergrün)",
       "vegetation": {
         "height": {
           "1": 4,
@@ -2229,13 +2229,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich; frisch halten beim Anwachsen",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch; keine Staun\u00e4sse"
+      "watering": "trockenheitsverträglich; frisch halten beim Anwachsen",
+      "watering_ideal": "mäßig trocken bis frisch; keine Staunässe"
     },
     {
       "bloom_end": 8,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte fl\u00e4chig scheren",
+      "cutting": "Nach der Blüte flächig scheren",
       "cutting_time": 8,
       "id": "dianthus-deltoides",
       "location": [
@@ -2248,9 +2248,9 @@
       "max_width": -1,
       "min_temperature": -25,
       "name": "Dianthus deltoides",
-      "notes": "Sehr gute Drainage erforderlich; ideal f\u00fcr Steingarten",
+      "notes": "Sehr gute Drainage erforderlich; ideal für Steingarten",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht d\u00fcngen; zu viel N schadet",
+      "nutrition_ideal": "nicht düngen; zu viel N schadet",
       "propagation": [
         "samen",
         "stecklinge",
@@ -2259,16 +2259,16 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "mager",
-        "kalkvertr\u00e4glich",
+        "kalkverträglich",
         "kiesig-sandig",
         "gut drainiert"
       ],
       "trivname": "Steinnelke",
-      "type": "polsterstaude (immergr\u00fcn)",
+      "type": "polsterstaude (immergrün)",
       "vegetation": {
         "height": {
           "1": 5,
@@ -2299,13 +2299,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich; nur bei langer Trockenheit gie\u00dfen",
-      "watering_ideal": "m\u00e4\u00dfig trocken; Wintern\u00e4sse vermeiden"
+      "watering": "trockenheitsverträglich; nur bei langer Trockenheit gießen",
+      "watering_ideal": "mäßig trocken; Winternässe vermeiden"
     },
     {
       "bloom_end": 7,
       "bloom_start": 5,
-      "cutting": "Nach der Bl\u00fcte Bl\u00fctenstiele bodennah abschneiden",
+      "cutting": "Nach der Blüte Blütenstiele bodennah abschneiden",
       "cutting_time": 7,
       "id": "dianthus-x-barbatus",
       "location": [
@@ -2320,7 +2320,7 @@
       "name": "Dianthus x barbatus",
       "notes": "Kurzlebig; neigt zur Selbstaussaat",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch d\u00fcngen",
+      "nutrition_ideal": "im Frühjahr leicht organisch düngen",
       "propagation": [
         "samen",
         "stecklinge",
@@ -2329,15 +2329,15 @@
       "scale": 0.35,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
         "frisch",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich"
+        "mäßig nährstoffreich"
       ],
       "trivname": "Bartnelke",
-      "type": "zweij\u00e4hrige bis kurzlebige staude",
+      "type": "zweijährige bis kurzlebige staude",
       "vegetation": {
         "height": {
           "1": 3,
@@ -2368,13 +2368,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten",
-      "watering_ideal": "frisch; keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten",
+      "watering_ideal": "frisch; keine Staunässe"
     },
     {
       "bloom_end": 9,
       "bloom_start": 6,
-      "cutting": "Nach der Hauptbl\u00fcte stark zur\u00fcckschneiden (um ca. 2/3)",
+      "cutting": "Nach der Hauptblüte stark zurückschneiden (um ca. 2/3)",
       "cutting_time": 7,
       "id": "salvia-nemorosa",
       "location": [
@@ -2387,9 +2387,9 @@
       "max_width": 60,
       "min_temperature": -25,
       "name": "Salvia nemorosa",
-      "notes": "R\u00fcckschnitt f\u00f6rdert Zweitbl\u00fcte; bienenfreundlich",
+      "notes": "Rückschnitt fördert Zweitblüte; bienenfreundlich",
       "nutrition": "gering",
-      "nutrition_ideal": "keine regelm\u00e4\u00dfige D\u00fcngung notwendig",
+      "nutrition_ideal": "keine regelmäßige Düngung notwendig",
       "propagation": [
         "teilung",
         "stecklinge",
@@ -2398,11 +2398,11 @@
       "scale": 0.35,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig",
-        "kalkvertr\u00e4glich",
+        "mager bis mäßig",
+        "kalkverträglich",
         "gut drainiert"
       ],
       "trivname": "Steppen-Salbei",
@@ -2437,13 +2437,13 @@
           "12": "/salvia-nemorosa-1.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich; nur bei langer Trockenheit gie\u00dfen",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch; Staun\u00e4sse vermeiden"
+      "watering": "trockenheitsverträglich; nur bei langer Trockenheit gießen",
+      "watering_ideal": "mäßig trocken bis frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 7,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte Bl\u00fctenstiele entfernen; ggf. bodennah zur\u00fcckschneiden f\u00fcr Zweitflor",
+      "cutting": "Nach der Blüte Blütenstiele entfernen; ggf. bodennah zurückschneiden für Zweitflor",
       "cutting_time": 7,
       "id": "lupinus-polyphyllus",
       "location": [
@@ -2457,9 +2457,9 @@
       "max_width": 60,
       "min_temperature": -25,
       "name": "Lupinus polyphyllus",
-      "notes": "Samen und Pflanze giftig; vertr\u00e4gt keinen Kalk\u00fcberschuss",
+      "notes": "Samen und Pflanze giftig; verträgt keinen Kalküberschuss",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht stark d\u00fcngen (Stickstoffbinder)",
+      "nutrition_ideal": "nicht stark düngen (Stickstoffbinder)",
       "propagation": [
         "samen",
         "teilung (selten)"
@@ -2467,12 +2467,12 @@
       "scale": 1.0,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "leicht sauer",
         "humos",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Hohe Lupine",
@@ -2507,28 +2507,28 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit meiden",
-      "watering_ideal": "frisch; keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten; Trockenheit meiden",
+      "watering_ideal": "frisch; keine Staunässe"
     },
     {
       "bloom_end": 7,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte leicht scheren, um Polster dicht zu halten",
+      "cutting": "Nach der Blüte leicht scheren, um Polster dicht zu halten",
       "cutting_time": 8,
       "id": "thymus-serpyllum",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
-        "vollsonnig, hei\u00df"
+        "vollsonnig, heiß"
       ],
       "max_lifetime": 10,
       "max_width": -1,
       "min_temperature": -30,
       "name": "Thymus serpyllum",
-      "notes": "Sehr bienenfreundlich; ideal f\u00fcr Fugen und Dachg\u00e4rten",
+      "notes": "Sehr bienenfreundlich; ideal für Fugen und Dachgärten",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht d\u00fcngen",
+      "nutrition_ideal": "nicht düngen",
       "propagation": [
         "stecklinge",
         "teilung",
@@ -2537,7 +2537,7 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "mager",
@@ -2545,7 +2545,7 @@
         "trocken"
       ],
       "trivname": "Sand-Thymian",
-      "type": "bodendecker-staude (immergr\u00fcn)",
+      "type": "bodendecker-staude (immergrün)",
       "vegetation": {
         "height": {
           "1": 2,
@@ -2576,13 +2576,13 @@
           "12": "/thymus-serpyllum-1.svg"
         }
       },
-      "watering": "sehr sparsam gie\u00dfen; trockenheitsvertr\u00e4glich",
-      "watering_ideal": "trocken bis m\u00e4\u00dfig trocken"
+      "watering": "sehr sparsam gießen; trockenheitsverträglich",
+      "watering_ideal": "trocken bis mäßig trocken"
     },
     {
       "bloom_end": 10,
       "bloom_start": 6,
-      "cutting": "Regelm\u00e4\u00dfig ausputzen; f\u00fcr Schnittblumen lange Stiele knapp \u00fcber Blattpaar schneiden",
+      "cutting": "Regelmäßig ausputzen; für Schnittblumen lange Stiele knapp über Blattpaar schneiden",
       "cutting_time": 7,
       "id": "antirrhinum-majus",
       "location": [
@@ -2595,9 +2595,9 @@
       "max_width": 35,
       "min_temperature": -10,
       "name": "Antirrhinum majus",
-      "notes": "Vertr\u00e4gt leichten Frost; stutzen f\u00f6rdert Verzweigung",
+      "notes": "Verträgt leichten Frost; stutzen fördert Verzweigung",
       "nutrition": "mittel",
-      "nutrition_ideal": "alle 2\u20133 Wochen schwach fl\u00fcssig d\u00fcngen",
+      "nutrition_ideal": "alle 2–3 Wochen schwach flüssig düngen",
       "propagation": [
         "samen",
         "selbstaussaat"
@@ -2605,14 +2605,14 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
-      "trivname": "L\u00f6wenmaul",
-      "type": "sommerblume (einj\u00e4hrig/zweij\u00e4hrig)",
+      "trivname": "Löwenmaul",
+      "type": "sommerblume (einjährig/zweijährig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -2643,14 +2643,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten",
-      "watering_ideal": "frisch; Staun\u00e4sse vermeiden"
+      "watering": "gleichmäßig frisch halten",
+      "watering_ideal": "frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 10,
       "bloom_start": 6,
-      "cutting": "Im Herbst bodennah eink\u00fcrzen oder St\u00e4ngel bis Fr\u00fchjahr stehen lassen",
-      "cutting_time": "10",
+      "cutting": "Im Herbst bodennah einkürzen oder Stängel bis Frühjahr stehen lassen",
+      "cutting_time": 10,
       "id": "echibeckia",
       "location": [
         "sonnig"
@@ -2663,9 +2663,9 @@
       "max_width": 60,
       "min_temperature": -18,
       "name": "Echibeckia",
-      "notes": "Dauerbl\u00fcher im Sommer; regelm\u00e4\u00dfiges Ausputzen verl\u00e4ngert Bl\u00fcte",
+      "notes": "Dauerblüher im Sommer; regelmäßiges Ausputzen verlängert Blüte",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr organisch nachd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr organisch nachdüngen",
       "propagation": [
         "teilung",
         "stecklinge (sorten)"
@@ -2673,11 +2673,11 @@
       "scale": 0.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Sonnenhut",
@@ -2712,14 +2712,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch; Trockenstress mindert Bl\u00fcte",
-      "watering_ideal": "frisch, keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch; Trockenstress mindert Blüte",
+      "watering_ideal": "frisch, keine Staunässe"
     },
     {
       "bloom_end": 10,
       "bloom_start": 6,
-      "cutting": "Regelm\u00e4\u00dfig Verbl\u00fchtes ausknipsen",
-      "cutting_time": "None",
+      "cutting": "Regelmäßig Verblühtes ausknipsen",
+      "cutting_time": -1,
       "id": "tagetes-patula-nana",
       "location": [
         "sonnig"
@@ -2731,23 +2731,23 @@
       "max_width": 25,
       "min_temperature": 0,
       "name": "Tagetes patula nana",
-      "notes": "W\u00e4rmeliebend; ideal f\u00fcr Beet und Topf",
+      "notes": "Wärmeliebend; ideal für Beet und Topf",
       "nutrition": "mittel",
-      "nutrition_ideal": "alle 2\u20133 Wochen schwach fl\u00fcssig d\u00fcngen",
+      "nutrition_ideal": "alle 2–3 Wochen schwach flüssig düngen",
       "propagation": [
         "samen"
       ],
       "scale": 1.0,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Studentenblume (Zwergform)",
-      "type": "sommerblume (einj\u00e4hrig)",
+      "type": "sommerblume (einjährig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -2778,13 +2778,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten",
-      "watering_ideal": "frisch; keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten",
+      "watering_ideal": "frisch; keine Staunässe"
     },
     {
       "bloom_end": 9,
       "bloom_start": 6,
-      "cutting": "Verbl\u00fchtes entfernen; kr\u00e4ftiger R\u00fcckschnitt im Sp\u00e4tsommer m\u00f6glich",
+      "cutting": "Verblühtes entfernen; kräftiger Rückschnitt im Spätsommer möglich",
       "cutting_time": 7,
       "id": "scabiosa-caucasica",
       "location": [
@@ -2797,9 +2797,9 @@
       "max_width": 50,
       "min_temperature": -20,
       "name": "Scabiosa caucasica",
-      "notes": "Insektenmagnet; St\u00fctze bei Wind von Vorteil",
+      "notes": "Insektenmagnet; Stütze bei Wind von Vorteil",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr moderat organisch d\u00fcngen",
+      "nutrition_ideal": "im Frühjahr moderat organisch düngen",
       "propagation": [
         "samen",
         "teilung"
@@ -2807,11 +2807,11 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "kalkvertr\u00e4glich",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "kalkverträglich",
+        "mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Witwenblume",
@@ -2846,13 +2846,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch; Hitzeperioden gie\u00dfen",
-      "watering_ideal": "frisch; Staun\u00e4sse vermeiden"
+      "watering": "gleichmäßig frisch; Hitzeperioden gießen",
+      "watering_ideal": "frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Triebspitzen regelm\u00e4\u00dfig pinzieren; f\u00f6rdert dichten Wuchs",
+      "cutting": "Triebspitzen regelmäßig pinzieren; fördert dichten Wuchs",
       "cutting_time": 5,
       "id": "plectranthus-ornatus",
       "location": [
@@ -2866,16 +2866,16 @@
       "max_width": 40,
       "min_temperature": 5,
       "name": "Plectranthus ornatus",
-      "notes": "Nicht winterhart \u2013 frostfrei (5\u201310\u202f\u00b0C) hell \u00fcberwintern",
+      "notes": "Nicht winterhart – frostfrei (5–10 °C) hell überwintern",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "14\u2011t\u00e4gig schwach fl\u00fcssig d\u00fcngen im Sommer",
+      "nutrition_ideal": "14‑tägig schwach flüssig düngen im Sommer",
       "propagation": [
         "stecklinge"
       ],
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "locker",
@@ -2914,13 +2914,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "m\u00e4\u00dfig gie\u00dfen; Ballen nicht austrocknen lassen",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, keine Staun\u00e4sse"
+      "watering": "mäßig gießen; Ballen nicht austrocknen lassen",
+      "watering_ideal": "frisch bis mäßig frisch, keine Staunässe"
     },
     {
       "bloom_end": 8,
       "bloom_start": 6,
-      "cutting": "Altes Laub im Fr\u00fchjahr entfernen; nach Bl\u00fcte eink\u00fcrzen",
+      "cutting": "Altes Laub im Frühjahr entfernen; nach Blüte einkürzen",
       "cutting_time": 3,
       "id": "stachys-officinalis",
       "location": [
@@ -2934,9 +2934,9 @@
       "max_width": 45,
       "min_temperature": -25,
       "name": "Stachys officinalis",
-      "notes": "Nicht mit Woll-Ziest verwechseln; wintergr\u00fcn",
+      "notes": "Nicht mit Woll-Ziest verwechseln; wintergrün",
       "nutrition": "gering",
-      "nutrition_ideal": "Fr\u00fchjahr Kompost",
+      "nutrition_ideal": "Frühjahr Kompost",
       "propagation": [
         "teilung",
         "samen"
@@ -2944,15 +2944,15 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4ssig n\u00e4hrstoffreich",
+        "mässig nährstoffreich",
         "frisch"
       ],
       "trivname": "Garten-Ziest",
-      "type": "staude (immergr\u00fcn)",
+      "type": "staude (immergrün)",
       "vegetation": {
         "height": {
           "1": 4,
@@ -2983,14 +2983,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch",
+      "watering": "gleichmäßig frisch",
       "watering_ideal": "frisch; Trockenheit vermeiden"
     },
     {
       "bloom_end": 8,
       "bloom_start": 6,
-      "cutting": "Im zeitigen Fr\u00fchjahr Auslichtungs- und Formschnitt; Verbl\u00fchtes nach der Bl\u00fcte entfernen",
-      "cutting_time": "3",
+      "cutting": "Im zeitigen Frühjahr Auslichtungs- und Formschnitt; Verblühtes nach der Blüte entfernen",
+      "cutting_time": 3,
       "id": "spiraea-bumalda-anthony-waterer",
       "location": [
         "sonnig",
@@ -3005,7 +3005,7 @@
       "name": "Spiraea bumalda 'Anthony Waterer'",
       "notes": "Bienen- und Insektenfreund",
       "nutrition": "gering",
-      "nutrition_ideal": "Fr\u00fchjahr leichte Kompostgabe",
+      "nutrition_ideal": "Frühjahr leichte Kompostgabe",
       "propagation": [
         "stecklinge",
         "absenker"
@@ -3013,10 +3013,10 @@
       "scale": 0.5,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "frisch",
         "gut drainiert"
       ],
@@ -3052,13 +3052,13 @@
           "12": "/spiraea-bumalda-anthony-waterer-12.svg"
         }
       },
-      "watering": "nur bei Trockenheit gie\u00dfen",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch; Staun\u00e4sse vermeiden"
+      "watering": "nur bei Trockenheit gießen",
+      "watering_ideal": "frisch bis mäßig frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 8,
       "bloom_start": 7,
-      "cutting": "Im Fr\u00fchjahr altes Laub/St\u00e4ngel bodennah entfernen; Verbl\u00fchtes ausputzen",
+      "cutting": "Im Frühjahr altes Laub/Stängel bodennah entfernen; Verblühtes ausputzen",
       "cutting_time": 3,
       "id": "monarda-didyma",
       "location": [
@@ -3073,7 +3073,7 @@
       "name": "Monarda didyma",
       "notes": "Standortluftig gegen Mehltau",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr organisch nachd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr organisch nachdüngen",
       "propagation": [
         "teilung",
         "stecklinge (sorten)"
@@ -3085,8 +3085,8 @@
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht"
+        "nährstoffreich",
+        "gleichmäßig feucht"
       ],
       "trivname": "Bergamotte",
       "type": "staude",
@@ -3120,13 +3120,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch; Mehltau durch Trockenstress beg\u00fcnstigt",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch; Mehltau durch Trockenstress begünstigt",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe"
     },
     {
       "bloom_end": 7,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte um ein Drittel zur\u00fcckschneiden, nicht ins alte Holz",
+      "cutting": "Nach der Blüte um ein Drittel zurückschneiden, nicht ins alte Holz",
       "cutting_time": 3,
       "id": "lavandula-angustifolia",
       "location": [
@@ -3139,9 +3139,9 @@
       "max_width": 70,
       "min_temperature": -20,
       "name": "Lavandula angustifolia",
-      "notes": "Gute Drainage entscheidend; R\u00fcckschnitt h\u00e4lt kompakt",
+      "notes": "Gute Drainage entscheidend; Rückschnitt hält kompakt",
       "nutrition": "sehr gering",
-      "nutrition_ideal": "nicht d\u00fcngen",
+      "nutrition_ideal": "nicht düngen",
       "propagation": [
         "stecklinge",
         "teilung (selten)",
@@ -3150,7 +3150,7 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "mager",
@@ -3159,7 +3159,7 @@
         "sehr gut drainiert"
       ],
       "trivname": "Echter Lavendel",
-      "type": "halbstrauch (immergr\u00fcn)",
+      "type": "halbstrauch (immergrün)",
       "vegetation": {
         "height": {
           "1": 20,
@@ -3190,28 +3190,28 @@
           "12": "/lavandula-angustifolia-9.svg"
         }
       },
-      "watering": "trockenheitsvertr\u00e4glich",
-      "watering_ideal": "trocken bis m\u00e4\u00dfig trocken; Wintern\u00e4sse meiden"
+      "watering": "trockenheitsverträglich",
+      "watering_ideal": "trocken bis mäßig trocken; Winternässe meiden"
     },
     {
       "bloom_end": 8,
       "bloom_start": 7,
-      "cutting": "Keine Schnitte n\u00f6tig; Bl\u00fctenst\u00e4nde nach Samenreife entfernen, wenn Selbstaussaat unerw\u00fcnscht",
-      "cutting_time": "None",
+      "cutting": "Keine Schnitte nötig; Blütenstände nach Samenreife entfernen, wenn Selbstaussaat unerwünscht",
+      "cutting_time": -1,
       "id": "verbascum-thapsus",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
-        "vollsonnig, hei\u00df"
+        "vollsonnig, heiß"
       ],
       "max_lifetime": 2,
       "max_width": 60,
       "min_temperature": -25,
       "name": "Verbascum thapsus",
-      "notes": "Flaumige Bl\u00e4tter; Tiefwurzler",
+      "notes": "Flaumige Blätter; Tiefwurzler",
       "nutrition": "sehr gering",
-      "nutrition_ideal": "nicht d\u00fcngen",
+      "nutrition_ideal": "nicht düngen",
       "propagation": [
         "samen",
         "selbstaussaat"
@@ -3219,15 +3219,15 @@
       "scale": 1.0,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "mager",
         "sandig-kiesig",
         "gut drainiert"
       ],
-      "trivname": "K\u00f6nigskerze",
-      "type": "zweij\u00e4hrig (rosettenpflanze)",
+      "trivname": "Königskerze",
+      "type": "zweijährig (rosettenpflanze)",
       "vegetation": {
         "height": {
           "1": 5,
@@ -3258,28 +3258,28 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "sehr trockenheitsvertr\u00e4glich",
+      "watering": "sehr trockenheitsverträglich",
       "watering_ideal": "trocken"
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Vor dem Austrieb altes St\u00e4ngelwerk bodennah entfernen",
+      "cutting": "Vor dem Austrieb altes Stängelwerk bodennah entfernen",
       "cutting_time": 3,
       "id": "lythrum-salicaria",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
-        "vollsonnig am Gew\u00e4sserrand"
+        "vollsonnig am Gewässerrand"
       ],
       "max_lifetime": 15,
       "max_width": 80,
       "min_temperature": -30,
       "name": "Lythrum salicaria",
-      "notes": "Stark nektarf\u00fchrend; ideal f\u00fcr Teichrand",
+      "notes": "Stark nektarführend; ideal für Teichrand",
       "nutrition": "mittel",
-      "nutrition_ideal": "j\u00e4hrlich Kompost",
+      "nutrition_ideal": "jährlich Kompost",
       "propagation": [
         "teilung",
         "samen"
@@ -3291,8 +3291,8 @@
         "humos"
       ],
       "soil_ideal": [
-        "st\u00e4ndig feucht bis nass",
-        "n\u00e4hrstoffreich"
+        "ständig feucht bis nass",
+        "nährstoffreich"
       ],
       "trivname": "Blut-Weiderich",
       "type": "staude (sumpfpflanze)",
@@ -3332,23 +3332,23 @@
     {
       "bloom_end": 7,
       "bloom_start": 6,
-      "cutting": "Nach der Hauptbl\u00fcte stark zur\u00fcckschneiden f\u00fcr Nachbl\u00fcte; St\u00e4be zur St\u00fctze",
-      "cutting_time": "7",
+      "cutting": "Nach der Hauptblüte stark zurückschneiden für Nachblüte; Stäbe zur Stütze",
+      "cutting_time": 7,
       "id": "delphinium-hybriden",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "sonnig",
-        " windgesch\u00fctzt"
+        " windgeschützt"
       ],
       "max_lifetime": 6,
       "max_width": 60,
       "min_temperature": -25,
       "name": "Delphinium hybriden",
-      "notes": "Austrieb vor Schnecken sch\u00fctzen; giftig",
+      "notes": "Austrieb vor Schnecken schützen; giftig",
       "nutrition": "hoch",
-      "nutrition_ideal": "im Fr\u00fchjahr/Fr\u00fchsommer regelm\u00e4\u00dfig organisch d\u00fcngen",
+      "nutrition_ideal": "im Frühjahr/Frühsommer regelmäßig organisch düngen",
       "propagation": [
         "teilung",
         "stecklinge (sorten)",
@@ -3357,12 +3357,12 @@
       "scale": 0.5,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "humos",
-        "gleichm\u00e4\u00dfig feucht",
+        "gleichmäßig feucht",
         "gut drainiert"
       ],
       "trivname": "Rittersporn",
@@ -3397,13 +3397,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig feucht; Trockenheit vermeiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
+      "watering": "gleichmäßig feucht; Trockenheit vermeiden",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe"
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Alte St\u00e4ngel vor Austrieb entfernen",
+      "cutting": "Alte Stängel vor Austrieb entfernen",
       "cutting_time": 3,
       "id": "astilbe-chinensis-pumila",
       "location": [
@@ -3411,15 +3411,15 @@
         "schattig"
       ],
       "location_ideal": [
-        "k\u00fchl-halbschattig"
+        "kühl-halbschattig"
       ],
       "max_lifetime": 15,
       "max_width": 40,
       "min_temperature": -25,
       "name": "Astilbe chinensis var. pumila",
-      "notes": "Geeignet f\u00fcr Geh\u00f6lzrand; gute Schnittblume",
+      "notes": "Geeignet für Gehölzrand; gute Schnittblume",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr Kompost",
+      "nutrition_ideal": "im Frühjahr Kompost",
       "propagation": [
         "teilung"
       ],
@@ -3430,7 +3430,7 @@
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig feucht",
+        "gleichmäßig feucht",
         "leicht sauer"
       ],
       "trivname": "Chinaschilf-Spierstrauch",
@@ -3465,28 +3465,28 @@
           "12": "/astilbe-chinensis-pumila-12.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch; Trockenheit meiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht"
+      "watering": "gleichmäßig frisch; Trockenheit meiden",
+      "watering_ideal": "ständig leicht feucht"
     },
     {
       "bloom_end": 10,
       "bloom_start": 8,
-      "cutting": "Alte St\u00e4ngel im Fr\u00fchjahr bodennah entfernen",
+      "cutting": "Alte Stängel im Frühjahr bodennah entfernen",
       "cutting_time": 3,
       "id": "anemone-hupehensis",
       "location": [
         "halbschattig"
       ],
       "location_ideal": [
-        "helle Halbschattenlage, windgesch\u00fctzt"
+        "helle Halbschattenlage, windgeschützt"
       ],
       "max_lifetime": 15,
       "max_width": 70,
       "min_temperature": -20,
       "name": "Anemone hupehensis",
-      "notes": "Junge Triebe vor Schnecken sch\u00fctzen",
+      "notes": "Junge Triebe vor Schnecken schützen",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr Kompost",
+      "nutrition_ideal": "im Frühjahr Kompost",
       "propagation": [
         "teilung",
         "wurzelstecklinge"
@@ -3498,7 +3498,7 @@
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig feucht",
+        "gleichmäßig feucht",
         "gut drainiert"
       ],
       "trivname": "Herbst-Anemone",
@@ -3533,13 +3533,13 @@
           "12": "/anemone-hupehensis-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe"
     },
     {
       "bloom_end": 10,
       "bloom_start": 9,
-      "cutting": "Vor dem Austrieb bodennah zur\u00fcckschneiden",
+      "cutting": "Vor dem Austrieb bodennah zurückschneiden",
       "cutting_time": 3,
       "id": "aster-ericoides-pansus",
       "location": [
@@ -3552,9 +3552,9 @@
       "max_width": 60,
       "min_temperature": -30,
       "name": "Aster ericoides var. pansus",
-      "notes": "Standfest; guter Herbstbl\u00fcher",
+      "notes": "Standfest; guter Herbstblüher",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen",
+      "nutrition_ideal": "sparsam düngen",
       "propagation": [
         "teilung",
         "stecklinge"
@@ -3562,10 +3562,10 @@
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "kiesig-sandig",
         "gut drainiert"
       ],
@@ -3601,14 +3601,14 @@
           "12": "/aster-ericoides-pansus-12.svg"
         }
       },
-      "watering": "m\u00e4\u00dfig gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig trocken"
+      "watering": "mäßig gießen; Staunässe vermeiden",
+      "watering_ideal": "frisch bis mäßig trocken"
     },
     {
       "bloom_end": 10,
       "bloom_start": 3,
-      "cutting": "Ausputzen verl\u00e4ngert Bl\u00fcte",
-      "cutting_time": "None",
+      "cutting": "Ausputzen verlängert Blüte",
+      "cutting_time": -1,
       "id": "bellis-perennis",
       "location": [
         "sonnig",
@@ -3623,7 +3623,7 @@
       "name": "Bellis perennis",
       "notes": "Kurzlebig, versamt sich",
       "nutrition": "gering",
-      "nutrition_ideal": "im Fr\u00fchjahr d\u00fcnn Kompost",
+      "nutrition_ideal": "im Frühjahr dünn Kompost",
       "propagation": [
         "teilung",
         "samen",
@@ -3636,10 +3636,10 @@
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig frisch"
+        "gleichmäßig frisch"
       ],
-      "trivname": "G\u00e4nsebl\u00fcmchen",
-      "type": "staude (immergr\u00fcn)",
+      "trivname": "Gänseblümchen",
+      "type": "staude (immergrün)",
       "vegetation": {
         "height": {
           "1": 4,
@@ -3670,14 +3670,14 @@
           "12": "/bellis-perennis-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch",
-      "watering_ideal": "frisch; Staun\u00e4sse vermeiden"
+      "watering": "gleichmäßig frisch",
+      "watering_ideal": "frisch; Staunässe vermeiden"
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Vor Austrieb altes St\u00e4ngelwerk bodennah entfernen",
-      "cutting_time": "3",
+      "cutting": "Vor Austrieb altes Stängelwerk bodennah entfernen",
+      "cutting_time": 3,
       "id": "phlox-paniculata",
       "location": [
         "sonnig"
@@ -3691,7 +3691,7 @@
       "name": "Phlox paniculata",
       "notes": "Luftiger Standort mindert Mehltau",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr organisch d\u00fcngen",
+      "nutrition_ideal": "im Frühjahr organisch düngen",
       "propagation": [
         "teilung",
         "stecklinge"
@@ -3703,8 +3703,8 @@
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht"
+        "nährstoffreich",
+        "gleichmäßig feucht"
       ],
       "trivname": "Flammenblume",
       "type": "staude",
@@ -3738,8 +3738,8 @@
           "12": "/phlox-paniculata-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch; Trockenheit f\u00f6rdert Mehltau",
-      "watering_ideal": "st\u00e4ndig leicht feucht"
+      "watering": "gleichmäßig frisch; Trockenheit fördert Mehltau",
+      "watering_ideal": "ständig leicht feucht"
     },
     {
       "bloom_end": 10,
@@ -3757,9 +3757,9 @@
       "max_width": 80,
       "min_temperature": -2,
       "name": "Dahlia",
-      "notes": "Fr\u00fchzeitiges Ausknipsen f\u00f6rdert gro\u00dfe Bl\u00fcten",
+      "notes": "Frühzeitiges Ausknipsen fördert große Blüten",
       "nutrition": "hoch",
-      "nutrition_ideal": "w\u00e4hrend der Saison alle 2 Wochen schwach fl\u00fcssig d\u00fcngen",
+      "nutrition_ideal": "während der Saison alle 2 Wochen schwach flüssig düngen",
       "propagation": [
         "knollen teilen",
         "stecklinge"
@@ -3767,12 +3767,12 @@
       "scale": 1.0,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "humos",
-        "gleichm\u00e4\u00dfig frisch"
+        "gleichmäßig frisch"
       ],
       "trivname": "Dahlie",
       "type": "knollenstaude (nicht winterhart)",
@@ -3806,13 +3806,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig feucht; Staun\u00e4sse vermeiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht"
+      "watering": "gleichmäßig feucht; Staunässe vermeiden",
+      "watering_ideal": "ständig leicht feucht"
     },
     {
       "bloom_end": 10,
       "bloom_start": 9,
-      "cutting": "Vor Austrieb bodennah zur\u00fcckschneiden",
+      "cutting": "Vor Austrieb bodennah zurückschneiden",
       "cutting_time": 3,
       "id": "aster",
       "location": [
@@ -3825,19 +3825,19 @@
       "max_width": 70,
       "min_temperature": -30,
       "name": "Aster",
-      "notes": "Sortenvielfalt; ggf. st\u00fctzen",
+      "notes": "Sortenvielfalt; ggf. stützen",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr Kompost",
+      "nutrition_ideal": "im Frühjahr Kompost",
       "propagation": [
         "teilung"
       ],
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "frisch",
         "gut drainiert"
       ],
@@ -3873,13 +3873,13 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch",
-      "watering_ideal": "frisch; Staun\u00e4sse meiden"
+      "watering": "gleichmäßig frisch",
+      "watering_ideal": "frisch; Staunässe meiden"
     },
     {
       "bloom_end": 10,
       "bloom_start": 6,
-      "cutting": "Im Fr\u00fchjahr/Fr\u00fchsommer pinzieren f\u00fcr kompakte Form",
+      "cutting": "Im Frühjahr/Frühsommer pinzieren für kompakte Form",
       "cutting_time": 3,
       "id": "cuphea-hyssopifolia",
       "location": [
@@ -3893,20 +3893,20 @@
       "max_width": 40,
       "min_temperature": 5,
       "name": "Cuphea hyssopifolia",
-      "notes": "Frostfrei (10\u201315\u202f\u00b0C) hell \u00fcberwintern",
+      "notes": "Frostfrei (10–15 °C) hell überwintern",
       "nutrition": "mittel",
-      "nutrition_ideal": "alle 2 Wochen schwach fl\u00fcssig d\u00fcngen",
+      "nutrition_ideal": "alle 2 Wochen schwach flüssig düngen",
       "propagation": [
         "stecklinge"
       ],
       "scale": 1.0,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "locker",
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Feuerbusch",
@@ -3941,14 +3941,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten",
-      "watering_ideal": "frisch; keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten",
+      "watering_ideal": "frisch; keine Staunässe"
     },
     {
       "id": "ipomoea-purpurea",
       "name": "Ipomoea Purpurea",
       "trivname": "Purpur-Prunkwinde",
-      "type": "sommerblume (einj\u00e4hrige kletterpflanze)",
+      "type": "sommerblume (einjährige kletterpflanze)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -3991,10 +3991,10 @@
       "bloom_start": 7,
       "bloom_end": 10,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "frisch",
         "gut drainiert"
       ],
@@ -4003,21 +4003,21 @@
       ],
       "location_ideal": [
         "vollsonnig",
-        "windgesch\u00fctzt"
+        "windgeschützt"
       ],
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit mindert Bl\u00fcte",
-      "watering_ideal": "frisch bis leicht feucht; Staun\u00e4sse vermeiden",
+      "watering": "gleichmäßig frisch halten; Trockenheit mindert Blüte",
+      "watering_ideal": "frisch bis leicht feucht; Staunässe vermeiden",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff f\u00f6rdert Blatt statt Bl\u00fcte",
-      "cutting_time": "None",
-      "cutting": "Kein Schnitt n\u00f6tig; Verbl\u00fchtes ausputzen, Pflanzen nach dem ersten Frost entfernen",
-      "notes": "Samen giftig (LSA); Rankhilfe n\u00f6tig; Jungpflanzen vor Schnecken sch\u00fctzen"
+      "nutrition_ideal": "sparsam düngen; zu viel Stickstoff fördert Blatt statt Blüte",
+      "cutting_time": -1,
+      "cutting": "Kein Schnitt nötig; Verblühtes ausputzen, Pflanzen nach dem ersten Frost entfernen",
+      "notes": "Samen giftig (LSA); Rankhilfe nötig; Jungpflanzen vor Schnecken schützen"
     },
     {
       "bloom_end": 9,
       "bloom_start": 6,
-      "cutting": "Regelm\u00e4\u00dfig pfl\u00fccken/ausputzen; Triebe an Rankhilfe leiten",
-      "cutting_time": "None",
+      "cutting": "Regelmäßig pflücken/ausputzen; Triebe an Rankhilfe leiten",
+      "cutting_time": -1,
       "id": "lathyrus-odoratus",
       "location": [
         "sonnig"
@@ -4030,9 +4030,9 @@
       "max_width": 45,
       "min_temperature": -4,
       "name": "Lathyrus Odoratus",
-      "notes": "Samen giftig (Lathyrismus-Risiko bei gr\u00f6\u00dferen Mengen); ben\u00f6tigt stabile Rankhilfe; liebt k\u00fchles Wetter, in Hitze bl\u00fchfaul",
+      "notes": "Samen giftig (Lathyrismus-Risiko bei größeren Mengen); benötigt stabile Rankhilfe; liebt kühles Wetter, in Hitze blühfaul",
       "nutrition": "mittel",
-      "nutrition_ideal": "vor dem Pflanzen Kompost; w\u00e4hrend der Saison 14\u2011t\u00e4gig ausgewogen, eher kalibetont",
+      "nutrition_ideal": "vor dem Pflanzen Kompost; während der Saison 14‑tägig ausgewogen, eher kalibetont",
       "propagation": [
         "samen",
         "selbstaussaat"
@@ -4040,17 +4040,17 @@
       "scale": 0.5,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht",
+        "nährstoffreich",
+        "gleichmäßig feucht",
         "gut drainiert",
-        "kalkvertr\u00e4glich"
+        "kalkverträglich"
       ],
       "trivname": "Duftwicke (Edelwicke)",
-      "type": "sommerblume (einj\u00e4hrige kletterpflanze)",
+      "type": "sommerblume (einjährige kletterpflanze)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4081,14 +4081,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit mindert Bl\u00fcte",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten; Trockenheit mindert Blüte",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe"
     },
     {
       "id": "convolvulus-tricolor",
       "name": "Convolvulus Tricolor",
       "trivname": "Dreifarbige Winde (Zwergwinde)",
-      "type": "sommerblume (einj\u00e4hrige winde, buschig)",
+      "type": "sommerblume (einjährige winde, buschig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4131,34 +4131,34 @@
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "kiesig-sandig",
         "gut drainiert",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich"
+        "mäßig nährstoffreich"
       ],
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
-        "gesch\u00fctzt"
+        "wärmebegünstigt",
+        "geschützt"
       ],
-      "watering": "m\u00e4\u00dfig gie\u00dfen; Trockenheit nur kurzzeitig toleriert; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig frisch bis leicht trocken bei sehr guter Drainage",
+      "watering": "mäßig gießen; Trockenheit nur kurzzeitig toleriert; Staunässe vermeiden",
+      "watering_ideal": "mäßig frisch bis leicht trocken bei sehr guter Drainage",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff f\u00f6rdert Blatt statt Bl\u00fcte",
-      "cutting_time": "None",
-      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen, das verl\u00e4ngert die Bl\u00fcte",
-      "notes": "Buschiger, nicht kletternder Wuchs; ideal f\u00fcr Topf/Beet und trockene, magere Lagen; frostempfindlich \u2013 als Einj\u00e4hrige kultivieren"
+      "nutrition_ideal": "sparsam düngen; zu viel Stickstoff fördert Blatt statt Blüte",
+      "cutting_time": -1,
+      "cutting": "Verblühtes regelmäßig ausputzen, das verlängert die Blüte",
+      "notes": "Buschiger, nicht kletternder Wuchs; ideal für Topf/Beet und trockene, magere Lagen; frostempfindlich – als Einjährige kultivieren"
     },
     {
       "id": "cucurbita-pepo",
       "name": "Cucurbita Pepo",
-      "trivname": "Garten-K\u00fcrbis (Zucchini/Sommerk\u00fcrbis)",
-      "type": "gem\u00fcse (einj\u00e4hrige rankpflanze)",
+      "trivname": "Garten-Kürbis (Zucchini/Sommerkürbis)",
+      "type": "gemüse (einjährige rankpflanze)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4200,12 +4200,12 @@
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig feucht",
+        "nährstoffreich",
+        "gleichmäßig feucht",
         "gut drainiert"
       ],
       "location": [
@@ -4213,54 +4213,54 @@
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
-        "windgesch\u00fctzt"
+        "wärmebegünstigt",
+        "windgeschützt"
       ],
-      "watering": "gleichm\u00e4\u00dfig feucht halten; hoher Wasserbedarf; keine Staun\u00e4sse",
-      "watering_ideal": "st\u00e4ndig leicht feucht, bodennah gie\u00dfen und mulchen",
+      "watering": "gleichmäßig feucht halten; hoher Wasserbedarf; keine Staunässe",
+      "watering_ideal": "ständig leicht feucht, bodennah gießen und mulchen",
       "nutrition": "hoch",
-      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; ab Fruchtansatz alle 10\u201314 Tage leicht nachd\u00fcngen",
-      "cutting_time": "None",
-      "cutting": "Kein Schnitt n\u00f6tig; Ranken bei Platzbedarf leiten oder leicht eink\u00fcrzen; Fruchtansatz bei Bedarf ausd\u00fcnnen",
-      "notes": "Einh\u00e4usig mit getrennten m\u00e4nnlichen/weiblichen Bl\u00fcten; Best\u00e4ubung v. a. durch Bienen (Squash-Bees). Sehr frostempfindlich \u2013 erst nach den Eisheiligen pflanzen. Bitter schmeckende Fr\u00fcchte (Cucurbitacine) nicht verzehren."
+      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; ab Fruchtansatz alle 10–14 Tage leicht nachdüngen",
+      "cutting_time": -1,
+      "cutting": "Kein Schnitt nötig; Ranken bei Platzbedarf leiten oder leicht einkürzen; Fruchtansatz bei Bedarf ausdünnen",
+      "notes": "Einhäusig mit getrennten männlichen/weiblichen Blüten; Bestäubung v. a. durch Bienen (Squash-Bees). Sehr frostempfindlich – erst nach den Eisheiligen pflanzen. Bitter schmeckende Früchte (Cucurbitacine) nicht verzehren."
     },
     {
       "bloom_end": 9,
       "bloom_start": "6",
-      "cutting": "Kein Schnitt n\u00f6tig; Triebe an Stangen/Netz leiten, Spitzen bei Erreichen der H\u00f6he eink\u00fcrzen",
-      "cutting_time": "None",
+      "cutting": "Kein Schnitt nötig; Triebe an Stangen/Netz leiten, Spitzen bei Erreichen der Höhe einkürzen",
+      "cutting_time": -1,
       "id": "phaseolus-coccineus",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "gesch\u00fctzt"
+        "geschützt"
       ],
       "max_lifetime": 1,
       "max_width": 150,
       "min_temperature": 1,
       "name": "Phaseolus Coccineus",
-      "notes": "Roh (Schoten/Samen) gesundheitssch\u00e4dlich wegen Lectinen \u2013 nur gegart verzehren. S\u00e4mlinge vor Schnecken sch\u00fctzen.",
+      "notes": "Roh (Schoten/Samen) gesundheitsschädlich wegen Lectinen – nur gegart verzehren. Sämlinge vor Schnecken schützen.",
       "nutrition": "hoch",
-      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; w\u00e4hrend der Saison regelm\u00e4\u00dfig moderat nachd\u00fcngen",
+      "nutrition_ideal": "vor dem Pflanzen reichlich Kompost; während der Saison regelmäßig moderat nachdüngen",
       "propagation": [
         "samen"
       ],
       "scale": 1,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "humos",
         "feuchthaltend",
         "gut drainiert",
         "nahe neutral"
       ],
       "trivname": "Feuerbohne (Prunkbohne)",
-      "type": "gem\u00fcse (einj\u00e4hrige kletterpflanze; mehrj\u00e4hrig nur frostfrei)",
+      "type": "gemüse (einjährige kletterpflanze; mehrjährig nur frostfrei)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4291,14 +4291,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenstress mindert Ansatz",
-      "watering_ideal": "st\u00e4ndig leicht feucht, mulchen; keine Staun\u00e4sse"
+      "watering": "gleichmäßig frisch halten; Trockenstress mindert Ansatz",
+      "watering_ideal": "ständig leicht feucht, mulchen; keine Staunässe"
     },
     {
       "id": "helianthus-annuus",
       "name": "Helianthus Annuus",
-      "trivname": "Gew\u00f6hnliche Sonnenblume",
-      "type": "sommerblume (einj\u00e4hrig)",
+      "trivname": "Gewöhnliche Sonnenblume",
+      "type": "sommerblume (einjährig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4341,52 +4341,52 @@
       "bloom_start": 7,
       "bloom_end": 9,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4\u00dfig bis n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig frisch",
+        "mäßig bis nährstoffreich",
+        "gleichmäßig frisch",
         "gut drainiert",
-        "tiefgr\u00fcndig"
+        "tiefgründig"
       ],
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
-        "windgesch\u00fctzt"
+        "wärmebegünstigt",
+        "windgeschützt"
       ],
-      "watering": "gleichm\u00e4\u00dfig frisch halten; tiefgr\u00fcndig gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht, tiefgr\u00fcndig gie\u00dfen; Boden mulchen",
+      "watering": "gleichmäßig frisch halten; tiefgründig gießen; Staunässe vermeiden",
+      "watering_ideal": "ständig leicht feucht, tiefgründig gießen; Boden mulchen",
       "nutrition": "mittel bis hoch",
-      "nutrition_ideal": "vor dem Pflanzen Kompost einarbeiten; in der Saison ma\u00dfvoll nachd\u00fcngen",
-      "cutting_time": "None",
-      "cutting": "Kein Schnitt n\u00f6tig; bei verzweigten Sorten Verbl\u00fchtes entfernen; hohe Sorten anbinden",
-      "notes": "Einj\u00e4hrig; Aussaat/ Auspflanzen erst nach Frostende. Sehr gute Bienen- und Vogelpflanze (Samen)."
+      "nutrition_ideal": "vor dem Pflanzen Kompost einarbeiten; in der Saison maßvoll nachdüngen",
+      "cutting_time": -1,
+      "cutting": "Kein Schnitt nötig; bei verzweigten Sorten Verblühtes entfernen; hohe Sorten anbinden",
+      "notes": "Einjährig; Aussaat/ Auspflanzen erst nach Frostende. Sehr gute Bienen- und Vogelpflanze (Samen)."
     },
     {
       "bloom_end": 10,
       "bloom_start": 7,
-      "cutting": "Regelm\u00e4\u00dfig ausputzen (Deadheading) verl\u00e4ngert die Bl\u00fcte; fr\u00fches Pinzieren f\u00f6rdert Verzweigung",
-      "cutting_time": "None",
+      "cutting": "Regelmäßig ausputzen (Deadheading) verlängert die Blüte; frühes Pinzieren fördert Verzweigung",
+      "cutting_time": -1,
       "id": "cosmos-bipinnatus",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
+        "wärmebegünstigt",
         "luftig"
       ],
       "max_lifetime": 1,
       "max_width": 60,
       "min_temperature": 0,
       "name": "Cosmos Bipinnatus",
-      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Sorten variieren stark in H\u00f6he. Jungpflanzen vor Schnecken sch\u00fctzen.",
+      "notes": "Frostempfindlich – erst nach Frostende aussäen/pflanzen. Sorten variieren stark in Höhe. Jungpflanzen vor Schnecken schützen.",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff mindert Bl\u00fcte",
+      "nutrition_ideal": "sparsam düngen; zu viel Stickstoff mindert Blüte",
       "propagation": [
         "samen",
         "selbstaussaat"
@@ -4394,14 +4394,14 @@
       "scale": 0.5,
       "snails": "very",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "gut drainiert"
       ],
-      "trivname": "Schmuckk\u00f6rbchen / Cosmea",
-      "type": "sommerblume (einj\u00e4hrig)",
+      "trivname": "Schmuckkörbchen / Cosmea",
+      "type": "sommerblume (einjährig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4432,14 +4432,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "m\u00e4\u00dfig gie\u00dfen; trockenheitsvertr\u00e4glich; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig frisch, durchdringend aber selten gie\u00dfen"
+      "watering": "mäßig gießen; trockenheitsverträglich; Staunässe vermeiden",
+      "watering_ideal": "mäßig frisch, durchdringend aber selten gießen"
     },
     {
       "id": "coreopsis-tinctoria",
       "name": "Coreopsis Tinctoria",
-      "trivname": "F\u00e4rber-M\u00e4dchenauge",
-      "type": "sommerblume (einj\u00e4hrig)",
+      "trivname": "Färber-Mädchenauge",
+      "type": "sommerblume (einjährig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4482,10 +4482,10 @@
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "sandig/kiesig",
         "gut drainiert"
       ],
@@ -4494,15 +4494,15 @@
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt"
+        "wärmebegünstigt"
       ],
-      "watering": "m\u00e4\u00dfig gie\u00dfen; trockenheitsvertr\u00e4glich nach Anwachsen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch bei sehr guter Drainage",
+      "watering": "mäßig gießen; trockenheitsverträglich nach Anwachsen; Staunässe vermeiden",
+      "watering_ideal": "mäßig trocken bis frisch bei sehr guter Drainage",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen; in eher mageren B\u00f6den w\u00e4chst und bl\u00fcht sie zuverl\u00e4ssig",
+      "nutrition_ideal": "sparsam düngen; in eher mageren Böden wächst und blüht sie zuverlässig",
       "cutting_time": 7,
-      "cutting": "Regelm\u00e4\u00dfig ausputzen (Deadheading) verl\u00e4ngert die Bl\u00fcte; nach erstem Flor ggf. um ca. ein Drittel zur\u00fcckschneiden",
-      "notes": "Einj\u00e4hrige Sommerblume; nach den Eisheiligen auss\u00e4en/pflanzen. Versamt sich an offenen Stellen. S\u00e4mlinge sind f\u00fcr Schnecken attraktiv\u2014jung sch\u00fctzen."
+      "cutting": "Regelmäßig ausputzen (Deadheading) verlängert die Blüte; nach erstem Flor ggf. um ca. ein Drittel zurückschneiden",
+      "notes": "Einjährige Sommerblume; nach den Eisheiligen aussäen/pflanzen. Versamt sich an offenen Stellen. Sämlinge sind für Schnecken attraktiv—jung schützen."
     },
     {
       "id": "agastache-foeniculum",
@@ -4553,10 +4553,10 @@
       "bloom_start": 6,
       "bloom_end": 9,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "gut drainiert",
         "trocken bis frisch"
       ],
@@ -4565,37 +4565,37 @@
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt"
+        "wärmebegünstigt"
       ],
-      "watering": "m\u00e4\u00dfig gie\u00dfen; nach Anwachsen trockenheitsvertr\u00e4glich; Wintern\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch bei sehr guter Drainage",
+      "watering": "mäßig gießen; nach Anwachsen trockenheitsverträglich; Winternässe vermeiden",
+      "watering_ideal": "mäßig trocken bis frisch bei sehr guter Drainage",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen; zu viel Stickstoff mindert Standfestigkeit und Bl\u00fcte",
+      "nutrition_ideal": "sparsam düngen; zu viel Stickstoff mindert Standfestigkeit und Blüte",
       "cutting_time": 3,
-      "cutting": "Altes St\u00e4ngelwerk im zeitigen Fr\u00fchjahr bodennah entfernen; in der Saison Verbl\u00fchtes ausputzen",
-      "notes": "Duftende Bienenweide; kurzlebige Staude mit Selbstaussaat. Hauptproblem ist Wintern\u00e4sse, nicht K\u00e4lte."
+      "cutting": "Altes Stängelwerk im zeitigen Frühjahr bodennah entfernen; in der Saison Verblühtes ausputzen",
+      "notes": "Duftende Bienenweide; kurzlebige Staude mit Selbstaussaat. Hauptproblem ist Winternässe, nicht Kälte."
     },
     {
       "bloom_end": 10,
       "bloom_start": 6,
-      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen; Triebe nach Bedarf leiten",
-      "cutting_time": "None",
+      "cutting": "Verblühtes regelmäßig ausputzen; Triebe nach Bedarf leiten",
+      "cutting_time": -1,
       "id": "tropaeolum-majus",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt",
-        "gesch\u00fctzt"
+        "wärmebegünstigt",
+        "geschützt"
       ],
       "max_lifetime": 1,
       "max_width": 150,
       "min_temperature": 0,
       "name": "Tropaeolum Majus",
-      "notes": "Frostempfindlich \u2013 erst nach Frostende auss\u00e4en/pflanzen. Essbare Bl\u00e4tter/Bl\u00fcten mit pfeffrigem Aroma; h\u00e4ufige L\u00e4use-Fangpflanze (Trap Crop).",
+      "notes": "Frostempfindlich – erst nach Frostende aussäen/pflanzen. Essbare Blätter/Blüten mit pfeffrigem Aroma; häufige Läuse-Fangpflanze (Trap Crop).",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen (bl\u00fcht auf magerem Boden besser)",
+      "nutrition_ideal": "sparsam düngen (blüht auf magerem Boden besser)",
       "propagation": [
         "samen",
         "selbstaussaat",
@@ -4604,14 +4604,14 @@
       "scale": 0.35,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "gut drainiert"
       ],
       "trivname": "Kapuzinerkresse",
-      "type": "sommerblume (einj\u00e4hrige kletter-/kriechpflanze)",
+      "type": "sommerblume (einjährige kletter-/kriechpflanze)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4642,8 +4642,8 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "m\u00e4\u00dfig gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig frisch, zwischen den Gaben leicht abtrocknen lassen"
+      "watering": "mäßig gießen; Staunässe vermeiden",
+      "watering_ideal": "mäßig frisch, zwischen den Gaben leicht abtrocknen lassen"
     },
     {
       "id": "monarda-fistulosa",
@@ -4694,11 +4694,11 @@
       "bloom_start": 7,
       "bloom_end": 9,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "trocken bis frisch",
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "gut drainiert",
         "luftiger stand"
       ],
@@ -4710,49 +4710,49 @@
         "vollsonnig",
         "mit guter luftzirkulation"
       ],
-      "watering": "m\u00e4\u00dfig gie\u00dfen; Trockenstress beg\u00fcnstigt Mehltau",
-      "watering_ideal": "m\u00e4\u00dfig frisch, gut drainiert; Wintern\u00e4sse vermeiden",
+      "watering": "mäßig gießen; Trockenstress begünstigt Mehltau",
+      "watering_ideal": "mäßig frisch, gut drainiert; Winternässe vermeiden",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr leicht organisch; nicht überdüngen",
       "cutting_time": 3,
-      "cutting": "Alte St\u00e4ngel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; Verbl\u00fchtes ausputzen. (Einige St\u00e4ngel \u00fcber Winter teils stehen lassen.)",
-      "notes": "Duftende, langlebige Bienenpflanze; relativ mehltauresistent bei luftigem Stand. St\u00e4ngel \u00fcber Winter teilweise stehen lassen \u2013 Nistpl\u00e4tze f\u00fcr Wildbienen."
+      "cutting": "Alte Stängel im Spätwinter/Frühjahr bodennah entfernen; Verblühtes ausputzen. (Einige Stängel über Winter teils stehen lassen.)",
+      "notes": "Duftende, langlebige Bienenpflanze; relativ mehltauresistent bei luftigem Stand. Stängel über Winter teilweise stehen lassen – Nistplätze für Wildbienen."
     },
     {
       "bloom_end": 9,
       "bloom_start": "6",
-      "cutting": "Verbl\u00fchtes regelm\u00e4\u00dfig ausputzen (verl\u00e4ngert die Bl\u00fcte); nach der Bl\u00fcte zur\u00fcckschneiden",
-      "cutting_time": "None",
+      "cutting": "Verblühtes regelmäßig ausputzen (verlängert die Blüte); nach der Blüte zurückschneiden",
+      "cutting_time": -1,
       "id": "eschscholzia-californica",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt"
+        "wärmebegünstigt"
       ],
       "max_lifetime": 3,
       "max_width": 40,
       "min_temperature": -5,
       "name": "Eschscholzia californica",
-      "notes": "\u00d6ffnet Bl\u00fcten in Sonne, schlie\u00dft bei K\u00e4lte/N\u00e4sse; kurzlebig, versamt sich; Jungpflanzen vor Schnecken sch\u00fctzen; enth\u00e4lt Alkaloide \u2013 nicht verzehren.",
+      "notes": "Öffnet Blüten in Sonne, schließt bei Kälte/Nässe; kurzlebig, versamt sich; Jungpflanzen vor Schnecken schützen; enthält Alkaloide – nicht verzehren.",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht oder nur sehr sparsam d\u00fcngen",
+      "nutrition_ideal": "nicht oder nur sehr sparsam düngen",
       "propagation": [
         "samen",
         "selbstaussaat"
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "sandig/leicht",
         "gut drainiert"
       ],
       "trivname": "Kalifornischer Mohn (Goldmohn)",
-      "type": "sommerblume (einj\u00e4hrig/kurzlebig)",
+      "type": "sommerblume (einjährig/kurzlebig)",
       "vegetation": {
         "height": {
           "1": 0,
@@ -4783,14 +4783,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "sparsam gie\u00dfen; Staun\u00e4sse vermeiden",
+      "watering": "sparsam gießen; Staunässe vermeiden",
       "watering_ideal": "trocken bis frisch bei sehr guter Drainage",
       "scale": 1.0
     },
     {
       "id": "galanthus-nivalis",
       "name": "Galanthus nivalis",
-      "trivname": "Schneegl\u00f6ckchen",
+      "trivname": "Schneeglöckchen",
       "type": "zwiebelpflanze (geophyt)",
       "vegetation": {
         "height": {
@@ -4835,11 +4835,11 @@
       "bloom_start": 2,
       "bloom_end": 3,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "frisch im Fr\u00fchjahr",
+        "frisch im Frühjahr",
         "gut drainiert"
       ],
       "location": [
@@ -4847,37 +4847,37 @@
         "schattig"
       ],
       "location_ideal": [
-        "lichter Schatten unter Laubgeh\u00f6lzen",
-        "Wintersonne m\u00f6glich"
+        "lichter Schatten unter Laubgehölzen",
+        "Wintersonne möglich"
       ],
-      "watering": "im Fr\u00fchjahr frisch; im Sommer trocken",
-      "watering_ideal": "w\u00e4hrend Austrieb gleichm\u00e4\u00dfig frisch, danach abtrocknen lassen",
+      "watering": "im Frühjahr frisch; im Sommer trocken",
+      "watering_ideal": "während Austrieb gleichmäßig frisch, danach abtrocknen lassen",
       "nutrition": "gering",
-      "nutrition_ideal": "Laubmulch im Herbst; keine regelm\u00e4\u00dfige D\u00fcngung n\u00f6tig",
-      "cutting_time": "None",
-      "cutting": "Verbl\u00fchtes entfernen; Laub erst nach Vergilben schneiden",
-      "notes": "Bildet mit der Zeit gro\u00dfe Best\u00e4nde (Ameisen verbreiten Samen). Horste am besten 'in the green' teilen. Nicht aus Wildbest\u00e4nden entnehmen."
+      "nutrition_ideal": "Laubmulch im Herbst; keine regelmäßige Düngung nötig",
+      "cutting_time": -1,
+      "cutting": "Verblühtes entfernen; Laub erst nach Vergilben schneiden",
+      "notes": "Bildet mit der Zeit große Bestände (Ameisen verbreiten Samen). Horste am besten 'in the green' teilen. Nicht aus Wildbeständen entnehmen."
     },
     {
       "bloom_end": 5,
       "bloom_start": "4",
-      "cutting": "Nur eingetrocknete/vergilbte Bl\u00e4tter nach der Saison entfernen",
-      "cutting_time": "None",
+      "cutting": "Nur eingetrocknete/vergilbte Blätter nach der Saison entfernen",
+      "cutting_time": -1,
       "id": "convallaria-majalis",
       "location": [
         "halbschattig",
         "schattig"
       ],
       "location_ideal": [
-        "lichter bis voller Schatten unter Geh\u00f6lzen"
+        "lichter bis voller Schatten unter Gehölzen"
       ],
       "max_lifetime": 40,
       "max_width": -1,
       "min_temperature": -34,
       "name": "Convallaria majalis",
-      "notes": "Sehr langlebig, breitet sich mit Rhizomen teppichbildend aus (ggf. Wurzelsperre). Stark giftig (kardenolide Glykoside) \u2013 nicht verzehren, Vorsicht bei Kindern/Haustieren.",
+      "notes": "Sehr langlebig, breitet sich mit Rhizomen teppichbildend aus (ggf. Wurzelsperre). Stark giftig (kardenolide Glykoside) – nicht verzehren, Vorsicht bei Kindern/Haustieren.",
       "nutrition": "gering",
-      "nutrition_ideal": "j\u00e4hrlich d\u00fcnne Laub-/Kompostgabe",
+      "nutrition_ideal": "jährlich dünne Laub-/Kompostgabe",
       "propagation": [
         "teilung",
         "rhizome",
@@ -4885,14 +4885,14 @@
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
         "frisch bis feucht",
         "gut drainiert"
       ],
-      "trivname": "Maigl\u00f6ckchen",
+      "trivname": "Maiglöckchen",
       "type": "rhizomstaude (geophyt)",
       "vegetation": {
         "height": {
@@ -4924,15 +4924,15 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse vermeiden",
-      "watering_ideal": "frisch bis feucht, humoser Boden h\u00e4lt Feuchte",
+      "watering": "gleichmäßig frisch halten; Staunässe vermeiden",
+      "watering_ideal": "frisch bis feucht, humoser Boden hält Feuchte",
       "scale": 1.0
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Hecken nach der Bl\u00fcte im sp\u00e4ten Fr\u00fchjahr/Fr\u00fchsommer schneiden; ggf. zweiter Pflegeschnitt Ende Sommer. Starken R\u00fcckschnitt au\u00dferhalb der Brutzeit.",
-      "cutting_time": "6",
+      "cutting": "Hecken nach der Blüte im späten Frühjahr/Frühsommer schneiden; ggf. zweiter Pflegeschnitt Ende Sommer. Starken Rückschnitt außerhalb der Brutzeit.",
+      "cutting_time": 6,
       "id": "prunus-laurocerasus",
       "location": [
         "sonnig",
@@ -4940,15 +4940,15 @@
       ],
       "location_ideal": [
         "sonnig bis halbschattig",
-        "in hei\u00dfen Lagen eher halbschattig"
+        "in heißen Lagen eher halbschattig"
       ],
       "max_lifetime": 50,
       "max_width": 300,
       "min_temperature": -15,
       "name": "Prunus laurocerasus",
-      "notes": "Gro\u00dfer, schneller Sichtschutzstrauch; in Kultur oft auf 2\u20133 m gehalten (arttypisch bis >4 m). Samenkerne/Laub giftig (Blaus\u00e4ureglykoside). Kann sich in einigen Regionen invasiv verhalten \u2013 Ausbreitung kontrollieren.",
+      "notes": "Großer, schneller Sichtschutzstrauch; in Kultur oft auf 2–3 m gehalten (arttypisch bis >4 m). Samenkerne/Laub giftig (Blausäureglykoside). Kann sich in einigen Regionen invasiv verhalten – Ausbreitung kontrollieren.",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr Kompost; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr Kompost; nicht überdüngen",
       "propagation": [
         "samen",
         "stecklinge (halbholz)",
@@ -4956,17 +4956,17 @@
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
-        "gleichm\u00e4\u00dfig frisch",
+        "mäßig nährstoffreich",
+        "gleichmäßig frisch",
         "gut drainiert",
         "kalktolerant"
       ],
       "trivname": "Kirschlorbeer (Lorbeerkirsche)",
-      "type": "immergr\u00fcner strauch",
+      "type": "immergrüner strauch",
       "vegetation": {
         "height": {
           "1": 300,
@@ -4997,15 +4997,15 @@
           "12": "/prunus-laurocerasus-1.svg"
         }
       },
-      "watering": "nur bei anhaltender Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch auf gut drainiertem Boden; nach Anwachsen relativ trockenheitsvertr\u00e4glich",
+      "watering": "nur bei anhaltender Trockenheit gießen; Staunässe vermeiden",
+      "watering_ideal": "frisch bis mäßig frisch auf gut drainiertem Boden; nach Anwachsen relativ trockenheitsverträglich",
       "scale": 1.0
     },
     {
       "bloom_end": 4,
       "bloom_start": 3,
-      "cutting": "Nur leicht formen (Juni/Juli); nicht ins alte Holz schneiden \u2013 treibt dort schlecht aus",
-      "cutting_time": "6",
+      "cutting": "Nur leicht formen (Juni/Juli); nicht ins alte Holz schneiden – treibt dort schlecht aus",
+      "cutting_time": 6,
       "id": "chamaecyparis-pisifera",
       "location": [
         "sonnig",
@@ -5013,15 +5013,15 @@
       ],
       "location_ideal": [
         "sonnig bis heller Halbschatten",
-        "windgesch\u00fctzt"
+        "windgeschützt"
       ],
       "max_lifetime": 100,
       "max_width": 250,
       "min_temperature": -30,
       "name": "Chamaecyparis pisifera",
-      "notes": "Sehr sortenreich (von Zwergformen bis gr\u00f6\u00dfere Str\u00e4ucher). Vertr\u00e4gt R\u00fcckschnitt nur begrenzt; innen neigt das Geh\u00f6lz zum Verkahlen bei zu dichter Pflanzung.",
+      "notes": "Sehr sortenreich (von Zwergformen bis größere Sträucher). Verträgt Rückschnitt nur begrenzt; innen neigt das Gehölz zum Verkahlen bei zu dichter Pflanzung.",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch, nicht \u00fcberd\u00fcngen (Kalk meiden)",
+      "nutrition_ideal": "im Frühjahr leicht organisch, nicht überdüngen (Kalk meiden)",
       "propagation": [
         "stecklinge (halbholz)",
         "stecklinge (reifholz)",
@@ -5030,16 +5030,16 @@
       "scale": 1.5,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "leicht sauer",
         "humos",
-        "gleichm\u00e4\u00dfig frisch",
+        "gleichmäßig frisch",
         "gut drainiert"
       ],
       "trivname": "Sawara-Zypresse",
-      "type": "immergr\u00fcner nadelstrauch",
+      "type": "immergrüner nadelstrauch",
       "vegetation": {
         "height": {
           "1": 300,
@@ -5070,14 +5070,14 @@
           "12": "/chamaecyparis-pisifera-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse und lange Trockenheit vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch bei sehr guter Drainage; Mulch h\u00e4lt Bodenfeuchte"
+      "watering": "gleichmäßig frisch halten; Staunässe und lange Trockenheit vermeiden",
+      "watering_ideal": "frisch bis mäßig frisch bei sehr guter Drainage; Mulch hält Bodenfeuchte"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Direkt nach der Bl\u00fcte altes Holz auslichten; zur Verj\u00fcngung einzelne Triebe stark auf 20\u201330 cm eink\u00fcrzen (treibt aus der Basis nach)",
-      "cutting_time": "5",
+      "cutting": "Direkt nach der Blüte altes Holz auslichten; zur Verjüngung einzelne Triebe stark auf 20–30 cm einkürzen (treibt aus der Basis nach)",
+      "cutting_time": 5,
       "id": "mahonia-aquifolium",
       "location": [
         "halbschattig",
@@ -5086,32 +5086,32 @@
       "location_ideal": [
         "halbschattig",
         "sonnig nur bei ausreichend Bodenfeuchte",
-        "windgesch\u00fctzt"
+        "windgeschützt"
       ],
       "max_lifetime": 50,
       "max_width": 250,
       "min_temperature": -29,
       "name": "Mahonia aquifolium",
-      "notes": "Breitet sich \u00fcber Ausl\u00e4ufer teppichartig aus (ggf. Wurzelsperre). Fr\u00fchbl\u00fcher und gute Bienenpflanze. Blauschwarze Beeren essbar verarbeitet (z. B. Gelee), \u00fcbrige Pflanzenteile enthalten Berberin \u2013 nicht verzehren.",
+      "notes": "Breitet sich über Ausläufer teppichartig aus (ggf. Wurzelsperre). Frühblüher und gute Bienenpflanze. Blauschwarze Beeren essbar verarbeitet (z. B. Gelee), übrige Pflanzenteile enthalten Berberin – nicht verzehren.",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr leicht organisch; nicht überdüngen",
       "propagation": [
         "samen",
         "stecklinge (halbholz)",
-        "ausl\u00e4ufer"
+        "ausläufer"
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig frisch",
+        "gleichmäßig frisch",
         "gut drainiert",
         "leicht sauer bis neutral"
       ],
-      "trivname": "Gew\u00f6hnliche Mahonie (Oregon-Traubenholly)",
-      "type": "immergr\u00fcner strauch",
+      "trivname": "Gewöhnliche Mahonie (Oregon-Traubenholly)",
+      "type": "immergrüner strauch",
       "vegetation": {
         "height": {
           "1": 150,
@@ -5142,15 +5142,15 @@
           "12": "/mahonia-aquifolium-10.svg"
         }
       },
-      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, Mulch h\u00e4lt Feuchte",
+      "watering": "nur bei längerer Trockenheit gießen; Staunässe vermeiden",
+      "watering_ideal": "frisch bis mäßig frisch, Mulch hält Feuchte",
       "scale": 1.0
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Alte/abgestorbene Wedel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; junge Triebe nicht besch\u00e4digen",
-      "cutting_time": "3",
+      "cutting": "Alte/abgestorbene Wedel im Spätwinter/Frühjahr bodennah entfernen; junge Triebe nicht beschädigen",
+      "cutting_time": 3,
       "id": "dryopteris-filix-mas",
       "location": [
         "halbschattig",
@@ -5158,27 +5158,27 @@
       ],
       "location_ideal": [
         "schattig",
-        "luftig-k\u00fchl",
-        "windgesch\u00fctzt"
+        "luftig-kühl",
+        "windgeschützt"
       ],
       "max_lifetime": 30,
       "max_width": 100,
       "min_temperature": -34,
       "name": "Dryopteris filix-mas",
-      "notes": "Sehr schattenvertr\u00e4glich, robuste Waldstaude. \u201aBl\u00fctezeit\u2018 hier als Zeitraum der Sporenreife (Sori) verstanden. Rhizom historisch als Wurmmittel genutzt, Pflanze (v. a. Rhizom) jedoch giftig.",
+      "notes": "Sehr schattenverträglich, robuste Waldstaude. ‚Blütezeit‘ hier als Zeitraum der Sporenreife (Sori) verstanden. Rhizom historisch als Wurmmittel genutzt, Pflanze (v. a. Rhizom) jedoch giftig.",
       "nutrition": "gering",
-      "nutrition_ideal": "j\u00e4hrlich Laub-/Kompostmulch; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "jährlich Laub-/Kompostmulch; nicht überdüngen",
       "propagation": [
         "teilung",
         "sporen"
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig frisch",
+        "gleichmäßig frisch",
         "gut drainiert",
         "leicht sauer"
       ],
@@ -5214,30 +5214,30 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit vermeiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht, keine Staun\u00e4sse; Mulch erh\u00e4lt Bodenfeuchte",
+      "watering": "gleichmäßig frisch halten; Trockenheit vermeiden",
+      "watering_ideal": "ständig leicht feucht, keine Staunässe; Mulch erhält Bodenfeuchte",
       "scale": 1
     },
     {
       "bloom_end": 6,
       "bloom_start": 5,
-      "cutting": "Unmittelbar nach der Bl\u00fcte auslichten: 1\u20443 der \u00e4ltesten Triebe bodennah entfernen, verbl\u00fchte Triebe um etwa 1\u20443 eink\u00fcrzen; Winterschnitt vermeiden (bl\u00fcht am vorj\u00e4hrigen Holz).",
-      "cutting_time": "6",
+      "cutting": "Unmittelbar nach der Blüte auslichten: 1⁄3 der ältesten Triebe bodennah entfernen, verblühte Triebe um etwa 1⁄3 einkürzen; Winterschnitt vermeiden (blüht am vorjährigen Holz).",
+      "cutting_time": 6,
       "id": "deutzia-gracilis",
       "location": [
         "sonnig",
         "halbschattig"
       ],
       "location_ideal": [
-        "sonnig (beste Bl\u00fcte)"
+        "sonnig (beste Blüte)"
       ],
       "max_lifetime": 30,
       "max_width": 100,
       "min_temperature": -25,
       "name": "Deutzia gracilis",
-      "notes": "Kompakter, reich bl\u00fchender Kleinstrauch; St\u00e4ngel sind kurzlebig \u2013 regelm\u00e4\u00dfige Verj\u00fcngung erh\u00e4lt Bl\u00fchfreude.",
+      "notes": "Kompakter, reich blühender Kleinstrauch; Stängel sind kurzlebig – regelmäßige Verjüngung erhält Blühfreude.",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr leicht organisch; nicht überdüngen",
       "propagation": [
         "stecklinge (weichholz)",
         "stecklinge (halbholz)",
@@ -5246,11 +5246,11 @@
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig frisch",
+        "gleichmäßig frisch",
         "gut drainiert"
       ],
       "trivname": "Zierliche Deutzie (Maiblumenstrauch)",
@@ -5285,49 +5285,49 @@
           "12": "/deutzia-gracilis-1.svg"
         }
       },
-      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch; Staun\u00e4sse vermeiden",
+      "watering": "nur bei längerer Trockenheit gießen",
+      "watering_ideal": "frisch bis mäßig frisch; Staunässe vermeiden",
       "scale": 1
     },
     {
       "bloom_end": 7,
       "bloom_start": 6,
-      "cutting": "Nach der Bl\u00fcte flach scheren, um Form zu halten; nicht ins alte Holz schneiden",
-      "cutting_time": "8",
+      "cutting": "Nach der Blüte flach scheren, um Form zu halten; nicht ins alte Holz schneiden",
+      "cutting_time": 8,
       "id": "sedum-spurium",
       "location": [
         "sonnig"
       ],
       "location_ideal": [
         "vollsonnig",
-        "w\u00e4rmebeg\u00fcnstigt"
+        "wärmebegünstigt"
       ],
       "max_lifetime": 20,
       "max_width": -1,
       "min_temperature": -30,
       "name": "Sedum spurium",
-      "notes": "Mattenbildend \u00fcber wurzelnde Triebe; ideal f\u00fcr Steingarten/Dach. Jungpflanzen ggf. vor Schnecken sch\u00fctzen; \u00dcberw\u00e4sserung f\u00fchrt zu F\u00e4ulnis.",
+      "notes": "Mattenbildend über wurzelnde Triebe; ideal für Steingarten/Dach. Jungpflanzen ggf. vor Schnecken schützen; Überwässerung führt zu Fäulnis.",
       "nutrition": "gering",
-      "nutrition_ideal": "nicht oder nur sehr sparsam d\u00fcngen",
+      "nutrition_ideal": "nicht oder nur sehr sparsam düngen",
       "propagation": [
         "teilung",
         "stecklinge (weichholz)",
         "blattstecklinge",
-        "ausl\u00e4ufer"
+        "ausläufer"
       ],
       "scale": 0.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "sandig/kiesig",
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "gut drainiert",
-        "alkalisch bis neutral m\u00f6glich"
+        "alkalisch bis neutral möglich"
       ],
       "trivname": "Kaukasus-Fetthenne (Teppich-Sedum)",
-      "type": "bodendecker-staude (sukkulent, halbimmergr\u00fcn)",
+      "type": "bodendecker-staude (sukkulent, halbimmergrün)",
       "vegetation": {
         "height": {
           "1": 4,
@@ -5358,42 +5358,42 @@
           "12": "/sedum-spurium-10.svg"
         }
       },
-      "watering": "sparsam gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "trocken bis m\u00e4\u00dfig trocken bei sehr guter Drainage"
+      "watering": "sparsam gießen; Staunässe vermeiden",
+      "watering_ideal": "trocken bis mäßig trocken bei sehr guter Drainage"
     },
     {
       "bloom_end": 10,
       "bloom_start": 7,
-      "cutting": "Nach der Bl\u00fcte/Im Herbst Bl\u00fctentriebe bodennah zur\u00fcckschneiden; kein Formschnitt n\u00f6tig",
-      "cutting_time": "10",
+      "cutting": "Nach der Blüte/Im Herbst Blütentriebe bodennah zurückschneiden; kein Formschnitt nötig",
+      "cutting_time": 10,
       "id": "gentiana-scabra",
       "location": [
         "sonnig",
         "halbschattig"
       ],
       "location_ideal": [
-        "vollsonnig bei k\u00fchlen Sommern",
+        "vollsonnig bei kühlen Sommern",
         " sonst lichter Halbschatten"
       ],
       "max_lifetime": 10,
       "max_width": 30,
       "min_temperature": -15,
       "name": "Gentiana scabra",
-      "notes": "Bevorzugt k\u00fchle Sommer; kalkempfindlich. F\u00fcr Steingarten/Topf geeignet. Bei Hitze nachmittags halbschattig stellen.",
+      "notes": "Bevorzugt kühle Sommer; kalkempfindlich. Für Steingarten/Topf geeignet. Bei Hitze nachmittags halbschattig stellen.",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen; humoser Boden bevorzugt",
+      "nutrition_ideal": "sparsam düngen; humoser Boden bevorzugt",
       "propagation": [
         "samen",
         "teilung"
       ],
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "sauer bis schwach sauer",
         "humos",
-        "gleichm\u00e4\u00dfig frisch",
+        "gleichmäßig frisch",
         "sehr gut drainiert",
         "kalkfrei"
       ],
@@ -5429,15 +5429,15 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Trockenheit und Staun\u00e4sse vermeiden",
-      "watering_ideal": "st\u00e4ndig leicht feucht auf gut drainiertem, kalkfreiem Substrat",
+      "watering": "gleichmäßig frisch halten; Trockenheit und Staunässe vermeiden",
+      "watering_ideal": "ständig leicht feucht auf gut drainiertem, kalkfreiem Substrat",
       "scale": 0.5
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nur minimal schneiden (Totholz/fehlstehende Triebe) nach Laubfall bis vor Januar; gr\u00f6\u00dfere Schnitte vermeiden \u2013 Ahorn blutet sonst stark.",
-      "cutting_time": "12",
+      "cutting": "Nur minimal schneiden (Totholz/fehlstehende Triebe) nach Laubfall bis vor Januar; größere Schnitte vermeiden – Ahorn blutet sonst stark.",
+      "cutting_time": 12,
       "id": "acer-japonicum",
       "location": [
         "halbschattig",
@@ -5445,15 +5445,15 @@
       ],
       "location_ideal": [
         "halbschattig",
-        "gesch\u00fctzt vor Wind & hei\u00dfer Nachmittagssonne"
+        "geschützt vor Wind & heißer Nachmittagssonne"
       ],
       "max_lifetime": 80,
       "max_width": 400,
       "min_temperature": -28,
       "name": "Acer japonicum",
-      "notes": "Bevorzugt k\u00fchle Sommer und gesch\u00fctzte Lagen; Bl\u00e4tter k\u00f6nnen in voller Sonne und Trockenheit verbrennen. Sp\u00e4tfrostempfindlicher fr\u00fcher Austrieb; Jungpflanzen vor Wind/Sonne sch\u00fctzen.",
+      "notes": "Bevorzugt kühle Sommer und geschützte Lagen; Blätter können in voller Sonne und Trockenheit verbrennen. Spätfrostempfindlicher früher Austrieb; Jungpflanzen vor Wind/Sonne schützen.",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr leicht organisch; nicht überdüngen",
       "propagation": [
         "samen",
         "veredlung",
@@ -5462,11 +5462,11 @@
       "scale": 2,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "gleichm\u00e4\u00dfig frisch",
+        "gleichmäßig frisch",
         "gut drainiert",
         "leicht sauer bis neutral"
       ],
@@ -5502,14 +5502,14 @@
           "12": "/acer-japonicum-1.svg"
         }
       },
-      "watering": "gleichm\u00e4\u00dfig frisch halten; Staun\u00e4sse und Sommerd\u00fcrre vermeiden",
+      "watering": "gleichmäßig frisch halten; Staunässe und Sommerdürre vermeiden",
       "watering_ideal": "feuchtigkeitsbewahrender, gut drainierter Boden; mulchen"
     },
     {
       "bloom_end": 5,
       "bloom_start": 5,
-      "cutting": "Direkt nach der Bl\u00fcte auslichten: Verbl\u00fchtes \u00fcber einem Blattpaar entfernen; j\u00e4hrlich 1\u20133 der \u00e4ltesten Triebe bodennah herausnehmen (bl\u00fcht am vorj\u00e4hrigen Holz).",
-      "cutting_time": "6",
+      "cutting": "Direkt nach der Blüte auslichten: Verblühtes über einem Blattpaar entfernen; jährlich 1–3 der ältesten Triebe bodennah herausnehmen (blüht am vorjährigen Holz).",
+      "cutting_time": 6,
       "id": "syringa-vulgaris",
       "location": [
         "sonnig"
@@ -5522,11 +5522,11 @@
       "max_width": 300,
       "min_temperature": -34,
       "name": "Syringa vulgaris",
-      "notes": "Beste Bl\u00fcte in voller Sonne auf gut drainierten, leicht kalkhaltigen B\u00f6den; meidet nasse Standorte. Bl\u00fcte meist im Mai. Gr\u00f6\u00dfere Verj\u00fcngungsschnitte kosten die Bl\u00fcte im Folgejahr.",
+      "notes": "Beste Blüte in voller Sonne auf gut drainierten, leicht kalkhaltigen Böden; meidet nasse Standorte. Blüte meist im Mai. Größere Verjüngungsschnitte kosten die Blüte im Folgejahr.",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im zeitigen Fr\u00fchjahr leicht organisch; Stickstoff zur\u00fcckhaltend (zu viel mindert Bl\u00fcte)",
+      "nutrition_ideal": "im zeitigen Frühjahr leicht organisch; Stickstoff zurückhaltend (zu viel mindert Blüte)",
       "propagation": [
-        "ausl\u00e4ufer",
+        "ausläufer",
         "stecklinge (weichholz)",
         "stecklinge (halbholz)",
         "absenker",
@@ -5536,16 +5536,16 @@
       "scale": 1.5,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mäßig nährstoffreich",
         "gut drainiert",
         "neutral bis alkalisch",
         "kalktolerant"
       ],
-      "trivname": "Gew\u00f6hnlicher Flieder",
+      "trivname": "Gewöhnlicher Flieder",
       "type": "laubabwerfender strauch",
       "vegetation": {
         "height": {
@@ -5577,14 +5577,14 @@
           "12": "/syringa-vulgaris-1.svg"
         }
       },
-      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "frisch bis m\u00e4\u00dfig frisch, gut drainiert; nach Anwachsen relativ trockenheitsvertr\u00e4glich"
+      "watering": "nur bei längerer Trockenheit gießen; Staunässe vermeiden",
+      "watering_ideal": "frisch bis mäßig frisch, gut drainiert; nach Anwachsen relativ trockenheitsverträglich"
     },
     {
       "bloom_end": 9,
       "bloom_start": 7,
-      "cutting": "Alte St\u00e4ngel im Sp\u00e4twinter/Fr\u00fchjahr bodennah entfernen; Verbl\u00fchtes in der Saison ausputzen",
-      "cutting_time": "3",
+      "cutting": "Alte Stängel im Spätwinter/Frühjahr bodennah entfernen; Verblühtes in der Saison ausputzen",
+      "cutting_time": 3,
       "id": "solidago-virgaurea",
       "location": [
         "sonnig",
@@ -5599,7 +5599,7 @@
       "name": "Solidago virgaurea",
       "notes": "Heimische Art; gute Insektenpflanze. Bevorzuge S. virgaurea oder horstige Sorten, da einige neophytische Goldruten (z. B. S. canadensis, S. gigantea) stark wuchern.",
       "nutrition": "gering",
-      "nutrition_ideal": "sparsam d\u00fcngen; zu reich n\u00e4hrt Blatt statt Bl\u00fcte",
+      "nutrition_ideal": "sparsam düngen; zu reich nährt Blatt statt Blüte",
       "propagation": [
         "teilung",
         "samen"
@@ -5607,15 +5607,15 @@
       "scale": 1.5,
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "mager bis m\u00e4\u00dfig n\u00e4hrstoffreich",
+        "mager bis mäßig nährstoffreich",
         "trocken bis frisch",
         "gut drainiert",
         "leicht sauer bis neutral"
       ],
-      "trivname": "Gew\u00f6hnliche Goldrute",
+      "trivname": "Gewöhnliche Goldrute",
       "type": "staude",
       "vegetation": {
         "height": {
@@ -5647,14 +5647,14 @@
           "12": "/solidago-virgaurea-1.svg"
         }
       },
-      "watering": "m\u00e4\u00dfig gie\u00dfen; nach Anwachsen trockenheitsvertr\u00e4glich",
-      "watering_ideal": "m\u00e4\u00dfig frisch, sehr gut drainiert; Staun\u00e4sse vermeiden"
+      "watering": "mäßig gießen; nach Anwachsen trockenheitsverträglich",
+      "watering_ideal": "mäßig frisch, sehr gut drainiert; Staunässe vermeiden"
     },
     {
       "bloom_end": 5,
       "bloom_start": 4,
-      "cutting": "Nur Bl\u00fctenstiele nach der Samenreife entfernen; Laub erst nach Vergilben abschneiden",
-      "cutting_time": "6",
+      "cutting": "Nur Blütenstiele nach der Samenreife entfernen; Laub erst nach Vergilben abschneiden",
+      "cutting_time": 6,
       "id": "fritillaria-imperialis-aurora",
       "location": [
         "sonnig",
@@ -5663,28 +5663,28 @@
       "location_ideal": [
         "vollsonnig bis lichter Halbschatten",
         "warm",
-        "windgesch\u00fctzt"
+        "windgeschützt"
       ],
       "max_lifetime": 15,
       "max_width": 40,
       "min_temperature": -20,
       "name": "Fritillaria imperialis 'Aurora'",
-      "notes": "Zwiebeln im Herbst z\u00fcgig und ca. 4\u00d7 so tief pflanzen, leicht schr\u00e4g/seitlich (Wasser sammelt sich sonst im St\u00e4ngelhohlraum). Mag n\u00e4hrstoffreiche, gut drainierte B\u00f6den; Versetzen/Teilung nur selten. Achtung Lilienh\u00e4hnchen; Jungtriebe k\u00f6nnen von Schnecken befallen werden.",
+      "notes": "Zwiebeln im Herbst zügig und ca. 4× so tief pflanzen, leicht schräg/seitlich (Wasser sammelt sich sonst im Stängelhohlraum). Mag nährstoffreiche, gut drainierte Böden; Versetzen/Teilung nur selten. Achtung Lilienhähnchen; Jungtriebe können von Schnecken befallen werden.",
       "nutrition": "mittel",
-      "nutrition_ideal": "im Herbst/Fr\u00fchjahr leicht organisch bzw. Zwiebelblumend\u00fcnger",
+      "nutrition_ideal": "im Herbst/Frühjahr leicht organisch bzw. Zwiebelblumendünger",
       "propagation": [
         "tochterzwiebeln/teilung",
         "samen (Sorten nicht sortenecht)"
       ],
       "snails": "little",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
-        "m\u00e4\u00dfig bis n\u00e4hrstoffreich",
+        "mäßig bis nährstoffreich",
         "gut drainiert",
-        "gleichm\u00e4\u00dfig frisch im Fr\u00fchjahr"
+        "gleichmäßig frisch im Frühjahr"
       ],
       "trivname": "Kaiserkrone 'Aurora'",
       "type": "zwiebelpflanze (geophyt)",
@@ -5718,14 +5718,14 @@
           "12": "/empty.svg"
         }
       },
-      "watering": "w\u00e4hrend Austrieb gleichm\u00e4\u00dfig frisch; Staun\u00e4sse vermeiden",
-      "watering_ideal": "Fr\u00fchjahr frisch, Sommer eher trocken; sehr gute Drainage",
+      "watering": "während Austrieb gleichmäßig frisch; Staunässe vermeiden",
+      "watering_ideal": "Frühjahr frisch, Sommer eher trocken; sehr gute Drainage",
       "scale": 0.5
     },
     {
       "id": "berberis-vulgaris",
       "name": "Berberis vulgaris",
-      "trivname": "Gew\u00f6hnliche Berberitze (Sauerdorn)",
+      "trivname": "Gewöhnliche Berberitze (Sauerdorn)",
       "type": "laubabwerfender strauch",
       "vegetation": {
         "height": {
@@ -5763,14 +5763,14 @@
         "samen",
         "stecklinge (halbholz)",
         "stecklinge (reifholz)",
-        "ausl\u00e4ufer"
+        "ausläufer"
       ],
       "max_width": 250,
       "snails": "hardened",
       "bloom_start": 5,
       "bloom_end": 6,
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
         "humos",
@@ -5787,53 +5787,53 @@
         "vollsonnig bis lichter Halbschatten",
         "windfest"
       ],
-      "watering": "nur bei l\u00e4ngerer Trockenheit gie\u00dfen; Staun\u00e4sse vermeiden",
-      "watering_ideal": "m\u00e4\u00dfig trocken bis frisch; nach Anwachsen recht trockenheitsvertr\u00e4glich",
+      "watering": "nur bei längerer Trockenheit gießen; Staunässe vermeiden",
+      "watering_ideal": "mäßig trocken bis frisch; nach Anwachsen recht trockenheitsverträglich",
       "nutrition": "gering bis mittel",
-      "nutrition_ideal": "im Fr\u00fchjahr leicht organisch; nicht \u00fcberd\u00fcngen",
+      "nutrition_ideal": "im Frühjahr leicht organisch; nicht überdüngen",
       "cutting_time": 6,
-      "cutting": "Direkt nach der Bl\u00fcte auslichten/formen; \u00e4ltere Triebe bodennah entfernen. Starkverj\u00fcngung bei laubabwerfenden Formen auch im Winter m\u00f6glich (dann Bl\u00fcte im Folgejahr geringer).",
-      "notes": "Dornenreicher, sehr robuster Heckenstrauch; bl\u00fcht sp\u00e4t im Fr\u00fchjahr, rote essbare Beeren (verarbeitet). Bildet Ausl\u00e4ufer. Historisch Zwischenwirt von Schwarzrost am Getreide \u2013 Anbau war teils eingeschr\u00e4nkt; heute meist wieder erlaubt."
+      "cutting": "Direkt nach der Blüte auslichten/formen; ältere Triebe bodennah entfernen. Starkverjüngung bei laubabwerfenden Formen auch im Winter möglich (dann Blüte im Folgejahr geringer).",
+      "notes": "Dornenreicher, sehr robuster Heckenstrauch; blüht spät im Frühjahr, rote essbare Beeren (verarbeitet). Bildet Ausläufer. Historisch Zwischenwirt von Schwarzrost am Getreide – Anbau war teils eingeschränkt; heute meist wieder erlaubt."
     },
     {
       "bloom_end": 3,
       "bloom_start": 3,
-      "cutting": "Sp\u00e4twinter oder nach Bl\u00fcte, kr\u00e4ftiger R\u00fcckschnitt zur Verj\u00fcngung m\u00f6glich",
-      "cutting_time": "4",
+      "cutting": "Spätwinter oder nach Blüte, kräftiger Rückschnitt zur Verjüngung möglich",
+      "cutting_time": 4,
       "id": "symphoricarpos-albus",
       "location": [
         "sonnig",
         "halbschattig"
       ],
       "location_ideal": [
-        "lichte Geh\u00f6lzr\u00e4nder",
+        "lichte Gehölzränder",
         "Heckenstandorte"
       ],
-      "max_age": "25\u201340 Jahre",
+      "max_age": "25–40 Jahre",
       "max_lifetime": 40,
       "max_width": 50,
       "min_temperature": -15,
       "name": "Symphoricarpos albus",
-      "notes": "robust, starkw\u00fcchsig, bildet Ausl\u00e4ufer, Fr\u00fcchte giftig f\u00fcr Menschen",
+      "notes": "robust, starkwüchsig, bildet Ausläufer, Früchte giftig für Menschen",
       "nutrition": "gering",
-      "nutrition_ideal": "Kompostgabe im Fr\u00fchjahr ausreichend",
+      "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
       "propagation": [
-        "Ausl\u00e4ufer",
+        "Ausläufer",
         " Stecklinge",
         " Teilung"
       ],
       "scale": 1,
       "snails": "hardened",
       "soil": [
-        "durchl\u00e4ssig"
+        "durchlässig"
       ],
       "soil_ideal": [
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "locker",
         "lehmig",
         "kaltolerant"
       ],
-      "trivname": "Gew\u00f6hnliche Schneebeere",
+      "trivname": "Gewöhnliche Schneebeere",
       "type": "strauch",
       "vegetation": {
         "height": {
@@ -5866,31 +5866,31 @@
         }
       },
       "watering": "gering bis mittel",
-      "watering_ideal": "bei l\u00e4ngerer Trockenheit gie\u00dfen, sonst pflegeleicht"
+      "watering_ideal": "bei längerer Trockenheit gießen, sonst pflegeleicht"
     },
     {
       "bloom_end": 3,
       "bloom_start": 12,
-      "cutting": "alte Bl\u00e4tter vor dem Austrieb bodennah entfernen",
-      "cutting_time": "im Sp\u00e4twinter",
+      "cutting": "alte Blätter vor dem Austrieb bodennah entfernen",
+      "cutting_time": 2,
       "id": "helleborus-niger",
       "location": [
         "halbschattig",
         "schattig"
       ],
       "location_ideal": [
-        "leichter Schatten unter laubabwerfenden Geh\u00f6lzen",
-        "windgesch\u00fctzt",
-        "k\u00fchl und luftig"
+        "leichter Schatten unter laubabwerfenden Gehölzen",
+        "windgeschützt",
+        "kühl und luftig"
       ],
-      "max_age": "30\u201340 Jahre",
+      "max_age": "30–40 Jahre",
       "max_lifetime": 30,
       "max_width": 40,
       "min_temperature": -25,
       "name": "Helleborus niger",
-      "notes": "winterbl\u00fchend, giftig, empfindlich gegen\u00fcber Wurzelst\u00f6rungen",
+      "notes": "winterblühend, giftig, empfindlich gegenüber Wurzelstörungen",
       "nutrition": "mittel",
-      "nutrition_ideal": "Kompostgabe im Fr\u00fchjahr ausreichend",
+      "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
       "propagation": [
         "Teilung",
         "Samen (langsam keimend)",
@@ -5901,7 +5901,7 @@
       "soil": [
         "humos",
         "kalkhaltig",
-        "n\u00e4hrstoffreich",
+        "nährstoffreich",
         "gut drainiert"
       ],
       "soil_ideal": [
@@ -5942,8 +5942,301 @@
           "12": "/helleborus-niger-12.svg"
         }
       },
-      "watering": "m\u00e4\u00dfig feucht halten",
-      "watering_ideal": "gleichm\u00e4\u00dfig frisch, keine Staun\u00e4sse"
+      "watering": "mäßig feucht halten",
+      "watering_ideal": "gleichmäßig frisch, keine Staunässe"
+    },
+    {
+      "id": "allium-moly",
+      "name": "Allium moly",
+      "scale": 1.0,
+      "trivname": "Gold-Lauch",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 15,
+          "5": 25,
+          "6": 30,
+          "7": 20,
+          "8": 10,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/allium-moly-1.svg",
+          "2": "/allium-moly-1.svg",
+          "3": "/allium-moly-3.svg",
+          "4": "/allium-moly-4.svg",
+          "5": "/allium-moly-4.svg",
+          "6": "/allium-moly-6.svg",
+          "7": "/allium-moly-7.svg",
+          "8": "/allium-moly-7.svg",
+          "9": "/allium-moly-3.svg",
+          "10": "/allium-moly-3.svg",
+          "11": "/allium-moly-3.svg",
+          "12": "/allium-moly-1.svg"
+        }
+      },
+      "soil": [
+        "durchlässig",
+        "locker",
+        "nicht staunass"
+      ],
+      "soil_ideal": [
+        "sandig-lehmiger Boden",
+        "humos",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "warmer Standort",
+        "geschützt vor Staunässe"
+      ],
+      "watering": "gering bis mittel",
+      "watering_ideal": "nur bei längerer Trockenheit gießen",
+      "nutrition": "gering",
+      "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
+      "cutting_time": 7,
+      "cutting": "Laub erst entfernen, wenn es vollständig eingezogen und vergilbt ist",
+      "notes": "verwildert gut, sehr robust, ideal für Steingärten und Naturgärten",
+      "snails": "hardened",
+      "min_temperature": -28,
+      "bloom_start": 5,
+      "bloom_end": 6,
+      "max_lifetime": 20,
+      "max_width": -1,
+      "propagation": [
+        "Brutzwiebeln",
+        "Teilung",
+        "Samen"
+      ]
+    },
+    {
+      "id": "puschkinia-libanotica",
+      "name": "Puschkinia libanotica",
+      "scale": 1.0,
+      "trivname": "Scheinscilla",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 15,
+          "5": 15,
+          "6": 10,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/puschkinia-libanotica-1.svg",
+          "2": "/puschkinia-libanotica-2.svg",
+          "3": "/puschkinia-libanotica-3.svg",
+          "4": "/puschkinia-libanotica-4.svg",
+          "5": "/puschkinia-libanotica-5.svg",
+          "6": "/puschkinia-libanotica-6.svg",
+          "7": "/puschkinia-libanotica-6.svg",
+          "8": "/puschkinia-libanotica-8.svg",
+          "9": "/puschkinia-libanotica-8.svg",
+          "10": "/puschkinia-libanotica-8.svg",
+          "11": "/puschkinia-libanotica-1.svg",
+          "12": "/puschkinia-libanotica-1.svg"
+        }
+      },
+      "soil": [
+        "durchlässig",
+        "locker",
+        "nicht staunass"
+      ],
+      "soil_ideal": [
+        "humoser Lehmboden",
+        "leicht sandig",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "lichte Gehölzränder",
+        "Frühlingssonne vor Laubaustrieb",
+        "windgeschützt"
+      ],
+      "watering": "gering",
+      "watering_ideal": "natürliche Bodenfeuchte ausreichend",
+      "nutrition": "gering",
+      "nutrition_ideal": "Kompostgabe im Herbst oder zeitigen Frühjahr",
+      "cutting_time": 6,
+      "cutting": "Laub erst entfernen, wenn es vollständig eingezogen ist",
+      "notes": "sehr gut verwildernd, ideal für Naturgärten und unter Gehölzen",
+      "snails": "hardened",
+      "min_temperature": -30,
+      "bloom_start": 3,
+      "bloom_end": 4,
+      "max_lifetime": 25,
+      "max_width": -1,
+      "propagation": [
+        "Brutzwiebeln",
+        "Samen"
+      ]
+    },
+    {
+      "id": "allium-neapolitanum",
+      "name": "Allium neapolitanum",
+      "scale": 1.0,
+      "trivname": "Neapolitanischer Lauch",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 10,
+          "4": 25,
+          "5": 40,
+          "6": 35,
+          "7": 15,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        },
+        "icon": {
+          "1": "/allium-neapolitanum-1.svg",
+          "2": "/allium-neapolitanum-2.svg",
+          "3": "/allium-neapolitanum-3.svg",
+          "4": "/allium-neapolitanum-4.svg",
+          "5": "/allium-neapolitanum-5.svg",
+          "6": "/allium-neapolitanum-6.svg",
+          "7": "/allium-neapolitanum-6.svg",
+          "8": "/allium-neapolitanum-8.svg",
+          "9": "/allium-neapolitanum-9.svg",
+          "10": "/allium-neapolitanum-9.svg",
+          "11": "/allium-neapolitanum-9.svg",
+          "12": "/allium-neapolitanum-1.svg"
+        }
+      },
+      "soil": [
+        "durchlässig",
+        "locker",
+        "nicht staunass"
+      ],
+      "soil_ideal": [
+        "sandig-lehmiger Boden",
+        "humos",
+        "gut drainiert"
+      ],
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "warmer Standort",
+        "geschützt vor Winterfeuchte"
+      ],
+      "watering": "gering bis mittel",
+      "watering_ideal": "mäßige Wassergaben, trockenere Phasen gut verträglich",
+      "nutrition": "gering",
+      "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
+      "cutting_time": 7,
+      "cutting": "Laub erst entfernen, wenn es vollständig eingezogen ist",
+      "notes": "in kalten Regionen nicht zuverlässig winterhart, ideal für geschützte Lagen oder Kübel",
+      "snails": "hardened",
+      "min_temperature": -10,
+      "bloom_start": 4,
+      "bloom_end": 5,
+      "max_lifetime": 10,
+      "max_width": -1,
+      "propagation": [
+        "Brutzwiebeln",
+        "Samen"
+      ]
+    },
+    {
+      "bloom_end": 11,
+      "bloom_start": 9,
+      "cutting": "Blätter erst entfernen, wenn sie vollständig vergilbt sind",
+      "cutting_time": 11,
+      "id": "crocus-prins-claus",
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "leichter Halbschatten",
+        "geschützt vor Staunässe"
+      ],
+      "max_lifetime": 15,
+      "max_width": -1,
+      "min_temperature": -25,
+      "name": "Crocus 'Prins Claus'",
+      "notes": "herbstblühend, sehr robust, ideal für Steingärten und Rabatten",
+      "nutrition": "gering",
+      "nutrition_ideal": "leichte Kompostgabe im Herbst nach der Blüte",
+      "propagation": [
+        "Teilung von Zwiebeln",
+        "Samen (langsam keimend)"
+      ],
+      "scale": 1,
+      "snails": "little",
+      "soil": [
+        "locker",
+        "durchlässig",
+        "nicht staunass"
+      ],
+      "soil_ideal": [
+        "sandiger Lehmboden",
+        "humos",
+        "gut drainiert"
+      ],
+      "trivname": "Herbst-Krokus 'Prins Claus'",
+      "type": "zwiebelpflanze",
+      "vegetation": {
+        "height": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 5,
+          "10": 10,
+          "11": 10,
+          "12": 5
+        },
+        "icon": {
+          "1": "/crocus-prins-claus-8.svg",
+          "2": "/crocus-prins-claus-7.svg",
+          "3": "/crocus-prins-claus-3.svg",
+          "4": "/crocus-prins-claus-4.svg",
+          "5": "/crocus-prins-claus-5.svg",
+          "6": "/crocus-prins-claus-6.svg",
+          "7": "/crocus-prins-claus-7.svg",
+          "8": "/crocus-prins-claus-8.svg",
+          "9": "/crocus-prins-claus-8.svg",
+          "10": "/crocus-prins-claus-8.svg",
+          "11": "/crocus-prins-claus-8.svg",
+          "12": "/crocus-prins-claus-8.svg"
+        }
+      },
+      "watering": "gering",
+      "watering_ideal": "nur bei längerer Trockenheit leicht gießen"
     }
   ]
 }
