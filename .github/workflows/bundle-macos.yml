@@ -1,0 +1,174 @@
+name: Bundle for macOS with PyInstaller
+
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -e .
+          # Install PyInstaller (pinning can be done if you prefer reproducible builds)
+          python -m pip install "pyinstaller>=5.10"
+
+      - name: Run PyInstaller (use gardenmap.spec)
+        shell: pwsh
+        run: |
+          # Run PyInstaller using the repository spec file
+          # --noconfirm: overwrite output without prompting
+          # --clean: clean PyInstaller cache and remove temporary files before building
+          python -m PyInstaller --noconfirm --clean gardenmap.spec
+
+      - name: Read version from pyproject.toml (bash)
+        id: get_version
+        shell: bash
+        run: |
+          version=$(sed -nE 's/^[[:space:]]*version[[:space:]]*=[[:space:]]*["'\'']([^"'\'']+)["'\''].*/\1/p' pyproject.toml | head -n1)
+          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "Detected version: $version"
+
+      - name: Create ZIP of dist/ for release
+        shell: bash
+        run: |
+          ZIP_NAME="gardenmap-macos-${{ steps.get_version.outputs.version }}.zip"
+          if [ -f "$ZIP_NAME" ]; then rm -f "$ZIP_NAME"; fi
+          # Create a single zip suitable for a release asset
+          (cd dist && zip -r "../$ZIP_NAME" .)
+          echo "Created $ZIP_NAME"
+        id: make_zip
+
+      - name: Compute SHA256 checksum
+        shell: bash
+        run: |
+          ZIP_NAME="gardenmap-macos-${{ steps.get_version.outputs.version }}.zip"
+          if [ ! -f "$ZIP_NAME" ]; then echo "ZIP not found: $ZIP_NAME" >&2; exit 1; fi
+          SHA256=$(shasum -a 256 "$ZIP_NAME" | awk '{print $1}')
+          echo "sha256=$SHA256"
+          echo "sha256=$SHA256" >> $GITHUB_OUTPUT
+        id: checksum
+
+      - name: Prepare release tag
+        id: prep_tag
+        run: |
+          VERSION=${{ steps.get_version.outputs.version }}
+          # choose tag style you want:
+          TAG="v${VERSION}"
+          echo "tag=${TAG}" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Check for existing release (macOS/Linux)
+        id: check_release
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            set -euo pipefail
+            API_URL="https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ steps.prep_tag.outputs.tag }}"
+            RESP=$(curl -sS \
+              -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "$API_URL" || true)
+
+            # Default outputs
+            EXISTS=false
+            UPLOAD_URL=""
+
+            if ! echo "$RESP" | grep -q '"message": "Not Found"'; then
+              EXISTS=true
+
+              # Extract upload_url (strip the {...} template part)
+              UPLOAD_URL=$(echo "$RESP" |
+                grep '"upload_url"' |
+                head -n1 |
+                sed -E 's/.*"upload_url": "([^"]+)".*/\1/' |
+                sed 's/{?name,label}//'
+              )
+            fi
+            echo "exists=${EXISTS}" >> "$GITHUB_OUTPUT"
+            echo "upload_url=${UPLOAD_URL}" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release (if missing)
+        id: create_release
+        if: ${{ steps.check_release.outputs.exists == 'false' }}
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.prep_tag.outputs.tag }}
+          release_name: "gardenmap ${{ steps.get_version.outputs.version }}"
+          body: |
+            Built by CI run ${{ github.run_number }}.
+          draft: false
+          prerelease: false
+
+      - name: Determine upload_url to use
+        id: upload_url
+        shell: bash
+        run: |
+          # prefer upload_url from check_release (existing release), otherwise from create_release
+          if [ "${{ steps.check_release.outputs.exists }}" = "true" ] && [ -n "${{ steps.check_release.outputs.upload_url }}" ]; then
+            echo "final_upload_url=${{ steps.check_release.outputs.upload_url }}" >> $GITHUB_OUTPUT
+          else
+            # create_release provides an output upload_url
+            echo "final_upload_url=${{ steps.create_release.outputs.upload_url }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Delete existing release asset (macOS/Linux)
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            set -euo pipefail
+
+            ASSET_NAME="gardenmap-macos-0.1.1.zip"
+            TAG="v0.1.1"
+            REPO="heeplr/gardenmap"
+
+            # Fetch release JSON (allow failure)
+            RELEASE_JSON=$(curl -sS \
+              -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${REPO}/releases/tags/${TAG}" || true)
+
+            # Release not found → exit 0
+            if echo "$RELEASE_JSON" | grep -q '"message": "Not Found"'; then
+              echo "Release $TAG not found, nothing to delete."
+              exit 0
+            fi
+
+            # Extract asset ID by name (robust)
+            ASSET_ID=$(echo "$RELEASE_JSON" | tr ',' '\n' | grep -A2 "\"name\": \"$ASSET_NAME\"" | grep '"id":' | sed 's/[^0-9]//g' || true)
+
+            if [ -n "$ASSET_ID" ]; then
+              echo "Deleting existing asset $ASSET_NAME (id=$ASSET_ID)"
+              curl -sS -X DELETE \
+                -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${REPO}/releases/assets/${ASSET_ID}"
+            else
+              echo "No existing asset named $ASSET_NAME"
+            fi
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.upload_url.outputs.final_upload_url }}
+          asset_path: "gardenmap-macos-${{ steps.get_version.outputs.version }}.zip"
+          asset_name: "gardenmap-macos-${{ steps.get_version.outputs.version }}.zip"
+          asset_content_type: application/zip

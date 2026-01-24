@@ -1,0 +1,95 @@
+name: Bundle for Windows with PyInstaller
+
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -e .
+          # Install PyInstaller (pinning can be done if you prefer reproducible builds)
+          python -m pip install "pyinstaller>=5.10"
+
+      - name: Run PyInstaller (use gardenmap.spec)
+        shell: pwsh
+        run: |
+          # Run PyInstaller using the repository spec file
+          # --noconfirm: overwrite output without prompting
+          # --clean: clean PyInstaller cache and remove temporary files before building
+          python -m PyInstaller --noconfirm --clean .\gardenmap.spec
+
+      - name: Read version from pyproject.toml (pwsh)
+        id: get_version
+        shell: pwsh
+        run: |
+          $version = (Get-Content pyproject.toml | Select-String -Pattern '^\s*version\s*=\s*"(.*)"' -AllMatches).Matches | Select-Object -First 1 | ForEach-Object { $_.Groups[1].Value }
+          if (-not $version) {
+            Write-Error "Could not extract version from pyproject.toml"
+            exit 2
+          }
+          Add-Content -Path $env:GITHUB_OUTPUT -Value ("version=$version")
+          Write-Host "Detected version: $version"
+
+      - name: Create ZIP of dist/ for release
+        shell: pwsh
+        run: |
+          $zipName = "gardenmap-windows-${{ steps.get_version.outputs.version }}.zip"
+          if (Test-Path $zipName) { Remove-Item $zipName -Force }
+          Compress-Archive -Path .\dist\* -DestinationPath $zipName -Force
+          Write-Host "Created $zipName"
+        id: make_zip
+
+      - name: Compute SHA256 checksum
+        shell: pwsh
+        run: |
+          $zipName = "gardenmap-windows-${{ steps.get_version.outputs.version }}.zip"
+          $hash = Get-FileHash $zipName -Algorithm SHA256
+          Write-Host "sha256=$($hash.Hash)"
+          echo "sha256=$($hash.Hash)" >> $GITHUB_OUTPUT
+        id: checksum
+
+      - name: Prepare release tag
+        id: prep_tag
+        shell: pwsh
+        run: |
+          $VERSION = "${{ steps.get_version.outputs.version }}"
+          $TAG = "v$VERSION"
+          "tag=$TAG" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
+      - name: Create GitHub Release (if missing)
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.prep_tag.outputs.tag }}
+          release_name: "gardenmap ${{ steps.get_version.outputs.version }}"
+          body: |
+            Built by CI run ${{ github.run_number }}.
+          draft: false
+          prerelease: false
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: "gardenmap-windows-${{ steps.get_version.outputs.version }}.zip"
+          asset_name: "gardenmap-windows-${{ steps.get_version.outputs.version }}.zip"
+          asset_content_type: application/zip
