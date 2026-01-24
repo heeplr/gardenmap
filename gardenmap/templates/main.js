@@ -20,15 +20,15 @@ let paletteFilter = {
     "search": document.getElementById("palette-filter-search").value,  // current search string for plant palette
     "snails": document.getElementById("palette-filter-snails").value, // snail resistence
     "lifetime": document.getElementById("palette-filter-lifetime").value, // max. lifetime
-    "location": document.getElementById("palette-filter-location").value,
-    "soil": document.getElementById("palette-filter-soil").value
+    "location": document.getElementById("palette-filter-location").value, // location preference
+    "soil": document.getElementById("palette-filter-soil").value  // soil preference
 };
 
-let viewTransform = null;
-let viewIsPanning = false;
-let viewPanStart = null;
-let viewMode = "iconVisMode";          // visualize plant height, not icons
-let viewMouse = { x: 0, y: 0};         // remember last SVG coords of mouse
+let viewTransform = null;               // current view (x, y, zoom)
+let viewIsPanning = false;              // true if pan is currently in progress
+let viewPanStart = null;                // coordinates at pan start
+let viewMode = "iconVisMode";           // visualize plant height, not icons
+let viewMouse = { x: 0, y: 0};          // remember last SVG coords of mouse
 
 let selectionBoxMode = false;
 let selectionJustSelected = false;
