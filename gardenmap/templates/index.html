@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,26 +74,26 @@
     <div class="btn-group-vertical" id="toolbox" role="group" aria-label="toolbox">
       <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#palette" title="open plant palette">🎨</button>
 
-      <input type="radio" class="btn-check" name="visMode" id="iconVisMode" onclick="viewModeChanged(this.id)" autocomplete="off">
+      <input type="radio" class="btn-check" name="visMode" id="iconVisMode" onclick="viewModeChanged(this.id)">
       <label class="btn btn-light" for="iconVisMode" title="visualize phenotype on/off">🌸</label>
 
-      <input type="radio" class="btn-check" name="visMode" id="heightVisMode" onclick="viewModeChanged(this.id)" autocomplete="off">
+      <input type="radio" class="btn-check" name="visMode" id="heightVisMode" onclick="viewModeChanged(this.id)">
       <label class="btn btn-light" for="heightVisMode" title="visualize height">📏</label>
 
-      <input type="radio" class="btn-check" name="visMode" id="cutVisMode" onclick="viewModeChanged(this.id)" autocomplete="off">
+      <input type="radio" class="btn-check" name="visMode" id="cutVisMode" onclick="viewModeChanged(this.id)">
       <label class="btn btn-light" for="cutVisMode" title="visualize cutting">✂️</label>
 
-      <input type="radio" class="btn-check" name="visMode" id="snailVisMode" onclick="viewModeChanged(this.id)" autocomplete="off">
+      <input type="radio" class="btn-check" name="visMode" id="snailVisMode" onclick="viewModeChanged(this.id)">
       <label class="btn btn-light" for="snailVisMode" title="visualize snail resistance">🐌</label>
 
-      <input type="checkbox" class="btn-check" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)" autocomplete="off">
+      <input type="checkbox" class="btn-check" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">
       <label class="btn btn-light" for="boxSelectToggle" title="turn box selection mode on/off">⛶</label>
 
       <button type="button" class="btn btn-light" onclick="gardenDeletePlant()" title="delete selected plant(s)">🗑️</button>
     </div>
 
     <!-- plant palette -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="palette" aria-labelledby="paletteLabel">
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="palette">
 
       <div class="offcanvas-header">
         <div class="input-group mt-auto">
@@ -112,7 +112,7 @@
                 Filter
               </button>
             </h2>
-            <div id="collapse-filter" class="accordion-collapse collapse" aria-labelledby="heading-filter" data-bs-parent="#accordionExample">
+            <div id="collapse-filter" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <div class="row pb-2">
                   <div class="input-group">
@@ -124,7 +124,7 @@
 
                 <div class="row pb-2">
                   <label class="col my-auto" for="palette-filter-lifetime" title="filter by lifetime">Lebensdauer:</label>
-                  <select id="palette-filter-lifetime"class="form-select col" aria-label="Lebensdauer" onchange="paletteFilterChanged()">
+                  <select id="palette-filter-lifetime" class="form-select col" aria-label="Lebensdauer" onchange="paletteFilterChanged()">
                     <option value="all" selected>alle</option>
                     <option value="perennial">nur mehrjährig</option>
                     <option value="annual">nur einjährig</option>
@@ -171,7 +171,7 @@
           <div class="modal-body">
 
               <div class="row mb-4">
-                <td class="align-middle" colspan="2">
+                <div class="align-middle">
                   <div id="edit-vegetation-carousel" class="carousel slide">
                     <button class="carousel-control-prev w-auto" type="button" data-bs-theme="dark" data-bs-target="#edit-vegetation-carousel" data-bs-slide="prev" title="click for previous month">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -183,7 +183,7 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                </td>
+                </div>
               </div>
 
               <div class="row mx-5 my-1">
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col">
                   <div class="input-group input-group-sm">
-                    <input id="edit-max-lifetime" type="number" class="form-control" placeholder="Alter" aria-label="max. Alter"></input>
+                    <input id="edit-max-lifetime" type="number" class="form-control" placeholder="Alter" aria-label="max. Alter">
                     <div class="input-group-append">
                       <span class="input-group-text">Jahre</span>
                     </div>
@@ -255,7 +255,7 @@
                 </div>
                 <div class="col">
                   <div class="input-group input-group-sm">
-                    <input id="edit-min-temperature" type="number" class="form-control" placeholder="Temperatur" aria-label="min. Temperatur"></input>
+                    <input id="edit-min-temperature" type="number" class="form-control" placeholder="Temperatur" aria-label="min. Temperatur">
                     <div class="input-group-append">
                       <span class="input-group-text">°C</span>
                     </div>
