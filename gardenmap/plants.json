@@ -6237,6 +6237,170 @@
       },
       "watering": "gering",
       "watering_ideal": "nur bei längerer Trockenheit leicht gießen"
+    },
+{
+  "id": "chionodoxa-forbesii",
+  "name": "Chionodoxa forbesii",
+  "scale": 1.0,
+  "trivname": "Glanzstern",
+  "type": "zwiebelpflanze",
+
+  "vegetation": {
+    "height": {
+      "1": 0,
+      "2": 0,
+      "3": 5,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+    },
+    "icon": {
+      "1": "/empty.svg",
+      "2": "/chionodoxa-forbesii-2.svg",
+      "3": "/chionodoxa-forbesii-3.svg",
+      "4": "/chionodoxa-forbesii-4.svg",
+      "5": "/chionodoxa-forbesii-5.svg",
+      "6": "/chionodoxa-forbesii-6.svg",
+      "7": "/chionodoxa-forbesii-2.svg",
+      "8": "/empty.svg",
+      "9": "/empty.svg",
+      "10": "/empty.svg",
+      "11": "/empty.svg",
+      "12": "/empty.svg"
     }
+  },
+
+  "soil": [
+    "durchlässig",
+    "locker",
+    "nicht staunass"
+  ],
+  "soil_ideal": [
+    "sandiger Lehmboden",
+    "humos",
+    "gut drainiert"
+  ],
+
+  "location": [
+    "sonnig",
+    "halbschattig"
+  ],
+  "location_ideal": [
+    "vollsonnig bis halbschattig",
+    "geschützter Standort",
+    "Steingarten oder Beet"
+  ],
+
+  "watering": "gering",
+  "watering_ideal": "nur bei längerer Trockenheit gießen",
+
+  "nutrition": "gering",
+  "nutrition_ideal": "leichte Kompostgabe im Frühjahr",
+
+  "cutting_time": 5,
+  "cutting": "Blätter erst entfernen, wenn sie vollständig vergilbt sind",
+
+  "notes": "verwildert gut, ideal für Steingärten und Rabatten, frühblühend",
+
+  "snails": "little",
+  "min_temperature": -25,
+  "bloom_start": 3,
+  "bloom_end": 4,
+  "max_lifetime": 10,
+  "max_width": -1,
+
+  "propagation": [
+    "Brutzwiebeln",
+    "Samen",
+    "Teilung"
+  ]
+},
+{
+  "id": "liatris-spicata",
+  "name": "Liatris spicata",
+  "scale": 1.0,
+  "trivname": "Prachtscharte",
+  "type": "staude",
+
+  "vegetation": {
+    "height": {
+      "1": 0,
+      "2": 0,
+      "3": 5,
+      "4": 15,
+      "5": 30,
+      "6": 60,
+      "7": 90,
+      "8": 100,
+      "9": 80,
+      "10": 40,
+      "11": 10,
+      "12": 0
+    },
+    "icon": {
+      "1": "/empty.svg",
+      "2": "/empty.svg",
+      "3": "/liatris-spicata-3.svg",
+      "4": "/liatris-spicata-4.svg",
+      "5": "/liatris-spicata-5.svg",
+      "6": "/liatris-spicata-6.svg",
+      "7": "/liatris-spicata-7.svg",
+      "8": "/liatris-spicata-8.svg",
+      "9": "/liatris-spicata-9.svg",
+      "10": "/liatris-spicata-10.svg",
+      "11": "/empty.svg",
+      "12": "/empty.svg"
+    }
+  },
+
+  "soil": [
+    "durchlässig",
+    "locker",
+    "nicht staunass"
+  ],
+  "soil_ideal": [
+    "sandig-lehmiger Boden",
+    "humos",
+    "gut drainiert"
+  ],
+
+  "location": [
+    "sonnig"
+  ],
+  "location_ideal": [
+    "vollsonniger Standort",
+    "warmer Platz",
+    "luftige Lage"
+  ],
+
+  "watering": "mittel",
+  "watering_ideal": "gleichmäßig feucht, Staunässe vermeiden",
+
+  "nutrition": "gering bis mittel",
+  "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
+
+  "cutting_time": 10,
+  "cutting": "Stängel nach dem Abblühen oder im Herbst bodennah schneiden",
+
+  "notes": "sehr insektenfreundlich, trockenheitsverträglich, standfest",
+
+  "snails": "hardened",
+  "min_temperature": -30,
+  "bloom_start": 7,
+  "bloom_end": 8,
+  "max_lifetime": 15,
+  "max_width": 40,
+
+  "propagation": [
+    "Teilung",
+    "Samen"
+  ]
+}
   ]
 }
