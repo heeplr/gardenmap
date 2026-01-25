@@ -5,6 +5,11 @@
 
 Simple browser based app for garden visualizing/planning. 
 
+**Disclaimer:**
+```
+All existing data & images were created by AI and only roughly validated, yet.
+```
+
 ## Usage
 
 Run the app and point your browser to http://127.0.0.1:5000
