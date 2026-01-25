@@ -7,7 +7,7 @@ Simple browser based app for garden visualizing/planning.
 
 **Disclaimer:**
 ```
-All existing data & images were created by AI and only roughly validated, yet.
+All botanical data & plant images were created by AI and only roughly validated, yet.
 ```
 
 ## Usage
