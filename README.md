@@ -1,7 +1,9 @@
 
 # gardenmap
 
-<img src="https://github.com/user-attachments/assets/bfb83598-d0c7-4295-b27e-aa205627a263" width="45%"></img> <img src="https://github.com/user-attachments/assets/62719856-18d7-4a0b-b891-4ebdf32490bc" width="45%"></img> 
+<img src="https://github.com/user-attachments/assets/c23c2341-b7ea-4a0c-b5e7-3eb7c06fb21e"></img>
+<img src="https://github.com/user-attachments/assets/62719856-18d7-4a0b-b891-4ebdf32490bc" width="50%"></img><img src="https://github.com/user-attachments/assets/f0fd81be-5213-473b-9ed0-28344d0eae40" width="50%"></img> 
+<img src="https://github.com/user-attachments/assets/63916c11-2875-4e2c-bbdb-b7dd5966bcf3" width="50%"></img><img src="https://github.com/user-attachments/assets/de2eda93-138e-49b6-9d6b-9281a362e9f8" width="50%"></img> 
 
 Simple browser based app for garden visualizing/planning. 
 
