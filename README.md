@@ -30,7 +30,7 @@ You can...
 * import/export garden data
 * keyboard shortcuts
   * <kbd>e</kbd> to edit selected plant (or doubleclick plant in palette)
-  * <kbd>Del</kbd> to delete selected plant(s) (or 🗑))
+  * <kbd>Del</kbd> to delete selected plant(s) (or 🗑)
   * hold <kbd>Shift</kbd> to select multiple plants
   * hold <kbd>Ctrl</kbd> to draw box to select multiple plants (or toggle ⛶)
   * <kbd>Esc</kbd> to cancel current operation
