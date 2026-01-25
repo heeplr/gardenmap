@@ -10,9 +10,40 @@ Simple browser based app for garden visualizing/planning.
 All botanical data & plant images were created by AI and only roughly validated, yet.
 ```
 
+## Install with pip
+
+1. clone repository
+
+```console
+git clone https://github.com/heeplr/gardenmap
+```
+
+2. create venv (optional)
+
+```console
+$ cd gardenmap
+$ python -m venv venv
+$ source ./venv/bin/activate
+(venv) $ gardenmap
+```
+
+3. install dependencies with pip
+
+```console
+$ pip install -e .
+```
+
+
 ## Usage
 
-Run the app and point your browser to http://127.0.0.1:5000
+Run server:
+
+```console
+(venv) $ gardenmap
+```
+
+Point your browser to http://127.0.0.1:5000
+
 
 
 ## Requirements
@@ -27,27 +58,27 @@ Run the app and point your browser to http://127.0.0.1:5000
 ## Features
 
 * pan map with click + drag
-* zoom with +/- buttons or scrollwheel
+* zoom with **+**/**-** buttons or scrollwheel
 * visualize
-  * ...plant appearance for every month 🌸
-  * ...plant height over year with gradient blue = small, red = tall 📏
-  * ...cutting time for every month ✂️
-  * ...snail resistance 🐌
+  * ...plant appearance for every month (🌸)
+  * ...plant height over year with gradient blue = small, red = tall (📏)
+  * ...cutting time for every month (✂️)
+  * ...snail resistance (🐌)
 * plant summary shown in tooltip when hovering over icon on map
-* searchable plant palette 🎨
+* searchable plant palette (🎨)
 * add plants from palette via drag/drop
-* add new plants to palette +
-* keyboard shortcuts
-  * e to edit selected plant (or doubleclick plant in palette)
-  * del to delete selected plant(s) (or click 🗑)
-  * hold shift to select multiple plants
-  * hold ctrl to draw box to select multiple plants (or toggle ⛶)
-  * escape to cancel current operation
-* copy/paste (ctrl+c/ctrl+v)
+* add new plants to palette (**+**)
 * no 3rd party dependencies - works without connection to the internet
 * export map view as SVG
 * import/export plant palette
 * import/export garden data
+* copy/paste plants (<kbd>Ctrl</kbd>+<kbd>c</kbd> / <kbd>ctrl</kbd>+<kbd>v</kbd>)
+* keyboard shortcuts
+  * <kbd>e</kbd> to edit selected plant (or doubleclick plant in palette)
+  * <kbd>Del</kbd> to delete selected plant(s) (or 🗑))
+  * hold <kbd>Shift</kbd> to select multiple plants
+  * hold <kbd>Ctrl</kbd> to draw box to select multiple plants (or toggle ⛶)
+  * <kbd>Esc</kbd> to cancel current operation
 
 
 # Customization
