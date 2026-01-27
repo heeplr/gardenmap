@@ -11,7 +11,8 @@ const palette = document.getElementById("palette");
 let garden = {};
 /* plant palette */
 let plants = {};
-
+/* anim frame pending */
+af_pending = false;
 
 const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let paletteCurrentlyEdited = null;
@@ -797,8 +798,14 @@ function viewZoom(factor, centerX, centerY) {
 
 /* apply pan & zoom */
 function viewUpdateTransform() {
-    map.setAttribute("transform", `translate(${viewTransform.x},${viewTransform.y}) scale(${viewTransform.scale})`);
-    viewSaveSettings();
+    if(af_pending) return;
+    af_pending = true;
+
+    requestAnimationFrame(() => {
+        af_pending = false;
+        map.setAttribute("transform", `translate(${viewTransform.x},${viewTransform.y}) scale(${viewTransform.scale})`);
+        viewSaveSettings();
+    });
 }
 
 /* change visualization mode */
