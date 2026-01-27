@@ -12,7 +12,9 @@ let garden = {};
 /* plant palette */
 let plants = {};
 /* anim frame pending */
-af_pending = false;
+let af_pending = false;
+/* cached CTM */
+let cached_ctm_inverse = null;
 
 const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let paletteCurrentlyEdited = null;
@@ -805,6 +807,9 @@ function viewUpdateTransform() {
         af_pending = false;
         map.setAttribute("transform", `translate(${viewTransform.x},${viewTransform.y}) scale(${viewTransform.scale})`);
         viewSaveSettings();
+
+        // invalidate + refresh cached inverse
+        cached_ctm_inverse = map.getCTM().inverse();
     });
 }
 
@@ -881,7 +886,7 @@ function getSVGCoords(e) {
 
     pt.x = e.clientX - svgRect.left;
     pt.y = e.clientY - svgRect.top;
-    return pt.matrixTransform(map.getCTM().inverse());
+    return pt.matrixTransform(cached_ctm_inverse);
 }
 
 /* generate a random id */
