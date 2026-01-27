@@ -957,9 +957,11 @@ svg.addEventListener("mousemove", (e) => {
         const dx = pt.x - selectionDragStart.x;
         const dy = pt.y - selectionDragStart.y;
 
-        selectionDragStartPositions.forEach(({ el, x, y }) => {
-            el.setAttribute("x", x + dx);
-            el.setAttribute("y", y + dy);
+        requestAnimationFrame(() => {
+            selectionDragStartPositions.forEach(({ el, x, y }) => {
+                el.setAttribute("x", x + dx);
+                el.setAttribute("y", y + dy);
+            });
         });
 
     }
