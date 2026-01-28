@@ -34,6 +34,10 @@ let viewPanStart = null;                // coordinates at pan start
 let viewMode = "iconVisMode";           // visualize plant height, not icons
 let viewMouse = { x: 0, y: 0};          // remember last SVG coords of mouse
 
+let viewPointers = {};  // active touches
+let viewInitialPinchDistance = null;
+let viewInitialScale = 1;
+
 let selectionBoxMode = false;
 let selectionJustSelected = false;
 let selectionStart = null;
@@ -744,6 +748,13 @@ function monthRender() {
     document.getElementById('month').textContent = monthNames[monthSelected-1];
 }
 
+/* ensure touch gestures are handled by JS, not browser */
+svg.style.touchAction = "none";
+/* normalize pointer capture support */
+function setPointerCaptureSafe(el, id) {
+    if (el.setPointerCapture) el.setPointerCapture(id);
+}
+
 /* save current view settings to local browser storage */
 function viewSaveSettings() {
     localStorage.setItem("view", JSON.stringify({
@@ -908,7 +919,18 @@ function randomId() {
 viewLoadSettings();
 
 // ---------- UI Handlers ----------
-svg.addEventListener("mousedown", (e) => {
+svg.addEventListener("pointerdown", (e) => {
+
+    setPointerCaptureSafe(svg, e.pointerId);
+
+    /* store coords of multipointers (for pinch zoom) */
+    viewPointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+    if (Object.keys(viewPointers).length === 2) {
+        // two fingers -> start pinch
+        const [p1, p2] = Object.values(viewPointers);
+        viewInitialPinchDistance = Math.hypot(p2.x - p1.x, p2.y - p1.y);
+        viewInitialScale = viewTransform.scale;
+    }
 
     const pt = getSVGCoords(e);
 
@@ -953,7 +975,24 @@ svg.addEventListener("mousedown", (e) => {
     }
 });
 
-svg.addEventListener("mousemove", (e) => {
+svg.addEventListener("pointermove", (e) => {
+
+    /* handle pinch zoom */
+    if (viewPointers[e.pointerId]) {
+        viewPointers[e.pointerId].x = e.clientX;
+        viewPointers[e.pointerId].y = e.clientY;
+
+        if (Object.keys(viewPointers).length === 2 && viewInitialPinchDistance) {
+            const [p1, p2] = Object.values(viewPointers);
+            const currentDistance = Math.hypot(p2.x - p1.x, p2.y - p1.y);
+            const factor = currentDistance / viewInitialPinchDistance;
+            // midpoint for zoom center
+            const centerX = (p1.x + p2.x) / 2;
+            const centerY = (p1.y + p2.y) / 2;
+            viewZoom(viewInitialScale * factor / viewTransform.scale, centerX, centerY);
+            return;
+        }
+    }
 
     const pt = getSVGCoords(e);
     /* remember last mouse position */
@@ -997,7 +1036,12 @@ svg.addEventListener("mousemove", (e) => {
     }
 });
 
-svg.addEventListener("mouseup", (e) => {
+svg.addEventListener("pointerup", (e) => {
+
+    /* finish pinch zoom */
+    delete viewPointers[e.pointerId];
+    if (Object.keys(viewPointers).length < 2) initialPinchDistance = null;
+
     /* dropped dragged plant(s)? */
     if(selectionDragStartPositions.length > 0) {
         const dragged_plants = [];
@@ -1055,6 +1099,18 @@ svg.addEventListener("mouseup", (e) => {
 
 });
 
+/* cancel interactions cleanly (e.g. touch cancel, pointer lost) */
+svg.addEventListener("pointercancel", () => {
+    /* cancel pinch zoom */
+    delete viewPointers[e.pointerId];
+    if (Object.keys(viewPointers).length < 2) initialPinchDistance = null;
+
+    viewIsPanning = false;
+    viewPanStart = null;
+    selectionDragStartPositions = [];
+    svg.style.cursor = null;
+});
+
 svg.addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("draggable")) {
     e.target.style.outline = "0.5px solid #f0f0f0a0";
@@ -1072,7 +1128,7 @@ svg.addEventListener("wheel", (e) => {
     e.preventDefault();
     const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1;
     viewZoom(factor, e.clientX, e.clientY);
-});
+}, { passive: false });
 
 svg.addEventListener("dragover", (e) => {
     // prevent default to allow drop
