@@ -111,7 +111,7 @@ jobs:
           tag_name: ${{ steps.prep_tag.outputs.tag }}
           release_name: "gardenmap ${{ steps.get_version.outputs.version }}"
           body: |
-            Built by CI run ${{ github.run_number }}.
+            Built by CI run ${{ github.run_number }} (commit ${{ github.sha }}).
           draft: false
           prerelease: false
 
