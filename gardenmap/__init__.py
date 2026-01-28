@@ -58,6 +58,7 @@ app.config.update(
         "MAX_CONTENT_LENGTH": 40 * 1024 * 1024
     }
 )
+app.config.from_prefixed_env()
 
 # create API
 api = Api(app)
