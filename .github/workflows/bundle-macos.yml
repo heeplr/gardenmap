@@ -2,6 +2,11 @@ name: Bundle for macOS with PyInstaller
 
 on:
   workflow_dispatch: {}
+  workflow_run:
+    workflows: [Bundle for Windows with PyInstaller]
+    types:
+      - completed
+
 permissions:
   contents: write
 jobs:
