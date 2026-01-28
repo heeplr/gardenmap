@@ -104,8 +104,7 @@
         <button type="button" class="btn-close text-reset mb-5" data-bs-dismiss="offcanvas" aria-label="Close" title="close palette"></button>
       </div>
 
-      <div class="offcanvas-body">
-        <div class="accordion" id="accordion-filter">
+      <div class="accordion mx-2" id="accordion-filter">
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading-filter">
               <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-filter" aria-expanded="false" aria-controls="collapse-filter">
@@ -114,6 +113,12 @@
             </h2>
             <div id="collapse-filter" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
+                <div class="row pb-2">
+                  <label class="col my-auto" for="palette-filter-type" title="filter by type">Typ:</label>
+                  <select id="palette-filter-type" class="form-select col" aria-label="Typ" onchange="paletteFilterChanged()">
+                  </select>
+                </div>
+
                 <div class="row pb-2">
                   <div class="input-group">
                     <label class="col my-auto" for="palette-filter-snails" title="filter by snail resistance">Schnecken:</label>
@@ -151,6 +156,7 @@
           </div>
         </div>
 
+      <div class="offcanvas-body">
         <div id="palette-plantlist"></div>
       </div>
 
