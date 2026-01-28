@@ -24,7 +24,8 @@ let paletteFilter = {
     "snails": document.getElementById("palette-filter-snails").value, // snail resistence
     "lifetime": document.getElementById("palette-filter-lifetime").value, // max. lifetime
     "location": document.getElementById("palette-filter-location").value, // location preference
-    "soil": document.getElementById("palette-filter-soil").value  // soil preference
+    "soil": document.getElementById("palette-filter-soil").value,  // soil preference
+    "type": document.getElementById("palette-filter-type").value // plant type
 };
 
 let viewTransform = null;               // current view (x, y, zoom)
@@ -71,12 +72,31 @@ function paletteLoad() {
         }).then(() => paletteRender());
 }
 
+/* render filter form */
+function filterRender(id, elements) {
+    const filter = document.getElementById(id);
+    filter.innerHTML = "";
+    for(var i = 0; i < elements.length; i++) {
+        const option = document.createElement("option");
+        option.value = elements[i];
+        if(option.value === "all") {
+            option.innerText = "alle";
+        }
+        else {
+            option.innerText = elements[i];
+        }
+        filter.appendChild(option);
+    }
+    return filter;
+}
+
 function paletteRender() {
     /* render plantlist */
     const el = document.getElementById('palette-plantlist');
     el.innerHTML = "";
     var locations = [ "all" ];   // list of location tags for filter
     var soils = [ "all" ];       // list of soil tags for filter
+    var types = [ "all" ];       // list of plant types
     for (const [id, plant] of Object.entries(plants)) {
         const div = document.createElement('div');
         div.className = 'plants-item';
@@ -101,38 +121,18 @@ function paletteRender() {
         locations = locations.concat(plant.location_ideal);
         soils = soils.concat(plant.soil);
         soils = soils.concat(plant.soil_ideal);
+        types = types.concat(plant.type);
     };
     /* remove duplicates */
     locations_uniq = [...new Set(locations)];
     soils_uniq = [...new Set(soils)];
+    types_uniq = [...new Set(types)];
     /* render palette location filter */
-    const l_filter = document.getElementById('palette-filter-location');
-    l_filter.innerHTML = "";
-    for(var i = 0; i < locations_uniq.length; i++) {
-        const option = document.createElement("option");
-        option.value = locations_uniq[i];
-        if(option.value === "all") {
-            option.innerText = "alle";
-        }
-        else {
-            option.innerText = locations_uniq[i];
-        }
-        l_filter.appendChild(option);
-    }
+    filterRender("palette-filter-location", locations_uniq);
     /* render palette soil filter */
-    const s_filter = document.getElementById('palette-filter-soil');
-    s_filter.innerHTML = "";
-    for(var i = 0; i < soils_uniq.length; i++) {
-        const option = document.createElement("option");
-        option.value = soils_uniq[i];
-        if(option.value === "all") {
-            option.innerText = "alle";
-        }
-        else {
-            option.innerText = soils_uniq[i];
-        }
-        s_filter.appendChild(option);
-    }
+    filterRender("palette-filter-soil", soils_uniq);
+    /* render palette type filter */
+    filterRender("palette-filter-type", types_uniq);
 
     /* apply any search term */
     paletteFilterNow();
@@ -278,6 +278,7 @@ function paletteFilterSearchClear() {
 
 /* reset other filters */
 function paletteFilterReset() {
+    document.getElementById("palette-filter-type").value = "all";
     document.getElementById("palette-filter-location").value = "all";
     document.getElementById("palette-filter-soil").value = "all";
     document.getElementById("palette-filter-lifetime").value = "all";
@@ -292,6 +293,7 @@ function paletteFilterChanged() {
     paletteFilter.snails = parseInt(document.getElementById("palette-filter-snails").value);
     paletteFilter.location = document.getElementById("palette-filter-location").value;
     paletteFilter.soil = document.getElementById("palette-filter-soil").value;
+    paletteFilter.type = document.getElementById("palette-filter-type").value;
     switch(paletteFilter.snails) {
 
         case 2:
@@ -341,7 +343,7 @@ function paletteFilterNow() {
             continue;
         }
         /* filter by location */
-        if(paletteFilter.location != "all" && paletteFilter.soil != "" &&
+        if(paletteFilter.location != "all" && paletteFilter.location != "" &&
           !plant.location.includes(paletteFilter.location) &&
           !plant.location_ideal.includes(paletteFilter.location) ) {
             plant.el.style.display = "none";
@@ -351,6 +353,12 @@ function paletteFilterNow() {
         if(paletteFilter.soil != "all" && paletteFilter.soil != "" &&
            !plant.soil.includes(paletteFilter.soil) &&
            !plant.soil_ideal.includes(paletteFilter.soil) ) {
+            plant.el.style.display = "none";
+            continue;
+        }
+        /* filter by type */
+        if(paletteFilter.type != "all" && paletteFilter.type != "" &&
+           !plant.type.includes(paletteFilter.type) ) {
             plant.el.style.display = "none";
             continue;
         }
