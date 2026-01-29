@@ -176,6 +176,14 @@ function paletteAdd() {
         }).then(() => paletteLoad());
 }
 
+function paletteEditSelected() {
+    if(!paletteCurrentlySelected)
+        return;
+
+    let p = plants[paletteCurrentlySelected.id];
+    paletteEdit(p);
+}
+
 function paletteEdit(plant) {
     document.getElementById('edit-name').value = plant.name;
     document.getElementById('edit-name-trivial').value = plant.trivname;
