@@ -849,6 +849,16 @@ function viewLoadSettings() {
     paletteFilterChanged();
 }
 
+/* reset view */
+function viewReset() {
+    viewTransform.x = 0;
+    viewTransform.y = 0;
+    viewTransform.scale = 1;
+    viewTransform.centerX = 0;
+    viewTransform.centerY = 0;
+    viewUpdateTransform();
+}
+
 /* change zoom */
 function viewZoom(factor, centerX, centerY) {
     /* use global center if no center was given */
@@ -1119,7 +1129,6 @@ svg.addEventListener("pointerup", (e) => {
            //selectionClear();
             selectionDragStartPositions = [];
         });
-        return;
     }
     /* finish rectangular selection? */
     else if(selectionBoxMode && selectionRect) {
@@ -1138,10 +1147,11 @@ svg.addEventListener("pointerup", (e) => {
             selectionRect = null;
         }
         svg.style.cursor = null;
-        return;
     }
-    /* click anywhere clears selection */
-    else if (e.target.tagName !== 'image' && !viewIsPanning) {
+    /* click anywhere clears selection
+     * (except box select mode is active)
+     */
+    else if (e.target.tagName !== 'image' && !viewIsPanning && !selectionBoxMode) {
         selectionClear();
     }
     /* finish pinch zoom */
@@ -1153,7 +1163,6 @@ svg.addEventListener("pointerup", (e) => {
     viewIsPanning = false;
     viewPanStart = null;
     svg.style.cursor = null;
-
 });
 
 /* cancel interactions cleanly (e.g. touch cancel, pointer lost) */

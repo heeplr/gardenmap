@@ -11,7 +11,6 @@
         .plants-item { height: 3rem; line-height: 3rem; padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         .plants-item img { width: auto; height: 2.5rem; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
-        #zoom-controls { position: absolute; bottom: 1rem; left: 1rem; }
         #export-controls { position: absolute; bottom: 1rem; right: 4rem; }
         #export-svg { position: absolute; bottom: 1rem; right: 1rem; }
         svg { width: 100vw; height: 100vh; background: #ffffff; }
@@ -53,10 +52,13 @@
         </div>
     </div>
 
-    <!-- +/- buttons to zoom -->
-    <div id="zoom-controls" class="btn-group-vertical" role="group" aria-label="zoom">
+    <!-- +/- buttons to zoom, reset to reset view -->
+    <div id="zoom-controls" class="btn-group-vertical position-absolute bottom-0 left-0 mb-1 ms-1" role="group" aria-label="zoom">
       <button type="button" class="btn btn-light" onclick="viewZoom(1.2)" title="zoom in">+</button>
       <button type="button" class="btn btn-light" onclick="viewZoom(1/1.2)" title="zoom out">-</button>
+    </div>
+    <div id="map-controls" class="btn-group-horizontal position-absolute bottom-0 left-0 mb-1 ms-5" role="group" aria-label="reset">
+      <button type="button" class="btn btn-light" onclick="viewReset()" title="reset view">⛶</button>
     </div>
 
     <!-- import/export plants into garden -->
