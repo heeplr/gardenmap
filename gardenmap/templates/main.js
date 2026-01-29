@@ -99,9 +99,15 @@ function paletteSelect(ev) {
     el = ev.currentTarget;
     /* unselect previous selection */
     if(paletteCurrentlySelected) {
+        let cur = paletteCurrentlySelected;
         paletteCurrentlySelected.style.border = '';
         paletteCurrentlySelected = null;
+        /* deselect item */
+        if(cur === el) {
+            return;
+        }
     }
+    /* select element */
     paletteCurrentlySelected = el;
     el.style.border = '1px solid gray';
 }
