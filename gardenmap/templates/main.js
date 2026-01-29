@@ -18,6 +18,7 @@ let cached_ctm_inverse = null;
 
 const paletteEditForm = new bootstrap.Modal('#plant-edit-form');
 let paletteCurrentlyEdited = null;
+let paletteCurrentlySelected = null;
 let paletteShown = false;
 let paletteFilter = {
     "search": document.getElementById("palette-filter-search").value,  // current search string for plant palette
@@ -94,6 +95,17 @@ function filterRender(id, elements) {
     return filter;
 }
 
+function paletteSelect(ev) {
+    el = ev.currentTarget;
+    /* unselect previous selection */
+    if(paletteCurrentlySelected) {
+        paletteCurrentlySelected.style.border = '';
+        paletteCurrentlySelected = null;
+    }
+    paletteCurrentlySelected = el;
+    el.style.border = '1px solid gray';
+}
+
 function paletteRender() {
     /* render plantlist */
     const el = document.getElementById('palette-plantlist');
@@ -103,15 +115,19 @@ function paletteRender() {
     var types = [ "all" ];       // list of plant types
     for (const [id, plant] of Object.entries(plants)) {
         const div = document.createElement('div');
-        div.className = 'plants-item';
+        div.className = 'plants-item h-100';
         div.innerText = plant.trivname;
         div.title = plant.name;
+        div.id = plant.id;
         div.draggable = true;
         div.ondragstart = e => {
             e.dataTransfer.setData('plant-id', plant.id);
         };
         div.ondblclick = (e) => {
             paletteEdit(plant);
+        }
+        div.onclick = (e) => {
+            paletteSelect(e);
         }
         const img = document.createElement('img');
         img.src = plant['vegetation']['icon'][monthSelected];
@@ -716,6 +732,31 @@ if (importPlantsInput) {
     });
 }
 
+/* add a new plant to the garden */
+function gardenAddPlant(id, x, y) {
+    const newPlant = {
+        x,
+        y,
+        plant_id: id,
+        id: randomId()
+    };
+    fetch('/garden', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newPlant)
+    }).then(() => gardenLoad());
+}
+
+/* add currently selected plant in palette to map center */
+function gardenAddSelectedPlant() {
+    if(!paletteCurrentlySelected)
+        return;
+    /* add at center */
+    let pt = { clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 };
+    pt = getSVGCoords(pt);
+    gardenAddPlant(paletteCurrentlySelected.id, pt.x, pt.y);
+}
+
 /* export SVG */
 function gardenExportSvg() {
     /* serialize SVG */
@@ -1038,10 +1079,6 @@ svg.addEventListener("pointermove", (e) => {
 
 svg.addEventListener("pointerup", (e) => {
 
-    /* finish pinch zoom */
-    delete viewPointers[e.pointerId];
-    if (Object.keys(viewPointers).length < 2) initialPinchDistance = null;
-
     /* dropped dragged plant(s)? */
     if(selectionDragStartPositions.length > 0) {
         const dragged_plants = [];
@@ -1068,6 +1105,7 @@ svg.addEventListener("pointerup", (e) => {
            //selectionClear();
             selectionDragStartPositions = [];
         });
+        return;
     }
     /* finish rectangular selection? */
     else if(selectionBoxMode && selectionRect) {
@@ -1089,8 +1127,13 @@ svg.addEventListener("pointerup", (e) => {
         return;
     }
     /* click anywhere clears selection */
-    if (e.target.tagName !== 'image' && !viewIsPanning) {
+    else if (e.target.tagName !== 'image' && !viewIsPanning) {
         selectionClear();
+    }
+    /* finish pinch zoom */
+    delete viewPointers[e.pointerId];
+    if (Object.keys(viewPointers).length < 2) {
+        initialPinchDistance = null;
     }
     /* stop panning view */
     viewIsPanning = false;
@@ -1141,17 +1184,7 @@ svg.addEventListener("drop", (e) => {
     const y = pt.y;
     const id = e.dataTransfer.getData('plant-id');
     if (id && plants[id]) {
-        const newPlant = {
-            x,
-            y,
-            plant_id: id,
-            id: randomId()
-        };
-        fetch('/garden', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newPlant)
-        }).then(() => gardenLoad());
+        gardenAddPlant(id, x, y);
     }
     e.preventDefault();
 });
