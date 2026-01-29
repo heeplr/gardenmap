@@ -951,7 +951,7 @@ function selectionBox(box) {
 /* unselect all selected plants */
 function selectionClear() {
     /* do nothing if shift key is pressed */
-    if(shiftKeyPressed) {
+    if(shiftKeyPressed || selectionBoxMode) {
         return;
     }
 
