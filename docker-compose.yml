@@ -1,0 +1,14 @@
+services:
+  gardenmap:
+    build: .
+    container_name: gardenmap
+    ports:
+      - "8000:5000"
+    environment:
+      GARDENMAP_STORAGE: "json"
+      JSON_PALETTE_PATH: "/data/plants.json"
+      JSON_DATA_PATH: "/data/garden.json"
+      SQLITE_DB_PATH: "/data/gardenmap.sqlite"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
