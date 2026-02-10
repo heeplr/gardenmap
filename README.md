@@ -41,7 +41,7 @@ You can...
 All botanical data & plant images were created using AI and only roughly reviewed, yet.
 ```
 
-## Install with pip
+## Option 1: Install with pip
 
 1. clone repository
 
@@ -64,8 +64,7 @@ $ source ./venv/bin/activate
 $ pip install -e .
 ```
 
-
-## Usage
+### Usage
 
 Run server:
 
@@ -75,9 +74,7 @@ Run server:
 
 Point your browser to http://127.0.0.1:5000
 
-
-
-## Requirements
+### Requirements
 
 * python
  * flask
@@ -86,6 +83,42 @@ Point your browser to http://127.0.0.1:5000
  * sqlite (optional)
 
 
+## Option 2: Run with docker
+
+Gardenmap can be run as a Docker container using Docker Compose. This is the recommended way to run it on a server, as it avoids local Python dependency issues and ensures consistent behavior.
+
+⚠️ Security note: Gardenmap uses a Flask development-style setup and has no authentication. Do not expose it directly to the public internet without additional protection (reverse proxy, authentication, firewall, etc.).
+
+1. clone repository
+
+```console
+git clone https://github.com/heeplr/gardenmap
+```
+
+2. Create the data directory:
+```console
+mkdir -p data
+```
+
+3. Seed the plant palette (only needed once):
+
+```console
+cp -n plants.json data/plants.json
+```
+
+4. Build and start the container:
+
+```console
+docker compose up -d --build
+```
+
+5. Check logs:
+ 
+```console
+ docker compose logs -f gardenmap
+```
+
+Point your browser to http://<server-ip>:5000
 
 # Customization
 
