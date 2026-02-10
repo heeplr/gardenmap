@@ -118,7 +118,7 @@ docker compose up -d --build
  docker compose logs -f gardenmap
 ```
 
-Point your browser to http://<server-ip>:5000
+Point your browser to http://<server-ip>:8000
 
 ### Requirements
 
