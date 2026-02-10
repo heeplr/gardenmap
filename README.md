@@ -120,6 +120,14 @@ docker compose up -d --build
 
 Point your browser to http://<server-ip>:5000
 
+### Requirements
+
+* Docker (≥ 20.x)
+* Docker Compose v2 (docker compose)
+* A Linux, macOS, or Windows host
+
+
+
 # Customization
 
 ## map background
