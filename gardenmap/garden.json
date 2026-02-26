@@ -2453,6 +2453,36 @@
       "plant_id": "berberis-vulgaris",
       "x": 429.8550109863281,
       "y": 534.7635498046875
+    },
+    {
+      "id": "e769b2472f79",
+      "plant_id": "crocus-tommasinianus-herb",
+      "x": 165.18072509765625,
+      "y": 522.9561767578125
+    },
+    {
+      "id": "43011b852988",
+      "plant_id": "thuja-occidentalis",
+      "x": 151.8357391357422,
+      "y": 283.9641418457031
+    },
+    {
+      "id": "97b2d9b5562d",
+      "plant_id": "thuja-occidentalis",
+      "x": 76.84143829345703,
+      "y": 274.8500061035156
+    },
+    {
+      "id": "9ca8a747b1d0",
+      "plant_id": "thuja-occidentalis",
+      "x": 86.83845520019531,
+      "y": 279.3528747558594
+    },
+    {
+      "id": "df45c9096aa3",
+      "plant_id": "thuja-occidentalis",
+      "x": 154.12484741210938,
+      "y": 287.5613098144531
     }
   ]
 }
