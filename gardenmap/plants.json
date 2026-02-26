@@ -6449,14 +6449,160 @@
       "notes": "Empfindlich gegen Winternässe; in rauen Lagen Knollen im Herbst ausgraben oder gut abdecken.",
       "snails": "little",
       "min_temperature": -10,
-      "bloom_start": 4,
-      "bloom_end": 5,
+      "bloom_start": 2,
+      "bloom_end": 4,
       "max_lifetime": 5,
       "max_width": 20,
       "propagation": [
         "Knollen",
         "Aussaat"
       ]
+    },
+    {
+      "id": "crocus-tommasinianus-herb",
+      "name": "Crocus tommasinianus Herb.",
+      "trivname": "Elfen-Krokus",
+      "type": "zwiebelpflanze",
+      "bloom_start": 2,
+      "bloom_end": 3,
+      "cutting": "Laub erst entfernen, wenn es vollständig vergilbt ist, damit die Zwiebel Nährstoffe einziehen kann.",
+      "cutting_time": 4,
+      "max_lifetime": 20,
+      "max_width": -1,
+      "min_temperature": -25,
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "sonnig",
+        "warm",
+        "unter Gehölzen licht"
+      ],
+      "nutrition": "Anspruchslos, benötigt kaum zusätzliche Düngung.",
+      "nutrition_ideal": "Im Herbst etwas Kompost einarbeiten.",
+      "soil": [
+        "durchlässig",
+        "humos",
+        "sandig-lehmig"
+      ],
+      "soil_ideal": [
+        "sehr gut drainiert",
+        "locker",
+        "leicht kalkhaltig"
+      ],
+      "watering": "Während der Wachstumszeit mäßig feucht halten, keine Staunässe.",
+      "watering_ideal": "Im Frühjahr ausreichend Feuchtigkeit, im Sommer trocken während der Ruhephase.",
+      "snails": "hardened",
+      "propagation": [
+        "Brutzwiebeln",
+        "Selbstaussaat"
+      ],
+      "scale": 0.5,
+      "vegetation": {
+        "height": {
+          "1": 0.0,
+          "2": 5.0,
+          "3": 12.0,
+          "4": 8.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0
+        },
+        "icon": {
+          "1": "/empty.svg",
+          "2": "/crocus-tommasinianus-herb-2.svg",
+          "3": "/crocus-tommasinianus-herb-3.svg",
+          "4": "/crocus-tommasinianus-herb-4.svg",
+          "5": "/crocus-tommasinianus-herb-5.svg",
+          "6": "/empty.svg",
+          "7": "/empty.svg",
+          "8": "/empty.svg",
+          "9": "/empty.svg",
+          "10": "/empty.svg",
+          "11": "/empty.svg",
+          "12": "/empty.svg"
+        }
+      },
+      "notes": "Verwildert gut im Rasen und bildet durch Selbstaussaat dichte Teppiche."
+    },
+    {
+      "id": "thuja-occidentalis",
+      "name": "Thuja occidentalis",
+      "trivname": "Abendländischer Lebensbaum",
+      "type": "strauch",
+      "bloom_start": 4,
+      "bloom_end": 5,
+      "cutting": "Formschnitt ab März möglich; Hecken ein- bis zweimal jährlich schneiden, dabei nicht ins alte, unbenadelte Holz zurückschneiden.",
+      "cutting_time": 3,
+      "max_lifetime": 200,
+      "max_width": 300,
+      "min_temperature": -35,
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "sonnig",
+        "windgeschützt"
+      ],
+      "nutrition": "Im Frühjahr moderat mit Koniferendünger oder Kompost versorgen.",
+      "nutrition_ideal": "Jährliche Gabe von organischem Langzeitdünger im zeitigen Frühjahr.",
+      "soil": [
+        "humos",
+        "sandig-lehmig",
+        "mäßig feucht"
+      ],
+      "soil_ideal": [
+        "tiefgründig",
+        "nährstoffreich",
+        "gleichmäßig feucht",
+        "durchlässig"
+      ],
+      "watering": "Regelmäßig gießen, besonders in Trockenperioden und bei jungen Pflanzen; keine Staunässe.",
+      "watering_ideal": "Gleichmäßig feuchter Boden ohne Austrocknung, besonders im Winter auf ausreichende Bodenfeuchte achten.",
+      "snails": "hardened",
+      "propagation": [
+        "Stecklinge",
+        "Aussaat"
+      ],
+      "scale": 1.5,
+      "vegetation": {
+        "height": {
+          "1": 500.0,
+          "2": 500.0,
+          "3": 500.0,
+          "4": 500.0,
+          "5": 500.0,
+          "6": 500.0,
+          "7": 500.0,
+          "8": 500.0,
+          "9": 500.0,
+          "10": 500.0,
+          "11": 500.0,
+          "12": 500.0
+        },
+        "icon": {
+          "1": "/thuja-occidentalis-1.svg",
+          "2": "/thuja-occidentalis-1.svg",
+          "3": "/thuja-occidentalis-1.svg",
+          "4": "/thuja-occidentalis-1.svg",
+          "5": "/thuja-occidentalis-1.svg",
+          "6": "/thuja-occidentalis-1.svg",
+          "7": "/thuja-occidentalis-1.svg",
+          "8": "/thuja-occidentalis-1.svg",
+          "9": "/thuja-occidentalis-1.svg",
+          "10": "/thuja-occidentalis-1.svg",
+          "11": "/thuja-occidentalis-1.svg",
+          "12": "/thuja-occidentalis-1.svg"
+        }
+      },
+      "notes": "Sehr schnittverträglich und als Heckenpflanze beliebt; empfindlich gegen anhaltende Trockenheit und Streusalz."
     }
   ]
 }
