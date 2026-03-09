@@ -171,6 +171,6 @@ Contains your garden data (will be created if not existing)
 
 
 # TODO
+- edit plant /cut/copy/paste button menu for mobile without keyboard
 - choose plant image/easy upload of plant images
-- mobile/touch support?
-- better UI/more bootstrap
+- plant images as sprites
