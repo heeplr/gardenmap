@@ -2477,6 +2477,144 @@
       "plant_id": "thuja-occidentalis",
       "x": 86.83845520019531,
       "y": 279.3528747558594
+    },
+    {
+      "id": "3920ed2277d5",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 214.10044860839844,
+      "y": 349.2904052734375
+    },
+    {
+      "id": "a5cd2d4123a1",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 216.94044494628906,
+      "y": 350.70068359375
+    },
+    {
+      "id": "c56e46ec77a7",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 214.21453857421875,
+      "y": 346.5209045410156
+    },
+    {
+      "id": "c724fa8bbaa7",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 216.72125244140625,
+      "y": 347.7542724609375
+    },
+    {
+      "id": "b78255937ead",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 219.63778686523438,
+      "y": 349.5041809082031
+    },
+    {
+      "id": "c0696f0ab7e4",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 221.07174682617188,
+      "y": 347.29248046875
+    },
+    {
+      "id": "51b0a19eae21",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 218.2038116455078,
+      "y": 345.7613220214844
+    },
+    {
+      "id": "70cfe769be32",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 215.87059020996094,
+      "y": 344.4731750488281
+    },
+    {
+      "id": "47d79eaafcd9",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 219.4676513671875,
+      "y": 343.233642578125
+    },
+    {
+      "id": "1fac84a3ee69",
+      "plant_id": "viola-cornuta-yellow",
+      "x": 221.75225830078125,
+      "y": 344.5946960449219
+    },
+    {
+      "id": "b6b9ac0fdeb3",
+      "plant_id": "viola-cornuta-violet",
+      "x": 239.25123596191406,
+      "y": 358.1858215332031
+    },
+    {
+      "id": "ba55f1dd9da4",
+      "plant_id": "viola-cornuta-violet",
+      "x": 241.05349731445312,
+      "y": 360.0401306152344
+    },
+    {
+      "id": "0f6f0b041e0d",
+      "plant_id": "viola-cornuta-violet",
+      "x": 239.6365509033203,
+      "y": 355.8427734375
+    },
+    {
+      "id": "6d86e2a7d94b",
+      "plant_id": "viola-cornuta-violet",
+      "x": 242.09616088867188,
+      "y": 357.58050537109375
+    },
+    {
+      "id": "6efafc8d5232",
+      "plant_id": "viola-cornuta-violet",
+      "x": 244.58250427246094,
+      "y": 359.71929931640625
+    },
+    {
+      "id": "48517e1ac8e5",
+      "plant_id": "viola-cornuta-violet",
+      "x": 242.28329467773438,
+      "y": 354.1851806640625
+    },
+    {
+      "id": "7c3a0ca01689",
+      "plant_id": "viola-cornuta-violet",
+      "x": 244.79637145996094,
+      "y": 356.1368408203125
+    },
+    {
+      "id": "e77e7fb20e70",
+      "plant_id": "viola-cornuta-violet",
+      "x": 247.3629150390625,
+      "y": 357.9815368652344
+    },
+    {
+      "id": "9789a8261144",
+      "plant_id": "viola-cornuta-violet",
+      "x": 245.51820373535156,
+      "y": 353.9713134765625
+    },
+    {
+      "id": "0fce08e59af9",
+      "plant_id": "viola-cornuta-violet",
+      "x": 247.76393127441406,
+      "y": 355.41497802734375
+    },
+    {
+      "id": "1c7896e80e78",
+      "plant_id": "anemone-nemorosa",
+      "x": 377.3662109375,
+      "y": 382.3134460449219
+    },
+    {
+      "id": "132c4444185d",
+      "plant_id": "prunus-laurocerasus",
+      "x": 398.3728942871094,
+      "y": 384.27899169921875
+    },
+    {
+      "id": "ed88c3d43e68",
+      "plant_id": "prunus-laurocerasus",
+      "x": 219.14303588867188,
+      "y": 299.5513000488281
     }
   ]
 }
