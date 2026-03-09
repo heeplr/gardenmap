@@ -633,32 +633,27 @@
       "watering_ideal": "gleichmäßig feucht während Austrieb, danach abtrocknen lassen"
     },
     {
-      "bloom_end": 10,
+      "id": "viola-cornuta-molly-sanderson",
+      "name": "Viola cornuta 'Molly Sanderson'",
+      "trivname": "Hornveilchen 'Molly Sanderson'",
+      "type": "staude",
       "bloom_start": 4,
+      "bloom_end": 10,
       "cutting": "Nach der ersten Blüte kräftig zurückschneiden (ca. 5 cm)",
       "cutting_time": 6,
-      "id": "viola-cornuta-molly-sanderson",
+      "max_lifetime": 3,
+      "max_width": 30,
+      "min_temperature": -15,
       "location": [
         "sonnig",
         "halbschattig"
       ],
       "location_ideal": [
-        "helle Halbschattenlage, nicht heiß"
+        "helle Halbschattenlage",
+        " nicht heiß"
       ],
-      "max_lifetime": 3,
-      "max_width": 30,
-      "min_temperature": -15,
-      "name": "Viola cornuta 'Molly Sanderson'",
-      "notes": "Blüht bei kühler Witterung am längsten; Rückschnitt fördert Nachblüte.",
       "nutrition": "mäßig",
       "nutrition_ideal": "im Frühjahr leicht nachdüngen",
-      "propagation": [
-        "samen",
-        "stecklinge",
-        "teilung"
-      ],
-      "scale": 1.0,
-      "snails": "little",
       "soil": [
         "humos",
         "frisch"
@@ -668,22 +663,29 @@
         "gleichmäßig feucht",
         "durchlässig"
       ],
-      "trivname": "Hornveilchen 'Molly Sanderson'",
-      "type": "staude",
+      "watering": "gleichmäßig gießen; Hitze vermeiden",
+      "watering_ideal": "ständig leicht feucht ohne Staunässe",
+      "snails": "little",
+      "propagation": [
+        "samen",
+        "stecklinge",
+        "teilung"
+      ],
+      "scale": 1.0,
       "vegetation": {
         "height": {
-          "1": 10,
-          "2": 12,
-          "3": 15,
-          "4": 20,
-          "5": 20,
-          "6": 15,
-          "7": 15,
-          "8": 15,
-          "9": 15,
-          "10": 15,
-          "11": 12,
-          "12": 10
+          "1": 10.0,
+          "2": 12.0,
+          "3": 15.0,
+          "4": 20.0,
+          "5": 20.0,
+          "6": 15.0,
+          "7": 15.0,
+          "8": 15.0,
+          "9": 15.0,
+          "10": 15.0,
+          "11": 12.0,
+          "12": 10.0
         },
         "icon": {
           "1": "/viola-cornuta-molly-sanderson-2.svg",
@@ -700,8 +702,151 @@
           "12": "/viola-cornuta-molly-sanderson-2.svg"
         }
       },
+      "notes": "Blüht bei kühler Witterung am längsten; Rückschnitt fördert Nachblüte."
+    },
+    {
+      "id": "viola-cornuta-yellow",
+      "name": "Viola cornuta",
+      "trivname": "Hornveilchen 'gelb'",
+      "type": "staude",
+      "bloom_start": 4,
+      "bloom_end": 10,
+      "cutting": "Nach der ersten Blüte kräftig zurückschneiden (ca. 5 cm)",
+      "cutting_time": 6,
+      "max_lifetime": 3,
+      "max_width": 30,
+      "min_temperature": -15,
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "helle Halbschattenlage",
+        " nicht heiß"
+      ],
+      "nutrition": "mäßig",
+      "nutrition_ideal": "im Frühjahr leicht nachdüngen",
+      "soil": [
+        "humos",
+        "frisch"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gleichmäßig feucht",
+        "durchlässig"
+      ],
       "watering": "gleichmäßig gießen; Hitze vermeiden",
-      "watering_ideal": "ständig leicht feucht ohne Staunässe"
+      "watering_ideal": "ständig leicht feucht ohne Staunässe",
+      "snails": "little",
+      "propagation": [
+        "samen",
+        "stecklinge",
+        "teilung"
+      ],
+      "scale": 0.35,
+      "vegetation": {
+        "height": {
+          "1": 10.0,
+          "2": 12.0,
+          "3": 15.0,
+          "4": 20.0,
+          "5": 20.0,
+          "6": 15.0,
+          "7": 15.0,
+          "8": 15.0,
+          "9": 15.0,
+          "10": 15.0,
+          "11": 12.0,
+          "12": 10.0
+        },
+        "icon": {
+          "1": "/viola-cornuta-yellow-2.svg",
+          "2": "/viola-cornuta-yellow-2.svg",
+          "3": "/viola-cornuta-yellow-3.svg",
+          "4": "/viola-cornuta-yellow-4.svg",
+          "5": "/viola-cornuta-yellow-4.svg",
+          "6": "/viola-cornuta-yellow-6.svg",
+          "7": "/viola-cornuta-yellow-2.svg",
+          "8": "/viola-cornuta-yellow-4.svg",
+          "9": "/viola-cornuta-yellow-6.svg",
+          "10": "/viola-cornuta-yellow-4.svg",
+          "11": "/viola-cornuta-yellow-2.svg",
+          "12": "/viola-cornuta-yellow-2.svg"
+        }
+      },
+      "notes": "Blüht bei kühler Witterung am längsten; Rückschnitt fördert Nachblüte."
+    },
+    {
+      "id": "viola-cornuta-violet",
+      "name": "Viola cornuta",
+      "trivname": "Hornveilchen 'lila'",
+      "type": "staude",
+      "bloom_start": 4,
+      "bloom_end": 10,
+      "cutting": "Nach der ersten Blüte kräftig zurückschneiden (ca. 5 cm)",
+      "cutting_time": 6,
+      "max_lifetime": 3,
+      "max_width": 30,
+      "min_temperature": -15,
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "helle Halbschattenlage",
+        " nicht heiß"
+      ],
+      "nutrition": "mäßig",
+      "nutrition_ideal": "im Frühjahr leicht nachdüngen",
+      "soil": [
+        "humos",
+        "frisch"
+      ],
+      "soil_ideal": [
+        "humos",
+        "gleichmäßig feucht",
+        "durchlässig"
+      ],
+      "watering": "gleichmäßig gießen; Hitze vermeiden",
+      "watering_ideal": "ständig leicht feucht ohne Staunässe",
+      "snails": "little",
+      "propagation": [
+        "samen",
+        "stecklinge",
+        "teilung"
+      ],
+      "scale": 0.35,
+      "vegetation": {
+        "height": {
+          "1": 10.0,
+          "2": 12.0,
+          "3": 15.0,
+          "4": 20.0,
+          "5": 20.0,
+          "6": 15.0,
+          "7": 15.0,
+          "8": 15.0,
+          "9": 15.0,
+          "10": 15.0,
+          "11": 12.0,
+          "12": 10.0
+        },
+        "icon": {
+          "1": "/viola-cornuta-violet-2.svg",
+          "2": "/viola-cornuta-violet-2.svg",
+          "3": "/viola-cornuta-violet-3.svg",
+          "4": "/viola-cornuta-violet-4.svg",
+          "5": "/viola-cornuta-violet-4.svg",
+          "6": "/viola-cornuta-violet-6.svg",
+          "7": "/viola-cornuta-violet-2.svg",
+          "8": "/viola-cornuta-violet-4.svg",
+          "9": "/viola-cornuta-violet-6.svg",
+          "10": "/viola-cornuta-violet-4.svg",
+          "11": "/viola-cornuta-violet-2.svg",
+          "12": "/viola-cornuta-violet-2.svg"
+        }
+      },
+      "notes": "Blüht bei kühler Witterung am längsten; Rückschnitt fördert Nachblüte."
     },
     {
       "bloom_end": 5,
