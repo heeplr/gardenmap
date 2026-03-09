@@ -909,6 +909,15 @@ function viewModeChanged(mode) {
     gardenRender();
 }
 
+function viewShowEditDialog() {
+    if(selection.length <= 0) {
+            return;
+        }
+
+    const plant = selection[selection.length-1];
+    paletteEdit(plants[plant.plant_id]);
+}
+
 /* activate/deactivate rectangular selection mode */
 function boxSelectToggle(active) {
     selectionBoxMode = active;
@@ -1277,12 +1286,7 @@ window.onkeyup = (e) => {
     }
     /* open edit dialog */
     else if(e.code === "KeyE") {
-        if(selection.length <= 0) {
-            return;
-        }
-
-        const plant = selection[selection.length-1];
-        paletteEdit(plants[plant.plant_id]);
+        viewShowEditDialog();
     }
 }
 

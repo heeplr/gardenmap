@@ -8,6 +8,7 @@
         html, body { margin: 0; overflow: hidden; }
         .carousel-item { transition: transform .25s ease, opacity .25s ease-out !important }
         #toolbox { position: absolute; top: 1rem; left: 1rem; }
+        #edit { position: absolute; top: 20rem; left: 1rem; }
         .plants-item { height: 3rem; line-height: 3rem; padding: 5px; cursor: grab; border-bottom: 1px solid #eee; user-select: none; }
         .plants-item img { width: auto; height: 2.5rem; margin-left: 1em; }
         #edit-form { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px; border: 1px solid #aaa; z-index: 10; }
@@ -87,11 +88,14 @@
 
       <input type="radio" class="btn-check" name="visMode" id="snailVisMode" onclick="viewModeChanged(this.id)">
       <label class="btn btn-light" for="snailVisMode" title="visualize snail resistance">🐌</label>
+    </div>
 
-      <input type="checkbox" class="btn-check" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">
-      <label class="btn btn-light" for="boxSelectToggle" title="turn box selection mode on/off">⛶</label>
-
-      <button type="button" class="btn btn-light" onclick="gardenDeletePlant()" title="delete selected plant(s)">🗑️</button>
+    <!-- edit menu -->
+    <div class="btn-group-vertical" id="edit" role="group" aria-label="edit">
+        <button type="button" class="btn btn-light" onclick="viewShowEditDialog()" title="edit selected plant">✏️</button>
+        <button type="button" class="btn btn-light" onclick="gardenDeletePlant()" title="delete selected plant(s)">🗑️</button>
+        <input type="checkbox" class="btn-check" id="boxSelectToggle" onclick="boxSelectToggle(this.checked)">
+        <label class="btn btn-light" for="boxSelectToggle" title="turn box selection mode on/off">⛶</label>
     </div>
 
     <!-- plant palette -->
