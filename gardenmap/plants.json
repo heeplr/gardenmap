@@ -6094,23 +6094,59 @@
     {
       "id": "allium-moly",
       "name": "Allium moly",
-      "scale": 1.0,
       "trivname": "Gold-Lauch",
       "type": "zwiebelpflanze",
+      "bloom_start": 5,
+      "bloom_end": 6,
+      "cutting": "Laub erst entfernen, wenn es vollständig eingezogen und vergilbt ist",
+      "cutting_time": 7,
+      "max_lifetime": 20,
+      "max_width": -1,
+      "min_temperature": -28,
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "vollsonnig",
+        "warmer Standort",
+        "geschützt vor Staunässe"
+      ],
+      "nutrition": "gering",
+      "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
+      "soil": [
+        "durchlässig",
+        "locker",
+        "nicht staunass"
+      ],
+      "soil_ideal": [
+        "sandig-lehmiger Boden",
+        "humos",
+        "gut drainiert"
+      ],
+      "watering": "gering bis mittel",
+      "watering_ideal": "nur bei längerer Trockenheit gießen",
+      "snails": "hardened",
+      "propagation": [
+        "Brutzwiebeln",
+        "Teilung",
+        "Samen"
+      ],
+      "scale": 0.5,
       "vegetation": {
         "height": {
-          "1": 0,
-          "2": 0,
-          "3": 5,
-          "4": 15,
-          "5": 25,
-          "6": 30,
-          "7": 20,
-          "8": 10,
-          "9": 0,
-          "10": 0,
-          "11": 0,
-          "12": 0
+          "1": 0.0,
+          "2": 0.0,
+          "3": 5.0,
+          "4": 15.0,
+          "5": 25.0,
+          "6": 30.0,
+          "7": 20.0,
+          "8": 10.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0
         },
         "icon": {
           "1": "/allium-moly-1.svg",
@@ -6127,43 +6163,7 @@
           "12": "/allium-moly-1.svg"
         }
       },
-      "soil": [
-        "durchlässig",
-        "locker",
-        "nicht staunass"
-      ],
-      "soil_ideal": [
-        "sandig-lehmiger Boden",
-        "humos",
-        "gut drainiert"
-      ],
-      "location": [
-        "sonnig",
-        "halbschattig"
-      ],
-      "location_ideal": [
-        "vollsonnig",
-        "warmer Standort",
-        "geschützt vor Staunässe"
-      ],
-      "watering": "gering bis mittel",
-      "watering_ideal": "nur bei längerer Trockenheit gießen",
-      "nutrition": "gering",
-      "nutrition_ideal": "Kompostgabe im Frühjahr ausreichend",
-      "cutting_time": 7,
-      "cutting": "Laub erst entfernen, wenn es vollständig eingezogen und vergilbt ist",
-      "notes": "verwildert gut, sehr robust, ideal für Steingärten und Naturgärten",
-      "snails": "hardened",
-      "min_temperature": -28,
-      "bloom_start": 5,
-      "bloom_end": 6,
-      "max_lifetime": 20,
-      "max_width": -1,
-      "propagation": [
-        "Brutzwiebeln",
-        "Teilung",
-        "Samen"
-      ]
+      "notes": "verwildert gut, sehr robust, ideal für Steingärten und Naturgärten"
     },
     {
       "id": "puschkinia-libanotica",
@@ -6533,23 +6533,58 @@
     {
       "id": "anemone-coronaria-sylphide",
       "name": "Anemone coronaria 'Sylphide'",
-      "scale": 1.0,
       "trivname": "Kronen-Anemone 'Sylphide'",
       "type": "knollenpflanze",
+      "bloom_start": 2,
+      "bloom_end": 4,
+      "cutting": "Nach dem Abblühen und Vergilben des Laubs bodennah zurückschneiden, Knollen einziehen lassen.",
+      "cutting_time": 6,
+      "max_lifetime": 5,
+      "max_width": 20,
+      "min_temperature": -10,
+      "location": [
+        "sonnig",
+        "halbschattig"
+      ],
+      "location_ideal": [
+        "sonnig",
+        "warm",
+        "geschützt"
+      ],
+      "nutrition": "Geringer Nährstoffbedarf, keine starken Düngergaben nötig.",
+      "nutrition_ideal": "Im Frühjahr sparsam mit organischem Dünger versorgen.",
+      "soil": [
+        "durchlässig",
+        "sandig",
+        "humos"
+      ],
+      "soil_ideal": [
+        "sehr gut drainiert",
+        "sandig-lehmig",
+        "locker"
+      ],
+      "watering": "Während der Wachstums- und Blütezeit gleichmäßig feucht halten, Staunässe vermeiden.",
+      "watering_ideal": "Mäßig gießen, im Sommer während der Ruhephase möglichst trocken halten.",
+      "snails": "little",
+      "propagation": [
+        "Knollen",
+        "Aussaat"
+      ],
+      "scale": 0.5,
       "vegetation": {
         "height": {
-          "1": 0,
-          "2": 5,
-          "3": 15,
-          "4": 25,
-          "5": 25,
-          "6": 10,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0,
-          "11": 0,
-          "12": 0
+          "1": 0.0,
+          "2": 5.0,
+          "3": 15.0,
+          "4": 25.0,
+          "5": 25.0,
+          "6": 10.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0
         },
         "icon": {
           "1": "/empty.svg",
@@ -6566,42 +6601,7 @@
           "12": "/empty.svg"
         }
       },
-      "soil": [
-        "durchlässig",
-        "sandig",
-        "humos"
-      ],
-      "soil_ideal": [
-        "sehr gut drainiert",
-        "sandig-lehmig",
-        "locker"
-      ],
-      "location": [
-        "sonnig",
-        "halbschattig"
-      ],
-      "location_ideal": [
-        "sonnig",
-        "warm",
-        "geschützt"
-      ],
-      "watering": "Während der Wachstums- und Blütezeit gleichmäßig feucht halten, Staunässe vermeiden.",
-      "watering_ideal": "Mäßig gießen, im Sommer während der Ruhephase möglichst trocken halten.",
-      "nutrition": "Geringer Nährstoffbedarf, keine starken Düngergaben nötig.",
-      "nutrition_ideal": "Im Frühjahr sparsam mit organischem Dünger versorgen.",
-      "cutting_time": 6,
-      "cutting": "Nach dem Abblühen und Vergilben des Laubs bodennah zurückschneiden, Knollen einziehen lassen.",
-      "notes": "Empfindlich gegen Winternässe; in rauen Lagen Knollen im Herbst ausgraben oder gut abdecken.",
-      "snails": "little",
-      "min_temperature": -10,
-      "bloom_start": 2,
-      "bloom_end": 4,
-      "max_lifetime": 5,
-      "max_width": 20,
-      "propagation": [
-        "Knollen",
-        "Aussaat"
-      ]
+      "notes": "Empfindlich gegen Winternässe; in rauen Lagen Knollen im Herbst ausgraben oder gut abdecken."
     },
     {
       "id": "crocus-tommasinianus-herb",
